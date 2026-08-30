@@ -66,8 +66,9 @@ GitHub 仓库名：`News-Rust-bioinformation`。
 - `url` 必填（支持 crates.io、文档站、论文页，不强迫 GitHub）
 - `repo` 仅 GitHub 项目填写，供元数据拉取
 - 同一 `url` 只能出现一次
+- 可选 `status: retired`：移出 README 主列表，保留在 YAML 供雷达对照
 - stars / last_push / archived 不写回 YAML，写入 `data/metadata.json`
-- 第一版不用 `kind` 字段，避免与 category 重复
+- 不用 `kind` 字段，避免与 category 重复
 
 `data/config.yaml` 示例：
 

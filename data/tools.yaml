@@ -390,6 +390,30 @@
   category: assembly-and-pangenomes
   description: Statistics for GFA-formatted pangenome graphs.
 
+- name: seqwish
+  url: https://github.com/pangenome/seqwish
+  repo: pangenome/seqwish
+  category: assembly-and-pangenomes
+  description: Alignment-to-variation-graph inducer for building pangenome graphs.
+
+- name: seqrush
+  url: https://github.com/pangenome/seqrush
+  repo: pangenome/seqrush
+  category: assembly-and-pangenomes
+  description: Online induction of bidirected pangenome variation graphs.
+
+- name: gafpack
+  url: https://github.com/pangenome/gafpack
+  repo: pangenome/gafpack
+  category: assembly-and-pangenomes
+  description: Conversion of variation-graph alignments into node coverage maps.
+
+- name: gfatk
+  url: https://github.com/tolkit/gfatk
+  repo: tolkit/gfatk
+  category: assembly-and-pangenomes
+  description: Toolkit for plant organellar Graphical Fragment Assembly graphs.
+
 - name: skani
   url: https://github.com/bluenote-1577/skani
   repo: bluenote-1577/skani
@@ -437,6 +461,7 @@
   repo: esteinig/vircov
   category: metagenomics
   description: Viral genome coverage evaluation for metagenomic diagnostics.
+  status: retired
 
 - name: ska
   url: https://github.com/bacpop/ska.rust
@@ -534,6 +559,30 @@
   category: proteomics-and-structure
   description: Protein and molecule viewer.
 
+- name: mzcore
+  url: https://github.com/rusteomics/mzcore
+  repo: rusteomics/mzcore
+  category: proteomics-and-structure
+  description: Peptide-centric mass spectrometry calculations around PSI standards.
+
+- name: mzdata
+  url: https://github.com/mobiusklein/mzdata
+  repo: mobiusklein/mzdata
+  category: proteomics-and-structure
+  description: Readers and writers for mass spectrometry file formats.
+
+- name: timsrust
+  url: https://github.com/MannLabs/timsrust
+  repo: MannLabs/timsrust
+  category: proteomics-and-structure
+  description: High-performance access to Bruker timsTOF mass spectrometry data.
+
+- name: pdbtbx
+  url: https://github.com/douweschulte/pdbtbx
+  repo: douweschulte/pdbtbx
+  category: proteomics-and-structure
+  description: Library for reading, editing, and writing PDB and mmCIF files.
+
 - name: oxo-flow
   url: https://github.com/Traitome/oxo-flow
   repo: Traitome/oxo-flow
@@ -545,6 +594,7 @@
   repo: stjude-rust-labs/wdl
   category: workflows-and-infrastructure
   description: Rust crates for Workflow Description Language documents.
+  status: retired
 
 - name: scidataflow
   url: https://github.com/vsbuffalo/scidataflow
@@ -623,6 +673,12 @@
   repo: Psy-Fer/kuva
   category: visualization
   description: Scientific plotting library in Rust.
+
+- name: igv-rs
+  url: https://github.com/AI4S-YB/igv-rs
+  repo: AI4S-YB/igv-rs
+  category: visualization
+  description: Interactive terminal genome viewer for FASTA, VCF, BAM, GFF, and BED.
 
 - name: Are we bio yet?
   url: https://rust4bio.github.io/arewebioyet/

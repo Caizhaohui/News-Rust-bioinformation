@@ -10,7 +10,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import (  # noqa: E402
     CATEGORIES,
     ROOT,
+    active_tools,
     format_meta_suffix,
+    is_retired,
     load_metadata,
     load_tools,
     tool_sort_key,
@@ -41,20 +43,40 @@ def build_readme(tools: list[dict], metadata: dict) -> str:
     if fetched:
         lines += [f"_Last metadata fetch: {fetched}_", ""]
 
+    catalog = active_tools(tools)
+    retired = [t for t in tools if is_retired(t)]
+
     lines += ["## Contents", ""]
     for slug, title in CATEGORIES:
-        if any(t.get("category") == slug for t in tools):
+        if any(t.get("category") == slug for t in catalog):
             anchor = title.lower().replace(" ", "-")
             lines.append(f"- [{title}](#{anchor})")
+    if retired:
+        lines.append("- [Retired](#retired)")
     lines += ["", "## Catalog", ""]
 
     for slug, title in CATEGORIES:
-        group = [t for t in tools if t.get("category") == slug]
+        group = [t for t in catalog if t.get("category") == slug]
         if not group:
             continue
         group = sorted(group, key=lambda t: tool_sort_key(t, metadata))
         lines += [f"### {title}", ""]
         for tool in group:
+            suffix = format_meta_suffix(tool, metadata)
+            lines.append(
+                f"- [{tool['name']}]({tool['url']}) - {tool['description']}{suffix}"
+            )
+        lines.append("")
+
+    if retired:
+        retired = sorted(retired, key=lambda t: tool_sort_key(t, metadata))
+        lines += [
+            "## Retired",
+            "",
+            "Archived or otherwise removed from the living catalog. Kept here so radar history is not lost.",
+            "",
+        ]
+        for tool in retired:
             suffix = format_meta_suffix(tool, metadata)
             lines.append(
                 f"- [{tool['name']}]({tool['url']}) - {tool['description']}{suffix}"
@@ -85,9 +107,11 @@ def main() -> int:
         for item in errors:
             print(f"  - {item}", file=sys.stderr)
         return 1
-    text = build_readme(tools, load_metadata())
+    metadata = load_metadata()
+    text = build_readme(tools, metadata)
     README_PATH.write_text(text, encoding="utf-8")
-    print(f"Wrote {README_PATH.name} ({len(tools)} tools)")
+    n_retired = sum(1 for t in tools if is_retired(t))
+    print(f"Wrote {README_PATH.name} ({len(tools) - n_retired} catalog, {n_retired} retired)")
     return 0
 
 

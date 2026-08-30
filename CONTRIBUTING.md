@@ -41,8 +41,9 @@ Prefer a short, objective English description: capital letter, ends with a perio
 - `learning-resources`
 
 3. `url` is required and must be unique. `repo` is `owner/name` for GitHub projects only.
+4. Optional `status: retired` moves an entry out of the main catalog into the README Retired section. Do not delete archived tools; mark them retired so radar history stays intact.
 
-4. Rebuild locally:
+5. Rebuild locally:
 
 ```bash
 python scripts/validate.py
@@ -72,4 +73,4 @@ Or run the `Generate digest draft` GitHub Action (`workflow_dispatch`).
 4. Copy the file to `Caizhaohui/personal-website` `src/content/blog/`.
 5. Set `pubDate` to the real publish date and `draft: false`.
 6. Confirm `pnpm build` succeeds.
-7. Update `data/tools.yaml` if the post adds or retires a tool. Move archived projects out of the main list.
+7. Update `data/tools.yaml` if the post adds or retires a tool. Set `status: retired` on archived projects instead of deleting them.

@@ -35,6 +35,16 @@ CATEGORY_TITLES = dict(CATEGORIES)
 VALID_CATEGORIES = set(CATEGORY_TITLES)
 
 REQUIRED_FIELDS = ("name", "url", "category", "description")
+ALLOWED_FIELDS = {"name", "url", "repo", "category", "description", "status"}
+VALID_STATUSES = {"retired"}
+
+
+def is_retired(tool: dict[str, Any]) -> bool:
+    return tool.get("status") == "retired"
+
+
+def active_tools(tools: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return [tool for tool in tools if not is_retired(tool)]
 
 
 def utcnow() -> datetime:
@@ -214,7 +224,10 @@ def validate_tools(tools: list[dict[str, Any]]) -> list[str]:
         if repo is not None:
             if not isinstance(repo, str) or repo.count("/") != 1 or not all(repo.split("/")):
                 errors.append(f"{prefix} ({name}): repo must be owner/name")
-        extra = set(tool) - {"name", "url", "repo", "category", "description"}
+        status = tool.get("status")
+        if status is not None and status not in VALID_STATUSES:
+            errors.append(f"{prefix} ({name}): status must be one of {sorted(VALID_STATUSES)}")
+        extra = set(tool) - ALLOWED_FIELDS
         if extra:
             errors.append(f"{prefix} ({name}): unknown fields {sorted(extra)}")
     return errors
@@ -233,12 +246,12 @@ def compute_radar(
     stale_before = months_ago(now, int(radar_cfg["stale_months"]))
     cold_before = months_ago(now, int(radar_cfg["cold_inactive_months"]))
 
-    current_urls = {t["url"] for t in tools}
+    tracked = active_tools(tools)
+    current_urls = {t["url"] for t in tracked}
     previous_urls = set((previous or {}).get("urls") or [])
     prev_repos = (previous or {}).get("repos") or {}
-    cur_repos = current.get("repos") or {}
 
-    by_url = {t["url"]: t for t in tools}
+    by_url = {t["url"]: t for t in tracked}
     new_entries = [by_url[url] for url in sorted(current_urls - previous_urls) if url in by_url]
 
     active: list[dict[str, Any]] = []
@@ -246,7 +259,7 @@ def compute_radar(
     watch: list[dict[str, Any]] = []
 
     if previous is None:
-        for tool in tools:
+        for tool in tracked:
             record = repo_record(current, tool.get("repo"))
             error = record.get("error")
             if error:
@@ -263,7 +276,7 @@ def compute_radar(
             "baseline": False,
         }
 
-    for tool in tools:
+    for tool in tracked:
         repo = tool.get("repo")
         record = repo_record(current, repo)
         prev = prev_repos.get(repo or "") or {}
@@ -276,6 +289,9 @@ def compute_radar(
         if record.get("archived") or (pushed and pushed < stale_before):
             reason = "archived" if record.get("archived") else "no push in 18 months"
             stale.append({**tool, "reason": reason})
+
+        if tool["url"] not in previous_urls:
+            continue
 
         reasons: list[str] = []
         stars = record.get("stars")
@@ -306,6 +322,14 @@ def compute_radar(
 
         if reasons:
             active.append({**tool, "reason": "; ".join(reasons)})
+
+    for tool in tools:
+        if not is_retired(tool):
+            continue
+        record = repo_record(current, tool.get("repo"))
+        error = record.get("error")
+        if error:
+            watch.append({**tool, "reason": str(error)})
 
     return {
         "new_entries": new_entries,

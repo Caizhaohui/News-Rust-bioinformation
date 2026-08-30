@@ -103,6 +103,50 @@ class RadarTests(unittest.TestCase):
         self.assertEqual(len(radar["active"]), 1)
         self.assertIn("stars", radar["active"][0]["reason"])
 
+    def test_new_entry_not_also_active(self) -> None:
+        old = tool("a", "o/a")
+        new = tool("b", "o/b")
+        previous = {"urls": [old["url"]], "repos": {}}
+        current = {
+            "urls": [old["url"], new["url"]],
+            "repos": {
+                "o/b": {
+                    "stars": 10,
+                    "pushed_at": "2026-08-29T00:00:00Z",
+                    "archived": False,
+                    "latest_release_at": "2026-08-20T00:00:00Z",
+                    "latest_release_tag": "v1.0",
+                }
+            },
+        }
+        radar = compute_radar([old, new], current, previous, CONFIG, now=NOW)
+        self.assertEqual([t["name"] for t in radar["new_entries"]], ["b"])
+        self.assertEqual(radar["active"], [])
+
+    def test_retired_skipped_in_new_and_stale(self) -> None:
+        live = tool("live", "o/live")
+        gone = tool("gone", "o/gone")
+        gone["status"] = "retired"
+        previous = {"urls": [live["url"]], "repos": {}}
+        current = {
+            "urls": [live["url"], gone["url"]],
+            "repos": {
+                "o/live": {
+                    "stars": 3,
+                    "pushed_at": "2026-08-29T00:00:00Z",
+                    "archived": False,
+                },
+                "o/gone": {
+                    "stars": 1,
+                    "pushed_at": "2024-01-01T00:00:00Z",
+                    "archived": True,
+                },
+            },
+        }
+        radar = compute_radar([live, gone], current, previous, CONFIG, now=NOW)
+        self.assertEqual([t["name"] for t in radar["new_entries"]], [])
+        self.assertEqual([t["name"] for t in radar["stale"]], [])
+
     def test_stale_and_watch(self) -> None:
         stale = tool("old", "o/old")
         missing = tool("gone", "o/gone")

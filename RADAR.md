@@ -2,13 +2,19 @@
 
 # Radar (2026-08-30)
 
-No previous snapshot to compare against. New entries and Active stay empty until the next refresh.
-
 ## New entries
 
 Tools added to `data/tools.yaml` since the last snapshot.
 
-_None._
+- [igv-rs](https://github.com/AI4S-YB/igv-rs)
+- [timsrust](https://github.com/MannLabs/timsrust)
+- [pdbtbx](https://github.com/douweschulte/pdbtbx)
+- [mzdata](https://github.com/mobiusklein/mzdata)
+- [gafpack](https://github.com/pangenome/gafpack)
+- [seqrush](https://github.com/pangenome/seqrush)
+- [seqwish](https://github.com/pangenome/seqwish)
+- [mzcore](https://github.com/rusteomics/mzcore)
+- [gfatk](https://github.com/tolkit/gfatk)
 
 ## Active this week
 
@@ -35,8 +41,6 @@ Archived, or no push in about 18 months.
 - [nanoq](https://github.com/esteinig/nanoq) — no push in 18 months
 - [longshot](https://github.com/pjedge/longshot) — no push in 18 months
 - [yacrd](https://github.com/natir/yacrd) — no push in 18 months
-- [vircov](https://github.com/esteinig/vircov) — archived
-- [wdl](https://github.com/stjude-rust-labs/wdl) — archived
 - [scidataflow](https://github.com/vsbuffalo/scidataflow) — no push in 18 months
 - [Are we bio yet?](https://rust4bio.github.io/arewebioyet/) — no push in 18 months
 

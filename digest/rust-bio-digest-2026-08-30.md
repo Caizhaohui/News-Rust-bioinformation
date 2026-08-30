@@ -13,11 +13,51 @@ draft: true
 
 ## 本周要点（候选）
 
-当前只有一份快照，还不能做周对比。下周再刷新后才会出现 New / Active 候选。
+### 1. [igv-rs](https://github.com/AI4S-YB/igv-rs)
+
+- 事实：★ 11；release v0.7.0
+- 为什么值得写：
+
+### 2. [timsrust](https://github.com/MannLabs/timsrust)
+
+- 事实：★ 35
+- 为什么值得写：
+
+### 3. [pdbtbx](https://github.com/douweschulte/pdbtbx)
+
+- 事实：★ 73；release v0.12.0
+- 为什么值得写：
+
+### 4. [mzdata](https://github.com/mobiusklein/mzdata)
+
+- 事实：★ 44；release v0.66.1
+- 为什么值得写：
+
+### 5. [gafpack](https://github.com/pangenome/gafpack)
+
+- 事实：★ 28；release v0.1.3
+- 为什么值得写：
 
 ## 新工具
 
-_无。_
+- [igv-rs](https://github.com/AI4S-YB/igv-rs) — ★ 11；release v0.7.0
+  - 为什么值得写：
+- [timsrust](https://github.com/MannLabs/timsrust) — ★ 35
+  - 为什么值得写：
+- [pdbtbx](https://github.com/douweschulte/pdbtbx) — ★ 73；release v0.12.0
+  - 为什么值得写：
+- [mzdata](https://github.com/mobiusklein/mzdata) — ★ 44；release v0.66.1
+  - 为什么值得写：
+- [gafpack](https://github.com/pangenome/gafpack) — ★ 28；release v0.1.3
+  - 为什么值得写：
+- [seqrush](https://github.com/pangenome/seqrush) — ★ 12
+  - 为什么值得写：
+- [seqwish](https://github.com/pangenome/seqwish) — ★ 165；release v0.7.12
+  - 为什么值得写：
+- [mzcore](https://github.com/rusteomics/mzcore) — ★ 51；release mzident-0.2.1
+  - 为什么值得写：
+- [gfatk](https://github.com/tolkit/gfatk) — ★ 16；release 0.2.2
+  - 为什么值得写：
 
 ## 值得盯
 
@@ -40,8 +80,6 @@ _无。_
 - [nanoq](https://github.com/esteinig/nanoq) — no push in 18 months
 - [longshot](https://github.com/pjedge/longshot) — no push in 18 months
 - [yacrd](https://github.com/natir/yacrd) — no push in 18 months
-- [vircov](https://github.com/esteinig/vircov) — archived
-- [wdl](https://github.com/stjude-rust-labs/wdl) — archived
 - [scidataflow](https://github.com/vsbuffalo/scidataflow) — no push in 18 months
 - [Are we bio yet?](https://rust4bio.github.io/arewebioyet/) — no push in 18 months
 

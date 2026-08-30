@@ -6,7 +6,7 @@ A living catalog of Rust libraries, applications, workflows, and learning resour
 
 Stars and last-push dates are tracking signals, not a popularity ranking. Rebuild with `python scripts/fetch_metadata.py` then `python scripts/build_readme.py`.
 
-_Last metadata fetch: 2026-08-30T03:59:57.803036+00:00_
+_Last metadata fetch: 2026-08-30T04:04:23.397586+00:00_
 
 ## Contents
 
@@ -22,6 +22,7 @@ _Last metadata fetch: 2026-08-30T03:59:57.803036+00:00_
 - [Workflows and Infrastructure](#workflows-and-infrastructure)
 - [Visualization](#visualization)
 - [Learning Resources and Related Lists](#learning-resources-and-related-lists)
+- [Retired](#retired)
 
 ## Catalog
 
@@ -106,7 +107,11 @@ _Last metadata fetch: 2026-08-30T03:59:57.803036+00:00_
 - [ggcat](https://github.com/algbio/ggcat) - Compacted and colored de Bruijn graph construction and querying. (★ 101, pushed 2026-08-25)
 - [panacus](https://github.com/marschall-lab/panacus) - Statistics for GFA-formatted pangenome graphs. (★ 138, pushed 2026-08-12)
 - [impg](https://github.com/pangenome/impg) - Implicit pangenome graph toolkit. (★ 110, pushed 2026-08-08)
+- [seqwish](https://github.com/pangenome/seqwish) - Alignment-to-variation-graph inducer for building pangenome graphs. (★ 165, pushed 2026-07-29)
 - [myloasm](https://github.com/bluenote-1577/myloasm) - High-resolution long-read metagenome assembler. (★ 166, pushed 2026-07-03)
+- [gafpack](https://github.com/pangenome/gafpack) - Conversion of variation-graph alignments into node coverage maps. (★ 28, pushed 2026-01-21)
+- [seqrush](https://github.com/pangenome/seqrush) - Online induction of bidirected pangenome variation graphs. (★ 12, pushed 2025-10-21)
+- [gfatk](https://github.com/tolkit/gfatk) - Toolkit for plant organellar Graphical Fragment Assembly graphs. (★ 16, pushed 2025-09-10)
 
 ### Metagenomics
 
@@ -115,7 +120,6 @@ _Last metadata fetch: 2026-08-30T03:59:57.803036+00:00_
 - [galah](https://github.com/wwood/galah) - Scalable dereplication of metagenome-assembled genomes. (★ 87, pushed 2026-08-03)
 - [CoverM](https://github.com/wwood/CoverM) - Read coverage calculator for metagenomics. (★ 405, pushed 2026-07-10)
 - [ska](https://github.com/bacpop/ska.rust) - Split k-mer analysis for bacterial genomes. (★ 105, pushed 2026-07-09)
-- [vircov](https://github.com/esteinig/vircov) - Viral genome coverage evaluation for metagenomic diagnostics. (★ 27, pushed 2026-07-09, archived)
 - [nohuman](https://github.com/mbhall88/nohuman) - Removal of human reads from a sequencing run. (★ 52, pushed 2026-06-29)
 - [gsearch](https://github.com/jean-pierreBoth/gsearch) - Approximate nearest-neighbor search for microbial genomes. (★ 66, pushed 2026-06-10)
 - [skani](https://github.com/bluenote-1577/skani) - Fast ANI and aligned-fraction estimates for genomes and metagenomic contigs. (★ 263, pushed 2026-05-13)
@@ -135,8 +139,12 @@ _Last metadata fetch: 2026-08-30T03:59:57.803036+00:00_
 ### Proteomics and Structure
 
 - [daedalus](https://github.com/David-OConnor/daedalus) - Protein and molecule viewer. (★ 150, pushed 2026-08-26)
+- [timsrust](https://github.com/MannLabs/timsrust) - High-performance access to Bruker timsTOF mass spectrometry data. (★ 35, pushed 2026-08-26)
+- [mzdata](https://github.com/mobiusklein/mzdata) - Readers and writers for mass spectrometry file formats. (★ 44, pushed 2026-08-23)
 - [align-cli](https://github.com/snijderlab/align-cli) - Pairwise alignment CLI supporting mass-based protein alignment. (★ 17, pushed 2026-08-19)
+- [mzcore](https://github.com/rusteomics/mzcore) - Peptide-centric mass spectrometry calculations around PSI standards. (★ 51, pushed 2026-08-17)
 - [folddisco](https://github.com/steineggerlab/folddisco) - Indexing and search of discontinuous motifs in protein structures. (★ 213, pushed 2026-07-10)
+- [pdbtbx](https://github.com/douweschulte/pdbtbx) - Library for reading, editing, and writing PDB and mmCIF files. (★ 73, pushed 2026-06-20)
 - [sage](https://github.com/lazear/sage) - Fast proteomics search and quantification. (★ 301, pushed 2026-06-05)
 - [foldmason](https://github.com/steineggerlab/foldmason) - Multiple alignment of large protein structure sets. (★ 281, pushed 2026-05-11)
 - [unicore](https://github.com/steineggerlab/unicore) - Core-gene phylogeny using Foldseek and ProstT5. (★ 91, pushed 2026-03-12)
@@ -148,13 +156,13 @@ _Last metadata fetch: 2026-08-30T03:59:57.803036+00:00_
 - [nextclade](https://github.com/nextstrain/nextclade) - Viral genome alignment, clade assignment, and quality checks. (★ 261, pushed 2026-08-19)
 - [nwr](https://github.com/wang-q/nwr) - CLI for NCBI taxonomy, Newick trees, and assembly reports. (★ 9, pushed 2026-07-30)
 - [ggetrs](https://github.com/noamteyssier/ggetrs) - Efficient querying of biological databases. (★ 45, pushed 2025-10-27)
-- [wdl](https://github.com/stjude-rust-labs/wdl) - Rust crates for Workflow Description Language documents. (★ 62, pushed 2025-09-23, archived)
 - [exon](https://github.com/wheretrue/exon) - OLAP query engine for biology and life-science files. (★ 71, pushed 2025-03-26)
 - [biobear](https://github.com/wheretrue/biobear) - Query bioinformatics files through Arrow, Polars, and DuckDB. (★ 196, pushed 2025-03-10)
 - [scidataflow](https://github.com/vsbuffalo/scidataflow) - Command-line scientific data management. (★ 230, pushed 2024-11-04)
 
 ### Visualization
 
+- [igv-rs](https://github.com/AI4S-YB/igv-rs) - Interactive terminal genome viewer for FASTA, VCF, BAM, GFF, and BED. (★ 11, pushed 2026-08-27)
 - [alignoth](https://github.com/alignoth/alignoth) - Alignment plots from BAM files. (★ 132, pushed 2026-08-24)
 - [kuva](https://github.com/Psy-Fer/kuva) - Scientific plotting library in Rust. (★ 865, pushed 2026-08-13)
 - [SeqSizzle](https://github.com/ChangqingW/SeqSizzle) - FASTQ pager with fuzzy matching and adaptor coloring. (★ 25, pushed 2026-08-04)
@@ -169,6 +177,13 @@ _Last metadata fetch: 2026-08-30T03:59:57.803036+00:00_
 - [Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics) - Language-agnostic curated list of bioinformatics software. (★ 4260, pushed 2026-04-07)
 - [Are we bio yet?](https://rust4bio.github.io/arewebioyet/) - Earlier public registry of Rust crates for bioinformatics. (★ 19, pushed 2022-10-22)
 - [Rust-Bio documentation](https://rust-bio.github.io/) - Project site and documentation for the Rust-Bio ecosystem.
+
+## Retired
+
+Archived or otherwise removed from the living catalog. Kept here so radar history is not lost.
+
+- [vircov](https://github.com/esteinig/vircov) - Viral genome coverage evaluation for metagenomic diagnostics. (★ 27, pushed 2026-07-09, archived)
+- [wdl](https://github.com/stjude-rust-labs/wdl) - Rust crates for Workflow Description Language documents. (★ 62, pushed 2025-09-23, archived)
 
 ## Related
 
