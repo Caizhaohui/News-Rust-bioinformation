@@ -1,0 +1,9 @@
+radar:
+  stale_months: 18
+  cold_inactive_months: 6
+  active:
+    min_star_delta: 5
+    include_new_release: true
+    include_cold_repo_push: true
+snapshots:
+  keep: 8
