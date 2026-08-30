@@ -9,7 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from common import compute_radar  # noqa: E402
+from common import compute_radar, tool_sort_key  # noqa: E402
 
 NOW = datetime(2026, 8, 30, tzinfo=timezone.utc)
 CONFIG = {
@@ -165,6 +165,32 @@ class RadarTests(unittest.TestCase):
         radar = compute_radar([stale, missing], current, previous, CONFIG, now=NOW)
         self.assertEqual([t["name"] for t in radar["stale"]], ["old"])
         self.assertEqual([t["name"] for t in radar["watch"]], ["gone"])
+
+
+class SortKeyTests(unittest.TestCase):
+    def test_sorts_by_stars_then_push_then_name(self) -> None:
+        tools = [
+            tool("zeta", "o/zeta"),
+            tool("alpha", "o/alpha"),
+            tool("mid", "o/mid"),
+            tool("recent-low", "o/recent-low"),
+            tool("no-stars", "o/no-stars"),
+            {"name": "orphan", "url": "https://example.org/orphan", "category": "core-libraries", "description": "Test."},
+        ]
+        metadata = {
+            "repos": {
+                "o/zeta": {"stars": 100, "pushed_at": "2026-01-01T00:00:00Z"},
+                "o/alpha": {"stars": 100, "pushed_at": "2026-01-01T00:00:00Z"},
+                "o/mid": {"stars": 50, "pushed_at": "2026-08-01T00:00:00Z"},
+                "o/recent-low": {"stars": 10, "pushed_at": "2026-08-29T00:00:00Z"},
+                "o/no-stars": {"pushed_at": "2026-08-30T00:00:00Z"},
+            }
+        }
+        ordered = sorted(tools, key=lambda t: tool_sort_key(t, metadata))
+        self.assertEqual(
+            [t["name"] for t in ordered],
+            ["alpha", "zeta", "mid", "recent-low", "no-stars", "orphan"],
+        )
 
 
 if __name__ == "__main__":

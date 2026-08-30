@@ -90,11 +90,11 @@ snapshots:
 
 ## 分类（约 14 个）
 
+- CRISPR
 - Core Libraries
 - Sequence IO and Formats
 - Alignment and Mapping
 - Variants and Annotation
-- CRISPR
 - Long Reads
 - Assembly and Pangenomes
 - Metagenomics
@@ -114,7 +114,7 @@ snapshots:
 - 开篇一句话说明这是 Rust 生信生态跟踪列表
 - `Contents` 目录
 - 每条：`[name](url) - Description. (stars, last push, archived 标记)`
-- 类目内默认按最近推送时间排，stars 仅作并列参考
+- 类目内默认按 stars 降序排（没有 stars 的条目靠后）；并列时再按最近推送、再按 name
 - 文末 Related：sharkLoc、arewebioyet、awesome-rust Bioinformatics 小节
 
 **RADAR.md（每周摘要）**

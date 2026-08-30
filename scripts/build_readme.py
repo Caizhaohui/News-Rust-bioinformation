@@ -32,7 +32,7 @@ def build_readme(tools: list[dict], metadata: dict) -> str:
         "",
         "A living catalog of Rust libraries, applications, workflows, and learning resources for computational biology.",
         "",
-        "Stars and last-push dates are tracking signals, not a popularity ranking. Rebuild with `python scripts/fetch_metadata.py` then `python scripts/build_readme.py`.",
+        "Within each category, tools are sorted by star count (highest first). Last-push date and name break ties. Rebuild with `python scripts/fetch_metadata.py` then `python scripts/build_readme.py`.",
         "",
     ]
     if incomplete:

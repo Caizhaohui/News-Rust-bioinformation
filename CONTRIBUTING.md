@@ -27,11 +27,11 @@ Prefer a short, objective English description: capital letter, ends with a perio
 
 2. `category` must be one of:
 
+- `crispr`
 - `core-libraries`
 - `sequence-io-and-formats`
 - `alignment-and-mapping`
 - `variants-and-annotation`
-- `crispr`
 - `long-reads`
 - `assembly-and-pangenomes`
 - `metagenomics`

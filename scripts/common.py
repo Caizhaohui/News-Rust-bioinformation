@@ -42,11 +42,11 @@ GITHUB_RESERVED_OWNERS = {
 }
 
 CATEGORIES: list[tuple[str, str]] = [
+    ("crispr", "CRISPR"),
     ("core-libraries", "Core Libraries"),
     ("sequence-io-and-formats", "Sequence IO and Formats"),
     ("alignment-and-mapping", "Alignment and Mapping"),
     ("variants-and-annotation", "Variants and Annotation"),
-    ("crispr", "CRISPR"),
     ("long-reads", "Long Reads"),
     ("assembly-and-pangenomes", "Assembly and Pangenomes"),
     ("metagenomics", "Metagenomics"),
@@ -266,7 +266,7 @@ def tool_sort_key(tool: dict[str, Any], metadata: dict[str, Any]) -> tuple:
     stars = record.get("stars")
     pushed_ord = pushed.timestamp() if pushed else 0.0
     star_ord = stars if isinstance(stars, int) else -1
-    return (-pushed_ord, -star_ord, tool["name"].lower())
+    return (-star_ord, -pushed_ord, tool["name"].lower())
 
 
 def format_meta_suffix(tool: dict[str, Any], metadata: dict[str, Any]) -> str:
