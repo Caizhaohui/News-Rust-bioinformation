@@ -28,11 +28,11 @@ Prefer a short, objective English description: capital letter, ends with a perio
 2. `category` must be one of the leaf slugs below (not a section heading):
 
 - `crispr`
-- Bacterial Bioinformatics (README section only; do not use as `category`):
+- Microbial Bioinformatics (README section only; do not use as `category`):
   - `bacterial-assembly`
   - `bacterial-annotation`
   - `prokaryotic-transcriptome`
-  - `microbiome`
+  - `metagenomics`
   - `phage-defense`
   - `resistance-genes`
   - `transposons`
@@ -42,7 +42,6 @@ Prefer a short, objective English description: capital letter, ends with a perio
 - `variants-and-annotation`
 - `long-reads`
 - `assembly-and-pangenomes`
-- `metagenomics`
 - `single-cell-and-rna`
 - `proteomics-and-structure`
 - `protein-engineering`

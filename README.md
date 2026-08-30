@@ -11,11 +11,11 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 ## Contents
 
 - [CRISPR](#crispr)
-- [Bacterial Bioinformatics](#bacterial-bioinformatics)
+- [Microbial Bioinformatics](#microbial-bioinformatics)
   - [Bacterial Genome Assembly](#bacterial-genome-assembly)
   - [Genome Annotation](#genome-annotation)
   - [Prokaryotic Transcriptome](#prokaryotic-transcriptome)
-  - [Microbiome](#microbiome)
+  - [Metagenomics](#metagenomics)
   - [Phage Defense Systems](#phage-defense-systems)
   - [Resistance Genes](#resistance-genes)
   - [Transposon Systems](#transposon-systems)
@@ -25,7 +25,6 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [Variants and Annotation](#variants-and-annotation)
 - [Long Reads](#long-reads)
 - [Assembly and Pangenomes](#assembly-and-pangenomes)
-- [Metagenomics](#metagenomics)
 - [Single-cell and RNA](#single-cell-and-rna)
 - [Proteomics and Structure](#proteomics-and-structure)
 - [Protein Engineering](#protein-engineering)
@@ -43,7 +42,7 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [crispr_screen](https://github.com/noamteyssier/crispr_screen) - Differential expression and gene-level aggregation for CRISPR screen count tables. (★ 11, pushed 2025-09-22)
 - [diced](https://github.com/althonos/diced) - Detects CRISPR arrays in assembled genomes using a Rust port of the MinCED algorithm. (★ 4, pushed 2026-03-06)
 
-### Bacterial Bioinformatics
+### Microbial Bioinformatics
 
 #### Bacterial Genome Assembly
 
@@ -61,11 +60,18 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 
 - [trackclusterTU](https://github.com/lrslab/trackclusterTU) - Clusters bacterial transcript units from mapped long reads. (★ 4, pushed 2026-08-26)
 
-#### Microbiome
+#### Metagenomics
 
+- [sourmash](https://github.com/sourmash-bio/sourmash) - Sketch-based search and comparison of genomic and metagenomic datasets. (★ 555, pushed 2026-08-24)
+- [CoverM](https://github.com/wwood/CoverM) - Read coverage calculator for metagenomics. (★ 405, pushed 2026-07-10)
+- [sylph](https://github.com/bluenote-1577/sylph) - Abundance-corrected minhash profiling for metagenomic samples. (★ 316, pushed 2026-02-03)
+- [skani](https://github.com/bluenote-1577/skani) - Fast ANI and aligned-fraction estimates for genomes and metagenomic contigs. (★ 263, pushed 2026-05-13)
+- [deacon](https://github.com/bede/deacon) - Fast host DNA sequence filtering. (★ 125, pushed 2026-08-26)
 - [ska](https://github.com/bacpop/ska.rust) - Split k-mer analysis for bacterial genomes. (★ 105, pushed 2026-07-09)
 - [galah](https://github.com/wwood/galah) - Scalable dereplication of metagenome-assembled genomes. (★ 87, pushed 2026-08-03)
+- [gsearch](https://github.com/jean-pierreBoth/gsearch) - Approximate nearest-neighbor search for microbial genomes. (★ 66, pushed 2026-06-10)
 - [savont](https://github.com/bluenote-1577/savont) - Calls amplicon sequence variants from 16S ONT and PacBio HiFi reads. (★ 53, pushed 2026-08-17)
+- [nohuman](https://github.com/mbhall88/nohuman) - Removal of human reads from a sequencing run. (★ 52, pushed 2026-06-29)
 - [DartUniFrac](https://github.com/jianshu93/DartUniFrac) - Approximates UniFrac distances with weighted MinHash sketches. (★ 11, pushed 2026-08-30)
 - [hyperex](https://github.com/Ebedthan/hyperex) - Extracts 16S and other SSU/LSU hypervariable regions using primer sequences. (★ 10, pushed 2026-07-23)
 - [dada2-rs](https://github.com/HPCBio/dada2-rs) - Reimplements the DADA2 amplicon sequence-variant algorithm. (★ 4, pushed 2026-08-29)
@@ -165,16 +171,6 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [gafpack](https://github.com/pangenome/gafpack) - Conversion of variation-graph alignments into node coverage maps. (★ 28, pushed 2026-01-21)
 - [gfatk](https://github.com/tolkit/gfatk) - Toolkit for plant organellar Graphical Fragment Assembly graphs. (★ 16, pushed 2025-09-10)
 - [seqrush](https://github.com/pangenome/seqrush) - Online induction of bidirected pangenome variation graphs. (★ 12, pushed 2025-10-21)
-
-### Metagenomics
-
-- [sourmash](https://github.com/sourmash-bio/sourmash) - Sketch-based search and comparison of genomic and metagenomic datasets. (★ 555, pushed 2026-08-24)
-- [CoverM](https://github.com/wwood/CoverM) - Read coverage calculator for metagenomics. (★ 405, pushed 2026-07-10)
-- [sylph](https://github.com/bluenote-1577/sylph) - Abundance-corrected minhash profiling for metagenomic samples. (★ 316, pushed 2026-02-03)
-- [skani](https://github.com/bluenote-1577/skani) - Fast ANI and aligned-fraction estimates for genomes and metagenomic contigs. (★ 263, pushed 2026-05-13)
-- [deacon](https://github.com/bede/deacon) - Fast host DNA sequence filtering. (★ 125, pushed 2026-08-26)
-- [gsearch](https://github.com/jean-pierreBoth/gsearch) - Approximate nearest-neighbor search for microbial genomes. (★ 66, pushed 2026-06-10)
-- [nohuman](https://github.com/mbhall88/nohuman) - Removal of human reads from a sequencing run. (★ 52, pushed 2026-06-29)
 
 ### Single-cell and RNA
 

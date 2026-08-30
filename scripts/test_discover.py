@@ -294,7 +294,7 @@ class ReportTests(unittest.TestCase):
         self.assertEqual(suggest_category("A Rust aligner for long-read genomics."), "long-reads")
         self.assertEqual(suggest_category("Fast sgRNA counting for CRISPR screens."), "crispr")
         self.assertEqual(suggest_category("Rust crates for protein language models and protein design."), "protein-engineering")
-        self.assertEqual(suggest_category("16S microbiome ASV caller."), "microbiome")
+        self.assertEqual(suggest_category("16S microbiome ASV caller."), "metagenomics")
         self.assertEqual(suggest_category("Bacterial transcript units from mapped reads."), "prokaryotic-transcriptome")
         self.assertEqual(suggest_category("Miscellaneous notes."), "")
 

@@ -147,15 +147,6 @@ CATEGORY_HINTS: list[tuple[str, tuple[str, ...]]] = [
         "transcript unit",
         "operon",
     )),
-    ("microbiome", (
-        "microbiom",
-        "16s rrna",
-        "16s ",
-        "mag dereplic",
-        "unifrac",
-        "dada2",
-        "amplicon sequence variant",
-    )),
     ("phage-defense", ("phage defense", "antiphage", "defense finder", "padloc", "anti-phage")),
     ("resistance-genes", (
         "antimicrobial",
@@ -174,7 +165,16 @@ CATEGORY_HINTS: list[tuple[str, tuple[str, ...]]] = [
     )),
     ("long-reads", ("long-read", "long read", "nanopore", "pacbio", "oxford nanopore")),
     ("assembly-and-pangenomes", ("pangenome", "genome assembl", "de bruijn", "gfa")),
-    ("metagenomics", ("metagenom",)),
+    ("metagenomics", (
+        "metagenom",
+        "microbiom",
+        "16s rrna",
+        "16s ",
+        "mag dereplic",
+        "unifrac",
+        "dada2",
+        "amplicon sequence variant",
+    )),
     ("single-cell-and-rna", ("single-cell", "single cell", "scrna", "rna-seq", "rnaseq", "transcriptom")),
     ("protein-engineering", (
         "protein design",

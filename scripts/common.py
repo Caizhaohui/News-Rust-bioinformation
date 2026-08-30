@@ -52,17 +52,17 @@ class Category:
         return bool(self.children)
 
 
-# CRISPR first (user focus), then Bacterial Bioinformatics as a section with leaf slugs.
+# CRISPR first (user focus), then Microbial Bioinformatics as a section with leaf slugs.
 CATEGORIES: list[Category] = [
     Category("crispr", "CRISPR"),
     Category(
-        "bacterial-bioinformatics",
-        "Bacterial Bioinformatics",
+        "microbial-bioinformatics",
+        "Microbial Bioinformatics",
         (
             Category("bacterial-assembly", "Bacterial Genome Assembly"),
             Category("bacterial-annotation", "Genome Annotation"),
             Category("prokaryotic-transcriptome", "Prokaryotic Transcriptome"),
-            Category("microbiome", "Microbiome"),
+            Category("metagenomics", "Metagenomics"),
             Category("phage-defense", "Phage Defense Systems"),
             Category("resistance-genes", "Resistance Genes"),
             Category("transposons", "Transposon Systems"),
@@ -74,7 +74,6 @@ CATEGORIES: list[Category] = [
     Category("variants-and-annotation", "Variants and Annotation"),
     Category("long-reads", "Long Reads"),
     Category("assembly-and-pangenomes", "Assembly and Pangenomes"),
-    Category("metagenomics", "Metagenomics"),
     Category("single-cell-and-rna", "Single-cell and RNA"),
     Category("proteomics-and-structure", "Proteomics and Structure"),
     Category("protein-engineering", "Protein Engineering"),

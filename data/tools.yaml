@@ -465,7 +465,7 @@
 - name: galah
   url: https://github.com/wwood/galah
   repo: wwood/galah
-  category: microbiome
+  category: metagenomics
   description: Scalable dereplication of metagenome-assembled genomes.
 
 - name: nohuman
@@ -490,7 +490,7 @@
 - name: ska
   url: https://github.com/bacpop/ska.rust
   repo: bacpop/ska.rust
-  category: microbiome
+  category: metagenomics
   description: Split k-mer analysis for bacterial genomes.
 
 - name: gsearch
@@ -790,25 +790,25 @@
 - name: savont
   url: https://github.com/bluenote-1577/savont
   repo: bluenote-1577/savont
-  category: microbiome
+  category: metagenomics
   description: Calls amplicon sequence variants from 16S ONT and PacBio HiFi reads.
 
 - name: hyperex
   url: https://github.com/Ebedthan/hyperex
   repo: Ebedthan/hyperex
-  category: microbiome
+  category: metagenomics
   description: Extracts 16S and other SSU/LSU hypervariable regions using primer sequences.
 
 - name: DartUniFrac
   url: https://github.com/jianshu93/DartUniFrac
   repo: jianshu93/DartUniFrac
-  category: microbiome
+  category: metagenomics
   description: Approximates UniFrac distances with weighted MinHash sketches.
 
 - name: dada2-rs
   url: https://github.com/HPCBio/dada2-rs
   repo: HPCBio/dada2-rs
-  category: microbiome
+  category: metagenomics
   description: Reimplements the DADA2 amplicon sequence-variant algorithm.
 
 - name: sparrowhawk-amr

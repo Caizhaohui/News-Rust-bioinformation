@@ -88,14 +88,14 @@ snapshots:
   keep: 8
 ```
 
-## 分类（CRISPR 最前，其次细菌大类，其余保持原顺序）
+## 分类（CRISPR 最前，其次微生物大类，其余保持原顺序）
 
 - CRISPR
-- Bacterial Bioinformatics（大类，仅 README 分组；工具的 `category` 填小类 slug）
+- Microbial Bioinformatics（大类，仅 README 分组；工具的 `category` 填小类 slug）
   - Bacterial Genome Assembly（`bacterial-assembly`）
   - Genome Annotation（`bacterial-annotation`）
   - Prokaryotic Transcriptome（`prokaryotic-transcriptome`）
-  - Microbiome（`microbiome`）
+  - Metagenomics（`metagenomics`）
   - Phage Defense Systems（`phage-defense`）
   - Resistance Genes（`resistance-genes`）
   - Transposon Systems（`transposons`）
@@ -105,7 +105,6 @@ snapshots:
 - Variants and Annotation
 - Long Reads
 - Assembly and Pangenomes
-- Metagenomics
 - Single-cell and RNA
 - Proteomics and Structure
 - Protein Engineering

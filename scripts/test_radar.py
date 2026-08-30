@@ -197,14 +197,14 @@ class SortKeyTests(unittest.TestCase):
 class CategoryHierarchyTests(unittest.TestCase):
     def test_bacterial_section_is_not_a_tool_category(self) -> None:
         self.assertEqual(CATEGORIES[0].slug, "crispr")
-        self.assertEqual(CATEGORIES[1].slug, "bacterial-bioinformatics")
+        self.assertEqual(CATEGORIES[1].slug, "microbial-bioinformatics")
         self.assertTrue(CATEGORIES[1].is_section)
-        self.assertNotIn("bacterial-bioinformatics", VALID_CATEGORIES)
+        self.assertNotIn("microbial-bioinformatics", VALID_CATEGORIES)
         for slug in (
             "bacterial-assembly",
             "bacterial-annotation",
             "prokaryotic-transcriptome",
-            "microbiome",
+            "metagenomics",
             "phage-defense",
             "resistance-genes",
             "transposons",
@@ -221,17 +221,20 @@ class CategoryHierarchyTests(unittest.TestCase):
             }
         ]
         text = build_readme(tools, {"repos": {}})
-        self.assertIn("### Bacterial Bioinformatics", text)
+        self.assertIn("### Microbial Bioinformatics", text)
         self.assertIn("#### Bacterial Genome Assembly", text)
+        self.assertIn("#### Metagenomics", text)
         self.assertIn("#### Phage Defense Systems", text)
-        self.assertIn("- [Bacterial Bioinformatics](#bacterial-bioinformatics)", text)
+        self.assertIn("- [Microbial Bioinformatics](#microbial-bioinformatics)", text)
         self.assertIn("  - [Genome Annotation](#genome-annotation)", text)
         crispr = text.index("### CRISPR") if "### CRISPR" in text else -1
-        bacterial = text.index("### Bacterial Bioinformatics")
+        microbial = text.index("### Microbial Bioinformatics")
         core = text.index("### Core Libraries") if "### Core Libraries" in text else len(text)
-        self.assertLess(bacterial, core)
+        self.assertLess(microbial, core)
         if crispr >= 0:
-            self.assertLess(crispr, bacterial)
+            self.assertLess(crispr, microbial)
+        self.assertNotIn("\n- [Metagenomics](#metagenomics)\n", text.split("## Catalog")[0])
+        self.assertIn("  - [Metagenomics](#metagenomics)", text)
 
 
 if __name__ == "__main__":
