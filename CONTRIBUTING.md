@@ -31,11 +31,13 @@ Prefer a short, objective English description: capital letter, ends with a perio
 - `sequence-io-and-formats`
 - `alignment-and-mapping`
 - `variants-and-annotation`
+- `crispr`
 - `long-reads`
 - `assembly-and-pangenomes`
 - `metagenomics`
 - `single-cell-and-rna`
 - `proteomics-and-structure`
+- `protein-engineering`
 - `workflows-and-infrastructure`
 - `visualization`
 - `learning-resources`
@@ -52,9 +54,21 @@ python scripts/build_readme.py
 python scripts/build_radar.py
 ```
 
+## Finding new tools
+
+Already-listed tools are refreshed by the weekly workflow (stars / push / archived / radar). New tools are **not** auto-added and `tools.yaml` is never written by discovery.
+
+1. Manually run `python scripts/discover.py` or the `Discover new tool candidates` GitHub Action (`workflow_dispatch` only).
+2. Open `discover/candidates-YYYY-MM-DD.md` and fill `收录？是/否`.
+3. For “是” items, append them to `data/tools.yaml` using the schema above (Rust-first, computational biology, public, no generic CSV / Slurm TUI).
+4. Rebuild with `validate.py` / `fetch_metadata.py` / `build_readme.py` / `build_radar.py`.
+
+Sources: GitHub Search and bioRxiv. X search is not enabled. Missing GitHub token skips that source and marks the report incomplete. crates.io is not scanned; a crates.io link mentioned by another source may still appear.
+
 ## Cadence
 
-- Weekly (automation): refresh GitHub metadata, rebuild `README.md` and `RADAR.md`, keep the last 8 snapshots. Does not write digest drafts.
+- Weekly (automation): refresh GitHub metadata, rebuild `README.md` and `RADAR.md`, keep the last 8 snapshots. Does not write digest drafts or discover new tools.
+- New tools (manual): run discover → review candidates → edit `data/tools.yaml`.
 - Every 1–2 weeks (you): generate a Chinese outline, curate 3–5 items, publish on the personal site.
 
 Generate an outline only when you are about to write:

@@ -8,8 +8,16 @@ Tools added to `data/tools.yaml` since the last snapshot.
 
 - [igv-rs](https://github.com/AI4S-YB/igv-rs)
 - [timsrust](https://github.com/MannLabs/timsrust)
+- [diced](https://github.com/althonos/diced)
+- [dreid-pack](https://github.com/caltechmsc/dreid-pack)
+- [sc-rs](https://github.com/cytokineking/sc-rs)
+- [heme](https://github.com/dacarlin/heme)
 - [pdbtbx](https://github.com/douweschulte/pdbtbx)
+- [ferritin](https://github.com/ferritin-bio/ferritin)
+- [guide-counter](https://github.com/fulcrumgenomics/guide-counter)
 - [mzdata](https://github.com/mobiusklein/mzdata)
+- [crispr_screen](https://github.com/noamteyssier/crispr_screen)
+- [sgcount](https://github.com/noamteyssier/sgcount)
 - [gafpack](https://github.com/pangenome/gafpack)
 - [seqrush](https://github.com/pangenome/seqrush)
 - [seqwish](https://github.com/pangenome/seqwish)
@@ -41,6 +49,7 @@ Archived, or no push in about 18 months.
 - [nanoq](https://github.com/esteinig/nanoq) — no push in 18 months
 - [longshot](https://github.com/pjedge/longshot) — no push in 18 months
 - [yacrd](https://github.com/natir/yacrd) — no push in 18 months
+- [heme](https://github.com/dacarlin/heme) — no push in 18 months
 - [scidataflow](https://github.com/vsbuffalo/scidataflow) — no push in 18 months
 - [Are we bio yet?](https://rust4bio.github.io/arewebioyet/) — no push in 18 months
 

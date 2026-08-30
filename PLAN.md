@@ -29,6 +29,9 @@ GitHub 仓库名：`News-Rust-bioinformation`。
 ├── digest/                   # 中文编辑提纲，手动触发，不自动发博客
 │   ├── _template.md          # 固定栏目：本周要点 / 新工具 / 值得盯 / 停更 / 下一篇待查
 │   └── rust-bio-digest-YYYY-MM-DD.md
+├── discover/                 # 手动发现的候选，人工勾选后才写入 tools.yaml
+│   ├── _template.md
+│   └── candidates-YYYY-MM-DD.md
 ├── CONTRIBUTING.md           # 收录规则 + 1–2 周写稿清单
 ├── LICENSE                   # CC0-1.0
 ├── data/
@@ -42,11 +45,13 @@ GitHub 仓库名：`News-Rust-bioinformation`。
 │   ├── fetch_metadata.py     # GitHub GraphQL 批量拉取
 │   ├── build_readme.py
 │   ├── build_radar.py
-│   └── build_digest_draft.py # metadata/snapshot -> digest 中文提纲
+│   ├── build_digest_draft.py # metadata/snapshot -> digest 中文提纲
+│   └── discover.py           # 手动检索 GitHub / bioRxiv 候选
 └── .github/workflows/
     ├── lint.yml              # 校验 YAML schema + 全量链接检查
     ├── weekly.yml            # 每周刷新元数据、重建 README/RADAR、存快照
-    └── digest.yml            # workflow_dispatch：手动生成 digest 提纲
+    ├── digest.yml            # workflow_dispatch：手动生成 digest 提纲
+    └── discover.yml          # workflow_dispatch：手动发现新工具候选
 ```
 
 ## 数据模型
@@ -83,17 +88,19 @@ snapshots:
   keep: 8
 ```
 
-## 分类（约 12 个）
+## 分类（约 14 个）
 
 - Core Libraries
 - Sequence IO and Formats
 - Alignment and Mapping
 - Variants and Annotation
+- CRISPR
 - Long Reads
 - Assembly and Pangenomes
 - Metagenomics
 - Single-cell and RNA
 - Proteomics and Structure
+- Protein Engineering
 - Workflows and Infrastructure
 - Visualization
 - Learning Resources and Related Lists
@@ -185,13 +192,14 @@ flowchart LR
 - GraphQL 批量拉 stars / pushedAt / isArchived
 - 每周 cron 只重建 README + RADAR + 存快照并自动 commit（不生成 digest）
 - digest 提纲由 `workflow_dispatch` 或本地手动触发
+- 手动 discover：GitHub Search + bioRxiv 只出候选清单，不自动改 YAML
 - PR/本地校验：YAML 字段、url 唯一、描述非空、全量链接检查
 - digest 提纲带齐个人网站 frontmatter（pubDate 占位）
 
 不做（第一版）：
 
 - 为过 awesome-lint 而去掉 stars 或改字母序
-- 自动扫 crates.io / GitHub topic 发现新工具
+- 每周自动扫 crates.io / GitHub / bioRxiv / X 并写入 tools.yaml（手动 `discover.yml` 只扫 GitHub + bioRxiv；自动扫仍不做）
 - 自动向 personal-website 提交或发布
 - 用模型直接生成博客成稿
 - Stargazers 趋势图、测试数据生成

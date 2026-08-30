@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import json
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import urlparse, urlunparse
 
 import yaml
 
@@ -15,17 +17,42 @@ TOOLS_PATH = DATA / "tools.yaml"
 CONFIG_PATH = DATA / "config.yaml"
 METADATA_PATH = DATA / "metadata.json"
 SNAPSHOT_DIR = DATA / "snapshots"
+DISCOVER_DIR = ROOT / "discover"
+
+GITHUB_RESERVED_OWNERS = {
+    "about",
+    "account",
+    "apps",
+    "codespaces",
+    "collections",
+    "enterprise",
+    "events",
+    "explore",
+    "features",
+    "login",
+    "marketplace",
+    "new",
+    "notifications",
+    "organizations",
+    "orgs",
+    "search",
+    "settings",
+    "sponsors",
+    "topics",
+}
 
 CATEGORIES: list[tuple[str, str]] = [
     ("core-libraries", "Core Libraries"),
     ("sequence-io-and-formats", "Sequence IO and Formats"),
     ("alignment-and-mapping", "Alignment and Mapping"),
     ("variants-and-annotation", "Variants and Annotation"),
+    ("crispr", "CRISPR"),
     ("long-reads", "Long Reads"),
     ("assembly-and-pangenomes", "Assembly and Pangenomes"),
     ("metagenomics", "Metagenomics"),
     ("single-cell-and-rna", "Single-cell and RNA"),
     ("proteomics-and-structure", "Proteomics and Structure"),
+    ("protein-engineering", "Protein Engineering"),
     ("workflows-and-infrastructure", "Workflows and Infrastructure"),
     ("visualization", "Visualization"),
     ("learning-resources", "Learning Resources and Related Lists"),
@@ -97,6 +124,76 @@ def load_tools() -> list[dict[str, Any]]:
     if not isinstance(raw, list):
         raise ValueError("data/tools.yaml must be a list")
     return raw
+
+
+def normalize_url(url: str) -> str:
+    raw = (url or "").strip()
+    if not raw:
+        return ""
+    parsed = urlparse(raw)
+    scheme = (parsed.scheme or "https").lower()
+    netloc = parsed.netloc.lower()
+    if netloc.startswith("www."):
+        netloc = netloc[4:]
+    path = parsed.path.rstrip("/")
+    if path.endswith(".git"):
+        path = path[:-4]
+    return urlunparse((scheme, netloc, path, "", "", ""))
+
+
+def github_repo_from_url(url: str) -> str | None:
+    parsed = urlparse(normalize_url(url))
+    if parsed.netloc not in {"github.com"}:
+        return None
+    parts = [part for part in parsed.path.split("/") if part]
+    if len(parts) < 2:
+        return None
+    owner, name = parts[0], parts[1]
+    if owner.lower() in GITHUB_RESERVED_OWNERS:
+        return None
+    name = name.removesuffix(".git")
+    if not owner or not name:
+        return None
+    return f"{owner}/{name}"
+
+
+@dataclass(frozen=True)
+class CatalogIndex:
+    urls: frozenset[str]
+    repos: frozenset[str]
+
+
+def catalog_index(tools: list[dict[str, Any]]) -> CatalogIndex:
+    urls: set[str] = set()
+    repos: set[str] = set()
+    for tool in tools:
+        url = tool.get("url")
+        if isinstance(url, str) and url.strip():
+            urls.add(normalize_url(url))
+            inferred = github_repo_from_url(url)
+            if inferred:
+                repos.add(inferred.lower())
+        repo = tool.get("repo")
+        if isinstance(repo, str) and repo.strip():
+            repos.add(repo.strip().lower())
+    return CatalogIndex(urls=frozenset(urls), repos=frozenset(repos))
+
+
+def is_cataloged(
+    index: CatalogIndex,
+    url: str | None = None,
+    repo: str | None = None,
+) -> bool:
+    if isinstance(repo, str) and repo.strip():
+        if repo.strip().lower() in index.repos:
+            return True
+    if isinstance(url, str) and url.strip():
+        if normalize_url(url) in index.urls:
+            return True
+        inferred = github_repo_from_url(url)
+        if inferred and inferred.lower() in index.repos:
+            return True
+    return False
 
 
 def load_json(path: Path) -> dict[str, Any] | None:

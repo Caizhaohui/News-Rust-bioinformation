@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-30T04:04:23.397586+00:00",
+  "fetched_at": "2026-08-30T04:54:07.886734+00:00",
   "incomplete": false,
   "urls": [
     "https://github.com/rust-bio/rust-bio",
@@ -53,6 +53,10 @@
     "https://github.com/anergictcell/atg",
     "https://github.com/dohlee/metheor",
     "https://github.com/nanoporetech/modkit",
+    "https://github.com/fulcrumgenomics/guide-counter",
+    "https://github.com/noamteyssier/sgcount",
+    "https://github.com/noamteyssier/crispr_screen",
+    "https://github.com/althonos/diced",
     "https://github.com/esteinig/nanoq",
     "https://github.com/wdecoster/chopper",
     "https://github.com/PacificBiosciences/HiPhase",
@@ -99,6 +103,10 @@
     "https://github.com/mobiusklein/mzdata",
     "https://github.com/MannLabs/timsrust",
     "https://github.com/douweschulte/pdbtbx",
+    "https://github.com/ferritin-bio/ferritin",
+    "https://github.com/cytokineking/sc-rs",
+    "https://github.com/dacarlin/heme",
+    "https://github.com/caltechmsc/dreid-pack",
     "https://github.com/Traitome/oxo-flow",
     "https://github.com/stjude-rust-labs/wdl",
     "https://github.com/vsbuffalo/scidataflow",
@@ -204,7 +212,7 @@
     },
     "COMBINE-lab/piscem": {
       "stars": 37,
-      "pushed_at": "2026-08-11T00:37:27Z",
+      "pushed_at": "2026-08-30T04:17:47Z",
       "archived": false,
       "latest_release_at": "2026-08-11T00:53:16Z",
       "latest_release_tag": "v0.22.1",
@@ -212,7 +220,7 @@
     },
     "COMBINE-lab/simpleaf": {
       "stars": 68,
-      "pushed_at": "2026-08-15T18:16:41Z",
+      "pushed_at": "2026-08-30T04:17:48Z",
       "archived": false,
       "latest_release_at": "2026-08-15T17:06:08Z",
       "latest_release_tag": "v0.28.0",
@@ -304,6 +312,14 @@
       "archived": false,
       "latest_release_at": "2026-07-28T08:49:19Z",
       "latest_release_tag": "v1.10.1",
+      "error": null
+    },
+    "althonos/diced": {
+      "stars": 4,
+      "pushed_at": "2026-03-06T10:58:52Z",
+      "archived": false,
+      "latest_release_at": "2026-03-06T08:33:35Z",
+      "latest_release_tag": "v0.1.3",
       "error": null
     },
     "anergictcell/atg": {
@@ -402,6 +418,30 @@
       "latest_release_tag": "v0.1.0",
       "error": null
     },
+    "caltechmsc/dreid-pack": {
+      "stars": 2,
+      "pushed_at": "2026-04-05T04:55:53Z",
+      "archived": false,
+      "latest_release_at": "2026-04-05T04:55:53Z",
+      "latest_release_tag": "v0.2.0",
+      "error": null
+    },
+    "cytokineking/sc-rs": {
+      "stars": 20,
+      "pushed_at": "2025-10-02T16:41:27Z",
+      "archived": false,
+      "latest_release_at": "2025-10-02T16:41:27Z",
+      "latest_release_tag": "v1.0.0",
+      "error": null
+    },
+    "dacarlin/heme": {
+      "stars": 4,
+      "pushed_at": "2024-07-27T01:33:19Z",
+      "archived": false,
+      "latest_release_at": null,
+      "latest_release_tag": null,
+      "error": null
+    },
     "danielecook/Awesome-Bioinformatics": {
       "stars": 4260,
       "pushed_at": "2026-04-07T14:29:34Z",
@@ -458,6 +498,14 @@
       "latest_release_tag": "0.6.0",
       "error": null
     },
+    "ferritin-bio/ferritin": {
+      "stars": 34,
+      "pushed_at": "2026-08-29T18:47:32Z",
+      "archived": false,
+      "latest_release_at": null,
+      "latest_release_tag": null,
+      "error": null
+    },
     "fulcrumgenomics/fg-sra": {
       "stars": 6,
       "pushed_at": "2026-07-30T13:34:19Z",
@@ -480,6 +528,14 @@
       "archived": false,
       "latest_release_at": "2024-08-19T22:36:39Z",
       "latest_release_tag": "v0.3.1",
+      "error": null
+    },
+    "fulcrumgenomics/guide-counter": {
+      "stars": 35,
+      "pushed_at": "2026-04-30T22:28:04Z",
+      "archived": false,
+      "latest_release_at": "2022-03-22T11:58:09Z",
+      "latest_release_tag": "v0.1.3",
       "error": null
     },
     "henriksson-lab/blast-rs": {
@@ -666,6 +722,14 @@
       "latest_release_tag": "v0.3.0",
       "error": null
     },
+    "noamteyssier/crispr_screen": {
+      "stars": 11,
+      "pushed_at": "2025-09-22T17:15:15Z",
+      "archived": false,
+      "latest_release_at": "2024-07-18T17:11:27Z",
+      "latest_release_tag": "0.2.28",
+      "error": null
+    },
     "noamteyssier/ggetrs": {
       "stars": 45,
       "pushed_at": "2025-10-27T06:27:21Z",
@@ -688,6 +752,14 @@
       "archived": false,
       "latest_release_at": "2025-07-29T20:33:20Z",
       "latest_release_tag": "ibu-0.1.1",
+      "error": null
+    },
+    "noamteyssier/sgcount": {
+      "stars": 12,
+      "pushed_at": "2026-06-17T17:40:29Z",
+      "archived": false,
+      "latest_release_at": "2024-07-18T17:14:26Z",
+      "latest_release_tag": "v0.1.32",
       "error": null
     },
     "onecodex/finch-rs": {
@@ -811,7 +883,7 @@
       "error": null
     },
     "rust-unofficial/awesome-rust": {
-      "stars": 59050,
+      "stars": 59051,
       "pushed_at": "2026-08-29T15:01:55Z",
       "archived": false,
       "latest_release_at": null,

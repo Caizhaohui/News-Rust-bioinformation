@@ -306,6 +306,30 @@
   category: variants-and-annotation
   description: Tools for working with modified bases in alignments.
 
+- name: guide-counter
+  url: https://github.com/fulcrumgenomics/guide-counter
+  repo: fulcrumgenomics/guide-counter
+  category: crispr
+  description: Counts guide RNAs from CRISPR screening FASTQ files at high throughput.
+
+- name: sgcount
+  url: https://github.com/noamteyssier/sgcount
+  repo: noamteyssier/sgcount
+  category: crispr
+  description: Tallies sgRNA abundances from FASTQ inputs with flexible matching options.
+
+- name: crispr_screen
+  url: https://github.com/noamteyssier/crispr_screen
+  repo: noamteyssier/crispr_screen
+  category: crispr
+  description: Differential expression and gene-level aggregation for CRISPR screen count tables.
+
+- name: diced
+  url: https://github.com/althonos/diced
+  repo: althonos/diced
+  category: crispr
+  description: Detects CRISPR arrays in assembled genomes using a Rust port of the MinCED algorithm.
+
 - name: nanoq
   url: https://github.com/esteinig/nanoq
   repo: esteinig/nanoq
@@ -582,6 +606,30 @@
   repo: douweschulte/pdbtbx
   category: proteomics-and-structure
   description: Library for reading, editing, and writing PDB and mmCIF files.
+
+- name: ferritin
+  url: https://github.com/ferritin-bio/ferritin
+  repo: ferritin-bio/ferritin
+  category: protein-engineering
+  description: Utilities for protein structures, protein language models, and LigandMPNN-style sequence-design workflows.
+
+- name: sc-rs
+  url: https://github.com/cytokineking/sc-rs
+  repo: cytokineking/sc-rs
+  category: protein-engineering
+  description: Scores the shape complementarity of protein-protein interfaces using the Lawrence and Colman statistic.
+
+- name: heme
+  url: https://github.com/dacarlin/heme
+  repo: dacarlin/heme
+  category: protein-engineering
+  description: Reads protein structures and featurizes them for graph-based generative design models.
+
+- name: dreid-pack
+  url: https://github.com/caltechmsc/dreid-pack
+  repo: caltechmsc/dreid-pack
+  category: protein-engineering
+  description: Packs protein side chains with the DREIDING force field, dead-end elimination, and tree-decomposition search.
 
 - name: oxo-flow
   url: https://github.com/Traitome/oxo-flow

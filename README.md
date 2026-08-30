@@ -6,7 +6,7 @@ A living catalog of Rust libraries, applications, workflows, and learning resour
 
 Stars and last-push dates are tracking signals, not a popularity ranking. Rebuild with `python scripts/fetch_metadata.py` then `python scripts/build_readme.py`.
 
-_Last metadata fetch: 2026-08-30T04:04:23.397586+00:00_
+_Last metadata fetch: 2026-08-30T04:54:07.886734+00:00_
 
 ## Contents
 
@@ -14,11 +14,13 @@ _Last metadata fetch: 2026-08-30T04:04:23.397586+00:00_
 - [Sequence IO and Formats](#sequence-io-and-formats)
 - [Alignment and Mapping](#alignment-and-mapping)
 - [Variants and Annotation](#variants-and-annotation)
+- [CRISPR](#crispr)
 - [Long Reads](#long-reads)
 - [Assembly and Pangenomes](#assembly-and-pangenomes)
 - [Metagenomics](#metagenomics)
 - [Single-cell and RNA](#single-cell-and-rna)
 - [Proteomics and Structure](#proteomics-and-structure)
+- [Protein Engineering](#protein-engineering)
 - [Workflows and Infrastructure](#workflows-and-infrastructure)
 - [Visualization](#visualization)
 - [Learning Resources and Related Lists](#learning-resources-and-related-lists)
@@ -89,6 +91,13 @@ _Last metadata fetch: 2026-08-30T04:04:23.397586+00:00_
 - [vcf2parquet](https://github.com/natir/vcf2parquet) - Converter from VCF to Parquet. (★ 32, pushed 2025-01-23)
 - [transanno](https://github.com/informationsea/transanno) - Accurate liftOver for new genome assemblies. (★ 151, pushed 2024-08-08)
 
+### CRISPR
+
+- [sgcount](https://github.com/noamteyssier/sgcount) - Tallies sgRNA abundances from FASTQ inputs with flexible matching options. (★ 12, pushed 2026-06-17)
+- [guide-counter](https://github.com/fulcrumgenomics/guide-counter) - Counts guide RNAs from CRISPR screening FASTQ files at high throughput. (★ 35, pushed 2026-04-30)
+- [diced](https://github.com/althonos/diced) - Detects CRISPR arrays in assembled genomes using a Rust port of the MinCED algorithm. (★ 4, pushed 2026-03-06)
+- [crispr_screen](https://github.com/noamteyssier/crispr_screen) - Differential expression and gene-level aggregation for CRISPR screen count tables. (★ 11, pushed 2025-09-22)
+
 ### Long Reads
 
 - [lrge](https://github.com/mbhall88/lrge) - Genome size estimation from long-read overlaps. (★ 91, pushed 2026-08-28)
@@ -127,12 +136,12 @@ _Last metadata fetch: 2026-08-30T04:04:23.397586+00:00_
 
 ### Single-cell and RNA
 
+- [simpleaf](https://github.com/COMBINE-lab/simpleaf) - Workflow wrapper that simplifies alevin-fry analyses. (★ 68, pushed 2026-08-30)
+- [piscem](https://github.com/COMBINE-lab/piscem) - Next-generation sequence indexing and mapping components. (★ 37, pushed 2026-08-30)
 - [proseg](https://github.com/dcjones/proseg) - Probabilistic cell segmentation for spatial transcriptomics. (★ 187, pushed 2026-08-28)
 - [oarfish](https://github.com/COMBINE-lab/oarfish) - Quantification for long-read RNA-seq. (★ 123, pushed 2026-08-19)
-- [simpleaf](https://github.com/COMBINE-lab/simpleaf) - Workflow wrapper that simplifies alevin-fry analyses. (★ 68, pushed 2026-08-15)
 - [alevin-fry](https://github.com/COMBINE-lab/alevin-fry) - Efficient processing of single-cell sequencing data, focused on transcriptomics. (★ 215, pushed 2026-08-15)
 - [SnapATAC2](https://github.com/kaizhang/SnapATAC2) - Single-cell epigenomics analysis tools. (★ 323, pushed 2026-08-15)
-- [piscem](https://github.com/COMBINE-lab/piscem) - Next-generation sequence indexing and mapping components. (★ 37, pushed 2026-08-11)
 - [squab](https://github.com/zaeleus/squab) - Alignment-based gene expression quantification. (★ 40, pushed 2026-08-04)
 - [rnapkin](https://github.com/ukmrs/rnapkin) - Fast drawing of RNA secondary structure. (★ 10, pushed 2025-11-22)
 
@@ -148,6 +157,13 @@ _Last metadata fetch: 2026-08-30T04:04:23.397586+00:00_
 - [sage](https://github.com/lazear/sage) - Fast proteomics search and quantification. (★ 301, pushed 2026-06-05)
 - [foldmason](https://github.com/steineggerlab/foldmason) - Multiple alignment of large protein structure sets. (★ 281, pushed 2026-05-11)
 - [unicore](https://github.com/steineggerlab/unicore) - Core-gene phylogeny using Foldseek and ProstT5. (★ 91, pushed 2026-03-12)
+
+### Protein Engineering
+
+- [ferritin](https://github.com/ferritin-bio/ferritin) - Utilities for protein structures, protein language models, and LigandMPNN-style sequence-design workflows. (★ 34, pushed 2026-08-29)
+- [dreid-pack](https://github.com/caltechmsc/dreid-pack) - Packs protein side chains with the DREIDING force field, dead-end elimination, and tree-decomposition search. (★ 2, pushed 2026-04-05)
+- [sc-rs](https://github.com/cytokineking/sc-rs) - Scores the shape complementarity of protein-protein interfaces using the Lawrence and Colman statistic. (★ 20, pushed 2025-10-02)
+- [heme](https://github.com/dacarlin/heme) - Reads protein structures and featurizes them for graph-based generative design models. (★ 4, pushed 2024-07-27)
 
 ### Workflows and Infrastructure
 
@@ -172,7 +188,7 @@ _Last metadata fetch: 2026-08-30T04:04:23.397586+00:00_
 
 ### Learning Resources and Related Lists
 
-- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) - General awesome list for Rust, including a short Bioinformatics section. (★ 59050, pushed 2026-08-29)
+- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) - General awesome list for Rust, including a short Bioinformatics section. (★ 59051, pushed 2026-08-29)
 - [rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics) - Collection of genomics software tools written in Rust. (★ 135, pushed 2026-08-18)
 - [Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics) - Language-agnostic curated list of bioinformatics software. (★ 4260, pushed 2026-04-07)
 - [Are we bio yet?](https://rust4bio.github.io/arewebioyet/) - Earlier public registry of Rust crates for bioinformatics. (★ 19, pushed 2022-10-22)

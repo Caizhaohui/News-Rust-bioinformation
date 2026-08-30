@@ -1,0 +1,39 @@
+name: Discover new tool candidates
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Look-back window in days"
+        required: false
+        default: "14"
+      sources:
+        description: "Comma-separated sources: github,biorxiv"
+        required: false
+        default: "github,biorxiv"
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Python deps
+        run: pip install -r scripts/requirements.txt
+      - name: Discover candidates
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/discover.py --days "${{ github.event.inputs.days }}" --sources "${{ github.event.inputs.sources }}"
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add discover
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "chore: add discover candidates"
+          git push
