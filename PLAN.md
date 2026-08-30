@@ -88,9 +88,17 @@ snapshots:
   keep: 8
 ```
 
-## 分类（约 14 个）
+## 分类（CRISPR 最前，其次细菌大类，其余保持原顺序）
 
 - CRISPR
+- Bacterial Bioinformatics（大类，仅 README 分组；工具的 `category` 填小类 slug）
+  - Bacterial Genome Assembly（`bacterial-assembly`）
+  - Genome Annotation（`bacterial-annotation`）
+  - Prokaryotic Transcriptome（`prokaryotic-transcriptome`）
+  - Microbiome（`microbiome`）
+  - Phage Defense Systems（`phage-defense`）
+  - Resistance Genes（`resistance-genes`）
+  - Transposon Systems（`transposons`）
 - Core Libraries
 - Sequence IO and Formats
 - Alignment and Mapping

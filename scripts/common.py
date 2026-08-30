@@ -41,25 +41,62 @@ GITHUB_RESERVED_OWNERS = {
     "topics",
 }
 
-CATEGORIES: list[tuple[str, str]] = [
-    ("crispr", "CRISPR"),
-    ("core-libraries", "Core Libraries"),
-    ("sequence-io-and-formats", "Sequence IO and Formats"),
-    ("alignment-and-mapping", "Alignment and Mapping"),
-    ("variants-and-annotation", "Variants and Annotation"),
-    ("long-reads", "Long Reads"),
-    ("assembly-and-pangenomes", "Assembly and Pangenomes"),
-    ("metagenomics", "Metagenomics"),
-    ("single-cell-and-rna", "Single-cell and RNA"),
-    ("proteomics-and-structure", "Proteomics and Structure"),
-    ("protein-engineering", "Protein Engineering"),
-    ("workflows-and-infrastructure", "Workflows and Infrastructure"),
-    ("visualization", "Visualization"),
-    ("learning-resources", "Learning Resources and Related Lists"),
+@dataclass(frozen=True)
+class Category:
+    slug: str
+    title: str
+    children: tuple["Category", ...] = ()
+
+    @property
+    def is_section(self) -> bool:
+        return bool(self.children)
+
+
+# CRISPR first (user focus), then Bacterial Bioinformatics as a section with leaf slugs.
+CATEGORIES: list[Category] = [
+    Category("crispr", "CRISPR"),
+    Category(
+        "bacterial-bioinformatics",
+        "Bacterial Bioinformatics",
+        (
+            Category("bacterial-assembly", "Bacterial Genome Assembly"),
+            Category("bacterial-annotation", "Genome Annotation"),
+            Category("prokaryotic-transcriptome", "Prokaryotic Transcriptome"),
+            Category("microbiome", "Microbiome"),
+            Category("phage-defense", "Phage Defense Systems"),
+            Category("resistance-genes", "Resistance Genes"),
+            Category("transposons", "Transposon Systems"),
+        ),
+    ),
+    Category("core-libraries", "Core Libraries"),
+    Category("sequence-io-and-formats", "Sequence IO and Formats"),
+    Category("alignment-and-mapping", "Alignment and Mapping"),
+    Category("variants-and-annotation", "Variants and Annotation"),
+    Category("long-reads", "Long Reads"),
+    Category("assembly-and-pangenomes", "Assembly and Pangenomes"),
+    Category("metagenomics", "Metagenomics"),
+    Category("single-cell-and-rna", "Single-cell and RNA"),
+    Category("proteomics-and-structure", "Proteomics and Structure"),
+    Category("protein-engineering", "Protein Engineering"),
+    Category("workflows-and-infrastructure", "Workflows and Infrastructure"),
+    Category("visualization", "Visualization"),
+    Category("learning-resources", "Learning Resources and Related Lists"),
 ]
 
-CATEGORY_TITLES = dict(CATEGORIES)
-VALID_CATEGORIES = set(CATEGORY_TITLES)
+
+def heading_anchor(title: str) -> str:
+    return title.lower().replace(" ", "-")
+
+
+def iter_category_nodes(nodes: list[Category] | tuple[Category, ...] | None = None):
+    for node in nodes if nodes is not None else CATEGORIES:
+        yield node
+        if node.children:
+            yield from iter_category_nodes(node.children)
+
+
+CATEGORY_TITLES = {node.slug: node.title for node in iter_category_nodes()}
+VALID_CATEGORIES = {node.slug for node in iter_category_nodes() if not node.is_section}
 
 REQUIRED_FIELDS = ("name", "url", "category", "description")
 ALLOWED_FIELDS = {"name", "url", "repo", "category", "description", "status"}

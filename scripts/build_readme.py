@@ -12,6 +12,7 @@ from common import (  # noqa: E402
     ROOT,
     active_tools,
     format_meta_suffix,
+    heading_anchor,
     is_retired,
     load_metadata,
     load_tools,
@@ -46,26 +47,46 @@ def build_readme(tools: list[dict], metadata: dict) -> str:
     catalog = active_tools(tools)
     retired = [t for t in tools if is_retired(t)]
 
-    lines += ["## Contents", ""]
-    for slug, title in CATEGORIES:
-        if any(t.get("category") == slug for t in catalog):
-            anchor = title.lower().replace(" ", "-")
-            lines.append(f"- [{title}](#{anchor})")
-    if retired:
-        lines.append("- [Retired](#retired)")
-    lines += ["", "## Catalog", ""]
+    def section_has_tools(node) -> bool:
+        if node.is_section:
+            return any(section_has_tools(child) for child in node.children)
+        return any(t.get("category") == node.slug for t in catalog)
 
-    for slug, title in CATEGORIES:
-        group = [t for t in catalog if t.get("category") == slug]
-        if not group:
-            continue
+    def append_tool_list(group: list[dict]) -> None:
         group = sorted(group, key=lambda t: tool_sort_key(t, metadata))
-        lines += [f"### {title}", ""]
         for tool in group:
             suffix = format_meta_suffix(tool, metadata)
             lines.append(
                 f"- [{tool['name']}]({tool['url']}) - {tool['description']}{suffix}"
             )
+
+    lines += ["## Contents", ""]
+    for node in CATEGORIES:
+        if not section_has_tools(node):
+            continue
+        lines.append(f"- [{node.title}](#{heading_anchor(node.title)})")
+        if node.is_section:
+            for child in node.children:
+                lines.append(f"  - [{child.title}](#{heading_anchor(child.title)})")
+    if retired:
+        lines.append("- [Retired](#retired)")
+    lines += ["", "## Catalog", ""]
+
+    for node in CATEGORIES:
+        if not section_has_tools(node):
+            continue
+        if node.is_section:
+            lines += [f"### {node.title}", ""]
+            for child in node.children:
+                group = [t for t in catalog if t.get("category") == child.slug]
+                lines += [f"#### {child.title}", ""]
+                if group:
+                    append_tool_list(group)
+                lines.append("")
+            continue
+        group = [t for t in catalog if t.get("category") == node.slug]
+        lines += [f"### {node.title}", ""]
+        append_tool_list(group)
         lines.append("")
 
     if retired:

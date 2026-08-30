@@ -363,13 +363,13 @@
 - name: Autocycler
   url: https://github.com/rrwick/Autocycler
   repo: rrwick/Autocycler
-  category: long-reads
+  category: bacterial-assembly
   description: Consensus long-read assemblies for bacterial genomes.
 
 - name: Polypolish
   url: https://github.com/rrwick/Polypolish
   repo: rrwick/Polypolish
-  category: long-reads
+  category: bacterial-assembly
   description: Short-read polishing for long-read assemblies.
 
 - name: yacrd
@@ -465,7 +465,7 @@
 - name: galah
   url: https://github.com/wwood/galah
   repo: wwood/galah
-  category: metagenomics
+  category: microbiome
   description: Scalable dereplication of metagenome-assembled genomes.
 
 - name: nohuman
@@ -490,7 +490,7 @@
 - name: ska
   url: https://github.com/bacpop/ska.rust
   repo: bacpop/ska.rust
-  category: metagenomics
+  category: microbiome
   description: Split k-mer analysis for bacterial genomes.
 
 - name: gsearch
@@ -756,3 +756,69 @@
   url: https://rust-bio.github.io/
   category: learning-resources
   description: Project site and documentation for the Rust-Bio ecosystem.
+
+- name: sparrowhawk-asm
+  url: https://github.com/bacpop/sparrowhawk-asm
+  repo: bacpop/sparrowhawk-asm
+  category: bacterial-assembly
+  description: Short-read de Bruijn assembler for bacterial genomes.
+
+- name: orphos
+  url: https://github.com/FullHuman/orphos
+  repo: FullHuman/orphos
+  category: bacterial-annotation
+  description: Parallel Prodigal-style gene prediction for prokaryotic genomes.
+
+- name: FragGeneScanRs
+  url: https://github.com/unipept/FragGeneScanRs
+  repo: unipept/FragGeneScanRs
+  category: bacterial-annotation
+  description: Gene prediction for short and error-prone reads using the FragGeneScan model.
+
+- name: dynamite
+  url: https://github.com/raw-lab/dynamite
+  repo: raw-lab/dynamite
+  category: bacterial-annotation
+  description: Finds protein-coding genes in bacteria, archaea, phages, and raw sequencing reads.
+
+- name: trackclusterTU
+  url: https://github.com/lrslab/trackclusterTU
+  repo: lrslab/trackclusterTU
+  category: prokaryotic-transcriptome
+  description: Clusters bacterial transcript units from mapped long reads.
+
+- name: savont
+  url: https://github.com/bluenote-1577/savont
+  repo: bluenote-1577/savont
+  category: microbiome
+  description: Calls amplicon sequence variants from 16S ONT and PacBio HiFi reads.
+
+- name: hyperex
+  url: https://github.com/Ebedthan/hyperex
+  repo: Ebedthan/hyperex
+  category: microbiome
+  description: Extracts 16S and other SSU/LSU hypervariable regions using primer sequences.
+
+- name: DartUniFrac
+  url: https://github.com/jianshu93/DartUniFrac
+  repo: jianshu93/DartUniFrac
+  category: microbiome
+  description: Approximates UniFrac distances with weighted MinHash sketches.
+
+- name: dada2-rs
+  url: https://github.com/HPCBio/dada2-rs
+  repo: HPCBio/dada2-rs
+  category: microbiome
+  description: Reimplements the DADA2 amplicon sequence-variant algorithm.
+
+- name: sparrowhawk-amr
+  url: https://github.com/bacpop/sparrowhawk-amr
+  repo: bacpop/sparrowhawk-amr
+  category: resistance-genes
+  description: Detects antimicrobial resistance genes with k-mer indexes of the AMRFinderPlus database.
+
+- name: rust-ise
+  url: https://github.com/necoli1822/rust-ise
+  repo: necoli1822/rust-ise
+  category: transposons
+  description: Scans bacterial genomes for insertion sequences with an ISEScan-style pipeline.

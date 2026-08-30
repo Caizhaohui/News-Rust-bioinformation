@@ -7,22 +7,33 @@
 Tools added to `data/tools.yaml` since the last snapshot.
 
 - [igv-rs](https://github.com/AI4S-YB/igv-rs)
+- [hyperex](https://github.com/Ebedthan/hyperex)
+- [orphos](https://github.com/FullHuman/orphos)
+- [dada2-rs](https://github.com/HPCBio/dada2-rs)
 - [timsrust](https://github.com/MannLabs/timsrust)
 - [diced](https://github.com/althonos/diced)
+- [sparrowhawk-amr](https://github.com/bacpop/sparrowhawk-amr)
+- [sparrowhawk-asm](https://github.com/bacpop/sparrowhawk-asm)
+- [savont](https://github.com/bluenote-1577/savont)
 - [dreid-pack](https://github.com/caltechmsc/dreid-pack)
 - [sc-rs](https://github.com/cytokineking/sc-rs)
 - [heme](https://github.com/dacarlin/heme)
 - [pdbtbx](https://github.com/douweschulte/pdbtbx)
 - [ferritin](https://github.com/ferritin-bio/ferritin)
 - [guide-counter](https://github.com/fulcrumgenomics/guide-counter)
+- [DartUniFrac](https://github.com/jianshu93/DartUniFrac)
+- [trackclusterTU](https://github.com/lrslab/trackclusterTU)
 - [mzdata](https://github.com/mobiusklein/mzdata)
+- [rust-ise](https://github.com/necoli1822/rust-ise)
 - [crispr_screen](https://github.com/noamteyssier/crispr_screen)
 - [sgcount](https://github.com/noamteyssier/sgcount)
 - [gafpack](https://github.com/pangenome/gafpack)
 - [seqrush](https://github.com/pangenome/seqrush)
 - [seqwish](https://github.com/pangenome/seqwish)
+- [dynamite](https://github.com/raw-lab/dynamite)
 - [mzcore](https://github.com/rusteomics/mzcore)
 - [gfatk](https://github.com/tolkit/gfatk)
+- [FragGeneScanRs](https://github.com/unipept/FragGeneScanRs)
 
 ## Active this week
 

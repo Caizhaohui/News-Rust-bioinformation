@@ -25,9 +25,17 @@ Prefer a short, objective English description: capital letter, ends with a perio
   description: One-sentence description.
 ```
 
-2. `category` must be one of:
+2. `category` must be one of the leaf slugs below (not a section heading):
 
 - `crispr`
+- Bacterial Bioinformatics (README section only; do not use as `category`):
+  - `bacterial-assembly`
+  - `bacterial-annotation`
+  - `prokaryotic-transcriptome`
+  - `microbiome`
+  - `phage-defense`
+  - `resistance-genes`
+  - `transposons`
 - `core-libraries`
 - `sequence-io-and-formats`
 - `alignment-and-mapping`

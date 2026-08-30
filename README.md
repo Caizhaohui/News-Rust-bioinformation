@@ -6,11 +6,19 @@ A living catalog of Rust libraries, applications, workflows, and learning resour
 
 Within each category, tools are sorted by star count (highest first). Last-push date and name break ties. Rebuild with `python scripts/fetch_metadata.py` then `python scripts/build_readme.py`.
 
-_Last metadata fetch: 2026-08-30T04:54:07.886734+00:00_
+_Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 
 ## Contents
 
 - [CRISPR](#crispr)
+- [Bacterial Bioinformatics](#bacterial-bioinformatics)
+  - [Bacterial Genome Assembly](#bacterial-genome-assembly)
+  - [Genome Annotation](#genome-annotation)
+  - [Prokaryotic Transcriptome](#prokaryotic-transcriptome)
+  - [Microbiome](#microbiome)
+  - [Phage Defense Systems](#phage-defense-systems)
+  - [Resistance Genes](#resistance-genes)
+  - [Transposon Systems](#transposon-systems)
 - [Core Libraries](#core-libraries)
 - [Sequence IO and Formats](#sequence-io-and-formats)
 - [Alignment and Mapping](#alignment-and-mapping)
@@ -34,6 +42,44 @@ _Last metadata fetch: 2026-08-30T04:54:07.886734+00:00_
 - [sgcount](https://github.com/noamteyssier/sgcount) - Tallies sgRNA abundances from FASTQ inputs with flexible matching options. (★ 12, pushed 2026-06-17)
 - [crispr_screen](https://github.com/noamteyssier/crispr_screen) - Differential expression and gene-level aggregation for CRISPR screen count tables. (★ 11, pushed 2025-09-22)
 - [diced](https://github.com/althonos/diced) - Detects CRISPR arrays in assembled genomes using a Rust port of the MinCED algorithm. (★ 4, pushed 2026-03-06)
+
+### Bacterial Bioinformatics
+
+#### Bacterial Genome Assembly
+
+- [Autocycler](https://github.com/rrwick/Autocycler) - Consensus long-read assemblies for bacterial genomes. (★ 238, pushed 2026-08-14)
+- [Polypolish](https://github.com/rrwick/Polypolish) - Short-read polishing for long-read assemblies. (★ 224, pushed 2026-07-28)
+- [sparrowhawk-asm](https://github.com/bacpop/sparrowhawk-asm) - Short-read de Bruijn assembler for bacterial genomes. (★ 15, pushed 2026-08-09)
+
+#### Genome Annotation
+
+- [dynamite](https://github.com/raw-lab/dynamite) - Finds protein-coding genes in bacteria, archaea, phages, and raw sequencing reads. (★ 33, pushed 2026-08-14)
+- [FragGeneScanRs](https://github.com/unipept/FragGeneScanRs) - Gene prediction for short and error-prone reads using the FragGeneScan model. (★ 31, pushed 2026-02-03)
+- [orphos](https://github.com/FullHuman/orphos) - Parallel Prodigal-style gene prediction for prokaryotic genomes. (★ 29, pushed 2026-07-26)
+
+#### Prokaryotic Transcriptome
+
+- [trackclusterTU](https://github.com/lrslab/trackclusterTU) - Clusters bacterial transcript units from mapped long reads. (★ 4, pushed 2026-08-26)
+
+#### Microbiome
+
+- [ska](https://github.com/bacpop/ska.rust) - Split k-mer analysis for bacterial genomes. (★ 105, pushed 2026-07-09)
+- [galah](https://github.com/wwood/galah) - Scalable dereplication of metagenome-assembled genomes. (★ 87, pushed 2026-08-03)
+- [savont](https://github.com/bluenote-1577/savont) - Calls amplicon sequence variants from 16S ONT and PacBio HiFi reads. (★ 53, pushed 2026-08-17)
+- [DartUniFrac](https://github.com/jianshu93/DartUniFrac) - Approximates UniFrac distances with weighted MinHash sketches. (★ 11, pushed 2026-08-30)
+- [hyperex](https://github.com/Ebedthan/hyperex) - Extracts 16S and other SSU/LSU hypervariable regions using primer sequences. (★ 10, pushed 2026-07-23)
+- [dada2-rs](https://github.com/HPCBio/dada2-rs) - Reimplements the DADA2 amplicon sequence-variant algorithm. (★ 4, pushed 2026-08-29)
+
+#### Phage Defense Systems
+
+
+#### Resistance Genes
+
+- [sparrowhawk-amr](https://github.com/bacpop/sparrowhawk-amr) - Detects antimicrobial resistance genes with k-mer indexes of the AMRFinderPlus database. (★ 0, pushed 2026-08-10)
+
+#### Transposon Systems
+
+- [rust-ise](https://github.com/necoli1822/rust-ise) - Scans bacterial genomes for insertion sequences with an ISEScan-style pipeline. (★ 0, pushed 2026-07-17)
 
 ### Core Libraries
 
@@ -101,8 +147,6 @@ _Last metadata fetch: 2026-08-30T04:54:07.886734+00:00_
 ### Long Reads
 
 - [chopper](https://github.com/wdecoster/chopper) - Filtering and trimming for PacBio and Nanopore FASTQ files. (★ 259, pushed 2026-08-03)
-- [Autocycler](https://github.com/rrwick/Autocycler) - Consensus long-read assemblies for bacterial genomes. (★ 238, pushed 2026-08-14)
-- [Polypolish](https://github.com/rrwick/Polypolish) - Short-read polishing for long-read assemblies. (★ 224, pushed 2026-07-28)
 - [longshot](https://github.com/pjedge/longshot) - Diploid SNV caller for error-prone long reads. (★ 212, pushed 2024-04-26)
 - [trgt](https://github.com/PacificBiosciences/trgt) - Tandem repeat genotyping from PacBio HiFi data. (★ 144, pushed 2026-06-10)
 - [nanoq](https://github.com/esteinig/nanoq) - Minimal quality control for Oxford Nanopore reads. (★ 139, pushed 2024-09-16)
@@ -129,8 +173,6 @@ _Last metadata fetch: 2026-08-30T04:54:07.886734+00:00_
 - [sylph](https://github.com/bluenote-1577/sylph) - Abundance-corrected minhash profiling for metagenomic samples. (★ 316, pushed 2026-02-03)
 - [skani](https://github.com/bluenote-1577/skani) - Fast ANI and aligned-fraction estimates for genomes and metagenomic contigs. (★ 263, pushed 2026-05-13)
 - [deacon](https://github.com/bede/deacon) - Fast host DNA sequence filtering. (★ 125, pushed 2026-08-26)
-- [ska](https://github.com/bacpop/ska.rust) - Split k-mer analysis for bacterial genomes. (★ 105, pushed 2026-07-09)
-- [galah](https://github.com/wwood/galah) - Scalable dereplication of metagenome-assembled genomes. (★ 87, pushed 2026-08-03)
 - [gsearch](https://github.com/jean-pierreBoth/gsearch) - Approximate nearest-neighbor search for microbial genomes. (★ 66, pushed 2026-06-10)
 - [nohuman](https://github.com/mbhall88/nohuman) - Removal of human reads from a sequencing run. (★ 52, pushed 2026-06-29)
 
