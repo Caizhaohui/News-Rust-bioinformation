@@ -1,6 +1,6 @@
 # Contributing
 
-This repository is a living catalog of Rust software used in computational biology. Edit `data/tools.yaml`. Do not hand-edit `README.md` or `RADAR.md`.
+This repository (`News-Rust-bioinformation`) is a living catalog of Rust software used in computational biology. Edit `data/tools.yaml`. Do not hand-edit `README.md` or `RADAR.md`.
 
 ## Inclusion
 

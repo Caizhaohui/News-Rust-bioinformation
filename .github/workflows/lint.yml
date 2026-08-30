@@ -1,4 +1,4 @@
-name: "awesome rust bioinformatics"
+name: "News-Rust-bioinformation"
 
 on:
   pull_request:

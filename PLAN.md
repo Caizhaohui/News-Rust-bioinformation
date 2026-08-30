@@ -1,4 +1,4 @@
-# Awesome Rust Bioinformatics（自用生态雷达）
+# News-Rust-bioinformation（自用生态雷达）
 
 ## 目标
 
@@ -18,7 +18,7 @@
 
 相对 sharkLoc/rust-in-bioinformatics 的差异化：补核心库、工作流、学习资源；用元数据 + 雷达看出「谁在动」，而不只是一份静态清单。
 
-GitHub 发布名建议 `awesome-rust-bioinformatics`。本地目录名可保持不变。
+GitHub 仓库名：`News-Rust-bioinformation`。
 
 ## 仓库结构
 
