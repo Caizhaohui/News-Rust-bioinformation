@@ -822,3 +822,57 @@
   repo: necoli1822/rust-ise
   category: transposons
   description: Scans bacterial genomes for insertion sequences with an ISEScan-style pipeline.
+
+- name: fastVEP
+  url: https://github.com/Huang-lab/fastVEP
+  repo: Huang-lab/fastVEP
+  category: variants-and-annotation
+  description: High-performance variant effect predictor written in Rust.
+
+- name: AnnoCAT
+  url: https://github.com/annocat-project/AnnoCAT
+  repo: annocat-project/AnnoCAT
+  category: variants-and-annotation
+  description: Local GRCh38 variant annotation and whole-genome review using fastVEP, DuckDB, and Parquet.
+
+- name: annotator
+  url: https://github.com/snijderlab/annotator
+  repo: snijderlab/annotator
+  category: proteomics-and-structure
+  description: Interactive annotation of complex mass spectra, one spectrum at a time.
+
+- name: arpeggia
+  url: https://github.com/y1zhou/arpeggia
+  repo: y1zhou/arpeggia
+  category: proteomics-and-structure
+  description: Calculates interatomic interactions in molecular structures.
+
+- name: aspartik
+  url: https://github.com/kaathewisegit/aspartik
+  repo: kaathewisegit/aspartik
+  category: core-libraries
+  description: Computational biology toolkit for genetic data and phylogenetic simulations.
+
+- name: badclip
+  url: https://github.com/lh3/badclip
+  repo: lh3/badclip
+  category: alignment-and-mapping
+  description: Extracts clipped alignments from BAM files.
+
+- name: BamNado
+  url: https://github.com/alsmith151/BamNado
+  repo: alsmith151/BamNado
+  category: single-cell-and-rna
+  description: Parallel BAM coverage, pileup, and filtering with Python bindings.
+
+- name: bbnorm-rs
+  url: https://github.com/Jakeelamb/bbnorm-rs
+  repo: Jakeelamb/bbnorm-rs
+  category: sequence-io-and-formats
+  description: Rust port of BBTools BBNorm read-depth normalization.
+
+- name: orthoSynAssign
+  url: https://github.com/stajichlab/orthoSynAssign
+  repo: stajichlab/orthoSynAssign
+  category: workflows-and-infrastructure
+  description: Refines orthogroups with synteny information; Python interface with a Rust core.

@@ -6,7 +6,7 @@ A living catalog of Rust libraries, applications, workflows, and learning resour
 
 Within each category, tools are sorted by star count (highest first). Last-push date and name break ties. Rebuild with `python scripts/fetch_metadata.py` then `python scripts/build_readme.py`.
 
-_Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
+_Last metadata fetch: 2026-08-30T13:55:17.284954+00:00_
 
 ## Contents
 
@@ -74,7 +74,7 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [nohuman](https://github.com/mbhall88/nohuman) - Removal of human reads from a sequencing run. (★ 52, pushed 2026-06-29)
 - [DartUniFrac](https://github.com/jianshu93/DartUniFrac) - Approximates UniFrac distances with weighted MinHash sketches. (★ 11, pushed 2026-08-30)
 - [hyperex](https://github.com/Ebedthan/hyperex) - Extracts 16S and other SSU/LSU hypervariable regions using primer sequences. (★ 10, pushed 2026-07-23)
-- [dada2-rs](https://github.com/HPCBio/dada2-rs) - Reimplements the DADA2 amplicon sequence-variant algorithm. (★ 4, pushed 2026-08-29)
+- [dada2-rs](https://github.com/HPCBio/dada2-rs) - Reimplements the DADA2 amplicon sequence-variant algorithm. (★ 4, pushed 2026-08-30)
 
 #### Phage Defense Systems
 
@@ -102,6 +102,7 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [rust-debruijn](https://github.com/10XGenomics/rust-debruijn) - De Bruijn graph construction and path compression libraries. (★ 72, pushed 2024-07-22)
 - [nuc2bit](https://github.com/natir/nuc2bit) - Fast 2-bit encoding and decoding of nucleotide sequences. (★ 14, pushed 2020-10-14)
 - [ibu](https://github.com/noamteyssier/ibu) - High-throughput binary encoding of genomic sequences. (★ 11, pushed 2026-08-26)
+- [aspartik](https://github.com/kaathewisegit/aspartik) - Computational biology toolkit for genetic data and phylogenetic simulations. (★ 3, pushed 2026-08-30)
 - [coitrees](https://github.com/vsbuffalo/coitrees) - Cache-oblivious interval trees for fast overlap queries on genomic intervals. (★ 1, pushed 2024-01-22)
 
 ### Sequence IO and Formats
@@ -113,7 +114,7 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [binseq](https://github.com/ArcInstitute/binseq) - Compact binary format for sequencing reads. (★ 105, pushed 2026-08-26)
 - [fqgrep](https://github.com/fulcrumgenomics/fqgrep) - Grep-like search over FASTQ files. (★ 104, pushed 2026-07-09)
 - [granges](https://github.com/vsbuffalo/granges) - Library and CLI for genomic ranges and associated data. (★ 103, pushed 2024-05-29)
-- [fq](https://github.com/stjude-rust-labs/fq) - Command-line utility for manipulating Illumina FASTQ files. (★ 101, pushed 2026-08-12)
+- [fq](https://github.com/stjude-rust-labs/fq) - Command-line utility for manipulating Illumina FASTQ files. (★ 102, pushed 2026-08-12)
 - [sracha-rs](https://github.com/rnabioco/sracha-rs) - Rust-based helpers around NCBI SRA tools. (★ 72, pushed 2026-08-29)
 - [fqtk](https://github.com/fulcrumgenomics/fqtk) - Fast FASTQ sample demultiplexing. (★ 70, pushed 2026-08-28)
 - [gia](https://github.com/noamteyssier/gia) - Genomic interval arithmetic on the command line. (★ 68, pushed 2024-08-21)
@@ -124,6 +125,7 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [rebgzf](https://github.com/nh13/rebgzf) - Gzip to BGZF transcoder that avoids a full decompress-recompress cycle. (★ 7, pushed 2026-06-19)
 - [fqkit](https://github.com/sharkLoc/fqkit) - Cross-platform FASTQ manipulation toolkit. (★ 6, pushed 2026-08-25)
 - [fg-sra](https://github.com/fulcrumgenomics/fg-sra) - High-performance SRA-to-SAM/BAM converter. (★ 6, pushed 2026-07-30)
+- [bbnorm-rs](https://github.com/Jakeelamb/bbnorm-rs) - Rust port of BBTools BBNorm read-depth normalization. (★ 0, pushed 2026-08-06)
 
 ### Alignment and Mapping
 
@@ -131,17 +133,19 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [rust-bio-tools](https://github.com/rust-bio/rust-bio-tools) - Command-line utilities built on Rust-Bio. (★ 205, pushed 2024-06-24)
 - [perbase](https://github.com/sstadick/perbase) - Per-base depth analysis from alignments. (★ 151, pushed 2026-05-09)
 - [rustybam](https://github.com/mrvollger/rustybam) - Bioinformatics toolkit focused on BAM and pangenome alignments. (★ 107, pushed 2026-08-16)
-- [poasta](https://github.com/broadinstitute/poasta) - Fast exact gap-affine partial order alignment. (★ 70, pushed 2026-04-25)
+- [poasta](https://github.com/broadinstitute/poasta) - Fast exact gap-affine partial order alignment. (★ 71, pushed 2026-04-25)
 - [sigalign](https://github.com/baku4/sigalign) - Similarity-guided sequence alignment algorithm. (★ 31, pushed 2026-02-07)
 - [minimap2-pure-rs](https://github.com/henriksson-lab/minimap2-pure-rs) - Pure Rust port of the minimap2 aligner. (★ 29, pushed 2026-08-15)
 - [mapAD](https://github.com/mpieva/mapAD) - Ancient-DNA-aware short-read mapper. (★ 22, pushed 2026-04-22)
 - [blast-rs](https://github.com/henriksson-lab/blast-rs) - Pure-Rust BLAST implementation that reads NCBI databases. (★ 9, pushed 2026-06-22)
+- [badclip](https://github.com/lh3/badclip) - Extracts clipped alignments from BAM files. (★ 0, pushed 2026-08-29)
 
 ### Variants and Annotation
 
 - [modkit](https://github.com/nanoporetech/modkit) - Tools for working with modified bases in alignments. (★ 272, pushed 2026-07-14)
 - [echtvar](https://github.com/brentp/echtvar) - Compact variant annotation and filtering for VCF files. (★ 162, pushed 2026-07-22)
-- [transanno](https://github.com/informationsea/transanno) - Accurate liftOver for new genome assemblies. (★ 151, pushed 2024-08-08)
+- [transanno](https://github.com/informationsea/transanno) - Accurate liftOver for new genome assemblies. (★ 150, pushed 2024-08-08)
+- [fastVEP](https://github.com/Huang-lab/fastVEP) - High-performance variant effect predictor written in Rust. (★ 131, pushed 2026-08-29)
 - [vcfexpress](https://github.com/brentp/vcfexpress) - Expression language for querying and rewriting VCFs. (★ 93, pushed 2026-03-17)
 - [metheor](https://github.com/dohlee/metheor) - Fast DNA methylation heterogeneity from bisulfite alignments. (★ 54, pushed 2025-08-25)
 - [GFFx](https://github.com/Baohua-Chen/GFFx) - Fast genomic feature extraction from GFF files. (★ 46, pushed 2025-12-18)
@@ -149,6 +153,7 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [vcf2parquet](https://github.com/natir/vcf2parquet) - Converter from VCF to Parquet. (★ 32, pushed 2025-01-23)
 - [gvcf_norm](https://github.com/mlin/gvcf_norm) - Allele normalizer for gVCF files. (★ 9, pushed 2025-05-04)
 - [atg](https://github.com/anergictcell/atg) - Library and CLI for genomic transcripts. (★ 7, pushed 2026-04-14)
+- [AnnoCAT](https://github.com/annocat-project/AnnoCAT) - Local GRCh38 variant annotation and whole-genome review using fastVEP, DuckDB, and Parquet. (★ 0, pushed 2026-08-26)
 
 ### Long Reads
 
@@ -182,6 +187,7 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [squab](https://github.com/zaeleus/squab) - Alignment-based gene expression quantification. (★ 40, pushed 2026-08-04)
 - [piscem](https://github.com/COMBINE-lab/piscem) - Next-generation sequence indexing and mapping components. (★ 37, pushed 2026-08-30)
 - [rnapkin](https://github.com/ukmrs/rnapkin) - Fast drawing of RNA secondary structure. (★ 10, pushed 2025-11-22)
+- [BamNado](https://github.com/alsmith151/BamNado) - Parallel BAM coverage, pileup, and filtering with Python bindings. (★ 1, pushed 2026-08-12)
 
 ### Proteomics and Structure
 
@@ -193,12 +199,14 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [pdbtbx](https://github.com/douweschulte/pdbtbx) - Library for reading, editing, and writing PDB and mmCIF files. (★ 73, pushed 2026-06-20)
 - [mzcore](https://github.com/rusteomics/mzcore) - Peptide-centric mass spectrometry calculations around PSI standards. (★ 51, pushed 2026-08-17)
 - [mzdata](https://github.com/mobiusklein/mzdata) - Readers and writers for mass spectrometry file formats. (★ 44, pushed 2026-08-23)
+- [annotator](https://github.com/snijderlab/annotator) - Interactive annotation of complex mass spectra, one spectrum at a time. (★ 42, pushed 2026-08-17)
 - [timsrust](https://github.com/MannLabs/timsrust) - High-performance access to Bruker timsTOF mass spectrometry data. (★ 35, pushed 2026-08-26)
 - [align-cli](https://github.com/snijderlab/align-cli) - Pairwise alignment CLI supporting mass-based protein alignment. (★ 17, pushed 2026-08-19)
+- [arpeggia](https://github.com/y1zhou/arpeggia) - Calculates interatomic interactions in molecular structures. (★ 8, pushed 2026-08-28)
 
 ### Protein Engineering
 
-- [ferritin](https://github.com/ferritin-bio/ferritin) - Utilities for protein structures, protein language models, and LigandMPNN-style sequence-design workflows. (★ 34, pushed 2026-08-29)
+- [ferritin](https://github.com/ferritin-bio/ferritin) - Utilities for protein structures, protein language models, and LigandMPNN-style sequence-design workflows. (★ 34, pushed 2026-08-30)
 - [sc-rs](https://github.com/cytokineking/sc-rs) - Scores the shape complementarity of protein-protein interfaces using the Lawrence and Colman statistic. (★ 20, pushed 2025-10-02)
 - [heme](https://github.com/dacarlin/heme) - Reads protein structures and featurizes them for graph-based generative design models. (★ 4, pushed 2024-07-27)
 - [dreid-pack](https://github.com/caltechmsc/dreid-pack) - Packs protein side chains with the DREIDING force field, dead-end elimination, and tree-decomposition search. (★ 2, pushed 2026-04-05)
@@ -213,6 +221,7 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 - [ggetrs](https://github.com/noamteyssier/ggetrs) - Efficient querying of biological databases. (★ 45, pushed 2025-10-27)
 - [oxo-flow](https://github.com/Traitome/oxo-flow) - Rust-native bioinformatics pipeline engine with TOML workflows. (★ 17, pushed 2026-08-29)
 - [nwr](https://github.com/wang-q/nwr) - CLI for NCBI taxonomy, Newick trees, and assembly reports. (★ 9, pushed 2026-07-30)
+- [orthoSynAssign](https://github.com/stajichlab/orthoSynAssign) - Refines orthogroups with synteny information; Python interface with a Rust core. (★ 5, pushed 2026-08-13)
 
 ### Visualization
 
@@ -226,7 +235,7 @@ _Last metadata fetch: 2026-08-30T05:12:55.231969+00:00_
 
 ### Learning Resources and Related Lists
 
-- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) - General awesome list for Rust, including a short Bioinformatics section. (★ 59051, pushed 2026-08-29)
+- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) - General awesome list for Rust, including a short Bioinformatics section. (★ 59059, pushed 2026-08-29)
 - [Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics) - Language-agnostic curated list of bioinformatics software. (★ 4260, pushed 2026-04-07)
 - [rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics) - Collection of genomics software tools written in Rust. (★ 135, pushed 2026-08-18)
 - [Are we bio yet?](https://rust4bio.github.io/arewebioyet/) - Earlier public registry of Rust crates for bioinformatics. (★ 19, pushed 2022-10-22)

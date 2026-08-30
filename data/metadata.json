@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-30T05:12:55.231969+00:00",
+  "fetched_at": "2026-08-30T13:55:17.284954+00:00",
   "incomplete": false,
   "urls": [
     "https://github.com/rust-bio/rust-bio",
@@ -138,7 +138,16 @@
     "https://github.com/jianshu93/DartUniFrac",
     "https://github.com/HPCBio/dada2-rs",
     "https://github.com/bacpop/sparrowhawk-amr",
-    "https://github.com/necoli1822/rust-ise"
+    "https://github.com/necoli1822/rust-ise",
+    "https://github.com/Huang-lab/fastVEP",
+    "https://github.com/annocat-project/AnnoCAT",
+    "https://github.com/snijderlab/annotator",
+    "https://github.com/y1zhou/arpeggia",
+    "https://github.com/kaathewisegit/aspartik",
+    "https://github.com/lh3/badclip",
+    "https://github.com/alsmith151/BamNado",
+    "https://github.com/Jakeelamb/bbnorm-rs",
+    "https://github.com/stajichlab/orthoSynAssign"
   ],
   "repos": {
     "10XGenomics/rust-boomphf": {
@@ -223,15 +232,15 @@
     },
     "COMBINE-lab/piscem": {
       "stars": 37,
-      "pushed_at": "2026-08-30T04:17:47Z",
+      "pushed_at": "2026-08-30T10:48:04Z",
       "archived": false,
-      "latest_release_at": "2026-08-11T00:53:16Z",
-      "latest_release_tag": "v0.22.1",
+      "latest_release_at": "2026-08-30T10:59:42Z",
+      "latest_release_tag": "v0.23.0",
       "error": null
     },
     "COMBINE-lab/simpleaf": {
       "stars": 68,
-      "pushed_at": "2026-08-30T04:17:48Z",
+      "pushed_at": "2026-08-30T13:50:24Z",
       "archived": false,
       "latest_release_at": "2026-08-15T17:06:08Z",
       "latest_release_tag": "v0.28.0",
@@ -287,10 +296,26 @@
     },
     "HPCBio/dada2-rs": {
       "stars": 4,
-      "pushed_at": "2026-08-29T22:27:53Z",
+      "pushed_at": "2026-08-30T05:59:53Z",
       "archived": false,
       "latest_release_at": "2026-07-07T03:24:58Z",
       "latest_release_tag": "v0.2.0",
+      "error": null
+    },
+    "Huang-lab/fastVEP": {
+      "stars": 131,
+      "pushed_at": "2026-08-29T01:59:13Z",
+      "archived": false,
+      "latest_release_at": "2026-07-28T14:10:26Z",
+      "latest_release_tag": "v0.3.0",
+      "error": null
+    },
+    "Jakeelamb/bbnorm-rs": {
+      "stars": 0,
+      "pushed_at": "2026-08-06T20:28:02Z",
+      "archived": false,
+      "latest_release_at": "2026-05-09T00:01:32Z",
+      "latest_release_tag": "v0.1.2",
       "error": null
     },
     "MannLabs/timsrust": {
@@ -349,6 +374,14 @@
       "latest_release_tag": "v1.10.1",
       "error": null
     },
+    "alsmith151/BamNado": {
+      "stars": 1,
+      "pushed_at": "2026-08-12T16:50:12Z",
+      "archived": false,
+      "latest_release_at": "2026-08-12T16:19:43Z",
+      "latest_release_tag": "v0.9.0",
+      "error": null
+    },
     "althonos/diced": {
       "stars": 4,
       "pushed_at": "2026-03-06T10:58:52Z",
@@ -363,6 +396,14 @@
       "archived": false,
       "latest_release_at": "2025-12-09T22:06:33Z",
       "latest_release_tag": "0.8.7",
+      "error": null
+    },
+    "annocat-project/AnnoCAT": {
+      "stars": 0,
+      "pushed_at": "2026-08-26T01:54:11Z",
+      "archived": false,
+      "latest_release_at": "2026-08-20T04:01:53Z",
+      "latest_release_tag": "v0.1.0",
       "error": null
     },
     "arewebioyet/arewebioyet.github.io": {
@@ -470,7 +511,7 @@
       "error": null
     },
     "broadinstitute/poasta": {
-      "stars": 70,
+      "stars": 71,
       "pushed_at": "2026-04-25T14:03:45Z",
       "archived": false,
       "latest_release_at": "2025-07-08T17:42:25Z",
@@ -559,7 +600,7 @@
     },
     "ferritin-bio/ferritin": {
       "stars": 34,
-      "pushed_at": "2026-08-29T18:47:32Z",
+      "pushed_at": "2026-08-30T13:53:02Z",
       "archived": false,
       "latest_release_at": null,
       "latest_release_tag": null,
@@ -614,7 +655,7 @@
       "error": null
     },
     "informationsea/transanno": {
-      "stars": 151,
+      "stars": 150,
       "pushed_at": "2024-08-08T02:38:06Z",
       "archived": false,
       "latest_release_at": "2024-05-15T03:02:58Z",
@@ -639,10 +680,18 @@
     },
     "jianshu93/DartUniFrac": {
       "stars": 11,
-      "pushed_at": "2026-08-30T04:10:57Z",
+      "pushed_at": "2026-08-30T05:32:05Z",
       "archived": false,
       "latest_release_at": "2026-06-17T18:29:08Z",
       "latest_release_tag": "v0.3.2",
+      "error": null
+    },
+    "kaathewisegit/aspartik": {
+      "stars": 3,
+      "pushed_at": "2026-08-30T13:25:30Z",
+      "archived": false,
+      "latest_release_at": null,
+      "latest_release_tag": null,
       "error": null
     },
     "kaizhang/SnapATAC2": {
@@ -659,6 +708,14 @@
       "archived": false,
       "latest_release_at": "2024-03-15T00:30:36Z",
       "latest_release_tag": "v0.14.7",
+      "error": null
+    },
+    "lh3/badclip": {
+      "stars": 0,
+      "pushed_at": "2026-08-29T21:30:01Z",
+      "archived": false,
+      "latest_release_at": null,
+      "latest_release_tag": null,
       "error": null
     },
     "lrslab/trackclusterTU": {
@@ -974,7 +1031,7 @@
       "error": null
     },
     "rust-unofficial/awesome-rust": {
-      "stars": 59051,
+      "stars": 59059,
       "pushed_at": "2026-08-29T15:01:55Z",
       "archived": false,
       "latest_release_at": null,
@@ -1013,6 +1070,14 @@
       "latest_release_tag": "v0.4.2",
       "error": null
     },
+    "snijderlab/annotator": {
+      "stars": 42,
+      "pushed_at": "2026-08-17T10:18:17Z",
+      "archived": false,
+      "latest_release_at": "2025-09-01T15:26:37Z",
+      "latest_release_tag": "v1.2.1",
+      "error": null
+    },
     "sourmash-bio/sourmash": {
       "stars": 555,
       "pushed_at": "2026-08-24T20:13:59Z",
@@ -1027,6 +1092,14 @@
       "archived": false,
       "latest_release_at": "2026-02-04T19:54:47Z",
       "latest_release_tag": "v1.4.0",
+      "error": null
+    },
+    "stajichlab/orthoSynAssign": {
+      "stars": 5,
+      "pushed_at": "2026-08-13T23:11:24Z",
+      "archived": false,
+      "latest_release_at": "2026-08-07T23:37:45Z",
+      "latest_release_tag": "v1.3.1",
       "error": null
     },
     "steineggerlab/folddisco": {
@@ -1054,7 +1127,7 @@
       "error": null
     },
     "stjude-rust-labs/fq": {
-      "stars": 101,
+      "stars": 102,
       "pushed_at": "2026-08-12T16:45:42Z",
       "archived": false,
       "latest_release_at": "2024-07-08T16:33:26Z",
@@ -1203,6 +1276,14 @@
       "archived": false,
       "latest_release_at": "2026-07-07T01:32:25Z",
       "latest_release_tag": "v0.5.2",
+      "error": null
+    },
+    "y1zhou/arpeggia": {
+      "stars": 8,
+      "pushed_at": "2026-08-28T09:40:54Z",
+      "archived": false,
+      "latest_release_at": "2026-08-27T08:36:16Z",
+      "latest_release_tag": "v0.9.0",
       "error": null
     },
     "zaeleus/noodles": {

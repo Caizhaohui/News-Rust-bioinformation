@@ -10,8 +10,12 @@ Tools added to `data/tools.yaml` since the last snapshot.
 - [hyperex](https://github.com/Ebedthan/hyperex)
 - [orphos](https://github.com/FullHuman/orphos)
 - [dada2-rs](https://github.com/HPCBio/dada2-rs)
+- [fastVEP](https://github.com/Huang-lab/fastVEP)
+- [bbnorm-rs](https://github.com/Jakeelamb/bbnorm-rs)
 - [timsrust](https://github.com/MannLabs/timsrust)
+- [BamNado](https://github.com/alsmith151/BamNado)
 - [diced](https://github.com/althonos/diced)
+- [AnnoCAT](https://github.com/annocat-project/AnnoCAT)
 - [sparrowhawk-amr](https://github.com/bacpop/sparrowhawk-amr)
 - [sparrowhawk-asm](https://github.com/bacpop/sparrowhawk-asm)
 - [savont](https://github.com/bluenote-1577/savont)
@@ -22,6 +26,8 @@ Tools added to `data/tools.yaml` since the last snapshot.
 - [ferritin](https://github.com/ferritin-bio/ferritin)
 - [guide-counter](https://github.com/fulcrumgenomics/guide-counter)
 - [DartUniFrac](https://github.com/jianshu93/DartUniFrac)
+- [aspartik](https://github.com/kaathewisegit/aspartik)
+- [badclip](https://github.com/lh3/badclip)
 - [trackclusterTU](https://github.com/lrslab/trackclusterTU)
 - [mzdata](https://github.com/mobiusklein/mzdata)
 - [rust-ise](https://github.com/necoli1822/rust-ise)
@@ -32,14 +38,18 @@ Tools added to `data/tools.yaml` since the last snapshot.
 - [seqwish](https://github.com/pangenome/seqwish)
 - [dynamite](https://github.com/raw-lab/dynamite)
 - [mzcore](https://github.com/rusteomics/mzcore)
+- [annotator](https://github.com/snijderlab/annotator)
+- [orthoSynAssign](https://github.com/stajichlab/orthoSynAssign)
 - [gfatk](https://github.com/tolkit/gfatk)
 - [FragGeneScanRs](https://github.com/unipept/FragGeneScanRs)
+- [arpeggia](https://github.com/y1zhou/arpeggia)
 
 ## Active this week
 
 Crossed a threshold: star jump, new release, or a cold repository pushed.
 
-_None._
+- [piscem](https://github.com/COMBINE-lab/piscem) — new release v0.23.0
+- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) — stars 59050 -> 59059
 
 ## Possibly stale
 
