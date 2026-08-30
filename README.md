@@ -6,7 +6,7 @@ A living catalog of Rust libraries, applications, workflows, and learning resour
 
 Stars and last-push dates are tracking signals, not a popularity ranking. Rebuild with `python scripts/fetch_metadata.py` then `python scripts/build_readme.py`.
 
-_Last metadata fetch: 2026-08-30T03:11:06.010714+00:00_
+_Last metadata fetch: 2026-08-30T03:59:57.803036+00:00_
 
 ## Contents
 
@@ -164,7 +164,7 @@ _Last metadata fetch: 2026-08-30T03:11:06.010714+00:00_
 
 ### Learning Resources and Related Lists
 
-- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) - General awesome list for Rust, including a short Bioinformatics section. (★ 59049, pushed 2026-08-29)
+- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) - General awesome list for Rust, including a short Bioinformatics section. (★ 59050, pushed 2026-08-29)
 - [rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics) - Collection of genomics software tools written in Rust. (★ 135, pushed 2026-08-18)
 - [Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics) - Language-agnostic curated list of bioinformatics software. (★ 4260, pushed 2026-04-07)
 - [Are we bio yet?](https://rust4bio.github.io/arewebioyet/) - Earlier public registry of Rust crates for bioinformatics. (★ 19, pushed 2022-10-22)

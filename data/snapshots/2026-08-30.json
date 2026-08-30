@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-30T03:11:06.010714+00:00",
+  "fetched_at": "2026-08-30T03:59:57.803036+00:00",
   "incomplete": false,
   "urls": [
     "https://github.com/rust-bio/rust-bio",
@@ -746,7 +746,7 @@
       "error": null
     },
     "rust-unofficial/awesome-rust": {
-      "stars": 59049,
+      "stars": 59050,
       "pushed_at": "2026-08-29T15:01:55Z",
       "archived": false,
       "latest_release_at": null,
