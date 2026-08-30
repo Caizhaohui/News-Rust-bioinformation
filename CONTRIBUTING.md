@@ -55,20 +55,22 @@ Prefer a short, objective English description: capital letter, ends with a perio
 5. Rebuild locally:
 
 ```bash
-python scripts/validate.py
-python scripts/fetch_metadata.py
-python scripts/build_readme.py
-python scripts/build_radar.py
+cargo run -- validate
+cargo run -- fetch-metadata   # needs GITHUB_TOKEN for complete data
+cargo run -- build-readme
+cargo run -- build-radar
 ```
+
+Or install the `nrb` binary with `cargo install --path .` and run those subcommands directly.
 
 ## Finding new tools
 
 Already-listed tools are refreshed by the weekly workflow (stars / push / archived / radar). New tools are **not** auto-added and `tools.yaml` is never written by discovery.
 
-1. Manually run `python scripts/discover.py` or the `Discover new tool candidates` GitHub Action (`workflow_dispatch` only).
+1. Manually run `cargo run -- discover` or the `Discover new tool candidates` GitHub Action (`workflow_dispatch` only).
 2. Open `discover/candidates-YYYY-MM-DD.md` and fill `收录？是/否`.
 3. For “是” items, append them to `data/tools.yaml` using the schema above (Rust-first, computational biology, public, no generic CSV / Slurm TUI).
-4. Rebuild with `validate.py` / `fetch_metadata.py` / `build_readme.py` / `build_radar.py`.
+4. Rebuild with `nrb validate` / `nrb fetch-metadata` / `nrb build-readme` / `nrb build-radar`.
 
 Sources: GitHub Search and bioRxiv. X search is not enabled. Missing GitHub token skips that source and marks the report incomplete. crates.io is not scanned; a crates.io link mentioned by another source may still appear.
 
@@ -81,7 +83,7 @@ Sources: GitHub Search and bioRxiv. X search is not enabled. Missing GitHub toke
 Generate an outline only when you are about to write:
 
 ```bash
-python scripts/build_digest_draft.py
+cargo run -- digest
 ```
 
 Or run the `Generate digest draft` GitHub Action (`workflow_dispatch`).

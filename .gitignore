@@ -1,8 +1,4 @@
-__pycache__/
-*.py[cod]
-.venv/
-venv/
+/target/
 .env
 .DS_Store
-*.egg-info/
-.pytest_cache/
+

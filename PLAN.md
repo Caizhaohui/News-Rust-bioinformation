@@ -24,8 +24,10 @@ GitHub 仓库名：`News-Rust-bioinformation`。
 
 ```
 .
-├── README.md                 # 由脚本生成：活目录（含 stars / last push）
-├── RADAR.md                  # 由脚本生成：本周生态摘要（英文信号）
+├── README.md                 # 由 nrb 生成：活目录（含 stars / last push）
+├── RADAR.md                  # 由 nrb 生成：本周生态摘要（英文信号）
+├── Cargo.toml                # Rust CLI（二进制名 nrb）
+├── src/                      # 校验、元数据、README/雷达/digest/发现
 ├── digest/                   # 中文编辑提纲，手动触发，不自动发博客
 │   ├── _template.md          # 固定栏目：本周要点 / 新工具 / 值得盯 / 停更 / 下一篇待查
 │   └── rust-bio-digest-YYYY-MM-DD.md
@@ -40,13 +42,6 @@ GitHub 仓库名：`News-Rust-bioinformation`。
 │   ├── metadata.json         # 脚本生成，不手改
 │   └── snapshots/            # 每周快照，保留最近 8 份
 │       └── YYYY-MM-DD.json
-├── scripts/
-│   ├── requirements.txt
-│   ├── fetch_metadata.py     # GitHub GraphQL 批量拉取
-│   ├── build_readme.py
-│   ├── build_radar.py
-│   ├── build_digest_draft.py # metadata/snapshot -> digest 中文提纲
-│   └── discover.py           # 手动检索 GitHub / bioRxiv 候选
 └── .github/workflows/
     ├── lint.yml              # 校验 YAML schema + 全量链接检查
     ├── weekly.yml            # 每周刷新元数据、重建 README/RADAR、存快照
@@ -143,7 +138,7 @@ Active 阈值（`data/config.yaml` 可调）：有新 release / tag，或 stars 
 
 **本仓职责（供稿）**
 
-`scripts/build_digest_draft.py` 直接读 `metadata.json` + 最近两份 snapshot + `tools.yaml`（不解析 RADAR.md），写出 `digest/rust-bio-digest-YYYY-MM-DD.md`：
+`nrb digest` 直接读 `metadata.json` + 最近两份 snapshot + `tools.yaml`（不解析 RADAR.md），写出 `digest/rust-bio-digest-YYYY-MM-DD.md`：
 
 - 顶部用个人网站 `src/content/config.ts` 的 frontmatter；`pubDate` 留占位，发布时改：
 
@@ -165,7 +160,7 @@ draft: true
 
 每 1–2 周按 `CONTRIBUTING.md` 里的写稿清单：
 
-1. 手动触发 `digest.yml`（或本地 `python scripts/build_digest_draft.py`）生成本周期提纲，删掉凑数项，只留真正有判断的 3–5 件事
+1. 手动触发 `digest.yml`（或本地 `cargo run -- digest`）生成本周期提纲，删掉凑数项，只留真正有判断的 3–5 件事
 2. 补中文评述：这个工具解决什么问题、和 Python/C 生态比有何进展、要不要收进 `tools.yaml`
 3. 把成稿拷到 Caizhaohui/personal-website 的 `src/content/blog/`，`draft: false` 后推送，走现有 GitHub Pages 部署
 4. 本仓 `digest/` 里把提纲标成已发布，并回写 YAML：新工具补收、归档移出主列表
@@ -174,16 +169,16 @@ draft: true
 
 ```mermaid
 flowchart LR
-    yaml[tools.yaml] --> fetch[fetch_metadata.py]
-    snap[data/snapshots] --> radar[build_radar.py]
+    yaml[tools.yaml] --> fetch[nrb fetch-metadata]
+    snap[data/snapshots] --> radar[nrb build-radar]
     fetch --> meta[metadata.json]
     meta --> radar
-    meta --> readme[build_readme.py]
+    meta --> readme[nrb build-readme]
     yaml --> readme
     yaml --> radar
     readme --> out1[README.md]
     radar --> out2[RADAR.md]
-    meta --> draft[build_digest_draft.py]
+    meta --> draft[nrb digest]
     snap --> draft
     yaml --> draft
     draft --> outline[digest/draft.md]
@@ -215,15 +210,15 @@ flowchart LR
 
 1. 脚手架：LICENSE、CONTRIBUTING（收录：Rust 为主、与计算生物学直接相关、可访问；拒绝通用 CSV/集群玩具）、空 YAML schema、`data/config.yaml`
 2. 先写入 P0 核心库 + 少量代表应用，保证生成链路可跑
-3. 实现 `fetch_metadata.py` / `build_readme.py` / `build_radar.py`，本地跑通 README + RADAR
-4. 实现 `build_digest_draft.py`（读 JSON 而非 RADAR.md）与 `digest/_template.md`，手动触发生成可拷贝提纲
+3. 实现 `nrb fetch-metadata` / `nrb build-readme` / `nrb build-radar`，本地跑通 README + RADAR
+4. 实现 `nrb digest`（读 JSON 而非 RADAR.md）与 `digest/_template.md`，手动触发生成可拷贝提纲
 5. 补齐第一版 60–90 条种子（从 sharkLoc / arewebioyet / Brown 综述挑，重写描述）
 6. 加上 `lint.yml`、`weekly.yml`（不含 digest）、`digest.yml`（workflow_dispatch）；CONTRIBUTING 写上 1–2 周写稿清单
 7. 初始 commit；推送 GitHub、以及第一次人工写稿搬到个人网站，均为后续手动步骤
 
 ## 验证
 
-- 无 `GITHUB_TOKEN` 时脚本不崩溃，RADAR 标明数据不完整
+- 无 `GITHUB_TOKEN` 时 `nrb fetch-metadata` 不崩溃，RADAR 标明数据不完整
 - 有 token 时 metadata 覆盖所有带 `repo` 的条目
 - 人为改一条 YAML、改 snapshot 中的 pushedAt 后，RADAR 能分别出现 New entries 与 Active/Stale；普通 push 不达阈值不进 Active
 - `data/snapshots/` 能累积多份且自动清理到 8 份
