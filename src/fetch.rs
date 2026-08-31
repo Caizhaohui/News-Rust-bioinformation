@@ -11,6 +11,7 @@ use crate::paths;
 
 const GRAPHQL_URL: &str = "https://api.github.com/graphql";
 const BATCH_SIZE: usize = 20;
+const USER_AGENT: &str = "News-Rust-bioinformation-fetch";
 
 fn alias(index: usize) -> String {
     format!("r{index}")
@@ -52,9 +53,10 @@ pub fn fetch_batch(
 ) -> Result<BTreeMap<String, RepoRecord>, String> {
     let query = build_query(batch);
     let body = json!({ "query": query });
-    let headers: [(&str, String); 2] = [
-        ("Authorization", format!("bearer {token}")),
+    let headers: [(&str, String); 3] = [
+        ("Authorization", format!("Bearer {token}")),
         ("Accept", "application/vnd.github+json".into()),
+        ("User-Agent", USER_AGENT.into()),
     ];
     let header_refs: Vec<(&str, String)> = headers.iter().map(|(k, v)| (*k, v.clone())).collect();
     let (status, payload) = client.post_json(GRAPHQL_URL, &body, &header_refs)?;

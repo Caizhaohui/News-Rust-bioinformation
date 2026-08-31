@@ -6,7 +6,7 @@ A living catalog of Rust libraries, applications, workflows, and learning resour
 
 Within each category, tools are sorted by star count (highest first). Last-push date and name break ties. Rebuild with `nrb fetch-metadata` then `nrb build-readme`.
 
-_Last metadata fetch: 2026-08-30T13:55:17.284954+00:00_
+_Last metadata fetch: 2026-08-31T02:52:55.554383+00:00_
 
 ## Contents
 
@@ -64,17 +64,24 @@ _Last metadata fetch: 2026-08-30T13:55:17.284954+00:00_
 
 - [sourmash](https://github.com/sourmash-bio/sourmash) - Sketch-based search and comparison of genomic and metagenomic datasets. (★ 555, pushed 2026-08-24)
 - [CoverM](https://github.com/wwood/CoverM) - Read coverage calculator for metagenomics. (★ 405, pushed 2026-07-10)
-- [sylph](https://github.com/bluenote-1577/sylph) - Abundance-corrected minhash profiling for metagenomic samples. (★ 316, pushed 2026-02-03)
+- [sylph](https://github.com/bluenote-1577/sylph) - Abundance-corrected minhash profiling for metagenomic samples. (★ 317, pushed 2026-02-03)
 - [skani](https://github.com/bluenote-1577/skani) - Fast ANI and aligned-fraction estimates for genomes and metagenomic contigs. (★ 263, pushed 2026-05-13)
+- [ngless](https://github.com/ngless-toolkit/ngless) - Domain-specific language for next-generation sequencing and metagenomic workflows. (★ 152, pushed 2026-08-04)
 - [deacon](https://github.com/bede/deacon) - Fast host DNA sequence filtering. (★ 125, pushed 2026-08-26)
 - [ska](https://github.com/bacpop/ska.rust) - Split k-mer analysis for bacterial genomes. (★ 105, pushed 2026-07-09)
 - [galah](https://github.com/wwood/galah) - Scalable dereplication of metagenome-assembled genomes. (★ 87, pushed 2026-08-03)
 - [gsearch](https://github.com/jean-pierreBoth/gsearch) - Approximate nearest-neighbor search for microbial genomes. (★ 66, pushed 2026-06-10)
 - [savont](https://github.com/bluenote-1577/savont) - Calls amplicon sequence variants from 16S ONT and PacBio HiFi reads. (★ 53, pushed 2026-08-17)
 - [nohuman](https://github.com/mbhall88/nohuman) - Removal of human reads from a sequencing run. (★ 52, pushed 2026-06-29)
+- [MAGmax](https://github.com/soedinglab/MAGmax) - Dereplicates and enriches metagenome-assembled genomes across samples. (★ 37, pushed 2026-08-28)
+- [xgt](https://github.com/Ebedthan/xgt) - Command-line client for querying the Genome Taxonomy Database. (★ 31, pushed 2026-08-28)
+- [sketchlib.rust](https://github.com/bacpop/sketchlib.rust) - Fast sequence distance estimates from genomic sketches. (★ 31, pushed 2026-08-24)
+- [ITSxRust](https://github.com/ayobi/ITSxRust) - ITS region extraction for long-read amplicon sequencing. (★ 20, pushed 2026-08-26)
 - [DartUniFrac](https://github.com/jianshu93/DartUniFrac) - Approximates UniFrac distances with weighted MinHash sketches. (★ 11, pushed 2026-08-30)
+- [umgap](https://github.com/unipept/umgap) - Taxonomic classifier for shotgun metagenomic reads. (★ 11, pushed 2026-08-26)
 - [hyperex](https://github.com/Ebedthan/hyperex) - Extracts 16S and other SSU/LSU hypervariable regions using primer sequences. (★ 10, pushed 2026-07-23)
-- [dada2-rs](https://github.com/HPCBio/dada2-rs) - Reimplements the DADA2 amplicon sequence-variant algorithm. (★ 4, pushed 2026-08-30)
+- [dada2-rs](https://github.com/HPCBio/dada2-rs) - Reimplements the DADA2 amplicon sequence-variant algorithm. (★ 4, pushed 2026-08-31)
+- [emits](https://github.com/ayobi/emits) - Expectation-maximization abundance estimation for fungal ITS communities from long reads. (★ 3, pushed 2026-08-25)
 
 #### Phage Defense Systems
 
@@ -95,21 +102,28 @@ _Last metadata fetch: 2026-08-30T13:55:17.284954+00:00_
 - [needletail](https://github.com/onecodex/needletail) - Fast FASTA and FASTQ parsing with k-mer helpers. (★ 214, pushed 2026-06-22)
 - [rust-mdbg](https://github.com/ekimb/rust-mdbg) - Minimizer-space de Bruijn graphs for whole-genome assembly. (★ 184, pushed 2024-09-19)
 - [rust-boomphf](https://github.com/10XGenomics/rust-boomphf) - Fast minimal perfect hashing for large key sets. (★ 154, pushed 2024-07-08)
+- [coitrees](https://github.com/dcjones/coitrees) - Cache-oblivious interval trees for fast overlap queries on genomic intervals. (★ 136, pushed 2025-02-03)
 - [triple_accel](https://github.com/Daniel-Liu-c0deb0t/triple_accel) - SIMD-accelerated edit distance and string search routines. (★ 109, pushed 2023-03-13)
 - [finch](https://github.com/onecodex/finch-rs) - MinHash sketches for genomic distance and search. (★ 101, pushed 2026-07-08)
 - [seq_io](https://github.com/markschl/seq_io) - FASTA and FASTQ readers and writers designed for high throughput. (★ 85, pushed 2025-03-14)
 - [niffler](https://github.com/luizirber/niffler) - Transparent reading and writing of compressed files. (★ 81, pushed 2026-08-19)
 - [rust-debruijn](https://github.com/10XGenomics/rust-debruijn) - De Bruijn graph construction and path compression libraries. (★ 72, pushed 2024-07-22)
-- [nuc2bit](https://github.com/natir/nuc2bit) - Fast 2-bit encoding and decoding of nucleotide sequences. (★ 14, pushed 2020-10-14)
+- [rust-lapper](https://github.com/sstadick/rust-lapper) - Fast interval-tree library for overlap queries. (★ 71, pushed 2026-08-20)
+- [microBioRust](https://github.com/LCrossman/microBioRust) - Library for microbial genomics data structures and analyses. (★ 31, pushed 2026-08-19)
+- [simd-sketch](https://github.com/RagnarGrootKoerkamp/simd-sketch) - SIMD-accelerated bottom-s and s-bucket genomic sketches. (★ 21, pushed 2026-08-26)
+- [phylo2vec](https://github.com/sbhattlab/phylo2vec) - Vector representation and library for phylogenetic tree manipulation. (★ 21, pushed 2026-08-11)
+- [packed-seq](https://github.com/rust-seq/packed-seq) - Bit-packed nucleotide sequence trait and implementations. (★ 19, pushed 2026-08-19)
 - [ibu](https://github.com/noamteyssier/ibu) - High-throughput binary encoding of genomic sequences. (★ 11, pushed 2026-08-26)
+- [dna_parser](https://github.com/Mvila035/dna_parser) - Python library with a Rust core for encoding DNA and RNA sequences for machine learning. (★ 11, pushed 2026-08-25)
+- [zoe](https://github.com/CDCgov/zoe) - Library for common data formats and methods in RNA-virus sequencing. (★ 8, pushed 2026-08-25)
 - [aspartik](https://github.com/kaathewisegit/aspartik) - Computational biology toolkit for genetic data and phylogenetic simulations. (★ 3, pushed 2026-08-30)
-- [coitrees](https://github.com/vsbuffalo/coitrees) - Cache-oblivious interval trees for fast overlap queries on genomic intervals. (★ 1, pushed 2024-01-22)
 
 ### Sequence IO and Formats
 
 - [rasusa](https://github.com/mbhall88/rasusa) - Random subsampling of sequencing reads. (★ 274, pushed 2026-08-24)
 - [d4tools](https://github.com/38/d4-format) - Dense depth data format and tools as an alternative to bigWig-style coverage files. (★ 175, pushed 2025-11-28)
 - [xsra](https://github.com/ArcInstitute/xsra) - Fast extraction of sequences from the SRA. (★ 126, pushed 2026-06-12)
+- [RustQC](https://github.com/seqeralabs/RustQC) - Fast quality-control tools for sequencing data. (★ 122, pushed 2026-08-24)
 - [bigtools](https://github.com/jackh726/bigtools) - High-performance BigWig and BigBed library and CLI. (★ 120, pushed 2026-08-14)
 - [binseq](https://github.com/ArcInstitute/binseq) - Compact binary format for sequencing reads. (★ 105, pushed 2026-08-26)
 - [fqgrep](https://github.com/fulcrumgenomics/fqgrep) - Grep-like search over FASTQ files. (★ 104, pushed 2026-07-09)
@@ -118,12 +132,23 @@ _Last metadata fetch: 2026-08-30T13:55:17.284954+00:00_
 - [sracha-rs](https://github.com/rnabioco/sracha-rs) - Rust-based helpers around NCBI SRA tools. (★ 72, pushed 2026-08-29)
 - [fqtk](https://github.com/fulcrumgenomics/fqtk) - Fast FASTQ sample demultiplexing. (★ 70, pushed 2026-08-28)
 - [gia](https://github.com/noamteyssier/gia) - Genomic interval arithmetic on the command line. (★ 68, pushed 2024-08-21)
+- [RastQC](https://github.com/Huang-lab/RastQC) - High-throughput sequencing quality control covering short and long reads. (★ 53, pushed 2026-08-03)
+- [fgumi](https://github.com/fulcrumgenomics/fgumi) - High-performance UMI processing for NGS data. (★ 52, pushed 2026-08-31)
 - [htsget-rs](https://github.com/umccr/htsget-rs) - Server implementation of the GA4GH htsget protocol. (★ 50, pushed 2026-08-03)
 - [bqtools](https://github.com/ArcInstitute/bqtools) - Command-line utilities for BINSEQ files. (★ 39, pushed 2026-08-25)
-- [ngs](https://github.com/stjude-rust-labs/ngs) - Command-line utility for working with next-generation sequencing files. (★ 39, pushed 2025-06-24)
-- [recmap](https://github.com/vsbuffalo/recmap) - Library and CLI for recombination maps. (★ 9, pushed 2024-08-09)
+- [gtfsort](https://github.com/alejandrogzi/gtfsort) - Lexicographic sorter for GTF and GFF annotation files. (★ 39, pushed 2026-08-08)
+- [FasterFASTA](https://github.com/unum-science/FasterFASTA) - FASTA and FASTQ parsing, sorting, deduplication, filtering, and statistics. (★ 31, pushed 2026-08-20)
+- [seqair](https://github.com/Softleif/seqair) - BAM, SAM, CRAM, and FASTA reader with pileup and BCF writing. (★ 28, pushed 2026-08-25)
+- [bed2gtf](https://github.com/alejandrogzi/bed2gtf) - High-performance BED-to-GTF converter. (★ 21, pushed 2026-08-09)
+- [chelae](https://github.com/fulcrumgenomics/chelae) - Accurate read trimming for NGS data. (★ 13, pushed 2026-08-26)
+- [skiver](https://github.com/GZHoffie/skiver) - Reference-free sequencing error-rate estimates using (k, v)-mer sketches. (★ 12, pushed 2026-08-19)
+- [mako](https://github.com/fg-labs/mako) - Fast SAM and BAM sorter. (★ 9, pushed 2026-08-25)
+- [bgzf](https://github.com/fulcrumgenomics/bgzf) - BGZF compression library. (★ 9, pushed 2026-08-09)
 - [rebgzf](https://github.com/nh13/rebgzf) - Gzip to BGZF transcoder that avoids a full decompress-recompress cycle. (★ 7, pushed 2026-06-19)
+- [holodeck](https://github.com/fg-labs/holodeck) - NGS read simulator. (★ 6, pushed 2026-08-28)
+- [umi-tools-rs](https://github.com/vertti/umi-tools-rs) - Drop-in Rust replacement for UMI-tools. (★ 6, pushed 2026-08-28)
 - [fqkit](https://github.com/sharkLoc/fqkit) - Cross-platform FASTQ manipulation toolkit. (★ 6, pushed 2026-08-25)
+- [rs_demultiplex](https://github.com/colindaven/rs_demultiplex) - Fast FASTQ demultiplexing. (★ 6, pushed 2026-08-21)
 - [fg-sra](https://github.com/fulcrumgenomics/fg-sra) - High-performance SRA-to-SAM/BAM converter. (★ 6, pushed 2026-07-30)
 - [bbnorm-rs](https://github.com/Jakeelamb/bbnorm-rs) - Rust port of BBTools BBNorm read-depth normalization. (★ 0, pushed 2026-08-06)
 
@@ -132,58 +157,80 @@ _Last metadata fetch: 2026-08-30T13:55:17.284954+00:00_
 - [wgatools](https://github.com/wjwei-handsome/wgatools) - Tools for whole-genome alignments. (★ 225, pushed 2025-11-06)
 - [rust-bio-tools](https://github.com/rust-bio/rust-bio-tools) - Command-line utilities built on Rust-Bio. (★ 205, pushed 2024-06-24)
 - [perbase](https://github.com/sstadick/perbase) - Per-base depth analysis from alignments. (★ 151, pushed 2026-05-09)
-- [rustybam](https://github.com/mrvollger/rustybam) - Bioinformatics toolkit focused on BAM and pangenome alignments. (★ 107, pushed 2026-08-16)
+- [rustybam](https://github.com/vollgerlab/rustybam) - Bioinformatics toolkit focused on BAM and pangenome alignments. (★ 107, pushed 2026-08-16)
 - [poasta](https://github.com/broadinstitute/poasta) - Fast exact gap-affine partial order alignment. (★ 71, pushed 2026-04-25)
 - [sigalign](https://github.com/baku4/sigalign) - Similarity-guided sequence alignment algorithm. (★ 31, pushed 2026-02-07)
 - [minimap2-pure-rs](https://github.com/henriksson-lab/minimap2-pure-rs) - Pure Rust port of the minimap2 aligner. (★ 29, pushed 2026-08-15)
 - [mapAD](https://github.com/mpieva/mapAD) - Ancient-DNA-aware short-read mapper. (★ 22, pushed 2026-04-22)
+- [irma-core](https://github.com/CDCgov/irma-core) - Core library accelerating IRMA virus sequencing workflows. (★ 13, pushed 2026-08-25)
 - [blast-rs](https://github.com/henriksson-lab/blast-rs) - Pure-Rust BLAST implementation that reads NCBI databases. (★ 9, pushed 2026-06-22)
 - [badclip](https://github.com/lh3/badclip) - Extracts clipped alignments from BAM files. (★ 0, pushed 2026-08-29)
 
 ### Variants and Annotation
 
+- [Bismark](https://github.com/FelixKrueger/Bismark) - Maps bisulfite-converted reads and calls cytosine methylation. (★ 461, pushed 2026-08-18)
 - [modkit](https://github.com/nanoporetech/modkit) - Tools for working with modified bases in alignments. (★ 272, pushed 2026-07-14)
 - [echtvar](https://github.com/brentp/echtvar) - Compact variant annotation and filtering for VCF files. (★ 162, pushed 2026-07-22)
 - [transanno](https://github.com/informationsea/transanno) - Accurate liftOver for new genome assemblies. (★ 150, pushed 2024-08-08)
 - [fastVEP](https://github.com/Huang-lab/fastVEP) - High-performance variant effect predictor written in Rust. (★ 131, pushed 2026-08-29)
 - [vcfexpress](https://github.com/brentp/vcfexpress) - Expression language for querying and rewriting VCFs. (★ 93, pushed 2026-03-17)
 - [metheor](https://github.com/dohlee/metheor) - Fast DNA methylation heterogeneity from bisulfite alignments. (★ 54, pushed 2025-08-25)
+- [bronko](https://github.com/treangenlab/bronko) - Alignment-free detection of viral genome variation from sequencing data. (★ 47, pushed 2026-08-23)
 - [GFFx](https://github.com/Baohua-Chen/GFFx) - Fast genomic feature extraction from GFF files. (★ 46, pushed 2025-12-18)
+- [locityper](https://github.com/tprodanov/locityper) - Targeted genotyping of complex polymorphic genes. (★ 45, pushed 2026-08-25)
+- [JanusX](https://github.com/FJingxian/JanusX) - Unified platform for genome-wide association studies and genomic selection. (★ 37, pushed 2026-08-20)
 - [mehari](https://github.com/varfish-org/mehari) - Sequence ontology and HGVS annotation of VCF files. (★ 32, pushed 2026-08-21)
-- [vcf2parquet](https://github.com/natir/vcf2parquet) - Converter from VCF to Parquet. (★ 32, pushed 2025-01-23)
-- [gvcf_norm](https://github.com/mlin/gvcf_norm) - Allele normalizer for gVCF files. (★ 9, pushed 2025-05-04)
+- [ferro-hgvs](https://github.com/fulcrumgenomics/ferro-hgvs) - HGVS variant nomenclature parser and normalizer. (★ 27, pushed 2026-08-29)
+- [snpick](https://github.com/PathoGenOmics-Lab/snpick) - Memory-efficient SNP extraction from large genomic alignments. (★ 17, pushed 2026-08-22)
 - [atg](https://github.com/anergictcell/atg) - Library and CLI for genomic transcripts. (★ 7, pushed 2026-04-14)
+- [cfDNAlab](https://github.com/BesenbacherLab/cfDNAlab) - Extracts bias-corrected fragmentation patterns from cell-free DNA. (★ 6, pushed 2026-08-12)
+- [eidolon](https://github.com/ncsa/eidolon) - Sequencing simulator with cancer genetics and complex variant models. (★ 4, pushed 2026-08-31)
 - [AnnoCAT](https://github.com/annocat-project/AnnoCAT) - Local GRCh38 variant annotation and whole-genome review using fastVEP, DuckDB, and Parquet. (★ 0, pushed 2026-08-26)
 
 ### Long Reads
 
 - [chopper](https://github.com/wdecoster/chopper) - Filtering and trimming for PacBio and Nanopore FASTQ files. (★ 259, pushed 2026-08-03)
 - [longshot](https://github.com/pjedge/longshot) - Diploid SNV caller for error-prone long reads. (★ 212, pushed 2024-04-26)
+- [cramino](https://github.com/wdecoster/cramino) - Fast BAM and CRAM quality evaluation for long-read datasets. (★ 189, pushed 2026-08-17)
 - [trgt](https://github.com/PacificBiosciences/trgt) - Tandem repeat genotyping from PacBio HiFi data. (★ 144, pushed 2026-06-10)
 - [nanoq](https://github.com/esteinig/nanoq) - Minimal quality control for Oxford Nanopore reads. (★ 139, pushed 2024-09-16)
 - [barbell](https://github.com/rickbeeloo/barbell) - Fast Nanopore demultiplexing. (★ 106, pushed 2026-07-18)
+- [longcallR](https://github.com/huangnengCSU/longcallR) - SNP calling, haplotype phasing, and allele-specific analysis from long-read RNA-seq. (★ 96, pushed 2026-08-02)
 - [lrge](https://github.com/mbhall88/lrge) - Genome size estimation from long-read overlaps. (★ 91, pushed 2026-08-28)
 - [yacrd](https://github.com/natir/yacrd) - Chimeric read detector for long-read datasets. (★ 88, pushed 2024-11-07)
 - [HiPhase](https://github.com/PacificBiosciences/HiPhase) - Small-variant, SV, and STR phasing for PacBio HiFi reads. (★ 87, pushed 2026-05-27)
+- [devider](https://github.com/bluenote-1577/devider) - Reconstructs diverse haplotypes from heterogeneous long-read sequencing. (★ 48, pushed 2026-08-05)
+- [STRdust](https://github.com/wdecoster/STRdust) - Tandem repeat genotyping from long reads. (★ 27, pushed 2026-08-29)
+- [CycSim](https://github.com/BioEarthDigital/CycSim) - Context-aware long-read simulator for mapping-parameter optimization. (★ 13, pushed 2026-08-19)
+- [inquiSTR](https://github.com/wdecoster/inquiSTR) - Population-scale tandem repeat genotyping from long reads. (★ 12, pushed 2026-08-29)
+- [DeepChopper](https://github.com/ylab-hi/DeepChopper) - Genomic language model that mitigates chimera artifacts in Nanopore direct RNA sequencing. (★ 9, pushed 2026-08-28)
+- [fishnet](https://github.com/dietvin/fishnet) - Nanopore signal-to-sequence alignment. (★ 7, pushed 2026-08-27)
+- [nanoget-rs](https://github.com/wdecoster/nanoget-rs) - Fast extraction of Nanopore sequencing metrics. (★ 7, pushed 2026-08-03)
 
 ### Assembly and Pangenomes
 
 - [myloasm](https://github.com/bluenote-1577/myloasm) - High-resolution long-read metagenome assembler. (★ 166, pushed 2026-07-03)
 - [seqwish](https://github.com/pangenome/seqwish) - Alignment-to-variation-graph inducer for building pangenome graphs. (★ 165, pushed 2026-07-29)
-- [panacus](https://github.com/marschall-lab/panacus) - Statistics for GFA-formatted pangenome graphs. (★ 138, pushed 2026-08-12)
+- [panacus](https://github.com/codialab/panacus) - Statistics for GFA-formatted pangenome graphs. (★ 138, pushed 2026-08-12)
 - [impg](https://github.com/pangenome/impg) - Implicit pangenome graph toolkit. (★ 110, pushed 2026-08-08)
 - [ggcat](https://github.com/algbio/ggcat) - Compacted and colored de Bruijn graph construction and querying. (★ 101, pushed 2026-08-25)
+- [gbwt-rs](https://github.com/jltsiren/gbwt-rs) - GBZ file format and related pangenome graph structures. (★ 46, pushed 2026-08-24)
 - [gafpack](https://github.com/pangenome/gafpack) - Conversion of variation-graph alignments into node coverage maps. (★ 28, pushed 2026-01-21)
+- [gbz-base](https://github.com/jltsiren/gbz-base) - SQLite-backed indexed file formats for pangenome graphs. (★ 16, pushed 2026-08-24)
 - [gfatk](https://github.com/tolkit/gfatk) - Toolkit for plant organellar Graphical Fragment Assembly graphs. (★ 16, pushed 2025-09-10)
 - [seqrush](https://github.com/pangenome/seqrush) - Online induction of bidirected pangenome variation graphs. (★ 12, pushed 2025-10-21)
+- [pandedup](https://github.com/RagnarGrootKoerkamp/pandedup) - Minimizer-based k-mer spectrum construction from AGC pangenomes. (★ 7, pushed 2026-08-03)
 
 ### Single-cell and RNA
 
+- [salmon](https://github.com/COMBINE-lab/salmon) - Transcript-level RNA-seq quantification using selective alignment. (★ 927, pushed 2026-08-30)
+- [cellranger](https://github.com/10XGenomics/cellranger) - 10x Genomics single-cell analysis pipeline with a large Rust core. (★ 474, pushed 2026-08-17)
 - [SnapATAC2](https://github.com/kaizhang/SnapATAC2) - Single-cell epigenomics analysis tools. (★ 323, pushed 2026-08-15)
 - [alevin-fry](https://github.com/COMBINE-lab/alevin-fry) - Efficient processing of single-cell sequencing data, focused on transcriptomics. (★ 215, pushed 2026-08-15)
 - [proseg](https://github.com/dcjones/proseg) - Probabilistic cell segmentation for spatial transcriptomics. (★ 187, pushed 2026-08-28)
 - [oarfish](https://github.com/COMBINE-lab/oarfish) - Quantification for long-read RNA-seq. (★ 123, pushed 2026-08-19)
 - [simpleaf](https://github.com/COMBINE-lab/simpleaf) - Workflow wrapper that simplifies alevin-fry analyses. (★ 68, pushed 2026-08-30)
+- [cyto](https://github.com/ArcInstitute/cyto) - Mapper for 10x Flex single-cell reads with fixed abstract geometries. (★ 48, pushed 2026-08-27)
 - [squab](https://github.com/zaeleus/squab) - Alignment-based gene expression quantification. (★ 40, pushed 2026-08-04)
 - [piscem](https://github.com/COMBINE-lab/piscem) - Next-generation sequence indexing and mapping components. (★ 37, pushed 2026-08-30)
 - [rnapkin](https://github.com/ukmrs/rnapkin) - Fast drawing of RNA secondary structure. (★ 10, pushed 2025-11-22)
@@ -198,47 +245,58 @@ _Last metadata fetch: 2026-08-30T13:55:17.284954+00:00_
 - [unicore](https://github.com/steineggerlab/unicore) - Core-gene phylogeny using Foldseek and ProstT5. (★ 91, pushed 2026-03-12)
 - [pdbtbx](https://github.com/douweschulte/pdbtbx) - Library for reading, editing, and writing PDB and mmCIF files. (★ 73, pushed 2026-06-20)
 - [mzcore](https://github.com/rusteomics/mzcore) - Peptide-centric mass spectrometry calculations around PSI standards. (★ 51, pushed 2026-08-17)
-- [mzdata](https://github.com/mobiusklein/mzdata) - Readers and writers for mass spectrometry file formats. (★ 44, pushed 2026-08-23)
+- [mzdata](https://github.com/mobiusklein/mzdata) - Readers and writers for mass spectrometry file formats. (★ 44, pushed 2026-08-30)
 - [annotator](https://github.com/snijderlab/annotator) - Interactive annotation of complex mass spectra, one spectrum at a time. (★ 42, pushed 2026-08-17)
 - [timsrust](https://github.com/MannLabs/timsrust) - High-performance access to Bruker timsTOF mass spectrometry data. (★ 35, pushed 2026-08-26)
+- [ProForma](https://github.com/HUPO-PSI/ProForma) - Reference implementation of HUPO-PSI peptidoform notation. (★ 26, pushed 2026-08-14)
 - [align-cli](https://github.com/snijderlab/align-cli) - Pairwise alignment CLI supporting mass-based protein alignment. (★ 17, pushed 2026-08-19)
+- [OpenTFRaw](https://github.com/Sigilweaver/OpenTFRaw) - Pure-Rust reader for Thermo Fisher RAW mass-spectrometry files, with Python bindings. (★ 13, pushed 2026-08-22)
+- [OpenMassSpec](https://github.com/Sigilweaver/OpenMassSpec) - High-performance Rust and Python readers for mass-spectrometry raw data. (★ 10, pushed 2026-08-30)
 - [arpeggia](https://github.com/y1zhou/arpeggia) - Calculates interatomic interactions in molecular structures. (★ 8, pushed 2026-08-28)
 
 ### Protein Engineering
 
 - [ferritin](https://github.com/ferritin-bio/ferritin) - Utilities for protein structures, protein language models, and LigandMPNN-style sequence-design workflows. (★ 34, pushed 2026-08-30)
 - [sc-rs](https://github.com/cytokineking/sc-rs) - Scores the shape complementarity of protein-protein interfaces using the Lawrence and Colman statistic. (★ 20, pushed 2025-10-02)
-- [heme](https://github.com/dacarlin/heme) - Reads protein structures and featurizes them for graph-based generative design models. (★ 4, pushed 2024-07-27)
+- [haddock-restraints](https://github.com/haddocking/haddock-restraints) - Generates docking restraints for HADDOCK. (★ 7, pushed 2026-08-13)
 - [dreid-pack](https://github.com/caltechmsc/dreid-pack) - Packs protein side chains with the DREIDING force field, dead-end elimination, and tree-decomposition search. (★ 2, pushed 2026-04-05)
 
 ### Workflows and Infrastructure
 
+- [rosalind](https://github.com/logannye/rosalind) - Deterministic, resource-governed per-locus genomics analyses with transactional artifacts and replay. (★ 278, pushed 2026-08-01)
 - [nextclade](https://github.com/nextstrain/nextclade) - Viral genome alignment, clade assignment, and quality checks. (★ 261, pushed 2026-08-19)
 - [scidataflow](https://github.com/vsbuffalo/scidataflow) - Command-line scientific data management. (★ 230, pushed 2024-11-04)
 - [biobear](https://github.com/wheretrue/biobear) - Query bioinformatics files through Arrow, Polars, and DuckDB. (★ 196, pushed 2025-03-10)
 - [polars-bio](https://github.com/biodatageeks/polars-bio) - Bioinformatics operations on Polars DataFrames. (★ 195, pushed 2026-08-28)
+- [sprocket](https://github.com/stjude-rust-labs/sprocket) - Bioinformatics workflow engine built on the Workflow Description Language. (★ 193, pushed 2026-08-29)
 - [exon](https://github.com/wheretrue/exon) - OLAP query engine for biology and life-science files. (★ 71, pushed 2025-03-26)
+- [crankshaft](https://github.com/stjude-rust-labs/crankshaft) - Headless workflow execution framework for local, cloud, and HPC backends. (★ 56, pushed 2026-08-26)
 - [ggetrs](https://github.com/noamteyssier/ggetrs) - Efficient querying of biological databases. (★ 45, pushed 2025-10-27)
+- [gen](https://github.com/genhub-bio/gen) - Version-control system for genome assemblies and annotations. (★ 35, pushed 2026-08-28)
 - [oxo-flow](https://github.com/Traitome/oxo-flow) - Rust-native bioinformatics pipeline engine with TOML workflows. (★ 17, pushed 2026-08-29)
 - [nwr](https://github.com/wang-q/nwr) - CLI for NCBI taxonomy, Newick trees, and assembly reports. (★ 9, pushed 2026-07-30)
 - [orthoSynAssign](https://github.com/stajichlab/orthoSynAssign) - Refines orthogroups with synteny information; Python interface with a Rust core. (★ 5, pushed 2026-08-13)
 
 ### Visualization
 
-- [kuva](https://github.com/Psy-Fer/kuva) - Scientific plotting library in Rust. (★ 865, pushed 2026-08-13)
+- [kuva](https://github.com/Psy-Fer/kuva) - Scientific plotting library in Rust. (★ 866, pushed 2026-08-13)
 - [tgv](https://github.com/zeqianli/tgv) - Terminal genome browser with vim-style motion. (★ 484, pushed 2026-07-26)
+- [molchanica](https://github.com/David-OConnor/molchanica) - Protein and molecule viewer, editor, and simulator. (★ 150, pushed 2026-08-26)
 - [plascad](https://github.com/David-OConnor/plascad) - Plasmid and primer design with cloning and restriction workflows. (★ 139, pushed 2025-12-21)
 - [alignoth](https://github.com/alignoth/alignoth) - Alignment plots from BAM files. (★ 132, pushed 2026-08-24)
+- [odon](https://github.com/alexcoulton/odon) - Ultra-fast spatial proteomics viewer for OME-Zarr data. (★ 78, pushed 2026-08-28)
+- [SVTopo](https://github.com/PacificBiosciences/SVTopo) - Complex structural variant visualization for PacBio HiFi data. (★ 51, pushed 2026-08-06)
 - [SeqTUI](https://github.com/ranwez-search/SeqTUI) - Terminal viewer and toolkit for DNA and protein sequences. (★ 46, pushed 2026-03-10)
+- [termal](https://github.com/sib-swiss/termal) - Terminal multiple-sequence-alignment viewer for remote and HPC workflows. (★ 33, pushed 2026-08-27)
+- [fqless](https://github.com/openpaul/fqless) - Pager-style viewer for FASTQ files. (★ 26, pushed 2026-07-31)
 - [SeqSizzle](https://github.com/ChangqingW/SeqSizzle) - FASTQ pager with fuzzy matching and adaptor coloring. (★ 25, pushed 2026-08-04)
 - [igv-rs](https://github.com/AI4S-YB/igv-rs) - Interactive terminal genome viewer for FASTA, VCF, BAM, GFF, and BED. (★ 11, pushed 2026-08-27)
 
 ### Learning Resources and Related Lists
 
-- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) - General awesome list for Rust, including a short Bioinformatics section. (★ 59059, pushed 2026-08-29)
+- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) - General awesome list for Rust, including a short Bioinformatics section. (★ 59069, pushed 2026-08-30)
 - [Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics) - Language-agnostic curated list of bioinformatics software. (★ 4260, pushed 2026-04-07)
 - [rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics) - Collection of genomics software tools written in Rust. (★ 135, pushed 2026-08-18)
-- [Are we bio yet?](https://rust4bio.github.io/arewebioyet/) - Earlier public registry of Rust crates for bioinformatics. (★ 19, pushed 2022-10-22)
 - [Rust-Bio documentation](https://rust-bio.github.io/) - Project site and documentation for the Rust-Bio ecosystem.
 
 ## Retired
@@ -246,7 +304,14 @@ _Last metadata fetch: 2026-08-30T13:55:17.284954+00:00_
 Archived or otherwise removed from the living catalog. Kept here so radar history is not lost.
 
 - [wdl](https://github.com/stjude-rust-labs/wdl) - Rust crates for Workflow Description Language documents. (★ 62, pushed 2025-09-23, archived)
+- [ngs](https://github.com/stjude-rust-labs/ngs) - Command-line utility for working with next-generation sequencing files. (★ 39, pushed 2025-06-24)
+- [vcf2parquet](https://github.com/natir/vcf2parquet) - Converter from VCF to Parquet. (★ 32, pushed 2025-01-23)
 - [vircov](https://github.com/esteinig/vircov) - Viral genome coverage evaluation for metagenomic diagnostics. (★ 27, pushed 2026-07-09, archived)
+- [Are we bio yet?](https://rust4bio.github.io/arewebioyet/) - Earlier public registry of Rust crates for bioinformatics. (★ 19, pushed 2022-10-22)
+- [nuc2bit](https://github.com/natir/nuc2bit) - Fast 2-bit encoding and decoding of nucleotide sequences. (★ 14, pushed 2020-10-14)
+- [gvcf_norm](https://github.com/mlin/gvcf_norm) - Allele normalizer for gVCF files. (★ 9, pushed 2025-05-04)
+- [recmap](https://github.com/vsbuffalo/recmap) - Library and CLI for recombination maps. (★ 9, pushed 2024-08-09)
+- [heme](https://github.com/dacarlin/heme) - Reads protein structures and featurizes them for graph-based generative design models. (★ 4, pushed 2024-07-27)
 
 ## Related
 

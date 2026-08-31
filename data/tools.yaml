@@ -31,8 +31,8 @@
   description: FASTA and FASTQ readers and writers designed for high throughput.
 
 - name: coitrees
-  url: https://github.com/vsbuffalo/coitrees
-  repo: vsbuffalo/coitrees
+  url: https://github.com/dcjones/coitrees
+  repo: dcjones/coitrees
   category: core-libraries
   description: Cache-oblivious interval trees for fast overlap queries on genomic intervals.
 
@@ -77,6 +77,7 @@
   repo: natir/nuc2bit
   category: core-libraries
   description: Fast 2-bit encoding and decoding of nucleotide sequences.
+  status: retired
 
 - name: ibu
   url: https://github.com/noamteyssier/ibu
@@ -155,6 +156,7 @@
   repo: vsbuffalo/recmap
   category: sequence-io-and-formats
   description: Library and CLI for recombination maps.
+  status: retired
 
 - name: fq
   url: https://github.com/stjude-rust-labs/fq
@@ -167,6 +169,7 @@
   repo: stjude-rust-labs/ngs
   category: sequence-io-and-formats
   description: Command-line utility for working with next-generation sequencing files.
+  status: retired
 
 - name: rasusa
   url: https://github.com/mbhall88/rasusa
@@ -223,8 +226,8 @@
   description: Pure Rust port of the minimap2 aligner.
 
 - name: rustybam
-  url: https://github.com/mrvollger/rustybam
-  repo: mrvollger/rustybam
+  url: https://github.com/vollgerlab/rustybam
+  repo: vollgerlab/rustybam
   category: alignment-and-mapping
   description: Bioinformatics toolkit focused on BAM and pangenome alignments.
 
@@ -275,12 +278,14 @@
   repo: natir/vcf2parquet
   category: variants-and-annotation
   description: Converter from VCF to Parquet.
+  status: retired
 
 - name: gvcf_norm
   url: https://github.com/mlin/gvcf_norm
   repo: mlin/gvcf_norm
   category: variants-and-annotation
   description: Allele normalizer for gVCF files.
+  status: retired
 
 - name: GFFx
   url: https://github.com/Baohua-Chen/GFFx
@@ -409,8 +414,8 @@
   description: Implicit pangenome graph toolkit.
 
 - name: panacus
-  url: https://github.com/marschall-lab/panacus
-  repo: marschall-lab/panacus
+  url: https://github.com/codialab/panacus
+  repo: codialab/panacus
   category: assembly-and-pangenomes
   description: Statistics for GFA-formatted pangenome graphs.
 
@@ -624,6 +629,7 @@
   repo: dacarlin/heme
   category: protein-engineering
   description: Reads protein structures and featurizes them for graph-based generative design models.
+  status: retired
 
 - name: dreid-pack
   url: https://github.com/caltechmsc/dreid-pack
@@ -733,6 +739,7 @@
   repo: arewebioyet/arewebioyet.github.io
   category: learning-resources
   description: Earlier public registry of Rust crates for bioinformatics.
+  status: retired
 
 - name: rust-in-bioinformatics
   url: https://github.com/sharkLoc/rust-in-bioinformatics
@@ -876,3 +883,393 @@
   repo: stajichlab/orthoSynAssign
   category: workflows-and-infrastructure
   description: Refines orthogroups with synteny information; Python interface with a Rust core.
+
+- name: salmon
+  url: https://github.com/COMBINE-lab/salmon
+  repo: COMBINE-lab/salmon
+  category: single-cell-and-rna
+  description: Transcript-level RNA-seq quantification using selective alignment.
+
+- name: cellranger
+  url: https://github.com/10XGenomics/cellranger
+  repo: 10XGenomics/cellranger
+  category: single-cell-and-rna
+  description: 10x Genomics single-cell analysis pipeline with a large Rust core.
+
+- name: Bismark
+  url: https://github.com/FelixKrueger/Bismark
+  repo: FelixKrueger/Bismark
+  category: variants-and-annotation
+  description: Maps bisulfite-converted reads and calls cytosine methylation.
+
+- name: cramino
+  url: https://github.com/wdecoster/cramino
+  repo: wdecoster/cramino
+  category: long-reads
+  description: Fast BAM and CRAM quality evaluation for long-read datasets.
+
+- name: ngless
+  url: https://github.com/ngless-toolkit/ngless
+  repo: ngless-toolkit/ngless
+  category: metagenomics
+  description: Domain-specific language for next-generation sequencing and metagenomic workflows.
+
+- name: longcallR
+  url: https://github.com/huangnengCSU/longcallR
+  repo: huangnengCSU/longcallR
+  category: long-reads
+  description: SNP calling, haplotype phasing, and allele-specific analysis from long-read RNA-seq.
+
+- name: odon
+  url: https://github.com/alexcoulton/odon
+  repo: alexcoulton/odon
+  category: visualization
+  description: Ultra-fast spatial proteomics viewer for OME-Zarr data.
+
+- name: RastQC
+  url: https://github.com/Huang-lab/RastQC
+  repo: Huang-lab/RastQC
+  category: sequence-io-and-formats
+  description: High-throughput sequencing quality control covering short and long reads.
+
+- name: SVTopo
+  url: https://github.com/PacificBiosciences/SVTopo
+  repo: PacificBiosciences/SVTopo
+  category: visualization
+  description: Complex structural variant visualization for PacBio HiFi data.
+
+- name: cyto
+  url: https://github.com/ArcInstitute/cyto
+  repo: ArcInstitute/cyto
+  category: single-cell-and-rna
+  description: Mapper for 10x Flex single-cell reads with fixed abstract geometries.
+
+- name: devider
+  url: https://github.com/bluenote-1577/devider
+  repo: bluenote-1577/devider
+  category: long-reads
+  description: Reconstructs diverse haplotypes from heterogeneous long-read sequencing.
+
+- name: bronko
+  url: https://github.com/treangenlab/bronko
+  repo: treangenlab/bronko
+  category: variants-and-annotation
+  description: Alignment-free detection of viral genome variation from sequencing data.
+
+- name: locityper
+  url: https://github.com/tprodanov/locityper
+  repo: tprodanov/locityper
+  category: variants-and-annotation
+  description: Targeted genotyping of complex polymorphic genes.
+
+- name: gtfsort
+  url: https://github.com/alejandrogzi/gtfsort
+  repo: alejandrogzi/gtfsort
+  category: sequence-io-and-formats
+  description: Lexicographic sorter for GTF and GFF annotation files.
+
+- name: JanusX
+  url: https://github.com/FJingxian/JanusX
+  repo: FJingxian/JanusX
+  category: variants-and-annotation
+  description: Unified platform for genome-wide association studies and genomic selection.
+
+- name: MAGmax
+  url: https://github.com/soedinglab/MAGmax
+  repo: soedinglab/MAGmax
+  category: metagenomics
+  description: Dereplicates and enriches metagenome-assembled genomes across samples.
+
+- name: termal
+  url: https://github.com/sib-swiss/termal
+  repo: sib-swiss/termal
+  category: visualization
+  description: Terminal multiple-sequence-alignment viewer for remote and HPC workflows.
+
+- name: sketchlib.rust
+  url: https://github.com/bacpop/sketchlib.rust
+  repo: bacpop/sketchlib.rust
+  category: metagenomics
+  description: Fast sequence distance estimates from genomic sketches.
+
+- name: xgt
+  url: https://github.com/Ebedthan/xgt
+  repo: Ebedthan/xgt
+  category: metagenomics
+  description: Command-line client for querying the Genome Taxonomy Database.
+
+- name: STRdust
+  url: https://github.com/wdecoster/STRdust
+  repo: wdecoster/STRdust
+  category: long-reads
+  description: Tandem repeat genotyping from long reads.
+
+- name: phylo2vec
+  url: https://github.com/sbhattlab/phylo2vec
+  repo: sbhattlab/phylo2vec
+  category: core-libraries
+  description: Vector representation and library for phylogenetic tree manipulation.
+
+- name: simd-sketch
+  url: https://github.com/RagnarGrootKoerkamp/simd-sketch
+  repo: RagnarGrootKoerkamp/simd-sketch
+  category: core-libraries
+  description: SIMD-accelerated bottom-s and s-bucket genomic sketches.
+
+- name: ITSxRust
+  url: https://github.com/ayobi/ITSxRust
+  repo: ayobi/ITSxRust
+  category: metagenomics
+  description: ITS region extraction for long-read amplicon sequencing.
+
+- name: gbz-base
+  url: https://github.com/jltsiren/gbz-base
+  repo: jltsiren/gbz-base
+  category: assembly-and-pangenomes
+  description: SQLite-backed indexed file formats for pangenome graphs.
+
+- name: CycSim
+  url: https://github.com/BioEarthDigital/CycSim
+  repo: BioEarthDigital/CycSim
+  category: long-reads
+  description: Context-aware long-read simulator for mapping-parameter optimization.
+
+- name: inquiSTR
+  url: https://github.com/wdecoster/inquiSTR
+  repo: wdecoster/inquiSTR
+  category: long-reads
+  description: Population-scale tandem repeat genotyping from long reads.
+
+- name: skiver
+  url: https://github.com/GZHoffie/skiver
+  repo: GZHoffie/skiver
+  category: sequence-io-and-formats
+  description: Reference-free sequencing error-rate estimates using (k, v)-mer sketches.
+
+- name: dna_parser
+  url: https://github.com/Mvila035/dna_parser
+  repo: Mvila035/dna_parser
+  category: core-libraries
+  description: Python library with a Rust core for encoding DNA and RNA sequences for machine learning.
+
+- name: umgap
+  url: https://github.com/unipept/umgap
+  repo: unipept/umgap
+  category: metagenomics
+  description: Taxonomic classifier for shotgun metagenomic reads.
+
+- name: DeepChopper
+  url: https://github.com/ylab-hi/DeepChopper
+  repo: ylab-hi/DeepChopper
+  category: long-reads
+  description: Genomic language model that mitigates chimera artifacts in Nanopore direct RNA sequencing.
+
+- name: fishnet
+  url: https://github.com/dietvin/fishnet
+  repo: dietvin/fishnet
+  category: long-reads
+  description: Nanopore signal-to-sequence alignment.
+
+- name: eidolon
+  url: https://github.com/ncsa/eidolon
+  repo: ncsa/eidolon
+  category: variants-and-annotation
+  description: Sequencing simulator with cancer genetics and complex variant models.
+
+- name: emits
+  url: https://github.com/ayobi/emits
+  repo: ayobi/emits
+  category: metagenomics
+  description: Expectation-maximization abundance estimation for fungal ITS communities from long reads.
+
+- name: rosalind
+  url: https://github.com/logannye/rosalind
+  repo: logannye/rosalind
+  category: workflows-and-infrastructure
+  description: Deterministic, resource-governed per-locus genomics analyses with transactional artifacts and replay.
+
+- name: sprocket
+  url: https://github.com/stjude-rust-labs/sprocket
+  repo: stjude-rust-labs/sprocket
+  category: workflows-and-infrastructure
+  description: Bioinformatics workflow engine built on the Workflow Description Language.
+
+- name: molchanica
+  url: https://github.com/David-OConnor/molchanica
+  repo: David-OConnor/molchanica
+  category: visualization
+  description: Protein and molecule viewer, editor, and simulator.
+
+- name: RustQC
+  url: https://github.com/seqeralabs/RustQC
+  repo: seqeralabs/RustQC
+  category: sequence-io-and-formats
+  description: Fast quality-control tools for sequencing data.
+
+- name: rust-lapper
+  url: https://github.com/sstadick/rust-lapper
+  repo: sstadick/rust-lapper
+  category: core-libraries
+  description: Fast interval-tree library for overlap queries.
+
+- name: crankshaft
+  url: https://github.com/stjude-rust-labs/crankshaft
+  repo: stjude-rust-labs/crankshaft
+  category: workflows-and-infrastructure
+  description: Headless workflow execution framework for local, cloud, and HPC backends.
+
+- name: fgumi
+  url: https://github.com/fulcrumgenomics/fgumi
+  repo: fulcrumgenomics/fgumi
+  category: sequence-io-and-formats
+  description: High-performance UMI processing for NGS data.
+
+- name: gbwt-rs
+  url: https://github.com/jltsiren/gbwt-rs
+  repo: jltsiren/gbwt-rs
+  category: assembly-and-pangenomes
+  description: GBZ file format and related pangenome graph structures.
+
+- name: gen
+  url: https://github.com/genhub-bio/gen
+  repo: genhub-bio/gen
+  category: workflows-and-infrastructure
+  description: Version-control system for genome assemblies and annotations.
+
+- name: FasterFASTA
+  url: https://github.com/unum-science/FasterFASTA
+  repo: unum-science/FasterFASTA
+  category: sequence-io-and-formats
+  description: FASTA and FASTQ parsing, sorting, deduplication, filtering, and statistics.
+
+- name: microBioRust
+  url: https://github.com/LCrossman/microBioRust
+  repo: LCrossman/microBioRust
+  category: core-libraries
+  description: Library for microbial genomics data structures and analyses.
+
+- name: seqair
+  url: https://github.com/Softleif/seqair
+  repo: Softleif/seqair
+  category: sequence-io-and-formats
+  description: BAM, SAM, CRAM, and FASTA reader with pileup and BCF writing.
+
+- name: ferro-hgvs
+  url: https://github.com/fulcrumgenomics/ferro-hgvs
+  repo: fulcrumgenomics/ferro-hgvs
+  category: variants-and-annotation
+  description: HGVS variant nomenclature parser and normalizer.
+
+- name: fqless
+  url: https://github.com/openpaul/fqless
+  repo: openpaul/fqless
+  category: visualization
+  description: Pager-style viewer for FASTQ files.
+
+- name: ProForma
+  url: https://github.com/HUPO-PSI/ProForma
+  repo: HUPO-PSI/ProForma
+  category: proteomics-and-structure
+  description: Reference implementation of HUPO-PSI peptidoform notation.
+
+- name: bed2gtf
+  url: https://github.com/alejandrogzi/bed2gtf
+  repo: alejandrogzi/bed2gtf
+  category: sequence-io-and-formats
+  description: High-performance BED-to-GTF converter.
+
+- name: packed-seq
+  url: https://github.com/rust-seq/packed-seq
+  repo: rust-seq/packed-seq
+  category: core-libraries
+  description: Bit-packed nucleotide sequence trait and implementations.
+
+- name: snpick
+  url: https://github.com/PathoGenOmics-Lab/snpick
+  repo: PathoGenOmics-Lab/snpick
+  category: variants-and-annotation
+  description: Memory-efficient SNP extraction from large genomic alignments.
+
+- name: chelae
+  url: https://github.com/fulcrumgenomics/chelae
+  repo: fulcrumgenomics/chelae
+  category: sequence-io-and-formats
+  description: Accurate read trimming for NGS data.
+
+- name: irma-core
+  url: https://github.com/CDCgov/irma-core
+  repo: CDCgov/irma-core
+  category: alignment-and-mapping
+  description: Core library accelerating IRMA virus sequencing workflows.
+
+- name: OpenTFRaw
+  url: https://github.com/Sigilweaver/OpenTFRaw
+  repo: Sigilweaver/OpenTFRaw
+  category: proteomics-and-structure
+  description: Pure-Rust reader for Thermo Fisher RAW mass-spectrometry files, with Python bindings.
+
+- name: OpenMassSpec
+  url: https://github.com/Sigilweaver/OpenMassSpec
+  repo: Sigilweaver/OpenMassSpec
+  category: proteomics-and-structure
+  description: High-performance Rust and Python readers for mass-spectrometry raw data.
+
+- name: bgzf
+  url: https://github.com/fulcrumgenomics/bgzf
+  repo: fulcrumgenomics/bgzf
+  category: sequence-io-and-formats
+  description: BGZF compression library.
+
+- name: mako
+  url: https://github.com/fg-labs/mako
+  repo: fg-labs/mako
+  category: sequence-io-and-formats
+  description: Fast SAM and BAM sorter.
+
+- name: zoe
+  url: https://github.com/CDCgov/zoe
+  repo: CDCgov/zoe
+  category: core-libraries
+  description: Library for common data formats and methods in RNA-virus sequencing.
+
+- name: nanoget-rs
+  url: https://github.com/wdecoster/nanoget-rs
+  repo: wdecoster/nanoget-rs
+  category: long-reads
+  description: Fast extraction of Nanopore sequencing metrics.
+
+- name: pandedup
+  url: https://github.com/RagnarGrootKoerkamp/pandedup
+  repo: RagnarGrootKoerkamp/pandedup
+  category: assembly-and-pangenomes
+  description: Minimizer-based k-mer spectrum construction from AGC pangenomes.
+
+- name: haddock-restraints
+  url: https://github.com/haddocking/haddock-restraints
+  repo: haddocking/haddock-restraints
+  category: protein-engineering
+  description: Generates docking restraints for HADDOCK.
+
+- name: cfDNAlab
+  url: https://github.com/BesenbacherLab/cfDNAlab
+  repo: BesenbacherLab/cfDNAlab
+  category: variants-and-annotation
+  description: Extracts bias-corrected fragmentation patterns from cell-free DNA.
+
+- name: holodeck
+  url: https://github.com/fg-labs/holodeck
+  repo: fg-labs/holodeck
+  category: sequence-io-and-formats
+  description: NGS read simulator.
+
+- name: rs_demultiplex
+  url: https://github.com/colindaven/rs_demultiplex
+  repo: colindaven/rs_demultiplex
+  category: sequence-io-and-formats
+  description: Fast FASTQ demultiplexing.
+
+- name: umi-tools-rs
+  url: https://github.com/vertti/umi-tools-rs
+  repo: vertti/umi-tools-rs
+  category: sequence-io-and-formats
+  description: Drop-in Rust replacement for UMI-tools.
