@@ -81,7 +81,7 @@ Crossed a threshold: star jump, new release, or a cold repository pushed.
 
 - [simpleaf](https://github.com/COMBINE-lab/simpleaf) — new release v0.29.0
 - [mzdata](https://github.com/mobiusklein/mzdata) — new release v0.66.6
-- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) — stars 59059 -> 59069
+- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) — stars 59059 -> 59073
 
 ## Possibly stale
 
