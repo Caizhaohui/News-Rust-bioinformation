@@ -7,8 +7,17 @@ use serde_yaml::Value;
 use url::Url;
 
 pub const REQUIRED_FIELDS: &[&str] = &["name", "url", "category", "description"];
-pub const ALLOWED_FIELDS: &[&str] = &["name", "url", "repo", "category", "description", "status"];
+pub const ALLOWED_FIELDS: &[&str] = &[
+    "name",
+    "url",
+    "repo",
+    "category",
+    "description",
+    "status",
+    "papers",
+];
 pub const VALID_STATUSES: &[&str] = &["retired"];
+pub const PAPER_FIELDS: &[&str] = &["title", "url"];
 
 const GITHUB_RESERVED_OWNERS: &[&str] = &[
     "about",
@@ -155,6 +164,12 @@ pub const CATEGORIES: &[Category] = &[
 ];
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+pub struct Paper {
+    pub title: String,
+    pub url: String,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Tool {
     pub name: String,
     pub url: String,
@@ -163,6 +178,7 @@ pub struct Tool {
     pub description: String,
     pub status: Option<String>,
     pub reason: Option<String>,
+    pub papers: Vec<Paper>,
 }
 
 impl Tool {
@@ -174,6 +190,31 @@ impl Tool {
         self.reason = Some(reason.into());
         self
     }
+
+    pub fn paper_links_markdown(&self) -> String {
+        if self.papers.is_empty() {
+            return String::new();
+        }
+        let links: Vec<String> = self
+            .papers
+            .iter()
+            .map(|paper| format!("[{}]({})", display_paper_title(&paper.title), paper.url))
+            .collect();
+        format!(" · {}", links.join(" · "))
+    }
+}
+
+const PAPER_TITLE_MAX_CHARS: usize = 140;
+
+fn display_paper_title(title: &str) -> String {
+    let title = title.trim();
+    let count = title.chars().count();
+    if count <= PAPER_TITLE_MAX_CHARS {
+        return title.to_string();
+    }
+    let keep = PAPER_TITLE_MAX_CHARS.saturating_sub(1);
+    let truncated: String = title.chars().take(keep).collect();
+    format!("{truncated}…")
 }
 
 pub fn heading_anchor(title: &str) -> String {
@@ -254,6 +295,106 @@ fn mapping_keys(map: &serde_yaml::Mapping) -> HashSet<String> {
         .collect()
 }
 
+fn mapping_papers(map: &serde_yaml::Mapping) -> Vec<Paper> {
+    let Some(Value::Sequence(seq)) = map.get(Value::String("papers".into())) else {
+        return Vec::new();
+    };
+    seq.iter()
+        .filter_map(|item| {
+            let paper = item.as_mapping()?;
+            let title = mapping_str(paper, "title")?.trim().to_string();
+            let url = mapping_str(paper, "url")?.trim().to_string();
+            if title.is_empty() || url.is_empty() {
+                return None;
+            }
+            Some(Paper { title, url })
+        })
+        .collect()
+}
+
+fn is_http_url(url: &str) -> bool {
+    Url::parse(url)
+        .ok()
+        .is_some_and(|parsed| parsed.scheme() == "http" || parsed.scheme() == "https")
+}
+
+fn paper_url_key(url: &str) -> String {
+    let key = normalize_url(url);
+    if !key.contains("biorxiv.org/content/") {
+        return key;
+    }
+    let bytes = key.as_bytes();
+    let mut digit_start = bytes.len();
+    while digit_start > 0 && bytes[digit_start - 1].is_ascii_digit() {
+        digit_start -= 1;
+    }
+    if digit_start > 0 && bytes[digit_start - 1] == b'v' && digit_start < bytes.len() {
+        key[..digit_start - 1].to_string()
+    } else {
+        key
+    }
+}
+
+fn paper_title_key(title: &str) -> String {
+    title
+        .trim()
+        .trim_end_matches('.')
+        .chars()
+        .filter(|ch| ch.is_alphanumeric())
+        .flat_map(char::to_lowercase)
+        .collect()
+}
+
+fn validate_papers(map: &serde_yaml::Mapping, prefix: &str, name: &str) -> Vec<String> {
+    let Some(value) = map.get(Value::String("papers".into())) else {
+        return Vec::new();
+    };
+    let Some(seq) = value.as_sequence() else {
+        return vec![format!("{prefix} ({name}): papers must be a list")];
+    };
+    if seq.is_empty() {
+        return vec![format!(
+            "{prefix} ({name}): omit empty papers instead of an empty list"
+        )];
+    }
+    let mut errors = Vec::new();
+    let mut urls = HashSet::new();
+    let mut titles = HashSet::new();
+    for (index, item) in seq.iter().enumerate() {
+        let paper_prefix = format!("{prefix} ({name}) papers[{}]", index + 1);
+        let Some(paper) = item.as_mapping() else {
+            errors.push(format!("{paper_prefix}: expected a mapping"));
+            continue;
+        };
+        let extra: Vec<String> = mapping_keys(paper)
+            .into_iter()
+            .filter(|key| !PAPER_FIELDS.contains(&key.as_str()))
+            .collect();
+        if !extra.is_empty() {
+            let mut extra = extra;
+            extra.sort();
+            errors.push(format!("{paper_prefix}: unknown fields {extra:?}"));
+        }
+        let title = mapping_str(paper, "title").unwrap_or_default();
+        let url = mapping_str(paper, "url").unwrap_or_default();
+        if title.trim().is_empty() {
+            errors.push(format!("{paper_prefix}: missing title"));
+        }
+        if url.trim().is_empty() {
+            errors.push(format!("{paper_prefix}: missing url"));
+        } else if !is_http_url(url.trim()) {
+            errors.push(format!("{paper_prefix}: url must be http(s)"));
+        }
+        if !url.trim().is_empty() && !urls.insert(paper_url_key(url.trim())) {
+            errors.push(format!("{paper_prefix}: duplicate paper url"));
+        }
+        if !title.trim().is_empty() && !titles.insert(paper_title_key(&title)) {
+            errors.push(format!("{paper_prefix}: duplicate paper title"));
+        }
+    }
+    errors
+}
+
 pub fn load_yaml_list(path: &Path) -> Result<Vec<Value>, String> {
     let text = std::fs::read_to_string(path).map_err(|err| err.to_string())?;
     let raw: Value = serde_yaml::from_str(&text).map_err(|err| err.to_string())?;
@@ -283,6 +424,7 @@ pub fn value_to_tool(value: &Value) -> Option<Tool> {
         description: mapping_str(map, "description")?,
         status: mapping_str(map, "status"),
         reason: None,
+        papers: mapping_papers(map),
     })
 }
 
@@ -358,6 +500,7 @@ pub fn validate_tool_docs(items: &[Value]) -> Vec<String> {
                 ));
             }
         }
+        errors.extend(validate_papers(map, &prefix, name.as_deref().unwrap_or("")));
         let extra: Vec<String> = mapping_keys(map)
             .into_iter()
             .filter(|key| !ALLOWED_FIELDS.contains(&key.as_str()))
@@ -546,6 +689,7 @@ mod tests {
             description: "Test.".into(),
             status: None,
             reason: None,
+            papers: vec![],
         }]);
         assert!(is_cataloged(
             &index,
@@ -571,6 +715,7 @@ mod tests {
                 description: "Test.".into(),
                 status: Some("retired".into()),
                 reason: None,
+                papers: vec![],
             },
             Tool {
                 name: "crate-only".into(),
@@ -580,6 +725,7 @@ mod tests {
                 description: "Test.".into(),
                 status: None,
                 reason: None,
+                papers: vec![],
             },
         ]);
         assert!(is_cataloged(&index, None, Some("o/gone")));
@@ -593,5 +739,77 @@ mod tests {
             Some("https://crates.io/crates/example"),
             None
         ));
+    }
+
+    fn docs_from(yaml: &str) -> Vec<Value> {
+        serde_yaml::from_str::<Value>(yaml)
+            .unwrap()
+            .as_sequence()
+            .unwrap()
+            .to_vec()
+    }
+
+    #[test]
+    fn papers_yaml_parses_and_rejects_empty_or_invalid() {
+        let ok = docs_from(
+            r#"
+- name: Demo
+  url: https://example.org/demo
+  category: core-libraries
+  description: Test.
+  papers:
+    - title: "Salmon provides fast and bias-aware quantification of transcript expression."
+      url: https://doi.org/10.1038/nmeth.4197
+"#,
+        );
+        assert!(validate_tool_docs(&ok).is_empty());
+        let tool = value_to_tool(&ok[0]).unwrap();
+        assert_eq!(tool.papers.len(), 1);
+        assert_eq!(tool.papers[0].url, "https://doi.org/10.1038/nmeth.4197");
+
+        let empty = docs_from(
+            r#"
+- name: Demo
+  url: https://example.org/demo
+  category: core-libraries
+  description: Test.
+  papers: []
+"#,
+        );
+        assert!(validate_tool_docs(&empty)
+            .iter()
+            .any(|err| err.contains("omit empty papers")));
+
+        let bad_url = docs_from(
+            r#"
+- name: Demo
+  url: https://example.org/demo
+  category: core-libraries
+  description: Test.
+  papers:
+    - title: "A paper."
+      url: ftp://example.org/paper
+"#,
+        );
+        assert!(validate_tool_docs(&bad_url)
+            .iter()
+            .any(|err| err.contains("url must be http(s)")));
+
+        let duplicate = docs_from(
+            r#"
+- name: Demo
+  url: https://example.org/demo
+  category: core-libraries
+  description: Test.
+  papers:
+    - title: "One paper."
+      url: https://doi.org/10.1038/nmeth.4197
+    - title: "Same paper."
+      url: https://doi.org/10.1038/nmeth.4197/
+"#,
+        );
+        assert!(validate_tool_docs(&duplicate)
+            .iter()
+            .any(|err| err.contains("duplicate paper url")));
     }
 }

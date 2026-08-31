@@ -5,6 +5,9 @@
   repo: rust-bio/rust-bio
   category: core-libraries
   description: Algorithms and data structures for sequence analysis, alignment, and common file parsers.
+  papers:
+    - title: "Rust-Bio: a fast and safe bioinformatics library."
+      url: https://doi.org/10.1093/bioinformatics/btv573
 
 - name: rust-htslib
   url: https://github.com/rust-bio/rust-htslib
@@ -230,6 +233,9 @@
   repo: vollgerlab/rustybam
   category: alignment-and-mapping
   description: Bioinformatics toolkit focused on BAM and pangenome alignments.
+  papers:
+    - title: "rustybam: a composable toolkit for alignment analysis and visualization with SafFire"
+      url: https://www.biorxiv.org/content/10.64898/2026.02.16.706142
 
 - name: perbase
   url: https://github.com/sstadick/perbase
@@ -418,6 +424,9 @@
   repo: codialab/panacus
   category: assembly-and-pangenomes
   description: Statistics for GFA-formatted pangenome graphs.
+  papers:
+    - title: "Panacus: fast and exact pangenome growth and core size estimation."
+      url: https://doi.org/10.1093/bioinformatics/btae720
 
 - name: seqwish
   url: https://github.com/pangenome/seqwish
@@ -799,6 +808,9 @@
   repo: bluenote-1577/savont
   category: metagenomics
   description: Calls amplicon sequence variants from 16S ONT and PacBio HiFi reads.
+  papers:
+    - title: "Sensitive long-read amplicon sequence variant recovery with savont"
+      url: https://www.biorxiv.org/content/10.64898/2026.05.26.727271
 
 - name: hyperex
   url: https://github.com/Ebedthan/hyperex
@@ -811,6 +823,9 @@
   repo: jianshu93/DartUniFrac
   category: metagenomics
   description: Approximates UniFrac distances with weighted MinHash sketches.
+  papers:
+    - title: "Megascale microbiome analysis with DartUniFrac."
+      url: https://doi.org/10.1038/s41587-026-03260-8
 
 - name: dada2-rs
   url: https://github.com/HPCBio/dada2-rs
@@ -835,6 +850,9 @@
   repo: Huang-lab/fastVEP
   category: variants-and-annotation
   description: High-performance variant effect predictor written in Rust.
+  papers:
+    - title: "fastVEP: A Fast, Comprehensive Variant Effect Predictor Written in Rust"
+      url: https://www.biorxiv.org/content/10.64898/2026.04.14.718452
 
 - name: AnnoCAT
   url: https://github.com/annocat-project/AnnoCAT
@@ -847,6 +865,9 @@
   repo: snijderlab/annotator
   category: proteomics-and-structure
   description: Interactive annotation of complex mass spectra, one spectrum at a time.
+  papers:
+    - title: "A Universal Spectrum Annotator for Complex Peptidoforms in Mass Spectrometry-Based Proteomics."
+      url: https://doi.org/10.1021/acs.analchem.5c02832
 
 - name: arpeggia
   url: https://github.com/y1zhou/arpeggia
@@ -883,204 +904,312 @@
   repo: stajichlab/orthoSynAssign
   category: workflows-and-infrastructure
   description: Refines orthogroups with synteny information; Python interface with a Rust core.
+  papers:
+    - title: "orthoSynAssign: refine orthogroups using synteny information"
+      url: https://www.biorxiv.org/content/10.64898/2026.08.10.744007
 
 - name: salmon
   url: https://github.com/COMBINE-lab/salmon
   repo: COMBINE-lab/salmon
   category: single-cell-and-rna
   description: Transcript-level RNA-seq quantification using selective alignment.
+  papers:
+    - title: "Salmon provides fast and bias-aware quantification of transcript expression."
+      url: https://doi.org/10.1038/nmeth.4197
 
 - name: cellranger
   url: https://github.com/10XGenomics/cellranger
   repo: 10XGenomics/cellranger
   category: single-cell-and-rna
   description: 10x Genomics single-cell analysis pipeline with a large Rust core.
+  papers:
+    - title: "Massively parallel digital transcriptional profiling of single cells."
+      url: https://doi.org/10.1038/ncomms14049
 
 - name: Bismark
   url: https://github.com/FelixKrueger/Bismark
   repo: FelixKrueger/Bismark
   category: variants-and-annotation
   description: Maps bisulfite-converted reads and calls cytosine methylation.
+  papers:
+    - title: "Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications."
+      url: https://doi.org/10.1093/bioinformatics/btr167
 
 - name: cramino
   url: https://github.com/wdecoster/cramino
   repo: wdecoster/cramino
   category: long-reads
   description: Fast BAM and CRAM quality evaluation for long-read datasets.
+  papers:
+    - title: "NanoPack2: Population scale evaluation of long-read sequencing data"
+      url: https://www.biorxiv.org/content/10.1101/2022.11.28.518232
 
 - name: ngless
   url: https://github.com/ngless-toolkit/ngless
   repo: ngless-toolkit/ngless
   category: metagenomics
   description: Domain-specific language for next-generation sequencing and metagenomic workflows.
+  papers:
+    - title: "NG-meta-profiler: fast processing of metagenomes using NGLess, a domain-specific language."
+      url: https://doi.org/10.1186/s40168-019-0684-8
+    - title: "NGLess: a domain-specific language for NGS processing."
+      url: https://doi.org/10.1093/gigascience/giz079
 
 - name: longcallR
   url: https://github.com/huangnengCSU/longcallR
   repo: huangnengCSU/longcallR
   category: long-reads
   description: SNP calling, haplotype phasing, and allele-specific analysis from long-read RNA-seq.
+  papers:
+    - title: "SNP calling, haplotype phasing and allele-specific analysis with long RNA-seq reads"
+      url: https://www.biorxiv.org/content/10.1101/2025.05.26.656191
 
 - name: odon
   url: https://github.com/alexcoulton/odon
   repo: alexcoulton/odon
   category: visualization
   description: Ultra-fast spatial proteomics viewer for OME-Zarr data.
+  papers:
+    - title: "Odon: an ultra-fast viewer for spatial proteomics."
+      url: https://doi.org/10.1093/bioinformatics/btag514
 
 - name: RastQC
   url: https://github.com/Huang-lab/RastQC
   repo: Huang-lab/RastQC
   category: sequence-io-and-formats
   description: High-throughput sequencing quality control covering short and long reads.
+  papers:
+    - title: "RastQC: High-Performance Sequencing Quality Control Written in Rust"
+      url: https://www.biorxiv.org/content/10.64898/2026.03.31.715630
 
 - name: SVTopo
   url: https://github.com/PacificBiosciences/SVTopo
   repo: PacificBiosciences/SVTopo
   category: visualization
   description: Complex structural variant visualization for PacBio HiFi data.
+  papers:
+    - title: "Complex structural variant visualization with SVTopo"
+      url: https://www.biorxiv.org/content/10.1101/2025.04.16.649185
 
 - name: cyto
   url: https://github.com/ArcInstitute/cyto
   repo: ArcInstitute/cyto
   category: single-cell-and-rna
   description: Mapper for 10x Flex single-cell reads with fixed abstract geometries.
+  papers:
+    - title: "cyto: ultra high-throughput processing of 10x-flex single cell sequencing"
+      url: https://www.biorxiv.org/content/10.64898/2026.01.21.700936
 
 - name: devider
   url: https://github.com/bluenote-1577/devider
   repo: bluenote-1577/devider
   category: long-reads
   description: Reconstructs diverse haplotypes from heterogeneous long-read sequencing.
+  papers:
+    - title: "Long-read reconstruction of many diverse haplotypes with devider."
+      url: https://doi.org/10.1101/gr.280510.125
 
 - name: bronko
   url: https://github.com/treangenlab/bronko
   repo: treangenlab/bronko
   category: variants-and-annotation
   description: Alignment-free detection of viral genome variation from sequencing data.
+  papers:
+    - title: "bronko: ultrafast, alignment-free detection of viral genome variation"
+      url: https://www.biorxiv.org/content/10.64898/2025.12.01.691650
 
 - name: locityper
   url: https://github.com/tprodanov/locityper
   repo: tprodanov/locityper
   category: variants-and-annotation
   description: Targeted genotyping of complex polymorphic genes.
+  papers:
+    - title: "Locityper enables targeted genotyping of complex polymorphic genes."
+      url: https://doi.org/10.1038/s41588-025-02362-4
 
 - name: gtfsort
   url: https://github.com/alejandrogzi/gtfsort
   repo: alejandrogzi/gtfsort
   category: sequence-io-and-formats
   description: Lexicographic sorter for GTF and GFF annotation files.
+  papers:
+    - title: "gtfsort: a tool to efficiently sort GTF files"
+      url: https://www.biorxiv.org/content/10.1101/2023.10.21.563454
 
 - name: JanusX
   url: https://github.com/FJingxian/JanusX
   repo: FJingxian/JanusX
   category: variants-and-annotation
   description: Unified platform for genome-wide association studies and genomic selection.
+  papers:
+    - title: "JanusX: an integrated and high-performance platform for scalable genome-wide association studies and genomic selection"
+      url: https://www.biorxiv.org/content/10.64898/2026.01.20.700366
 
 - name: MAGmax
   url: https://github.com/soedinglab/MAGmax
   repo: soedinglab/MAGmax
   category: metagenomics
   description: Dereplicates and enriches metagenome-assembled genomes across samples.
+  papers:
+    - title: "Enhancing genome recovery across metagenomic samples using MAGmax."
+      url: https://doi.org/10.1093/bioinformatics/btaf538
 
 - name: termal
   url: https://github.com/sib-swiss/termal
   repo: sib-swiss/termal
   category: visualization
   description: Terminal multiple-sequence-alignment viewer for remote and HPC workflows.
+  papers:
+    - title: "termal: a terminal-based multiple sequence alignment viewer."
+      url: https://doi.org/10.1093/bioadv/vbaf208
 
 - name: sketchlib.rust
   url: https://github.com/bacpop/sketchlib.rust
   repo: bacpop/sketchlib.rust
   category: metagenomics
   description: Fast sequence distance estimates from genomic sketches.
+  papers:
+    - title: "Rapid and Consistent Genome Clustering for Navigating Bacterial Diversity with Millions of MAGs and Isolates"
+      url: https://www.biorxiv.org/content/10.64898/2025.12.30.695181
 
 - name: xgt
   url: https://github.com/Ebedthan/xgt
   repo: Ebedthan/xgt
   category: metagenomics
   description: Command-line client for querying the Genome Taxonomy Database.
+  papers:
+    - title: "xgt: a command-line interface for the Genome Taxonomy Database with cross-release taxonomic comparison."
+      url: https://doi.org/10.1093/gigascience/giag086
 
 - name: STRdust
   url: https://github.com/wdecoster/STRdust
   repo: wdecoster/STRdust
   category: long-reads
   description: Tandem repeat genotyping from long reads.
+  papers:
+    - title: "A comprehensive assessment of tandem repeat genotyping methods for Nanopore long-read genomes"
+      url: https://www.biorxiv.org/content/10.64898/2026.02.28.708646
 
 - name: phylo2vec
   url: https://github.com/sbhattlab/phylo2vec
   repo: sbhattlab/phylo2vec
   category: core-libraries
   description: Vector representation and library for phylogenetic tree manipulation.
+  papers:
+    - title: "phylo2vec: a library for vector-based phylogenetic tree manipulation"
+      url: https://doi.org/10.21105/joss.09040
+    - title: "Phylo2Vec: A Vector Representation for Binary Trees."
+      url: https://doi.org/10.1093/sysbio/syae030
 
 - name: simd-sketch
   url: https://github.com/RagnarGrootKoerkamp/simd-sketch
   repo: RagnarGrootKoerkamp/simd-sketch
   category: core-libraries
   description: SIMD-accelerated bottom-s and s-bucket genomic sketches.
+  papers:
+    - title: "SimdMinimizers: Computing random minimizers, fast"
+      url: https://www.biorxiv.org/content/10.1101/2025.01.27.634998
 
 - name: ITSxRust
   url: https://github.com/ayobi/ITSxRust
   repo: ayobi/ITSxRust
   category: metagenomics
   description: ITS region extraction for long-read amplicon sequencing.
+  papers:
+    - title: "ITSxRust: ITS region extraction with partial-chain recovery and structured diagnostics for long-read amplicon sequencing"
+      url: https://www.biorxiv.org/content/10.64898/2026.02.25.707950
 
 - name: gbz-base
   url: https://github.com/jltsiren/gbz-base
   repo: jltsiren/gbz-base
   category: assembly-and-pangenomes
   description: SQLite-backed indexed file formats for pangenome graphs.
+  papers:
+    - title: "GBZ-base and GAF-base: Indexed pangenome file formats"
+      url: https://www.biorxiv.org/content/10.64898/2026.07.10.737775
 
 - name: CycSim
   url: https://github.com/BioEarthDigital/CycSim
   repo: BioEarthDigital/CycSim
   category: long-reads
   description: Context-aware long-read simulator for mapping-parameter optimization.
+  papers:
+    - title: "Context-aware simulation enables systematic optimization of long-read mapping parameters."
+      url: https://doi.org/10.1093/gigascience/giag079
 
 - name: inquiSTR
   url: https://github.com/wdecoster/inquiSTR
   repo: wdecoster/inquiSTR
   category: long-reads
   description: Population-scale tandem repeat genotyping from long reads.
+  papers:
+    - title: "Defining a tandem repeat catalog and variation clusters for genome-wide analyses and population databases"
+      url: https://www.biorxiv.org/content/10.1101/2024.10.04.615514
+    - title: "inquiSTR: a toolkit for accurate and efficient population-scale tandem repeat genotyping and analysis"
+      url: https://www.biorxiv.org/content/10.64898/2026.06.09.731080
 
 - name: skiver
   url: https://github.com/GZHoffie/skiver
   repo: GZHoffie/skiver
   category: sequence-io-and-formats
   description: Reference-free sequencing error-rate estimates using (k, v)-mer sketches.
+  papers:
+    - title: "Skiver: Alignment-free Estimation of Sequencing Error Rates and Spectra using (k, v)-mer Sketches"
+      url: https://www.biorxiv.org/content/10.64898/2026.02.12.705514
 
 - name: dna_parser
   url: https://github.com/Mvila035/dna_parser
   repo: Mvila035/dna_parser
   category: core-libraries
   description: Python library with a Rust core for encoding DNA and RNA sequences for machine learning.
+  papers:
+    - title: "dna-parser: a Python library written in Rust for fast encoding of DNA and RNA sequences"
+      url: https://www.biorxiv.org/content/10.64898/2026.01.20.700656
 
 - name: umgap
   url: https://github.com/unipept/umgap
   repo: unipept/umgap
   category: metagenomics
   description: Taxonomic classifier for shotgun metagenomic reads.
+  papers:
+    - title: "UMGAP: the Unipept MetaGenomics Analysis Pipeline."
+      url: https://doi.org/10.1186/s12864-022-08542-4
 
 - name: DeepChopper
   url: https://github.com/ylab-hi/DeepChopper
   repo: ylab-hi/DeepChopper
   category: long-reads
   description: Genomic language model that mitigates chimera artifacts in Nanopore direct RNA sequencing.
+  papers:
+    - title: "Genomic language model mitigates chimera artifacts in nanopore direct RNA sequencing."
+      url: https://doi.org/10.1038/s41467-026-68571-5
 
 - name: fishnet
   url: https://github.com/dietvin/fishnet
   repo: dietvin/fishnet
   category: long-reads
   description: Nanopore signal-to-sequence alignment.
+  papers:
+    - title: "Fishnet simplifies and accelerates signal-to-sequence alignment in Nanopore sequencing"
+      url: https://doi.org/10.21203/rs.3.rs-8345719/v1
 
 - name: eidolon
   url: https://github.com/ncsa/eidolon
   repo: ncsa/eidolon
   category: variants-and-annotation
   description: Sequencing simulator with cancer genetics and complex variant models.
+  papers:
+    - title: "Enhancing short-read sequencing simulation: Updates to NEAT"
+      url: https://doi.org/10.21105/joss.09056
 
 - name: emits
   url: https://github.com/ayobi/emits
   repo: ayobi/emits
   category: metagenomics
   description: Expectation-maximization abundance estimation for fungal ITS communities from long reads.
+  papers:
+    - title: "EMITS: expectation-maximization abundance estimation for fungal ITS communities from long-read sequencing"
+      url: https://www.biorxiv.org/content/10.64898/2026.03.31.715662
 
 - name: rosalind
   url: https://github.com/logannye/rosalind

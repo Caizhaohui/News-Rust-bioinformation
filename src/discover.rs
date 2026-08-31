@@ -1139,6 +1139,7 @@ mod tests {
             description: "Test.".into(),
             status: Some("retired".into()),
             reason: None,
+            papers: vec![],
         }]);
         let known = Candidate {
             name: "old".into(),

@@ -48,8 +48,11 @@ pub fn build_readme(tools: &[Tool], metadata: &Metadata) -> String {
         for tool in group {
             let suffix = format_meta_suffix(tool, metadata);
             lines.push(format!(
-                "- [{}]({}) - {}{suffix}",
-                tool.name, tool.url, tool.description
+                "- [{}]({}) - {}{suffix}{}",
+                tool.name,
+                tool.url,
+                tool.description,
+                tool.paper_links_markdown()
             ));
         }
     };
@@ -124,8 +127,11 @@ pub fn build_readme(tools: &[Tool], metadata: &Metadata) -> String {
         for tool in retired {
             let suffix = format_meta_suffix(tool, metadata);
             lines.push(format!(
-                "- [{}]({}) - {}{suffix}",
-                tool.name, tool.url, tool.description
+                "- [{}]({}) - {}{suffix}{}",
+                tool.name,
+                tool.url,
+                tool.description,
+                tool.paper_links_markdown()
             ));
         }
         lines.push(String::new());
@@ -214,6 +220,7 @@ mod tests {
             description: "Test.".into(),
             status: None,
             reason: None,
+            papers: vec![],
         }];
         let text = build_readme(&tools, &Metadata::default());
         assert!(text.contains("### Microbial Bioinformatics"));
@@ -232,5 +239,63 @@ mod tests {
         let contents = text.split("## Catalog").next().unwrap();
         assert!(!contents.contains("\n- [Metagenomics](#metagenomics)\n"));
         assert!(text.contains("  - [Metagenomics](#metagenomics)"));
+    }
+
+    #[test]
+    fn readme_appends_paper_markdown_links() {
+        use crate::catalog::Paper;
+        let tools = [
+            Tool {
+                name: "salmon".into(),
+                url: "https://github.com/COMBINE-lab/salmon".into(),
+                repo: Some("COMBINE-lab/salmon".into()),
+                category: "single-cell-and-rna".into(),
+                description: "Transcript-level RNA-seq quantification using selective alignment.".into(),
+                status: None,
+                reason: None,
+                papers: vec![Paper {
+                    title: "Salmon provides fast and bias-aware quantification of transcript expression.".into(),
+                    url: "https://doi.org/10.1038/nmeth.4197".into(),
+                }],
+            },
+            Tool {
+                name: "plain".into(),
+                url: "https://example.org/plain".into(),
+                repo: None,
+                category: "core-libraries".into(),
+                description: "No literature.".into(),
+                status: None,
+                reason: None,
+                papers: vec![],
+            },
+            Tool {
+                name: "old".into(),
+                url: "https://example.org/old".into(),
+                repo: None,
+                category: "core-libraries".into(),
+                description: "Retired with a paper.".into(),
+                status: Some("retired".into()),
+                reason: None,
+                papers: vec![
+                    Paper {
+                        title: "First paper.".into(),
+                        url: "https://doi.org/10.1093/bioinformatics/btr167".into(),
+                    },
+                    Paper {
+                        title: "Second paper.".into(),
+                        url: "https://doi.org/10.1186/s40168-019-0684-8".into(),
+                    },
+                ],
+            },
+        ];
+        let text = build_readme(&tools, &Metadata::default());
+        assert!(text.contains(
+            "- [salmon](https://github.com/COMBINE-lab/salmon) - Transcript-level RNA-seq quantification using selective alignment. · [Salmon provides fast and bias-aware quantification of transcript expression.](https://doi.org/10.1038/nmeth.4197)"
+        ));
+        assert!(text.contains("- [plain](https://example.org/plain) - No literature."));
+        assert!(!text.contains("- [plain](https://example.org/plain) - No literature. ·"));
+        assert!(text.contains(
+            "- [old](https://example.org/old) - Retired with a paper. · [First paper.](https://doi.org/10.1093/bioinformatics/btr167) · [Second paper.](https://doi.org/10.1186/s40168-019-0684-8)"
+        ));
     }
 }

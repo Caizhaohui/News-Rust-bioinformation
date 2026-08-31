@@ -137,6 +137,7 @@ mod tests {
             description: "Test.".into(),
             status: None,
             reason: None,
+            papers: vec![],
         }
     }
 
@@ -425,6 +426,7 @@ mod tests {
                 description: "Test.".into(),
                 status: None,
                 reason: None,
+                papers: vec![],
             },
         ];
         let mut repos = BTreeMap::new();

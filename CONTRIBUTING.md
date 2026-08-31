@@ -51,8 +51,9 @@ Prefer a short, objective English description: capital letter, ends with a perio
 
 3. `url` is required and must be unique. `repo` is `owner/name` for GitHub projects only.
 4. Optional `status: retired` moves an entry out of the main catalog into the README Retired section. Do not delete archived tools; mark them retired so radar history stays intact.
+5. Optional `papers` is a list of `{title, url}` introducing articles (DOI or preprint). Omit the field when there is no paper; do not use an empty list.
 
-5. Rebuild locally:
+6. Rebuild locally:
 
 ```bash
 cargo run -- validate
