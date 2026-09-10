@@ -108,7 +108,7 @@ pub fn build_readme_v2(
     }
 
     lines.push("- [🦀 Core Rust Libraries](#-core-rust-libraries)".into());
-    lines.push("- [🐍 Rust × Python](#-rust--python)".into());
+    lines.push("- [🦀🐍 Rust × Python](#-rust--python)".into());
     lines.push("- [⚙️ Infrastructure & Workflows](#️-infrastructure--workflows)".into());
     lines.push("- [📚 Learning Resources](#-learning-resources)".into());
     if !retired_tools.is_empty() {
@@ -393,8 +393,8 @@ pub fn build_readme_v2(
         }
     }
 
-    // 🐍 Rust × Python
-    lines.push("## 🐍 Rust × Python".into());
+    // 🦀🐍 Rust × Python
+    lines.push("## 🦀🐍 Rust × Python".into());
     lines.push(String::new());
     lines.push(
         "Python packages and hybrid ecosystems accelerated by high-performance Rust cores.".into(),

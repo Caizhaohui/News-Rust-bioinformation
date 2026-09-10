@@ -35,7 +35,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
   - [Protein Engineering](#protein-engineering)
   - [Visualization](#visualization)
 - [🦀 Core Rust Libraries](#-core-rust-libraries)
-- [🐍 Rust × Python](#-rust--python)
+- [🦀🐍 Rust × Python](#-rust--python)
 - [⚙️ Infrastructure & Workflows](#️-infrastructure--workflows)
 - [📚 Learning Resources](#-learning-resources)
 - [🗄️ Retired](#️-retired)
@@ -86,7 +86,7 @@ Selected high-quality Rust codebases recommended for studying clean software arc
 |---|---|---|---|
 | [rust-bio](https://github.com/rust-bio/rust-bio) | algorithms, API design | Intermediate | `🦀 Native` |
 | [noodles](https://github.com/zaeleus/noodles) | bioinformatics IO, binary file formats, API design | Advanced | `🦀 Native` |
-| [sourmash](https://github.com/sourmash-bio/sourmash) | Python + Rust architecture, PyO3 | Intermediate | `🐍 Rust × Python` |
+| [sourmash](https://github.com/sourmash-bio/sourmash) | Python + Rust architecture, PyO3 | Intermediate | `🦀🐍 Rust × Python` |
 | [sylph](https://github.com/bluenote-1577/sylph) | MinHash, metagenomics | Intermediate | `🦀 Native` |
 | [rasusa](https://github.com/mbhall88/rasusa) | CLI design, FASTQ handling | Beginner | `🦀 Native` |
 | [skani](https://github.com/bluenote-1577/skani) | k-mer algorithms, MinHash, rayon | Intermediate | `🦀 Native` |
@@ -124,7 +124,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 
 #### Metagenomics
 
-- **[sourmash](https://github.com/sourmash-bio/sourmash)** — Sketch-based search and comparison of genomic and metagenomic datasets. `🐍 Rust × Python` `🟢 Active` `★ 556` `📖 Source Pick`
+- **[sourmash](https://github.com/sourmash-bio/sourmash)** — Sketch-based search and comparison of genomic and metagenomic datasets. `🦀🐍 Rust × Python` `🟢 Active` `★ 556` `📖 Source Pick`
 - **[CoverM](https://github.com/wwood/CoverM)** — Read coverage calculator for metagenomics. `🟢 Active` `★ 406`
 - **[sylph](https://github.com/bluenote-1577/sylph)** — Abundance-corrected minhash profiling for metagenomic samples. `🦀 Native` `🟡 Maintained` `★ 318` `📖 Source Pick`
 - **[skani](https://github.com/bluenote-1577/skani)** — Fast ANI and aligned-fraction estimates for genomes and metagenomic contigs. `🦀 Native` `🟡 Maintained` `★ 263` `📖 Source Pick`
@@ -235,7 +235,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[squab](https://github.com/zaeleus/squab)** — Alignment-based gene expression quantification. `🟢 Active` `★ 40`
 - **[piscem](https://github.com/COMBINE-lab/piscem)** — Next-generation sequence indexing and mapping components. `🟢 Active` `★ 37`
 - **[rnapkin](https://github.com/ukmrs/rnapkin)** — Fast drawing of RNA secondary structure. `🟡 Maintained` `★ 10`
-- **[BamNado](https://github.com/alsmith151/BamNado)** — Parallel BAM coverage, pileup, and filtering with Python bindings. `🐍 Rust × Python` `🟢 Active` `★ 1`
+- **[BamNado](https://github.com/alsmith151/BamNado)** — Parallel BAM coverage, pileup, and filtering with Python bindings. `🦀🐍 Rust × Python` `🟢 Active` `★ 1`
 
 ### Proteomics and Structure
 
@@ -251,7 +251,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[timsrust](https://github.com/MannLabs/timsrust)** — High-performance access to Bruker timsTOF mass spectrometry data. `🟢 Active` `★ 35`
 - **[ProForma](https://github.com/HUPO-PSI/ProForma)** — Reference implementation of HUPO-PSI peptidoform notation. `🟢 Active` `★ 26`
 - **[align-cli](https://github.com/snijderlab/align-cli)** — Pairwise alignment CLI supporting mass-based protein alignment. `🟢 Active` `★ 17`
-- **[OpenTFRaw](https://github.com/Sigilweaver/OpenTFRaw)** — Pure-Rust reader for Thermo Fisher RAW mass-spectrometry files, with Python bindings. `🐍 Rust × Python` `🟢 Active` `★ 13`
+- **[OpenTFRaw](https://github.com/Sigilweaver/OpenTFRaw)** — Pure-Rust reader for Thermo Fisher RAW mass-spectrometry files, with Python bindings. `🦀🐍 Rust × Python` `🟢 Active` `★ 13`
 - **[OpenMassSpec](https://github.com/Sigilweaver/OpenMassSpec)** — High-performance Rust and Python readers for mass-spectrometry raw data. `🟢 Active` `★ 10`
 - **[arpeggia](https://github.com/y1zhou/arpeggia)** — Calculates interatomic interactions in molecular structures. `🟢 Active` `★ 8`
 
@@ -337,13 +337,13 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[rs_demultiplex](https://github.com/colindaven/rs_demultiplex)** — Fast FASTQ demultiplexing. `🟢 Active` `★ 6`
 - **[bbnorm-rs](https://github.com/Jakeelamb/bbnorm-rs)** — Rust port of BBTools BBNorm read-depth normalization. `🟢 Active` `★ 0`
 
-## 🐍 Rust × Python
+## 🦀🐍 Rust × Python
 
 Python packages and hybrid ecosystems accelerated by high-performance Rust cores.
 
-- **[sourmash](https://github.com/sourmash-bio/sourmash)** — Sketch-based search and comparison of genomic and metagenomic datasets. `🐍 Rust × Python` `🟢 Active` `★ 556` `📖 Source Pick`
-- **[OpenTFRaw](https://github.com/Sigilweaver/OpenTFRaw)** — Pure-Rust reader for Thermo Fisher RAW mass-spectrometry files, with Python bindings. `🐍 Rust × Python` `🟢 Active` `★ 13`
-- **[BamNado](https://github.com/alsmith151/BamNado)** — Parallel BAM coverage, pileup, and filtering with Python bindings. `🐍 Rust × Python` `🟢 Active` `★ 1`
+- **[sourmash](https://github.com/sourmash-bio/sourmash)** — Sketch-based search and comparison of genomic and metagenomic datasets. `🦀🐍 Rust × Python` `🟢 Active` `★ 556` `📖 Source Pick`
+- **[OpenTFRaw](https://github.com/Sigilweaver/OpenTFRaw)** — Pure-Rust reader for Thermo Fisher RAW mass-spectrometry files, with Python bindings. `🦀🐍 Rust × Python` `🟢 Active` `★ 13`
+- **[BamNado](https://github.com/alsmith151/BamNado)** — Parallel BAM coverage, pileup, and filtering with Python bindings. `🦀🐍 Rust × Python` `🟢 Active` `★ 1`
 
 ## ⚙️ Infrastructure & Workflows
 

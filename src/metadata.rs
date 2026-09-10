@@ -278,7 +278,7 @@ pub fn architecture_badge(tool: &ToolDef) -> &'static str {
         RustRole::Native => "🦀 Native",
         RustRole::Hybrid => {
             if tool.is_python_facing() {
-                "🐍 Rust × Python"
+                "🦀🐍 Rust × Python"
             } else {
                 "🔀 Hybrid"
             }
