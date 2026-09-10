@@ -278,7 +278,7 @@ pub fn architecture_badge(tool: &ToolDef) -> &'static str {
         RustRole::Native => "🦀 Native",
         RustRole::Hybrid => {
             if tool.is_python_facing() {
-                "🦀🐍 Rust × Python"
+                "Rust × Python"
             } else {
                 "🔀 Hybrid"
             }
@@ -286,6 +286,22 @@ pub fn architecture_badge(tool: &ToolDef) -> &'static str {
         RustRole::Binding => "🔗 Binding",
         RustRole::Experimental => "🧪 Experimental",
         RustRole::Unknown => "",
+    }
+}
+
+pub fn architecture_badge_md(tool: &ToolDef) -> String {
+    match tool.architecture.rust_role {
+        RustRole::Native => "`🦀 Native`".to_string(),
+        RustRole::Hybrid => {
+            if tool.is_python_facing() {
+                "<img src=\"assets/rust-python.png\" width=\"14\" height=\"14\" alt=\"Rust × Python\" style=\"vertical-align: -2px;\" /> `Rust × Python`".to_string()
+            } else {
+                "`🔀 Hybrid`".to_string()
+            }
+        }
+        RustRole::Binding => "`🔗 Binding`".to_string(),
+        RustRole::Experimental => "`🧪 Experimental`".to_string(),
+        RustRole::Unknown => String::new(),
     }
 }
 
@@ -346,9 +362,9 @@ pub fn format_v2_badges(
     let record = metadata.get_repo(&tool.repository);
     let mut badges = Vec::new();
 
-    let arch_badge = architecture_badge(tool);
+    let arch_badge = architecture_badge_md(tool);
     if !arch_badge.is_empty() {
-        badges.push(format!("`{arch_badge}`"));
+        badges.push(arch_badge);
     }
 
     let activity = calculate_activity(record, config, now);
