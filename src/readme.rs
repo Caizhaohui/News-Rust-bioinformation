@@ -5,7 +5,7 @@ use chrono::{DateTime, Utc};
 use crate::catalog::utcnow;
 use crate::config::{load_config, Config};
 use crate::metadata::{
-    architecture_badge_md, calculate_activity, format_v2_badges, load_metadata, tooldef_sort_key,
+    architecture_badge, calculate_activity, format_v2_badges, load_metadata, tooldef_sort_key,
     ActivityLevel, Metadata,
 };
 use crate::model::{Catalog, CategoryDef, ToolDef};
@@ -108,9 +108,7 @@ pub fn build_readme_v2(
     }
 
     lines.push("- [🦀 Core Rust Libraries](#-core-rust-libraries)".into());
-    lines.push(
-        "- [<img src=\"assets/rust-python.png\" width=\"16\" height=\"16\" alt=\"Rust × Python\" style=\"vertical-align: -2px;\" /> Rust × Python](#rust--python)".into(),
-    );
+    lines.push("- [🐍 Rust × Python](#-rust--python)".into());
     lines.push("- [⚙️ Infrastructure & Workflows](#️-infrastructure--workflows)".into());
     lines.push("- [📚 Learning Resources](#-learning-resources)".into());
     if !retired_tools.is_empty() {
@@ -139,10 +137,7 @@ pub fn build_readme_v2(
     lines.push(format!("| Cataloged projects | {} |", total_count));
     lines.push(format!("| Actively maintained | {} |", active_repos_count));
     lines.push(format!("| Pure Rust | {} |", native_count));
-    lines.push(format!(
-        "| <img src=\"assets/rust-python.png\" width=\"14\" height=\"14\" alt=\"Rust × Python\" style=\"vertical-align: -2px;\" /> Rust × Python | {} |",
-        py_count
-    ));
+    lines.push(format!("| Rust × Python | {} |", py_count));
     lines.push(format!(
         "| Published software (with DOI/paper) | {} |",
         published_count
@@ -266,9 +261,9 @@ pub fn build_readme_v2(
                 Some(crate::model::LearningLevel::Advanced) => "Advanced",
                 None => "General",
             };
-            let arch = architecture_badge_md(tool);
+            let arch = architecture_badge(tool);
             lines.push(format!(
-                "| [{}]({}) | {} | {} | {} |",
+                "| [{}]({}) | {} | {} | `{}` |",
                 tool.name,
                 tool.effective_url(),
                 topics,
@@ -398,10 +393,8 @@ pub fn build_readme_v2(
         }
     }
 
-    // Rust × Python
-    lines.push(
-        "## <img src=\"assets/rust-python.png\" width=\"20\" height=\"20\" alt=\"Rust × Python\" style=\"vertical-align: -3px;\" /> Rust × Python".into(),
-    );
+    // 🐍 Rust × Python
+    lines.push("## 🐍 Rust × Python".into());
     lines.push(String::new());
     lines.push(
         "Python packages and hybrid ecosystems accelerated by high-performance Rust cores.".into(),
