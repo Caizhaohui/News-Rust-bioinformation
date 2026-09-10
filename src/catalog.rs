@@ -629,8 +629,31 @@ pub fn is_cataloged(index: &CatalogIndex, url: Option<&str>, repo: Option<&str>)
     false
 }
 
+pub fn load_all_tools(path: &Path) -> Result<Vec<Tool>, String> {
+    let content = std::fs::read_to_string(path)
+        .map_err(|e| format!("Failed to read {}: {}", path.display(), e))?;
+    if content.contains("schema_version: 2") {
+        let catalog: crate::model::Catalog = serde_yaml::from_str(&content)
+            .map_err(|e| format!("Failed to parse v2 catalog: {e}"))?;
+        return Ok(catalog.tools.values().map(|t| t.to_v1_tool()).collect());
+    }
+    let docs = load_yaml_list(path)?;
+    Ok(docs.iter().filter_map(value_to_tool).collect())
+}
+
 pub fn cmd_validate(root: &Path) -> i32 {
-    match load_yaml_list(&crate::paths::tools_path(root)) {
+    let path = crate::paths::tools_path(root);
+    let content = match std::fs::read_to_string(&path) {
+        Ok(c) => c,
+        Err(e) => {
+            eprintln!("Failed to read {}: {e}", path.display());
+            return 1;
+        }
+    };
+    if content.contains("schema_version: 2") {
+        return crate::validate::cmd_validate_v2(&path);
+    }
+    match load_yaml_list(&path) {
         Ok(docs) => {
             let errors = validate_tool_docs(&docs);
             if errors.is_empty() {

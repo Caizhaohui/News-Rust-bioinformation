@@ -37,3 +37,7 @@ pub fn discover_dir(root: &Path) -> PathBuf {
 pub fn digest_dir(root: &Path) -> PathBuf {
     root.join("digest")
 }
+
+pub fn trends_path(root: &Path) -> PathBuf {
+    root.join("data").join("trends.json")
+}

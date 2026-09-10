@@ -3,10 +3,10 @@ use std::path::Path;
 
 use serde_json::{json, Value};
 
-use crate::catalog::{load_yaml_list, utcnow, validate_tool_docs, value_to_tool};
+use crate::catalog::utcnow;
 use crate::config::load_config;
 use crate::http::{HttpClient, ReqwestClient};
-use crate::metadata::{dump_json, prune_snapshots, Metadata, RepoRecord};
+use crate::metadata::{dump_json, prune_snapshots, Metadata, ReleaseInfo, RepoRecord};
 use crate::paths;
 
 const GRAPHQL_URL: &str = "https://api.github.com/graphql";
@@ -25,6 +25,8 @@ pub fn build_query(batch: &[(String, String, String)]) -> String {
             r#"
             {alias}: repository(owner: "{owner}", name: "{name}") {{
               stargazerCount
+              forkCount
+              createdAt
               pushedAt
               isArchived
               latestRelease {{ publishedAt tagName }}
@@ -38,10 +40,21 @@ pub fn build_query(batch: &[(String, String, String)]) -> String {
 fn empty_record(error: impl Into<String>) -> RepoRecord {
     RepoRecord {
         stars: None,
+        forks: None,
+        open_issues: None,
+        created_at: None,
+        updated_at: None,
         pushed_at: None,
         archived: None,
+        disabled: None,
+        default_branch: None,
+        license: None,
+        topics: Vec::new(),
+        language: None,
+        latest_release: None,
         latest_release_at: None,
         latest_release_tag: None,
+        activity: None,
         error: Some(error.into()),
     }
 }
@@ -104,23 +117,48 @@ pub fn fetch_batch(
         }
         let node = node.unwrap();
         let release = node.get("latestRelease").cloned().unwrap_or(Value::Null);
+        let rel_pub = release
+            .get("publishedAt")
+            .and_then(Value::as_str)
+            .map(str::to_string);
+        let rel_tag = release
+            .get("tagName")
+            .and_then(Value::as_str)
+            .map(str::to_string);
+        let latest_rel = if rel_pub.is_some() || rel_tag.is_some() {
+            Some(ReleaseInfo {
+                tag: rel_tag.clone(),
+                published_at: rel_pub.clone(),
+                url: None,
+            })
+        } else {
+            None
+        };
         results.insert(
             repo.clone(),
             RepoRecord {
                 stars: node.get("stargazerCount").and_then(Value::as_i64),
+                forks: node.get("forkCount").and_then(Value::as_i64),
+                open_issues: None,
+                created_at: node
+                    .get("createdAt")
+                    .and_then(Value::as_str)
+                    .map(str::to_string),
+                updated_at: None,
                 pushed_at: node
                     .get("pushedAt")
                     .and_then(Value::as_str)
                     .map(str::to_string),
                 archived: node.get("isArchived").and_then(Value::as_bool),
-                latest_release_at: release
-                    .get("publishedAt")
-                    .and_then(Value::as_str)
-                    .map(str::to_string),
-                latest_release_tag: release
-                    .get("tagName")
-                    .and_then(Value::as_str)
-                    .map(str::to_string),
+                disabled: None,
+                default_branch: None,
+                license: None,
+                topics: Vec::new(),
+                language: None,
+                latest_release: latest_rel,
+                latest_release_at: rel_pub,
+                latest_release_tag: rel_tag,
+                activity: None,
                 error: None,
             },
         );
@@ -130,22 +168,14 @@ pub fn fetch_batch(
 
 pub fn cmd_fetch_metadata(root: &Path) -> i32 {
     let tools_path = paths::tools_path(root);
-    let docs = match load_yaml_list(&tools_path) {
-        Ok(docs) => docs,
+    let tools = match crate::catalog::load_all_tools(&tools_path) {
+        Ok(t) => t,
         Err(err) => {
             eprintln!("{err}");
             return 1;
         }
     };
-    let errors = validate_tool_docs(&docs);
-    if !errors.is_empty() {
-        eprintln!("tools.yaml is invalid:");
-        for item in errors {
-            eprintln!("  - {item}");
-        }
-        return 1;
-    }
-    let tools: Vec<_> = docs.iter().filter_map(value_to_tool).collect();
+
     let token = std::env::var("GITHUB_TOKEN")
         .ok()
         .or_else(|| std::env::var("GH_TOKEN").ok())
@@ -204,10 +234,11 @@ pub fn cmd_fetch_metadata(root: &Path) -> i32 {
     }
 
     let metadata = Metadata {
-        fetched_at: utcnow().to_rfc3339_opts(chrono::SecondsFormat::Micros, false),
+        schema_version: 2,
+        generated_at: utcnow().to_rfc3339_opts(chrono::SecondsFormat::Micros, false),
         incomplete,
         urls,
-        repos: records.clone(),
+        repositories: records.clone(),
         date: None,
     };
     let meta_path = paths::metadata_path(root);
@@ -215,16 +246,24 @@ pub fn cmd_fetch_metadata(root: &Path) -> i32 {
         eprintln!("{err}");
         return 1;
     }
+
     let today = utcnow().date_naive().to_string();
-    let mut snapshot = metadata;
-    snapshot.date = Some(today.clone());
     let snap_dir = paths::snapshot_dir(root);
-    if let Err(err) = dump_json(&snap_dir.join(format!("{today}.json")), &snapshot) {
+    let compact_snap = crate::trends::create_compact_snapshot(&metadata, &today);
+    if let Err(err) =
+        crate::trends::save_compact_snapshot(&snap_dir.join(format!("{today}.json")), &compact_snap)
+    {
         eprintln!("{err}");
         return 1;
     }
-    let keep = load_config(&paths::config_path(root)).snapshots_keep;
-    prune_snapshots(&snap_dir, keep);
+
+    let config = load_config(&paths::config_path(root));
+    let trends = crate::trends::compute_trends(&metadata, &snap_dir, &config, utcnow());
+    if let Err(err) = crate::trends::save_trends(&paths::trends_path(root), &trends) {
+        eprintln!("Warning: failed to save trends: {err}");
+    }
+
+    prune_snapshots(&snap_dir, config.snapshots_keep);
     println!(
         "Wrote {} for {} repos",
         meta_path.strip_prefix(root).unwrap_or(&meta_path).display(),

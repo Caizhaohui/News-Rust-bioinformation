@@ -1,6 +1,6 @@
 use std::path::Path;
 
-use crate::catalog::{load_yaml_list, utcnow, validate_tool_docs, value_to_tool, Tool};
+use crate::catalog::{utcnow, Tool};
 use crate::config::{load_config, Config};
 use crate::metadata::{load_metadata, previous_snapshot, Metadata};
 use crate::paths;
@@ -59,15 +59,17 @@ pub fn build_radar_markdown(
             "Fetch errors: missing repo, rename, or auth.",
         ),
     ];
-    for (title, items, hint) in sections {
+    for (title, list, subtitle) in sections {
         lines.push(format!("## {title}"));
         lines.push(String::new());
-        lines.push(hint.into());
+        lines.push(subtitle.into());
         lines.push(String::new());
-        if items.is_empty() {
+        if list.is_empty() {
             lines.push("_None._".into());
         } else {
-            lines.extend(items.iter().map(bullet));
+            for tool in list {
+                lines.push(bullet(tool));
+            }
         }
         lines.push(String::new());
     }
@@ -75,22 +77,13 @@ pub fn build_radar_markdown(
 }
 
 pub fn cmd_build_radar(root: &Path) -> i32 {
-    let docs = match load_yaml_list(&paths::tools_path(root)) {
-        Ok(docs) => docs,
+    let tools = match crate::catalog::load_all_tools(&paths::tools_path(root)) {
+        Ok(t) => t,
         Err(err) => {
             eprintln!("{err}");
             return 1;
         }
     };
-    let errors = validate_tool_docs(&docs);
-    if !errors.is_empty() {
-        eprintln!("tools.yaml is invalid:");
-        for item in errors {
-            eprintln!("  - {item}");
-        }
-        return 1;
-    }
-    let tools: Vec<Tool> = docs.iter().filter_map(value_to_tool).collect();
     let metadata = load_metadata(&paths::metadata_path(root));
     let previous = previous_snapshot(&paths::snapshot_dir(root), None);
     let text = build_radar_markdown(
@@ -125,6 +118,7 @@ mod tests {
                 include_cold_repo_push: true,
             },
             snapshots_keep: 8,
+            ..Default::default()
         }
     }
 
@@ -159,6 +153,7 @@ mod tests {
             latest_release_at: latest_release_at.map(str::to_string),
             latest_release_tag: None,
             error: error.map(str::to_string),
+            ..Default::default()
         }
     }
 
@@ -176,7 +171,7 @@ mod tests {
         );
         let current = Metadata {
             urls: vec![tools[0].url.clone()],
-            repos,
+            repositories: repos,
             ..Metadata::default()
         };
         let radar = compute_radar(&tools, &current, None, &test_config(), Some(now()));
@@ -227,11 +222,12 @@ mod tests {
                 latest_release_at: Some("2026-01-01T00:00:00Z".into()),
                 latest_release_tag: None,
                 error: None,
+                ..Default::default()
             },
         );
         let previous = Metadata {
             urls: vec![t.url.clone()],
-            repos: prev_repos,
+            repositories: prev_repos,
             ..Metadata::default()
         };
         let mut quiet_repos = BTreeMap::new();
@@ -244,15 +240,16 @@ mod tests {
                 latest_release_at: Some("2026-01-01T00:00:00Z".into()),
                 latest_release_tag: None,
                 error: None,
+                ..Default::default()
             },
         );
         let quiet = Metadata {
             urls: vec![t.url.clone()],
-            repos: quiet_repos,
+            repositories: quiet_repos,
             ..Metadata::default()
         };
         let radar = compute_radar(
-            &[t.clone()],
+            std::slice::from_ref(&t),
             &quiet,
             Some(&previous),
             &test_config(),
@@ -270,11 +267,12 @@ mod tests {
                 latest_release_at: Some("2026-01-01T00:00:00Z".into()),
                 latest_release_tag: None,
                 error: None,
+                ..Default::default()
             },
         );
         let jumped = Metadata {
             urls: vec![t.url.clone()],
-            repos: jumped_repos,
+            repositories: jumped_repos,
             ..Metadata::default()
         };
         let radar = compute_radar(&[t], &jumped, Some(&previous), &test_config(), Some(now()));
@@ -300,11 +298,12 @@ mod tests {
                 latest_release_at: Some("2026-08-20T00:00:00Z".into()),
                 latest_release_tag: Some("v1.0".into()),
                 error: None,
+                ..Default::default()
             },
         );
         let current = Metadata {
             urls: vec![old.url.clone(), new.url.clone()],
-            repos,
+            repositories: repos,
             ..Metadata::default()
         };
         let radar = compute_radar(
@@ -345,7 +344,7 @@ mod tests {
         );
         let current = Metadata {
             urls: vec![live.url.clone(), gone.url.clone()],
-            repos,
+            repositories: repos,
             ..Metadata::default()
         };
         let radar = compute_radar(
@@ -377,12 +376,12 @@ mod tests {
         );
         let current = Metadata {
             urls: vec![stale.url.clone(), missing.url.clone()],
-            repos: repos.clone(),
+            repositories: repos.clone(),
             ..Metadata::default()
         };
         let previous = Metadata {
             urls: vec![stale.url.clone(), missing.url.clone()],
-            repos,
+            repositories: repos,
             ..Metadata::default()
         };
         let radar = compute_radar(
@@ -455,10 +454,11 @@ mod tests {
                 latest_release_at: None,
                 latest_release_tag: None,
                 error: None,
+                ..Default::default()
             },
         );
         let metadata = Metadata {
-            repos,
+            repositories: repos,
             ..Metadata::default()
         };
         let mut ordered = tools.to_vec();

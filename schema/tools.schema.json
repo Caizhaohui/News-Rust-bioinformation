@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Caizhaohui/News-Rust-bioinformation/main/schema/tools.schema.json",
+  "title": "Rust Bioinformatics Radar Catalog Schema",
+  "description": "Schema for data/tools.yaml in News-Rust-bioinformation v2",
+  "type": "object",
+  "required": ["schema_version", "categories", "tools"],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 2,
+      "description": "Must be 2 for the v2 schema"
+    },
+    "categories": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/category"
+      }
+    },
+    "tools": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/tool"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "category": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "order": { "type": "integer" },
+        "children": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/category"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "tool": {
+      "type": "object",
+      "required": [
+        "name",
+        "repository",
+        "description",
+        "category",
+        "architecture",
+        "status"
+      ],
+      "properties": {
+        "name": { "type": "string" },
+        "repository": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "description": { "type": "string" },
+        "category": {
+          "type": "object",
+          "required": ["primary"],
+          "properties": {
+            "primary": { "type": "string" },
+            "secondary": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "domains": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "architecture": {
+          "type": "object",
+          "required": ["rust_role"],
+          "properties": {
+            "rust_role": {
+              "type": "string",
+              "enum": ["native", "hybrid", "binding", "experimental", "unknown"]
+            },
+            "interfaces": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["cli", "library", "python", "r", "web", "workflow", "api", "wasm"]
+              }
+            },
+            "foreign_dependencies": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "technologies": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "formats": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "learning": {
+          "type": "object",
+          "properties": {
+            "recommended": { "type": "boolean" },
+            "level": {
+              "type": "string",
+              "enum": ["beginner", "intermediate", "advanced"]
+            },
+            "topics": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "publications": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title"],
+            "properties": {
+              "doi": { "type": ["string", "null"] },
+              "url": { "type": ["string", "null"] },
+              "title": { "type": "string" },
+              "type": {
+                "type": "string",
+                "enum": ["journal", "preprint", "conference", "software-paper", "software_paper"]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "status": {
+          "type": "object",
+          "required": ["catalog"],
+          "properties": {
+            "catalog": {
+              "type": "string",
+              "enum": ["active", "retired", "watch", "excluded"]
+            }
+          },
+          "additionalProperties": false
+        },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    }
+  }
+}

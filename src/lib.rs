@@ -5,10 +5,14 @@ pub mod discover;
 pub mod fetch;
 pub mod http;
 pub mod metadata;
+pub mod migration;
+pub mod model;
 pub mod paths;
 pub mod radar;
 pub mod radar_md;
 pub mod readme;
+pub mod trends;
+pub mod validate;
 
 pub use catalog::{
     catalog_index, github_repo_from_url, is_cataloged, normalize_url, valid_categories, Tool,
@@ -17,4 +21,4 @@ pub use catalog::{
 pub use config::Config;
 pub use metadata::{tool_sort_key, Metadata};
 pub use radar::compute_radar;
-pub use readme::build_readme;
+pub use readme::{build_readme_v2, build_readme_v2 as build_readme};

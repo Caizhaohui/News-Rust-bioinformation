@@ -1,9 +1,34 @@
+schema_version: 2
+
+activity:
+  active_days: 90
+  maintained_days: 365
+  quiet_days: 730
+
+emerging:
+  max_stars: 150
+  max_age_days: 1095
+  max_inactive_days: 180
+
+trending:
+  min_stars: 20
+  min_gain_30d: 10
+  min_growth_30d: 0.10
+
+readme:
+  trending_limit: 10
+  emerging_limit: 12
+  source_picks_limit: 12
+
+snapshot:
+  keep_days: 730
+
 radar:
   stale_months: 18
   cold_inactive_months: 6
-  active:
-    min_star_delta: 5
-    include_new_release: true
-    include_cold_repo_push: true
+  min_star_delta: 5
+  include_new_release: true
+  include_cold_repo_push: true
+
 snapshots:
   keep: 8

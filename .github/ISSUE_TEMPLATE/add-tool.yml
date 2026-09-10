@@ -1,0 +1,77 @@
+name: Add a new Rust bioinformatics tool
+description: Propose adding a new Rust bioinformatics project to the radar
+labels: ["tool-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the Rust Bioinformatics Radar!
+        Please verify that the project is written substantially in Rust and directly serves computational biology or bioinformatics.
+  - type: input
+    id: name
+    attributes:
+      label: Project name
+      description: Name of the tool or library (e.g., `noodles`)
+    validations:
+      required: true
+  - type: input
+    id: repository
+    attributes:
+      label: Repository
+      description: Format: `owner/repository` (e.g., `zaeleus/noodles`)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Factual, concise 1-2 sentence description in English.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Primary Category
+      options:
+        - crispr
+        - bacterial-assembly
+        - genome-annotation
+        - prokaryotic-transcriptome
+        - metagenomics
+        - phage-defense
+        - antimicrobial-resistance
+        - transposons
+        - core-libraries
+        - sequence-io
+        - alignment
+        - variants
+        - long-reads
+        - assembly-pangenome
+        - single-cell-rna
+        - proteomics
+        - protein-engineering
+        - infrastructure
+        - visualization
+        - rust-python
+        - learning
+    validations:
+      required: true
+  - type: checkboxes
+    id: architecture
+    attributes:
+      label: Rust Architecture
+      options:
+        - label: Native Rust (core biological algorithms implemented primarily in Rust)
+        - label: Rust × Python (Python-facing package powered by Rust core/PyO3)
+        - label: Rust Binding (Rust bindings around non-Rust libraries like HTSlib)
+        - label: Experimental (experimental Rust port or prototype)
+  - type: input
+    id: publication
+    attributes:
+      label: Publication DOI or Preprint
+      description: Optional DOI (e.g., `10.1093/bioinformatics/...`) or preprint URL.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Optional context, key features, or suggested learning topics.

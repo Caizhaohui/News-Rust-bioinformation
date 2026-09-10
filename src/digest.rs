@@ -1,6 +1,6 @@
 use std::path::Path;
 
-use crate::catalog::{load_yaml_list, utcnow, validate_tool_docs, value_to_tool, Tool};
+use crate::catalog::{utcnow, Tool};
 use crate::config::{load_config, Config};
 use crate::metadata::{load_metadata, previous_snapshot, repo_record, Metadata};
 use crate::paths;
@@ -139,22 +139,13 @@ pub fn build_digest(
 }
 
 pub fn cmd_digest(root: &Path) -> i32 {
-    let docs = match load_yaml_list(&paths::tools_path(root)) {
-        Ok(docs) => docs,
+    let tools = match crate::catalog::load_all_tools(&paths::tools_path(root)) {
+        Ok(t) => t,
         Err(err) => {
             eprintln!("{err}");
             return 1;
         }
     };
-    let errors = validate_tool_docs(&docs);
-    if !errors.is_empty() {
-        eprintln!("tools.yaml is invalid:");
-        for item in errors {
-            eprintln!("  - {item}");
-        }
-        return 1;
-    }
-    let tools: Vec<Tool> = docs.iter().filter_map(value_to_tool).collect();
     let today = utcnow().date_naive().to_string();
     let dir = paths::digest_dir(root);
     if let Err(err) = std::fs::create_dir_all(&dir) {

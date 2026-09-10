@@ -9,8 +9,7 @@ use regex::Regex;
 use serde_json::Value;
 
 use crate::catalog::{
-    catalog_index, github_repo_from_url, is_cataloged, load_yaml_list, normalize_url, utcnow,
-    validate_tool_docs, CatalogIndex, Tool,
+    catalog_index, github_repo_from_url, is_cataloged, normalize_url, utcnow, CatalogIndex,
 };
 use crate::http::{HttpClient, ReqwestClient};
 use crate::paths;
@@ -873,25 +872,13 @@ pub fn render_report(
 }
 
 pub fn cmd_discover(root: &Path, days: i64, sources_raw: &str, output: Option<PathBuf>) -> i32 {
-    let docs = match load_yaml_list(&paths::tools_path(root)) {
-        Ok(docs) => docs,
+    let tools = match crate::catalog::load_all_tools(&paths::tools_path(root)) {
+        Ok(t) => t,
         Err(err) => {
             eprintln!("{err}");
             return 1;
         }
     };
-    let errors = validate_tool_docs(&docs);
-    if !errors.is_empty() {
-        eprintln!("tools.yaml is invalid:");
-        for item in errors {
-            eprintln!("  - {item}");
-        }
-        return 1;
-    }
-    let tools: Vec<Tool> = docs
-        .iter()
-        .filter_map(crate::catalog::value_to_tool)
-        .collect();
     let days = days.clamp(1, 365);
     let sources = parse_sources(sources_raw);
     let index = catalog_index(&tools);

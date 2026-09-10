@@ -1,1404 +1,2869 @@
-# Living catalog. Edit this file; do not edit README.md by hand.
-
-- name: rust-bio
-  url: https://github.com/rust-bio/rust-bio
-  repo: rust-bio/rust-bio
-  category: core-libraries
-  description: Algorithms and data structures for sequence analysis, alignment, and common file parsers.
-  papers:
-    - title: "Rust-Bio: a fast and safe bioinformatics library."
+schema_version: 2
+categories:
+  crispr:
+    name: CRISPR
+    description: CRISPR screening, guide design, genome editing and related tools.
+    order: 10
+  microbial:
+    name: Microbial Bioinformatics
+    description: Genomics and bioinformatics tools focused on microorganisms.
+    order: 20
+    children:
+      bacterial-assembly:
+        name: Bacterial Genome Assembly
+        order: 10
+      genome-annotation:
+        name: Genome Annotation
+        order: 20
+      prokaryotic-transcriptome:
+        name: Prokaryotic Transcriptome
+        order: 30
+      metagenomics:
+        name: Metagenomics
+        order: 40
+      phage-defense:
+        name: Phage Defense Systems
+        order: 50
+      antimicrobial-resistance:
+        name: Antimicrobial Resistance
+        order: 60
+      transposons:
+        name: Transposon Systems
+        order: 70
+  core-libraries:
+    name: Core Libraries
+    order: 30
+  sequence-io:
+    name: Sequence IO and Formats
+    order: 40
+  alignment:
+    name: Alignment and Mapping
+    order: 50
+  variants:
+    name: Variants and Annotation
+    order: 60
+  long-reads:
+    name: Long Reads
+    order: 70
+  assembly-pangenome:
+    name: Assembly and Pangenomes
+    order: 80
+  single-cell-rna:
+    name: Single-cell and RNA
+    order: 90
+  proteomics:
+    name: Proteomics and Structure
+    order: 100
+  protein-engineering:
+    name: Protein Engineering
+    order: 110
+  infrastructure:
+    name: Workflows and Infrastructure
+    order: 120
+  visualization:
+    name: Visualization
+    order: 130
+  rust-python:
+    name: Rust × Python
+    description: Python-facing bioinformatics packages powered partially or primarily by Rust.
+    order: 140
+  learning:
+    name: Learning Resources
+    order: 200
+tools:
+  rust-bio:
+    name: rust-bio
+    repository: rust-bio/rust-bio
+    description: Algorithms and data structures for sequence analysis, alignment, and common file parsers.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: native
+      interfaces:
+      - library
+    learning:
+      recommended: true
+      level: intermediate
+      topics:
+      - algorithms
+      - API design
+    publications:
+    - doi: 10.1093/bioinformatics/btv573
       url: https://doi.org/10.1093/bioinformatics/btv573
-
-- name: rust-htslib
-  url: https://github.com/rust-bio/rust-htslib
-  repo: rust-bio/rust-htslib
-  category: core-libraries
-  description: HTSlib bindings and a higher-level Rust API for BAM and related formats.
-
-- name: noodles
-  url: https://github.com/zaeleus/noodles
-  repo: zaeleus/noodles
-  category: core-libraries
-  description: Pure Rust bioinformatics I/O libraries covering SAM, BAM, CRAM, VCF, FASTA, and more.
-
-- name: needletail
-  url: https://github.com/onecodex/needletail
-  repo: onecodex/needletail
-  category: core-libraries
-  description: Fast FASTA and FASTQ parsing with k-mer helpers.
-
-- name: seq_io
-  url: https://github.com/markschl/seq_io
-  repo: markschl/seq_io
-  category: core-libraries
-  description: FASTA and FASTQ readers and writers designed for high throughput.
-
-- name: coitrees
-  url: https://github.com/dcjones/coitrees
-  repo: dcjones/coitrees
-  category: core-libraries
-  description: Cache-oblivious interval trees for fast overlap queries on genomic intervals.
-
-- name: niffler
-  url: https://github.com/luizirber/niffler
-  repo: luizirber/niffler
-  category: core-libraries
-  description: Transparent reading and writing of compressed files.
-
-- name: triple_accel
-  url: https://github.com/Daniel-Liu-c0deb0t/triple_accel
-  repo: Daniel-Liu-c0deb0t/triple_accel
-  category: core-libraries
-  description: SIMD-accelerated edit distance and string search routines.
-
-- name: rust-debruijn
-  url: https://github.com/10XGenomics/rust-debruijn
-  repo: 10XGenomics/rust-debruijn
-  category: core-libraries
-  description: De Bruijn graph construction and path compression libraries.
-
-- name: rust-boomphf
-  url: https://github.com/10XGenomics/rust-boomphf
-  repo: 10XGenomics/rust-boomphf
-  category: core-libraries
-  description: Fast minimal perfect hashing for large key sets.
-
-- name: rust-mdbg
-  url: https://github.com/ekimb/rust-mdbg
-  repo: ekimb/rust-mdbg
-  category: core-libraries
-  description: Minimizer-space de Bruijn graphs for whole-genome assembly.
-
-- name: finch
-  url: https://github.com/onecodex/finch-rs
-  repo: onecodex/finch-rs
-  category: core-libraries
-  description: MinHash sketches for genomic distance and search.
-
-- name: nuc2bit
-  url: https://github.com/natir/nuc2bit
-  repo: natir/nuc2bit
-  category: core-libraries
-  description: Fast 2-bit encoding and decoding of nucleotide sequences.
-  status: retired
-
-- name: ibu
-  url: https://github.com/noamteyssier/ibu
-  repo: noamteyssier/ibu
-  category: core-libraries
-  description: High-throughput binary encoding of genomic sequences.
-
-- name: bigtools
-  url: https://github.com/jackh726/bigtools
-  repo: jackh726/bigtools
-  category: sequence-io-and-formats
-  description: High-performance BigWig and BigBed library and CLI.
-
-- name: d4tools
-  url: https://github.com/38/d4-format
-  repo: 38/d4-format
-  category: sequence-io-and-formats
-  description: Dense depth data format and tools as an alternative to bigWig-style coverage files.
-
-- name: binseq
-  url: https://github.com/ArcInstitute/binseq
-  repo: ArcInstitute/binseq
-  category: sequence-io-and-formats
-  description: Compact binary format for sequencing reads.
-
-- name: bqtools
-  url: https://github.com/ArcInstitute/bqtools
-  repo: ArcInstitute/bqtools
-  category: sequence-io-and-formats
-  description: Command-line utilities for BINSEQ files.
-
-- name: xsra
-  url: https://github.com/ArcInstitute/xsra
-  repo: ArcInstitute/xsra
-  category: sequence-io-and-formats
-  description: Fast extraction of sequences from the SRA.
-
-- name: sracha-rs
-  url: https://github.com/rnabioco/sracha-rs
-  repo: rnabioco/sracha-rs
-  category: sequence-io-and-formats
-  description: Rust-based helpers around NCBI SRA tools.
-
-- name: fg-sra
-  url: https://github.com/fulcrumgenomics/fg-sra
-  repo: fulcrumgenomics/fg-sra
-  category: sequence-io-and-formats
-  description: High-performance SRA-to-SAM/BAM converter.
-
-- name: htsget-rs
-  url: https://github.com/umccr/htsget-rs
-  repo: umccr/htsget-rs
-  category: sequence-io-and-formats
-  description: Server implementation of the GA4GH htsget protocol.
-
-- name: rebgzf
-  url: https://github.com/nh13/rebgzf
-  repo: nh13/rebgzf
-  category: sequence-io-and-formats
-  description: Gzip to BGZF transcoder that avoids a full decompress-recompress cycle.
-
-- name: gia
-  url: https://github.com/noamteyssier/gia
-  repo: noamteyssier/gia
-  category: sequence-io-and-formats
-  description: Genomic interval arithmetic on the command line.
-
-- name: granges
-  url: https://github.com/vsbuffalo/granges
-  repo: vsbuffalo/granges
-  category: sequence-io-and-formats
-  description: Library and CLI for genomic ranges and associated data.
-
-- name: recmap
-  url: https://github.com/vsbuffalo/recmap
-  repo: vsbuffalo/recmap
-  category: sequence-io-and-formats
-  description: Library and CLI for recombination maps.
-  status: retired
-
-- name: fq
-  url: https://github.com/stjude-rust-labs/fq
-  repo: stjude-rust-labs/fq
-  category: sequence-io-and-formats
-  description: Command-line utility for manipulating Illumina FASTQ files.
-
-- name: ngs
-  url: https://github.com/stjude-rust-labs/ngs
-  repo: stjude-rust-labs/ngs
-  category: sequence-io-and-formats
-  description: Command-line utility for working with next-generation sequencing files.
-  status: retired
-
-- name: rasusa
-  url: https://github.com/mbhall88/rasusa
-  repo: mbhall88/rasusa
-  category: sequence-io-and-formats
-  description: Random subsampling of sequencing reads.
-
-- name: fqkit
-  url: https://github.com/sharkLoc/fqkit
-  repo: sharkLoc/fqkit
-  category: sequence-io-and-formats
-  description: Cross-platform FASTQ manipulation toolkit.
-
-- name: fqgrep
-  url: https://github.com/fulcrumgenomics/fqgrep
-  repo: fulcrumgenomics/fqgrep
-  category: sequence-io-and-formats
-  description: Grep-like search over FASTQ files.
-
-- name: fqtk
-  url: https://github.com/fulcrumgenomics/fqtk
-  repo: fulcrumgenomics/fqtk
-  category: sequence-io-and-formats
-  description: Fast FASTQ sample demultiplexing.
-
-- name: rust-bio-tools
-  url: https://github.com/rust-bio/rust-bio-tools
-  repo: rust-bio/rust-bio-tools
-  category: alignment-and-mapping
-  description: Command-line utilities built on Rust-Bio.
-
-- name: poasta
-  url: https://github.com/broadinstitute/poasta
-  repo: broadinstitute/poasta
-  category: alignment-and-mapping
-  description: Fast exact gap-affine partial order alignment.
-
-- name: sigalign
-  url: https://github.com/baku4/sigalign
-  repo: baku4/sigalign
-  category: alignment-and-mapping
-  description: Similarity-guided sequence alignment algorithm.
-
-- name: blast-rs
-  url: https://github.com/henriksson-lab/blast-rs
-  repo: henriksson-lab/blast-rs
-  category: alignment-and-mapping
-  description: Pure-Rust BLAST implementation that reads NCBI databases.
-
-- name: minimap2-pure-rs
-  url: https://github.com/henriksson-lab/minimap2-pure-rs
-  repo: henriksson-lab/minimap2-pure-rs
-  category: alignment-and-mapping
-  description: Pure Rust port of the minimap2 aligner.
-
-- name: rustybam
-  url: https://github.com/vollgerlab/rustybam
-  repo: vollgerlab/rustybam
-  category: alignment-and-mapping
-  description: Bioinformatics toolkit focused on BAM and pangenome alignments.
-  papers:
-    - title: "rustybam: a composable toolkit for alignment analysis and visualization with SafFire"
+      title: 'Rust-Bio: a fast and safe bioinformatics library.'
+      type: journal
+    status:
+      catalog: active
+  rust-htslib:
+    name: rust-htslib
+    repository: rust-bio/rust-htslib
+    description: HTSlib bindings and a higher-level Rust API for BAM and related formats.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: binding
+      interfaces:
+      - library
+      foreign_dependencies:
+      - HTSlib
+    status:
+      catalog: active
+  noodles:
+    name: noodles
+    repository: zaeleus/noodles
+    description: Pure Rust bioinformatics I/O libraries covering SAM, BAM, CRAM, VCF, FASTA, and more.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: native
+      interfaces:
+      - cli
+      - library
+    learning:
+      recommended: true
+      level: advanced
+      topics:
+      - bioinformatics IO
+      - binary file formats
+      - API design
+    status:
+      catalog: active
+  needletail:
+    name: needletail
+    repository: onecodex/needletail
+    description: Fast FASTA and FASTQ parsing with k-mer helpers.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  seq-io:
+    name: seq_io
+    repository: markschl/seq_io
+    description: FASTA and FASTQ readers and writers designed for high throughput.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  coitrees:
+    name: coitrees
+    repository: dcjones/coitrees
+    description: Cache-oblivious interval trees for fast overlap queries on genomic intervals.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  niffler:
+    name: niffler
+    repository: luizirber/niffler
+    description: Transparent reading and writing of compressed files.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  triple-accel:
+    name: triple_accel
+    repository: Daniel-Liu-c0deb0t/triple_accel
+    description: SIMD-accelerated edit distance and string search routines.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rust-debruijn:
+    name: rust-debruijn
+    repository: 10XGenomics/rust-debruijn
+    description: De Bruijn graph construction and path compression libraries.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rust-boomphf:
+    name: rust-boomphf
+    repository: 10XGenomics/rust-boomphf
+    description: Fast minimal perfect hashing for large key sets.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rust-mdbg:
+    name: rust-mdbg
+    repository: ekimb/rust-mdbg
+    description: Minimizer-space de Bruijn graphs for whole-genome assembly.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  finch:
+    name: finch
+    repository: onecodex/finch-rs
+    description: MinHash sketches for genomic distance and search.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  nuc2bit:
+    name: nuc2bit
+    repository: natir/nuc2bit
+    description: Fast 2-bit encoding and decoding of nucleotide sequences.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: retired
+  ibu:
+    name: ibu
+    repository: noamteyssier/ibu
+    description: High-throughput binary encoding of genomic sequences.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  bigtools:
+    name: bigtools
+    repository: jackh726/bigtools
+    description: High-performance BigWig and BigBed library and CLI.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  d4tools:
+    name: d4tools
+    repository: 38/d4-format
+    description: Dense depth data format and tools as an alternative to bigWig-style coverage files.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  binseq:
+    name: binseq
+    repository: ArcInstitute/binseq
+    description: Compact binary format for sequencing reads.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  bqtools:
+    name: bqtools
+    repository: ArcInstitute/bqtools
+    description: Command-line utilities for BINSEQ files.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  xsra:
+    name: xsra
+    repository: ArcInstitute/xsra
+    description: Fast extraction of sequences from the SRA.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  sracha-rs:
+    name: sracha-rs
+    repository: rnabioco/sracha-rs
+    description: Rust-based helpers around NCBI SRA tools.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  fg-sra:
+    name: fg-sra
+    repository: fulcrumgenomics/fg-sra
+    description: High-performance SRA-to-SAM/BAM converter.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  htsget-rs:
+    name: htsget-rs
+    repository: umccr/htsget-rs
+    description: Server implementation of the GA4GH htsget protocol.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rebgzf:
+    name: rebgzf
+    repository: nh13/rebgzf
+    description: Gzip to BGZF transcoder that avoids a full decompress-recompress cycle.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  gia:
+    name: gia
+    repository: noamteyssier/gia
+    description: Genomic interval arithmetic on the command line.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  granges:
+    name: granges
+    repository: vsbuffalo/granges
+    description: Library and CLI for genomic ranges and associated data.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  recmap:
+    name: recmap
+    repository: vsbuffalo/recmap
+    description: Library and CLI for recombination maps.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: retired
+  fq:
+    name: fq
+    repository: stjude-rust-labs/fq
+    description: Command-line utility for manipulating Illumina FASTQ files.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  ngs:
+    name: ngs
+    repository: stjude-rust-labs/ngs
+    description: Command-line utility for working with next-generation sequencing files.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: retired
+  rasusa:
+    name: rasusa
+    repository: mbhall88/rasusa
+    description: Random subsampling of sequencing reads.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: native
+      interfaces:
+      - cli
+    learning:
+      recommended: true
+      level: beginner
+      topics:
+      - CLI design
+      - FASTQ handling
+    status:
+      catalog: active
+  fqkit:
+    name: fqkit
+    repository: sharkLoc/fqkit
+    description: Cross-platform FASTQ manipulation toolkit.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  fqgrep:
+    name: fqgrep
+    repository: fulcrumgenomics/fqgrep
+    description: Grep-like search over FASTQ files.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  fqtk:
+    name: fqtk
+    repository: fulcrumgenomics/fqtk
+    description: Fast FASTQ sample demultiplexing.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rust-bio-tools:
+    name: rust-bio-tools
+    repository: rust-bio/rust-bio-tools
+    description: Command-line utilities built on Rust-Bio.
+    category:
+      primary: alignment
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  poasta:
+    name: poasta
+    repository: broadinstitute/poasta
+    description: Fast exact gap-affine partial order alignment.
+    category:
+      primary: alignment
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  sigalign:
+    name: sigalign
+    repository: baku4/sigalign
+    description: Similarity-guided sequence alignment algorithm.
+    category:
+      primary: alignment
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  blast-rs:
+    name: blast-rs
+    repository: henriksson-lab/blast-rs
+    description: Pure-Rust BLAST implementation that reads NCBI databases.
+    category:
+      primary: alignment
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  minimap2-pure-rs:
+    name: minimap2-pure-rs
+    repository: henriksson-lab/minimap2-pure-rs
+    description: Pure Rust port of the minimap2 aligner.
+    category:
+      primary: alignment
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rustybam:
+    name: rustybam
+    repository: vollgerlab/rustybam
+    description: Bioinformatics toolkit focused on BAM and pangenome alignments.
+    category:
+      primary: alignment
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.02.16.706142
       url: https://www.biorxiv.org/content/10.64898/2026.02.16.706142
-
-- name: perbase
-  url: https://github.com/sstadick/perbase
-  repo: sstadick/perbase
-  category: alignment-and-mapping
-  description: Per-base depth analysis from alignments.
-
-- name: mapAD
-  url: https://github.com/mpieva/mapAD
-  repo: mpieva/mapAD
-  category: alignment-and-mapping
-  description: Ancient-DNA-aware short-read mapper.
-
-- name: wgatools
-  url: https://github.com/wjwei-handsome/wgatools
-  repo: wjwei-handsome/wgatools
-  category: alignment-and-mapping
-  description: Tools for whole-genome alignments.
-
-- name: transanno
-  url: https://github.com/informationsea/transanno
-  repo: informationsea/transanno
-  category: variants-and-annotation
-  description: Accurate liftOver for new genome assemblies.
-
-- name: echtvar
-  url: https://github.com/brentp/echtvar
-  repo: brentp/echtvar
-  category: variants-and-annotation
-  description: Compact variant annotation and filtering for VCF files.
-
-- name: vcfexpress
-  url: https://github.com/brentp/vcfexpress
-  repo: brentp/vcfexpress
-  category: variants-and-annotation
-  description: Expression language for querying and rewriting VCFs.
-
-- name: mehari
-  url: https://github.com/varfish-org/mehari
-  repo: varfish-org/mehari
-  category: variants-and-annotation
-  description: Sequence ontology and HGVS annotation of VCF files.
-
-- name: vcf2parquet
-  url: https://github.com/natir/vcf2parquet
-  repo: natir/vcf2parquet
-  category: variants-and-annotation
-  description: Converter from VCF to Parquet.
-  status: retired
-
-- name: gvcf_norm
-  url: https://github.com/mlin/gvcf_norm
-  repo: mlin/gvcf_norm
-  category: variants-and-annotation
-  description: Allele normalizer for gVCF files.
-  status: retired
-
-- name: GFFx
-  url: https://github.com/Baohua-Chen/GFFx
-  repo: Baohua-Chen/GFFx
-  category: variants-and-annotation
-  description: Fast genomic feature extraction from GFF files.
-
-- name: atg
-  url: https://github.com/anergictcell/atg
-  repo: anergictcell/atg
-  category: variants-and-annotation
-  description: Library and CLI for genomic transcripts.
-
-- name: metheor
-  url: https://github.com/dohlee/metheor
-  repo: dohlee/metheor
-  category: variants-and-annotation
-  description: Fast DNA methylation heterogeneity from bisulfite alignments.
-
-- name: modkit
-  url: https://github.com/nanoporetech/modkit
-  repo: nanoporetech/modkit
-  category: variants-and-annotation
-  description: Tools for working with modified bases in alignments.
-
-- name: guide-counter
-  url: https://github.com/fulcrumgenomics/guide-counter
-  repo: fulcrumgenomics/guide-counter
-  category: crispr
-  description: Counts guide RNAs from CRISPR screening FASTQ files at high throughput.
-
-- name: sgcount
-  url: https://github.com/noamteyssier/sgcount
-  repo: noamteyssier/sgcount
-  category: crispr
-  description: Tallies sgRNA abundances from FASTQ inputs with flexible matching options.
-
-- name: crispr_screen
-  url: https://github.com/noamteyssier/crispr_screen
-  repo: noamteyssier/crispr_screen
-  category: crispr
-  description: Differential expression and gene-level aggregation for CRISPR screen count tables.
-
-- name: diced
-  url: https://github.com/althonos/diced
-  repo: althonos/diced
-  category: crispr
-  description: Detects CRISPR arrays in assembled genomes using a Rust port of the MinCED algorithm.
-
-- name: nanoq
-  url: https://github.com/esteinig/nanoq
-  repo: esteinig/nanoq
-  category: long-reads
-  description: Minimal quality control for Oxford Nanopore reads.
-
-- name: chopper
-  url: https://github.com/wdecoster/chopper
-  repo: wdecoster/chopper
-  category: long-reads
-  description: Filtering and trimming for PacBio and Nanopore FASTQ files.
-
-- name: HiPhase
-  url: https://github.com/PacificBiosciences/HiPhase
-  repo: PacificBiosciences/HiPhase
-  category: long-reads
-  description: Small-variant, SV, and STR phasing for PacBio HiFi reads.
-
-- name: trgt
-  url: https://github.com/PacificBiosciences/trgt
-  repo: PacificBiosciences/trgt
-  category: long-reads
-  description: Tandem repeat genotyping from PacBio HiFi data.
-
-- name: longshot
-  url: https://github.com/pjedge/longshot
-  repo: pjedge/longshot
-  category: long-reads
-  description: Diploid SNV caller for error-prone long reads.
-
-- name: Autocycler
-  url: https://github.com/rrwick/Autocycler
-  repo: rrwick/Autocycler
-  category: bacterial-assembly
-  description: Consensus long-read assemblies for bacterial genomes.
-
-- name: Polypolish
-  url: https://github.com/rrwick/Polypolish
-  repo: rrwick/Polypolish
-  category: bacterial-assembly
-  description: Short-read polishing for long-read assemblies.
-
-- name: yacrd
-  url: https://github.com/natir/yacrd
-  repo: natir/yacrd
-  category: long-reads
-  description: Chimeric read detector for long-read datasets.
-
-- name: lrge
-  url: https://github.com/mbhall88/lrge
-  repo: mbhall88/lrge
-  category: long-reads
-  description: Genome size estimation from long-read overlaps.
-
-- name: barbell
-  url: https://github.com/rickbeeloo/barbell
-  repo: rickbeeloo/barbell
-  category: long-reads
-  description: Fast Nanopore demultiplexing.
-
-- name: myloasm
-  url: https://github.com/bluenote-1577/myloasm
-  repo: bluenote-1577/myloasm
-  category: assembly-and-pangenomes
-  description: High-resolution long-read metagenome assembler.
-
-- name: ggcat
-  url: https://github.com/algbio/ggcat
-  repo: algbio/ggcat
-  category: assembly-and-pangenomes
-  description: Compacted and colored de Bruijn graph construction and querying.
-
-- name: impg
-  url: https://github.com/pangenome/impg
-  repo: pangenome/impg
-  category: assembly-and-pangenomes
-  description: Implicit pangenome graph toolkit.
-
-- name: panacus
-  url: https://github.com/codialab/panacus
-  repo: codialab/panacus
-  category: assembly-and-pangenomes
-  description: Statistics for GFA-formatted pangenome graphs.
-  papers:
-    - title: "Panacus: fast and exact pangenome growth and core size estimation."
+      title: 'rustybam: a composable toolkit for alignment analysis and visualization with SafFire'
+      type: preprint
+    status:
+      catalog: active
+  perbase:
+    name: perbase
+    repository: sstadick/perbase
+    description: Per-base depth analysis from alignments.
+    category:
+      primary: alignment
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  mapad:
+    name: mapAD
+    repository: mpieva/mapAD
+    description: Ancient-DNA-aware short-read mapper.
+    category:
+      primary: alignment
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  wgatools:
+    name: wgatools
+    repository: wjwei-handsome/wgatools
+    description: Tools for whole-genome alignments.
+    category:
+      primary: alignment
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  transanno:
+    name: transanno
+    repository: informationsea/transanno
+    description: Accurate liftOver for new genome assemblies.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  echtvar:
+    name: echtvar
+    repository: brentp/echtvar
+    description: Compact variant annotation and filtering for VCF files.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  vcfexpress:
+    name: vcfexpress
+    repository: brentp/vcfexpress
+    description: Expression language for querying and rewriting VCFs.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  mehari:
+    name: mehari
+    repository: varfish-org/mehari
+    description: Sequence ontology and HGVS annotation of VCF files.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  vcf2parquet:
+    name: vcf2parquet
+    repository: natir/vcf2parquet
+    description: Converter from VCF to Parquet.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: retired
+  gvcf-norm:
+    name: gvcf_norm
+    repository: mlin/gvcf_norm
+    description: Allele normalizer for gVCF files.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: retired
+  gffx:
+    name: GFFx
+    repository: Baohua-Chen/GFFx
+    description: Fast genomic feature extraction from GFF files.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  atg:
+    name: atg
+    repository: anergictcell/atg
+    description: Library and CLI for genomic transcripts.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  metheor:
+    name: metheor
+    repository: dohlee/metheor
+    description: Fast DNA methylation heterogeneity from bisulfite alignments.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  modkit:
+    name: modkit
+    repository: nanoporetech/modkit
+    description: Tools for working with modified bases in alignments.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  guide-counter:
+    name: guide-counter
+    repository: fulcrumgenomics/guide-counter
+    description: Counts guide RNAs from CRISPR screening FASTQ files at high throughput.
+    category:
+      primary: crispr
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  sgcount:
+    name: sgcount
+    repository: noamteyssier/sgcount
+    description: Tallies sgRNA abundances from FASTQ inputs with flexible matching options.
+    category:
+      primary: crispr
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  crispr-screen:
+    name: crispr_screen
+    repository: noamteyssier/crispr_screen
+    description: Differential expression and gene-level aggregation for CRISPR screen count tables.
+    category:
+      primary: crispr
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  diced:
+    name: diced
+    repository: althonos/diced
+    description: Detects CRISPR arrays in assembled genomes using a Rust port of the MinCED algorithm.
+    category:
+      primary: crispr
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  nanoq:
+    name: nanoq
+    repository: esteinig/nanoq
+    description: Minimal quality control for Oxford Nanopore reads.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  chopper:
+    name: chopper
+    repository: wdecoster/chopper
+    description: Filtering and trimming for PacBio and Nanopore FASTQ files.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  hiphase:
+    name: HiPhase
+    repository: PacificBiosciences/HiPhase
+    description: Small-variant, SV, and STR phasing for PacBio HiFi reads.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  trgt:
+    name: trgt
+    repository: PacificBiosciences/trgt
+    description: Tandem repeat genotyping from PacBio HiFi data.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  longshot:
+    name: longshot
+    repository: pjedge/longshot
+    description: Diploid SNV caller for error-prone long reads.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  autocycler:
+    name: Autocycler
+    repository: rrwick/Autocycler
+    description: Consensus long-read assemblies for bacterial genomes.
+    category:
+      primary: bacterial-assembly
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  polypolish:
+    name: Polypolish
+    repository: rrwick/Polypolish
+    description: Short-read polishing for long-read assemblies.
+    category:
+      primary: bacterial-assembly
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  yacrd:
+    name: yacrd
+    repository: natir/yacrd
+    description: Chimeric read detector for long-read datasets.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  lrge:
+    name: lrge
+    repository: mbhall88/lrge
+    description: Genome size estimation from long-read overlaps.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  barbell:
+    name: barbell
+    repository: rickbeeloo/barbell
+    description: Fast Nanopore demultiplexing.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  myloasm:
+    name: myloasm
+    repository: bluenote-1577/myloasm
+    description: High-resolution long-read metagenome assembler.
+    category:
+      primary: assembly-pangenome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  ggcat:
+    name: ggcat
+    repository: algbio/ggcat
+    description: Compacted and colored de Bruijn graph construction and querying.
+    category:
+      primary: assembly-pangenome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  impg:
+    name: impg
+    repository: pangenome/impg
+    description: Implicit pangenome graph toolkit.
+    category:
+      primary: assembly-pangenome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  panacus:
+    name: panacus
+    repository: codialab/panacus
+    description: Statistics for GFA-formatted pangenome graphs.
+    category:
+      primary: assembly-pangenome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1093/bioinformatics/btae720
       url: https://doi.org/10.1093/bioinformatics/btae720
-
-- name: seqwish
-  url: https://github.com/pangenome/seqwish
-  repo: pangenome/seqwish
-  category: assembly-and-pangenomes
-  description: Alignment-to-variation-graph inducer for building pangenome graphs.
-
-- name: seqrush
-  url: https://github.com/pangenome/seqrush
-  repo: pangenome/seqrush
-  category: assembly-and-pangenomes
-  description: Online induction of bidirected pangenome variation graphs.
-
-- name: gafpack
-  url: https://github.com/pangenome/gafpack
-  repo: pangenome/gafpack
-  category: assembly-and-pangenomes
-  description: Conversion of variation-graph alignments into node coverage maps.
-
-- name: gfatk
-  url: https://github.com/tolkit/gfatk
-  repo: tolkit/gfatk
-  category: assembly-and-pangenomes
-  description: Toolkit for plant organellar Graphical Fragment Assembly graphs.
-
-- name: skani
-  url: https://github.com/bluenote-1577/skani
-  repo: bluenote-1577/skani
-  category: metagenomics
-  description: Fast ANI and aligned-fraction estimates for genomes and metagenomic contigs.
-
-- name: sylph
-  url: https://github.com/bluenote-1577/sylph
-  repo: bluenote-1577/sylph
-  category: metagenomics
-  description: Abundance-corrected minhash profiling for metagenomic samples.
-
-- name: sourmash
-  url: https://github.com/sourmash-bio/sourmash
-  repo: sourmash-bio/sourmash
-  category: metagenomics
-  description: Sketch-based search and comparison of genomic and metagenomic datasets.
-
-- name: CoverM
-  url: https://github.com/wwood/CoverM
-  repo: wwood/CoverM
-  category: metagenomics
-  description: Read coverage calculator for metagenomics.
-
-- name: galah
-  url: https://github.com/wwood/galah
-  repo: wwood/galah
-  category: metagenomics
-  description: Scalable dereplication of metagenome-assembled genomes.
-
-- name: nohuman
-  url: https://github.com/mbhall88/nohuman
-  repo: mbhall88/nohuman
-  category: metagenomics
-  description: Removal of human reads from a sequencing run.
-
-- name: deacon
-  url: https://github.com/bede/deacon
-  repo: bede/deacon
-  category: metagenomics
-  description: Fast host DNA sequence filtering.
-
-- name: vircov
-  url: https://github.com/esteinig/vircov
-  repo: esteinig/vircov
-  category: metagenomics
-  description: Viral genome coverage evaluation for metagenomic diagnostics.
-  status: retired
-
-- name: ska
-  url: https://github.com/bacpop/ska.rust
-  repo: bacpop/ska.rust
-  category: metagenomics
-  description: Split k-mer analysis for bacterial genomes.
-
-- name: gsearch
-  url: https://github.com/jean-pierreBoth/gsearch
-  repo: jean-pierreBoth/gsearch
-  category: metagenomics
-  description: Approximate nearest-neighbor search for microbial genomes.
-
-- name: alevin-fry
-  url: https://github.com/COMBINE-lab/alevin-fry
-  repo: COMBINE-lab/alevin-fry
-  category: single-cell-and-rna
-  description: Efficient processing of single-cell sequencing data, focused on transcriptomics.
-
-- name: simpleaf
-  url: https://github.com/COMBINE-lab/simpleaf
-  repo: COMBINE-lab/simpleaf
-  category: single-cell-and-rna
-  description: Workflow wrapper that simplifies alevin-fry analyses.
-
-- name: oarfish
-  url: https://github.com/COMBINE-lab/oarfish
-  repo: COMBINE-lab/oarfish
-  category: single-cell-and-rna
-  description: Quantification for long-read RNA-seq.
-
-- name: piscem
-  url: https://github.com/COMBINE-lab/piscem
-  repo: COMBINE-lab/piscem
-  category: single-cell-and-rna
-  description: Next-generation sequence indexing and mapping components.
-
-- name: squab
-  url: https://github.com/zaeleus/squab
-  repo: zaeleus/squab
-  category: single-cell-and-rna
-  description: Alignment-based gene expression quantification.
-
-- name: SnapATAC2
-  url: https://github.com/kaizhang/SnapATAC2
-  repo: kaizhang/SnapATAC2
-  category: single-cell-and-rna
-  description: Single-cell epigenomics analysis tools.
-
-- name: proseg
-  url: https://github.com/dcjones/proseg
-  repo: dcjones/proseg
-  category: single-cell-and-rna
-  description: Probabilistic cell segmentation for spatial transcriptomics.
-
-- name: rnapkin
-  url: https://github.com/ukmrs/rnapkin
-  repo: ukmrs/rnapkin
-  category: single-cell-and-rna
-  description: Fast drawing of RNA secondary structure.
-
-- name: sage
-  url: https://github.com/lazear/sage
-  repo: lazear/sage
-  category: proteomics-and-structure
-  description: Fast proteomics search and quantification.
-
-- name: folddisco
-  url: https://github.com/steineggerlab/folddisco
-  repo: steineggerlab/folddisco
-  category: proteomics-and-structure
-  description: Indexing and search of discontinuous motifs in protein structures.
-
-- name: foldmason
-  url: https://github.com/steineggerlab/foldmason
-  repo: steineggerlab/foldmason
-  category: proteomics-and-structure
-  description: Multiple alignment of large protein structure sets.
-
-- name: unicore
-  url: https://github.com/steineggerlab/unicore
-  repo: steineggerlab/unicore
-  category: proteomics-and-structure
-  description: Core-gene phylogeny using Foldseek and ProstT5.
-
-- name: align-cli
-  url: https://github.com/snijderlab/align-cli
-  repo: snijderlab/align-cli
-  category: proteomics-and-structure
-  description: Pairwise alignment CLI supporting mass-based protein alignment.
-
-- name: daedalus
-  url: https://github.com/David-OConnor/daedalus
-  repo: David-OConnor/daedalus
-  category: proteomics-and-structure
-  description: Protein and molecule viewer.
-
-- name: mzcore
-  url: https://github.com/rusteomics/mzcore
-  repo: rusteomics/mzcore
-  category: proteomics-and-structure
-  description: Peptide-centric mass spectrometry calculations around PSI standards.
-
-- name: mzdata
-  url: https://github.com/mobiusklein/mzdata
-  repo: mobiusklein/mzdata
-  category: proteomics-and-structure
-  description: Readers and writers for mass spectrometry file formats.
-
-- name: timsrust
-  url: https://github.com/MannLabs/timsrust
-  repo: MannLabs/timsrust
-  category: proteomics-and-structure
-  description: High-performance access to Bruker timsTOF mass spectrometry data.
-
-- name: pdbtbx
-  url: https://github.com/douweschulte/pdbtbx
-  repo: douweschulte/pdbtbx
-  category: proteomics-and-structure
-  description: Library for reading, editing, and writing PDB and mmCIF files.
-
-- name: ferritin
-  url: https://github.com/ferritin-bio/ferritin
-  repo: ferritin-bio/ferritin
-  category: protein-engineering
-  description: Utilities for protein structures, protein language models, and LigandMPNN-style sequence-design workflows.
-
-- name: sc-rs
-  url: https://github.com/cytokineking/sc-rs
-  repo: cytokineking/sc-rs
-  category: protein-engineering
-  description: Scores the shape complementarity of protein-protein interfaces using the Lawrence and Colman statistic.
-
-- name: heme
-  url: https://github.com/dacarlin/heme
-  repo: dacarlin/heme
-  category: protein-engineering
-  description: Reads protein structures and featurizes them for graph-based generative design models.
-  status: retired
-
-- name: dreid-pack
-  url: https://github.com/caltechmsc/dreid-pack
-  repo: caltechmsc/dreid-pack
-  category: protein-engineering
-  description: Packs protein side chains with the DREIDING force field, dead-end elimination, and tree-decomposition search.
-
-- name: oxo-flow
-  url: https://github.com/Traitome/oxo-flow
-  repo: Traitome/oxo-flow
-  category: workflows-and-infrastructure
-  description: Rust-native bioinformatics pipeline engine with TOML workflows.
-
-- name: wdl
-  url: https://github.com/stjude-rust-labs/wdl
-  repo: stjude-rust-labs/wdl
-  category: workflows-and-infrastructure
-  description: Rust crates for Workflow Description Language documents.
-  status: retired
-
-- name: scidataflow
-  url: https://github.com/vsbuffalo/scidataflow
-  repo: vsbuffalo/scidataflow
-  category: workflows-and-infrastructure
-  description: Command-line scientific data management.
-
-- name: exon
-  url: https://github.com/wheretrue/exon
-  repo: wheretrue/exon
-  category: workflows-and-infrastructure
-  description: OLAP query engine for biology and life-science files.
-
-- name: biobear
-  url: https://github.com/wheretrue/biobear
-  repo: wheretrue/biobear
-  category: workflows-and-infrastructure
-  description: Query bioinformatics files through Arrow, Polars, and DuckDB.
-
-- name: polars-bio
-  url: https://github.com/biodatageeks/polars-bio
-  repo: biodatageeks/polars-bio
-  category: workflows-and-infrastructure
-  description: Bioinformatics operations on Polars DataFrames.
-
-- name: ggetrs
-  url: https://github.com/noamteyssier/ggetrs
-  repo: noamteyssier/ggetrs
-  category: workflows-and-infrastructure
-  description: Efficient querying of biological databases.
-
-- name: nwr
-  url: https://github.com/wang-q/nwr
-  repo: wang-q/nwr
-  category: workflows-and-infrastructure
-  description: CLI for NCBI taxonomy, Newick trees, and assembly reports.
-
-- name: nextclade
-  url: https://github.com/nextstrain/nextclade
-  repo: nextstrain/nextclade
-  category: workflows-and-infrastructure
-  description: Viral genome alignment, clade assignment, and quality checks.
-
-- name: tgv
-  url: https://github.com/zeqianli/tgv
-  repo: zeqianli/tgv
-  category: visualization
-  description: Terminal genome browser with vim-style motion.
-
-- name: alignoth
-  url: https://github.com/alignoth/alignoth
-  repo: alignoth/alignoth
-  category: visualization
-  description: Alignment plots from BAM files.
-
-- name: SeqTUI
-  url: https://github.com/ranwez-search/SeqTUI
-  repo: ranwez-search/SeqTUI
-  category: visualization
-  description: Terminal viewer and toolkit for DNA and protein sequences.
-
-- name: SeqSizzle
-  url: https://github.com/ChangqingW/SeqSizzle
-  repo: ChangqingW/SeqSizzle
-  category: visualization
-  description: FASTQ pager with fuzzy matching and adaptor coloring.
-
-- name: plascad
-  url: https://github.com/David-OConnor/plascad
-  repo: David-OConnor/plascad
-  category: visualization
-  description: Plasmid and primer design with cloning and restriction workflows.
-
-- name: kuva
-  url: https://github.com/Psy-Fer/kuva
-  repo: Psy-Fer/kuva
-  category: visualization
-  description: Scientific plotting library in Rust.
-
-- name: igv-rs
-  url: https://github.com/AI4S-YB/igv-rs
-  repo: AI4S-YB/igv-rs
-  category: visualization
-  description: Interactive terminal genome viewer for FASTA, VCF, BAM, GFF, and BED.
-
-- name: Are we bio yet?
-  url: https://rust4bio.github.io/arewebioyet/
-  repo: arewebioyet/arewebioyet.github.io
-  category: learning-resources
-  description: Earlier public registry of Rust crates for bioinformatics.
-  status: retired
-
-- name: rust-in-bioinformatics
-  url: https://github.com/sharkLoc/rust-in-bioinformatics
-  repo: sharkLoc/rust-in-bioinformatics
-  category: learning-resources
-  description: Collection of genomics software tools written in Rust.
-
-- name: Awesome Bioinformatics
-  url: https://github.com/danielecook/Awesome-Bioinformatics
-  repo: danielecook/Awesome-Bioinformatics
-  category: learning-resources
-  description: Language-agnostic curated list of bioinformatics software.
-
-- name: awesome-rust
-  url: https://github.com/rust-unofficial/awesome-rust
-  repo: rust-unofficial/awesome-rust
-  category: learning-resources
-  description: General awesome list for Rust, including a short Bioinformatics section.
-
-- name: Rust-Bio documentation
-  url: https://rust-bio.github.io/
-  category: learning-resources
-  description: Project site and documentation for the Rust-Bio ecosystem.
-
-- name: sparrowhawk-asm
-  url: https://github.com/bacpop/sparrowhawk-asm
-  repo: bacpop/sparrowhawk-asm
-  category: bacterial-assembly
-  description: Short-read de Bruijn assembler for bacterial genomes.
-
-- name: orphos
-  url: https://github.com/FullHuman/orphos
-  repo: FullHuman/orphos
-  category: bacterial-annotation
-  description: Parallel Prodigal-style gene prediction for prokaryotic genomes.
-
-- name: FragGeneScanRs
-  url: https://github.com/unipept/FragGeneScanRs
-  repo: unipept/FragGeneScanRs
-  category: bacterial-annotation
-  description: Gene prediction for short and error-prone reads using the FragGeneScan model.
-
-- name: dynamite
-  url: https://github.com/raw-lab/dynamite
-  repo: raw-lab/dynamite
-  category: bacterial-annotation
-  description: Finds protein-coding genes in bacteria, archaea, phages, and raw sequencing reads.
-
-- name: trackclusterTU
-  url: https://github.com/lrslab/trackclusterTU
-  repo: lrslab/trackclusterTU
-  category: prokaryotic-transcriptome
-  description: Clusters bacterial transcript units from mapped long reads.
-
-- name: savont
-  url: https://github.com/bluenote-1577/savont
-  repo: bluenote-1577/savont
-  category: metagenomics
-  description: Calls amplicon sequence variants from 16S ONT and PacBio HiFi reads.
-  papers:
-    - title: "Sensitive long-read amplicon sequence variant recovery with savont"
+      title: 'Panacus: fast and exact pangenome growth and core size estimation.'
+      type: journal
+    status:
+      catalog: active
+  seqwish:
+    name: seqwish
+    repository: pangenome/seqwish
+    description: Alignment-to-variation-graph inducer for building pangenome graphs.
+    category:
+      primary: assembly-pangenome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  seqrush:
+    name: seqrush
+    repository: pangenome/seqrush
+    description: Online induction of bidirected pangenome variation graphs.
+    category:
+      primary: assembly-pangenome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  gafpack:
+    name: gafpack
+    repository: pangenome/gafpack
+    description: Conversion of variation-graph alignments into node coverage maps.
+    category:
+      primary: assembly-pangenome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  gfatk:
+    name: gfatk
+    repository: tolkit/gfatk
+    description: Toolkit for plant organellar Graphical Fragment Assembly graphs.
+    category:
+      primary: assembly-pangenome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  skani:
+    name: skani
+    repository: bluenote-1577/skani
+    description: Fast ANI and aligned-fraction estimates for genomes and metagenomic contigs.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: native
+      interfaces:
+      - cli
+    learning:
+      recommended: true
+      level: intermediate
+      topics:
+      - k-mer algorithms
+      - MinHash
+      - rayon
+    status:
+      catalog: active
+  sylph:
+    name: sylph
+    repository: bluenote-1577/sylph
+    description: Abundance-corrected minhash profiling for metagenomic samples.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: native
+      interfaces:
+      - cli
+    learning:
+      recommended: true
+      level: intermediate
+      topics:
+      - MinHash
+      - metagenomics
+    status:
+      catalog: active
+  sourmash:
+    name: sourmash
+    repository: sourmash-bio/sourmash
+    description: Sketch-based search and comparison of genomic and metagenomic datasets.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: hybrid
+      interfaces:
+      - cli
+      - python
+      - library
+    learning:
+      recommended: true
+      level: intermediate
+      topics:
+      - Python + Rust architecture
+      - PyO3
+    status:
+      catalog: active
+  coverm:
+    name: CoverM
+    repository: wwood/CoverM
+    description: Read coverage calculator for metagenomics.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  galah:
+    name: galah
+    repository: wwood/galah
+    description: Scalable dereplication of metagenome-assembled genomes.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  nohuman:
+    name: nohuman
+    repository: mbhall88/nohuman
+    description: Removal of human reads from a sequencing run.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  deacon:
+    name: deacon
+    repository: bede/deacon
+    description: Fast host DNA sequence filtering.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  vircov:
+    name: vircov
+    repository: esteinig/vircov
+    description: Viral genome coverage evaluation for metagenomic diagnostics.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: retired
+  ska:
+    name: ska
+    repository: bacpop/ska.rust
+    description: Split k-mer analysis for bacterial genomes.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  gsearch:
+    name: gsearch
+    repository: jean-pierreBoth/gsearch
+    description: Approximate nearest-neighbor search for microbial genomes.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  alevin-fry:
+    name: alevin-fry
+    repository: COMBINE-lab/alevin-fry
+    description: Efficient processing of single-cell sequencing data, focused on transcriptomics.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  simpleaf:
+    name: simpleaf
+    repository: COMBINE-lab/simpleaf
+    description: Workflow wrapper that simplifies alevin-fry analyses.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: binding
+      interfaces:
+      - library
+    status:
+      catalog: active
+  oarfish:
+    name: oarfish
+    repository: COMBINE-lab/oarfish
+    description: Quantification for long-read RNA-seq.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  piscem:
+    name: piscem
+    repository: COMBINE-lab/piscem
+    description: Next-generation sequence indexing and mapping components.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  squab:
+    name: squab
+    repository: zaeleus/squab
+    description: Alignment-based gene expression quantification.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  snapatac2:
+    name: SnapATAC2
+    repository: kaizhang/SnapATAC2
+    description: Single-cell epigenomics analysis tools.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  proseg:
+    name: proseg
+    repository: dcjones/proseg
+    description: Probabilistic cell segmentation for spatial transcriptomics.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rnapkin:
+    name: rnapkin
+    repository: ukmrs/rnapkin
+    description: Fast drawing of RNA secondary structure.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  sage:
+    name: sage
+    repository: lazear/sage
+    description: Fast proteomics search and quantification.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  folddisco:
+    name: folddisco
+    repository: steineggerlab/folddisco
+    description: Indexing and search of discontinuous motifs in protein structures.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  foldmason:
+    name: foldmason
+    repository: steineggerlab/foldmason
+    description: Multiple alignment of large protein structure sets.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  unicore:
+    name: unicore
+    repository: steineggerlab/unicore
+    description: Core-gene phylogeny using Foldseek and ProstT5.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  align-cli:
+    name: align-cli
+    repository: snijderlab/align-cli
+    description: Pairwise alignment CLI supporting mass-based protein alignment.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  daedalus:
+    name: daedalus
+    repository: David-OConnor/daedalus
+    description: Protein and molecule viewer.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  mzcore:
+    name: mzcore
+    repository: rusteomics/mzcore
+    description: Peptide-centric mass spectrometry calculations around PSI standards.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  mzdata:
+    name: mzdata
+    repository: mobiusklein/mzdata
+    description: Readers and writers for mass spectrometry file formats.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  timsrust:
+    name: timsrust
+    repository: MannLabs/timsrust
+    description: High-performance access to Bruker timsTOF mass spectrometry data.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  pdbtbx:
+    name: pdbtbx
+    repository: douweschulte/pdbtbx
+    description: Library for reading, editing, and writing PDB and mmCIF files.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  ferritin:
+    name: ferritin
+    repository: ferritin-bio/ferritin
+    description: Utilities for protein structures, protein language models, and LigandMPNN-style sequence-design workflows.
+    category:
+      primary: protein-engineering
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  sc-rs:
+    name: sc-rs
+    repository: cytokineking/sc-rs
+    description: Scores the shape complementarity of protein-protein interfaces using the Lawrence and Colman statistic.
+    category:
+      primary: protein-engineering
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  heme:
+    name: heme
+    repository: dacarlin/heme
+    description: Reads protein structures and featurizes them for graph-based generative design models.
+    category:
+      primary: protein-engineering
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: retired
+  dreid-pack:
+    name: dreid-pack
+    repository: caltechmsc/dreid-pack
+    description: Packs protein side chains with the DREIDING force field, dead-end elimination, and tree-decomposition search.
+    category:
+      primary: protein-engineering
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  oxo-flow:
+    name: oxo-flow
+    repository: Traitome/oxo-flow
+    description: Rust-native bioinformatics pipeline engine with TOML workflows.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  wdl:
+    name: wdl
+    repository: stjude-rust-labs/wdl
+    description: Rust crates for Workflow Description Language documents.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: retired
+  scidataflow:
+    name: scidataflow
+    repository: vsbuffalo/scidataflow
+    description: Command-line scientific data management.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  exon:
+    name: exon
+    repository: wheretrue/exon
+    description: OLAP query engine for biology and life-science files.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  biobear:
+    name: biobear
+    repository: wheretrue/biobear
+    description: Query bioinformatics files through Arrow, Polars, and DuckDB.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  polars-bio:
+    name: polars-bio
+    repository: biodatageeks/polars-bio
+    description: Bioinformatics operations on Polars DataFrames.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  ggetrs:
+    name: ggetrs
+    repository: noamteyssier/ggetrs
+    description: Efficient querying of biological databases.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  nwr:
+    name: nwr
+    repository: wang-q/nwr
+    description: CLI for NCBI taxonomy, Newick trees, and assembly reports.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  nextclade:
+    name: nextclade
+    repository: nextstrain/nextclade
+    description: Viral genome alignment, clade assignment, and quality checks.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  tgv:
+    name: tgv
+    repository: zeqianli/tgv
+    description: Terminal genome browser with vim-style motion.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  alignoth:
+    name: alignoth
+    repository: alignoth/alignoth
+    description: Alignment plots from BAM files.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  seqtui:
+    name: SeqTUI
+    repository: ranwez-search/SeqTUI
+    description: Terminal viewer and toolkit for DNA and protein sequences.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  seqsizzle:
+    name: SeqSizzle
+    repository: ChangqingW/SeqSizzle
+    description: FASTQ pager with fuzzy matching and adaptor coloring.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  plascad:
+    name: plascad
+    repository: David-OConnor/plascad
+    description: Plasmid and primer design with cloning and restriction workflows.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  kuva:
+    name: kuva
+    repository: Psy-Fer/kuva
+    description: Scientific plotting library in Rust.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  igv-rs:
+    name: igv-rs
+    repository: AI4S-YB/igv-rs
+    description: Interactive terminal genome viewer for FASTA, VCF, BAM, GFF, and BED.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  are-we-bio-yet:
+    name: Are we bio yet?
+    repository: arewebioyet/arewebioyet.github.io
+    url: https://rust4bio.github.io/arewebioyet/
+    description: Earlier public registry of Rust crates for bioinformatics.
+    category:
+      primary: learning
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: retired
+  rust-in-bioinformatics:
+    name: rust-in-bioinformatics
+    repository: sharkLoc/rust-in-bioinformatics
+    description: Collection of genomics software tools written in Rust.
+    category:
+      primary: learning
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  awesome-bioinformatics:
+    name: Awesome Bioinformatics
+    repository: danielecook/Awesome-Bioinformatics
+    description: Language-agnostic curated list of bioinformatics software.
+    category:
+      primary: learning
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  awesome-rust:
+    name: awesome-rust
+    repository: rust-unofficial/awesome-rust
+    description: General awesome list for Rust, including a short Bioinformatics section.
+    category:
+      primary: learning
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rust-bio-documentation:
+    name: Rust-Bio documentation
+    repository: rust-bio/rust-bio.github.io
+    url: https://rust-bio.github.io/
+    description: Project site and documentation for the Rust-Bio ecosystem.
+    category:
+      primary: learning
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  sparrowhawk-asm:
+    name: sparrowhawk-asm
+    repository: bacpop/sparrowhawk-asm
+    description: Short-read de Bruijn assembler for bacterial genomes.
+    category:
+      primary: bacterial-assembly
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  orphos:
+    name: orphos
+    repository: FullHuman/orphos
+    description: Parallel Prodigal-style gene prediction for prokaryotic genomes.
+    category:
+      primary: genome-annotation
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  fraggenescanrs:
+    name: FragGeneScanRs
+    repository: unipept/FragGeneScanRs
+    description: Gene prediction for short and error-prone reads using the FragGeneScan model.
+    category:
+      primary: genome-annotation
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  dynamite:
+    name: dynamite
+    repository: raw-lab/dynamite
+    description: Finds protein-coding genes in bacteria, archaea, phages, and raw sequencing reads.
+    category:
+      primary: genome-annotation
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  trackclustertu:
+    name: trackclusterTU
+    repository: lrslab/trackclusterTU
+    description: Clusters bacterial transcript units from mapped long reads.
+    category:
+      primary: prokaryotic-transcriptome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  savont:
+    name: savont
+    repository: bluenote-1577/savont
+    description: Calls amplicon sequence variants from 16S ONT and PacBio HiFi reads.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.05.26.727271
       url: https://www.biorxiv.org/content/10.64898/2026.05.26.727271
-
-- name: hyperex
-  url: https://github.com/Ebedthan/hyperex
-  repo: Ebedthan/hyperex
-  category: metagenomics
-  description: Extracts 16S and other SSU/LSU hypervariable regions using primer sequences.
-
-- name: DartUniFrac
-  url: https://github.com/jianshu93/DartUniFrac
-  repo: jianshu93/DartUniFrac
-  category: metagenomics
-  description: Approximates UniFrac distances with weighted MinHash sketches.
-  papers:
-    - title: "Megascale microbiome analysis with DartUniFrac."
+      title: Sensitive long-read amplicon sequence variant recovery with savont
+      type: preprint
+    status:
+      catalog: active
+  hyperex:
+    name: hyperex
+    repository: Ebedthan/hyperex
+    description: Extracts 16S and other SSU/LSU hypervariable regions using primer sequences.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  dartunifrac:
+    name: DartUniFrac
+    repository: jianshu93/DartUniFrac
+    description: Approximates UniFrac distances with weighted MinHash sketches.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1038/s41587-026-03260-8
       url: https://doi.org/10.1038/s41587-026-03260-8
-
-- name: dada2-rs
-  url: https://github.com/HPCBio/dada2-rs
-  repo: HPCBio/dada2-rs
-  category: metagenomics
-  description: Reimplements the DADA2 amplicon sequence-variant algorithm.
-
-- name: sparrowhawk-amr
-  url: https://github.com/bacpop/sparrowhawk-amr
-  repo: bacpop/sparrowhawk-amr
-  category: resistance-genes
-  description: Detects antimicrobial resistance genes with k-mer indexes of the AMRFinderPlus database.
-
-- name: rust-ise
-  url: https://github.com/necoli1822/rust-ise
-  repo: necoli1822/rust-ise
-  category: transposons
-  description: Scans bacterial genomes for insertion sequences with an ISEScan-style pipeline.
-
-- name: fastVEP
-  url: https://github.com/Huang-lab/fastVEP
-  repo: Huang-lab/fastVEP
-  category: variants-and-annotation
-  description: High-performance variant effect predictor written in Rust.
-  papers:
-    - title: "fastVEP: A Fast, Comprehensive Variant Effect Predictor Written in Rust"
+      title: Megascale microbiome analysis with DartUniFrac.
+      type: journal
+    status:
+      catalog: active
+  dada2-rs:
+    name: dada2-rs
+    repository: HPCBio/dada2-rs
+    description: Reimplements the DADA2 amplicon sequence-variant algorithm.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  sparrowhawk-amr:
+    name: sparrowhawk-amr
+    repository: bacpop/sparrowhawk-amr
+    description: Detects antimicrobial resistance genes with k-mer indexes of the AMRFinderPlus database.
+    category:
+      primary: antimicrobial-resistance
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rust-ise:
+    name: rust-ise
+    repository: necoli1822/rust-ise
+    description: Scans bacterial genomes for insertion sequences with an ISEScan-style pipeline.
+    category:
+      primary: transposons
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  fastvep:
+    name: fastVEP
+    repository: Huang-lab/fastVEP
+    description: High-performance variant effect predictor written in Rust.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.04.14.718452
       url: https://www.biorxiv.org/content/10.64898/2026.04.14.718452
-
-- name: AnnoCAT
-  url: https://github.com/annocat-project/AnnoCAT
-  repo: annocat-project/AnnoCAT
-  category: variants-and-annotation
-  description: Local GRCh38 variant annotation and whole-genome review using fastVEP, DuckDB, and Parquet.
-
-- name: annotator
-  url: https://github.com/snijderlab/annotator
-  repo: snijderlab/annotator
-  category: proteomics-and-structure
-  description: Interactive annotation of complex mass spectra, one spectrum at a time.
-  papers:
-    - title: "A Universal Spectrum Annotator for Complex Peptidoforms in Mass Spectrometry-Based Proteomics."
+      title: 'fastVEP: A Fast, Comprehensive Variant Effect Predictor Written in Rust'
+      type: preprint
+    status:
+      catalog: active
+  annocat:
+    name: AnnoCAT
+    repository: annocat-project/AnnoCAT
+    description: Local GRCh38 variant annotation and whole-genome review using fastVEP, DuckDB, and Parquet.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  annotator:
+    name: annotator
+    repository: snijderlab/annotator
+    description: Interactive annotation of complex mass spectra, one spectrum at a time.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1021/acs.analchem.5c02832
       url: https://doi.org/10.1021/acs.analchem.5c02832
-
-- name: arpeggia
-  url: https://github.com/y1zhou/arpeggia
-  repo: y1zhou/arpeggia
-  category: proteomics-and-structure
-  description: Calculates interatomic interactions in molecular structures.
-
-- name: aspartik
-  url: https://github.com/kaathewisegit/aspartik
-  repo: kaathewisegit/aspartik
-  category: core-libraries
-  description: Computational biology toolkit for genetic data and phylogenetic simulations.
-
-- name: badclip
-  url: https://github.com/lh3/badclip
-  repo: lh3/badclip
-  category: alignment-and-mapping
-  description: Extracts clipped alignments from BAM files.
-
-- name: BamNado
-  url: https://github.com/alsmith151/BamNado
-  repo: alsmith151/BamNado
-  category: single-cell-and-rna
-  description: Parallel BAM coverage, pileup, and filtering with Python bindings.
-
-- name: bbnorm-rs
-  url: https://github.com/Jakeelamb/bbnorm-rs
-  repo: Jakeelamb/bbnorm-rs
-  category: sequence-io-and-formats
-  description: Rust port of BBTools BBNorm read-depth normalization.
-
-- name: orthoSynAssign
-  url: https://github.com/stajichlab/orthoSynAssign
-  repo: stajichlab/orthoSynAssign
-  category: workflows-and-infrastructure
-  description: Refines orthogroups with synteny information; Python interface with a Rust core.
-  papers:
-    - title: "orthoSynAssign: refine orthogroups using synteny information"
+      title: A Universal Spectrum Annotator for Complex Peptidoforms in Mass Spectrometry-Based Proteomics.
+      type: journal
+    status:
+      catalog: active
+  arpeggia:
+    name: arpeggia
+    repository: y1zhou/arpeggia
+    description: Calculates interatomic interactions in molecular structures.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  aspartik:
+    name: aspartik
+    repository: kaathewisegit/aspartik
+    description: Computational biology toolkit for genetic data and phylogenetic simulations.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  badclip:
+    name: badclip
+    repository: lh3/badclip
+    description: Extracts clipped alignments from BAM files.
+    category:
+      primary: alignment
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  bamnado:
+    name: BamNado
+    repository: alsmith151/BamNado
+    description: Parallel BAM coverage, pileup, and filtering with Python bindings.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: hybrid
+      interfaces:
+      - python
+      - library
+    status:
+      catalog: active
+  bbnorm-rs:
+    name: bbnorm-rs
+    repository: Jakeelamb/bbnorm-rs
+    description: Rust port of BBTools BBNorm read-depth normalization.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  orthosynassign:
+    name: orthoSynAssign
+    repository: stajichlab/orthoSynAssign
+    description: Refines orthogroups with synteny information; Python interface with a Rust core.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.08.10.744007
       url: https://www.biorxiv.org/content/10.64898/2026.08.10.744007
-
-- name: salmon
-  url: https://github.com/COMBINE-lab/salmon
-  repo: COMBINE-lab/salmon
-  category: single-cell-and-rna
-  description: Transcript-level RNA-seq quantification using selective alignment.
-  papers:
-    - title: "Salmon provides fast and bias-aware quantification of transcript expression."
+      title: 'orthoSynAssign: refine orthogroups using synteny information'
+      type: preprint
+    status:
+      catalog: active
+  salmon:
+    name: salmon
+    repository: COMBINE-lab/salmon
+    description: Transcript-level RNA-seq quantification using selective alignment.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1038/nmeth.4197
       url: https://doi.org/10.1038/nmeth.4197
-
-- name: cellranger
-  url: https://github.com/10XGenomics/cellranger
-  repo: 10XGenomics/cellranger
-  category: single-cell-and-rna
-  description: 10x Genomics single-cell analysis pipeline with a large Rust core.
-  papers:
-    - title: "Massively parallel digital transcriptional profiling of single cells."
+      title: Salmon provides fast and bias-aware quantification of transcript expression.
+      type: journal
+    status:
+      catalog: active
+  cellranger:
+    name: cellranger
+    repository: 10XGenomics/cellranger
+    description: 10x Genomics single-cell analysis pipeline with a large Rust core.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1038/ncomms14049
       url: https://doi.org/10.1038/ncomms14049
-
-- name: Bismark
-  url: https://github.com/FelixKrueger/Bismark
-  repo: FelixKrueger/Bismark
-  category: variants-and-annotation
-  description: Maps bisulfite-converted reads and calls cytosine methylation.
-  papers:
-    - title: "Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications."
+      title: Massively parallel digital transcriptional profiling of single cells.
+      type: journal
+    status:
+      catalog: active
+  bismark:
+    name: Bismark
+    repository: FelixKrueger/Bismark
+    description: Maps bisulfite-converted reads and calls cytosine methylation.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1093/bioinformatics/btr167
       url: https://doi.org/10.1093/bioinformatics/btr167
-
-- name: cramino
-  url: https://github.com/wdecoster/cramino
-  repo: wdecoster/cramino
-  category: long-reads
-  description: Fast BAM and CRAM quality evaluation for long-read datasets.
-  papers:
-    - title: "NanoPack2: Population scale evaluation of long-read sequencing data"
+      title: 'Bismark: a flexible aligner and methylation caller for Bisulfite-Seq applications.'
+      type: journal
+    status:
+      catalog: active
+  cramino:
+    name: cramino
+    repository: wdecoster/cramino
+    description: Fast BAM and CRAM quality evaluation for long-read datasets.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1101/2022.11.28.518232
       url: https://www.biorxiv.org/content/10.1101/2022.11.28.518232
-
-- name: ngless
-  url: https://github.com/ngless-toolkit/ngless
-  repo: ngless-toolkit/ngless
-  category: metagenomics
-  description: Domain-specific language for next-generation sequencing and metagenomic workflows.
-  papers:
-    - title: "NG-meta-profiler: fast processing of metagenomes using NGLess, a domain-specific language."
+      title: 'NanoPack2: Population scale evaluation of long-read sequencing data'
+      type: preprint
+    status:
+      catalog: active
+  ngless:
+    name: ngless
+    repository: ngless-toolkit/ngless
+    description: Domain-specific language for next-generation sequencing and metagenomic workflows.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1186/s40168-019-0684-8
       url: https://doi.org/10.1186/s40168-019-0684-8
-    - title: "NGLess: a domain-specific language for NGS processing."
+      title: 'NG-meta-profiler: fast processing of metagenomes using NGLess, a domain-specific language.'
+      type: journal
+    - doi: 10.1093/gigascience/giz079
       url: https://doi.org/10.1093/gigascience/giz079
-
-- name: longcallR
-  url: https://github.com/huangnengCSU/longcallR
-  repo: huangnengCSU/longcallR
-  category: long-reads
-  description: SNP calling, haplotype phasing, and allele-specific analysis from long-read RNA-seq.
-  papers:
-    - title: "SNP calling, haplotype phasing and allele-specific analysis with long RNA-seq reads"
+      title: 'NGLess: a domain-specific language for NGS processing.'
+      type: journal
+    status:
+      catalog: active
+  longcallr:
+    name: longcallR
+    repository: huangnengCSU/longcallR
+    description: SNP calling, haplotype phasing, and allele-specific analysis from long-read RNA-seq.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1101/2025.05.26.656191
       url: https://www.biorxiv.org/content/10.1101/2025.05.26.656191
-
-- name: odon
-  url: https://github.com/alexcoulton/odon
-  repo: alexcoulton/odon
-  category: visualization
-  description: Ultra-fast spatial proteomics viewer for OME-Zarr data.
-  papers:
-    - title: "Odon: an ultra-fast viewer for spatial proteomics."
+      title: SNP calling, haplotype phasing and allele-specific analysis with long RNA-seq reads
+      type: preprint
+    status:
+      catalog: active
+  odon:
+    name: odon
+    repository: alexcoulton/odon
+    description: Ultra-fast spatial proteomics viewer for OME-Zarr data.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1093/bioinformatics/btag514
       url: https://doi.org/10.1093/bioinformatics/btag514
-
-- name: RastQC
-  url: https://github.com/Huang-lab/RastQC
-  repo: Huang-lab/RastQC
-  category: sequence-io-and-formats
-  description: High-throughput sequencing quality control covering short and long reads.
-  papers:
-    - title: "RastQC: High-Performance Sequencing Quality Control Written in Rust"
+      title: 'Odon: an ultra-fast viewer for spatial proteomics.'
+      type: journal
+    status:
+      catalog: active
+  rastqc:
+    name: RastQC
+    repository: Huang-lab/RastQC
+    description: High-throughput sequencing quality control covering short and long reads.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.03.31.715630
       url: https://www.biorxiv.org/content/10.64898/2026.03.31.715630
-
-- name: SVTopo
-  url: https://github.com/PacificBiosciences/SVTopo
-  repo: PacificBiosciences/SVTopo
-  category: visualization
-  description: Complex structural variant visualization for PacBio HiFi data.
-  papers:
-    - title: "Complex structural variant visualization with SVTopo"
+      title: 'RastQC: High-Performance Sequencing Quality Control Written in Rust'
+      type: preprint
+    status:
+      catalog: active
+  svtopo:
+    name: SVTopo
+    repository: PacificBiosciences/SVTopo
+    description: Complex structural variant visualization for PacBio HiFi data.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1101/2025.04.16.649185
       url: https://www.biorxiv.org/content/10.1101/2025.04.16.649185
-
-- name: cyto
-  url: https://github.com/ArcInstitute/cyto
-  repo: ArcInstitute/cyto
-  category: single-cell-and-rna
-  description: Mapper for 10x Flex single-cell reads with fixed abstract geometries.
-  papers:
-    - title: "cyto: ultra high-throughput processing of 10x-flex single cell sequencing"
+      title: Complex structural variant visualization with SVTopo
+      type: preprint
+    status:
+      catalog: active
+  cyto:
+    name: cyto
+    repository: ArcInstitute/cyto
+    description: Mapper for 10x Flex single-cell reads with fixed abstract geometries.
+    category:
+      primary: single-cell-rna
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.01.21.700936
       url: https://www.biorxiv.org/content/10.64898/2026.01.21.700936
-
-- name: devider
-  url: https://github.com/bluenote-1577/devider
-  repo: bluenote-1577/devider
-  category: long-reads
-  description: Reconstructs diverse haplotypes from heterogeneous long-read sequencing.
-  papers:
-    - title: "Long-read reconstruction of many diverse haplotypes with devider."
+      title: 'cyto: ultra high-throughput processing of 10x-flex single cell sequencing'
+      type: preprint
+    status:
+      catalog: active
+  devider:
+    name: devider
+    repository: bluenote-1577/devider
+    description: Reconstructs diverse haplotypes from heterogeneous long-read sequencing.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1101/gr.280510.125
       url: https://doi.org/10.1101/gr.280510.125
-
-- name: bronko
-  url: https://github.com/treangenlab/bronko
-  repo: treangenlab/bronko
-  category: variants-and-annotation
-  description: Alignment-free detection of viral genome variation from sequencing data.
-  papers:
-    - title: "bronko: ultrafast, alignment-free detection of viral genome variation"
+      title: Long-read reconstruction of many diverse haplotypes with devider.
+      type: journal
+    status:
+      catalog: active
+  bronko:
+    name: bronko
+    repository: treangenlab/bronko
+    description: Alignment-free detection of viral genome variation from sequencing data.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2025.12.01.691650
       url: https://www.biorxiv.org/content/10.64898/2025.12.01.691650
-
-- name: locityper
-  url: https://github.com/tprodanov/locityper
-  repo: tprodanov/locityper
-  category: variants-and-annotation
-  description: Targeted genotyping of complex polymorphic genes.
-  papers:
-    - title: "Locityper enables targeted genotyping of complex polymorphic genes."
+      title: 'bronko: ultrafast, alignment-free detection of viral genome variation'
+      type: preprint
+    status:
+      catalog: active
+  locityper:
+    name: locityper
+    repository: tprodanov/locityper
+    description: Targeted genotyping of complex polymorphic genes.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1038/s41588-025-02362-4
       url: https://doi.org/10.1038/s41588-025-02362-4
-
-- name: gtfsort
-  url: https://github.com/alejandrogzi/gtfsort
-  repo: alejandrogzi/gtfsort
-  category: sequence-io-and-formats
-  description: Lexicographic sorter for GTF and GFF annotation files.
-  papers:
-    - title: "gtfsort: a tool to efficiently sort GTF files"
+      title: Locityper enables targeted genotyping of complex polymorphic genes.
+      type: journal
+    status:
+      catalog: active
+  gtfsort:
+    name: gtfsort
+    repository: alejandrogzi/gtfsort
+    description: Lexicographic sorter for GTF and GFF annotation files.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1101/2023.10.21.563454
       url: https://www.biorxiv.org/content/10.1101/2023.10.21.563454
-
-- name: JanusX
-  url: https://github.com/FJingxian/JanusX
-  repo: FJingxian/JanusX
-  category: variants-and-annotation
-  description: Unified platform for genome-wide association studies and genomic selection.
-  papers:
-    - title: "JanusX: an integrated and high-performance platform for scalable genome-wide association studies and genomic selection"
+      title: 'gtfsort: a tool to efficiently sort GTF files'
+      type: preprint
+    status:
+      catalog: active
+  janusx:
+    name: JanusX
+    repository: FJingxian/JanusX
+    description: Unified platform for genome-wide association studies and genomic selection.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.01.20.700366
       url: https://www.biorxiv.org/content/10.64898/2026.01.20.700366
-
-- name: MAGmax
-  url: https://github.com/soedinglab/MAGmax
-  repo: soedinglab/MAGmax
-  category: metagenomics
-  description: Dereplicates and enriches metagenome-assembled genomes across samples.
-  papers:
-    - title: "Enhancing genome recovery across metagenomic samples using MAGmax."
+      title: 'JanusX: an integrated and high-performance platform for scalable genome-wide association studies and genomic selection'
+      type: preprint
+    status:
+      catalog: active
+  magmax:
+    name: MAGmax
+    repository: soedinglab/MAGmax
+    description: Dereplicates and enriches metagenome-assembled genomes across samples.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1093/bioinformatics/btaf538
       url: https://doi.org/10.1093/bioinformatics/btaf538
-
-- name: termal
-  url: https://github.com/sib-swiss/termal
-  repo: sib-swiss/termal
-  category: visualization
-  description: Terminal multiple-sequence-alignment viewer for remote and HPC workflows.
-  papers:
-    - title: "termal: a terminal-based multiple sequence alignment viewer."
+      title: Enhancing genome recovery across metagenomic samples using MAGmax.
+      type: journal
+    status:
+      catalog: active
+  termal:
+    name: termal
+    repository: sib-swiss/termal
+    description: Terminal multiple-sequence-alignment viewer for remote and HPC workflows.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1093/bioadv/vbaf208
       url: https://doi.org/10.1093/bioadv/vbaf208
-
-- name: sketchlib.rust
-  url: https://github.com/bacpop/sketchlib.rust
-  repo: bacpop/sketchlib.rust
-  category: metagenomics
-  description: Fast sequence distance estimates from genomic sketches.
-  papers:
-    - title: "Rapid and Consistent Genome Clustering for Navigating Bacterial Diversity with Millions of MAGs and Isolates"
+      title: 'termal: a terminal-based multiple sequence alignment viewer.'
+      type: journal
+    status:
+      catalog: active
+  sketchlibrust:
+    name: sketchlib.rust
+    repository: bacpop/sketchlib.rust
+    description: Fast sequence distance estimates from genomic sketches.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2025.12.30.695181
       url: https://www.biorxiv.org/content/10.64898/2025.12.30.695181
-
-- name: xgt
-  url: https://github.com/Ebedthan/xgt
-  repo: Ebedthan/xgt
-  category: metagenomics
-  description: Command-line client for querying the Genome Taxonomy Database.
-  papers:
-    - title: "xgt: a command-line interface for the Genome Taxonomy Database with cross-release taxonomic comparison."
+      title: Rapid and Consistent Genome Clustering for Navigating Bacterial Diversity with Millions of MAGs and Isolates
+      type: preprint
+    status:
+      catalog: active
+  xgt:
+    name: xgt
+    repository: Ebedthan/xgt
+    description: Command-line client for querying the Genome Taxonomy Database.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1093/gigascience/giag086
       url: https://doi.org/10.1093/gigascience/giag086
-
-- name: STRdust
-  url: https://github.com/wdecoster/STRdust
-  repo: wdecoster/STRdust
-  category: long-reads
-  description: Tandem repeat genotyping from long reads.
-  papers:
-    - title: "A comprehensive assessment of tandem repeat genotyping methods for Nanopore long-read genomes"
+      title: 'xgt: a command-line interface for the Genome Taxonomy Database with cross-release taxonomic comparison.'
+      type: journal
+    status:
+      catalog: active
+  strdust:
+    name: STRdust
+    repository: wdecoster/STRdust
+    description: Tandem repeat genotyping from long reads.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.02.28.708646
       url: https://www.biorxiv.org/content/10.64898/2026.02.28.708646
-
-- name: phylo2vec
-  url: https://github.com/sbhattlab/phylo2vec
-  repo: sbhattlab/phylo2vec
-  category: core-libraries
-  description: Vector representation and library for phylogenetic tree manipulation.
-  papers:
-    - title: "phylo2vec: a library for vector-based phylogenetic tree manipulation"
+      title: A comprehensive assessment of tandem repeat genotyping methods for Nanopore long-read genomes
+      type: preprint
+    status:
+      catalog: active
+  phylo2vec:
+    name: phylo2vec
+    repository: sbhattlab/phylo2vec
+    description: Vector representation and library for phylogenetic tree manipulation.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.21105/joss.09040
       url: https://doi.org/10.21105/joss.09040
-    - title: "Phylo2Vec: A Vector Representation for Binary Trees."
+      title: 'phylo2vec: a library for vector-based phylogenetic tree manipulation'
+      type: journal
+    - doi: 10.1093/sysbio/syae030
       url: https://doi.org/10.1093/sysbio/syae030
-
-- name: simd-sketch
-  url: https://github.com/RagnarGrootKoerkamp/simd-sketch
-  repo: RagnarGrootKoerkamp/simd-sketch
-  category: core-libraries
-  description: SIMD-accelerated bottom-s and s-bucket genomic sketches.
-  papers:
-    - title: "SimdMinimizers: Computing random minimizers, fast"
+      title: 'Phylo2Vec: A Vector Representation for Binary Trees.'
+      type: journal
+    status:
+      catalog: active
+  simd-sketch:
+    name: simd-sketch
+    repository: RagnarGrootKoerkamp/simd-sketch
+    description: SIMD-accelerated bottom-s and s-bucket genomic sketches.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1101/2025.01.27.634998
       url: https://www.biorxiv.org/content/10.1101/2025.01.27.634998
-
-- name: ITSxRust
-  url: https://github.com/ayobi/ITSxRust
-  repo: ayobi/ITSxRust
-  category: metagenomics
-  description: ITS region extraction for long-read amplicon sequencing.
-  papers:
-    - title: "ITSxRust: ITS region extraction with partial-chain recovery and structured diagnostics for long-read amplicon sequencing"
+      title: 'SimdMinimizers: Computing random minimizers, fast'
+      type: preprint
+    status:
+      catalog: active
+  itsxrust:
+    name: ITSxRust
+    repository: ayobi/ITSxRust
+    description: ITS region extraction for long-read amplicon sequencing.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.02.25.707950
       url: https://www.biorxiv.org/content/10.64898/2026.02.25.707950
-
-- name: gbz-base
-  url: https://github.com/jltsiren/gbz-base
-  repo: jltsiren/gbz-base
-  category: assembly-and-pangenomes
-  description: SQLite-backed indexed file formats for pangenome graphs.
-  papers:
-    - title: "GBZ-base and GAF-base: Indexed pangenome file formats"
+      title: 'ITSxRust: ITS region extraction with partial-chain recovery and structured diagnostics for long-read amplicon sequencing'
+      type: preprint
+    status:
+      catalog: active
+  gbz-base:
+    name: gbz-base
+    repository: jltsiren/gbz-base
+    description: SQLite-backed indexed file formats for pangenome graphs.
+    category:
+      primary: assembly-pangenome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.07.10.737775
       url: https://www.biorxiv.org/content/10.64898/2026.07.10.737775
-
-- name: CycSim
-  url: https://github.com/BioEarthDigital/CycSim
-  repo: BioEarthDigital/CycSim
-  category: long-reads
-  description: Context-aware long-read simulator for mapping-parameter optimization.
-  papers:
-    - title: "Context-aware simulation enables systematic optimization of long-read mapping parameters."
+      title: 'GBZ-base and GAF-base: Indexed pangenome file formats'
+      type: preprint
+    status:
+      catalog: active
+  cycsim:
+    name: CycSim
+    repository: BioEarthDigital/CycSim
+    description: Context-aware long-read simulator for mapping-parameter optimization.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1093/gigascience/giag079
       url: https://doi.org/10.1093/gigascience/giag079
-
-- name: inquiSTR
-  url: https://github.com/wdecoster/inquiSTR
-  repo: wdecoster/inquiSTR
-  category: long-reads
-  description: Population-scale tandem repeat genotyping from long reads.
-  papers:
-    - title: "Defining a tandem repeat catalog and variation clusters for genome-wide analyses and population databases"
+      title: Context-aware simulation enables systematic optimization of long-read mapping parameters.
+      type: journal
+    status:
+      catalog: active
+  inquistr:
+    name: inquiSTR
+    repository: wdecoster/inquiSTR
+    description: Population-scale tandem repeat genotyping from long reads.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1101/2024.10.04.615514
       url: https://www.biorxiv.org/content/10.1101/2024.10.04.615514
-    - title: "inquiSTR: a toolkit for accurate and efficient population-scale tandem repeat genotyping and analysis"
+      title: Defining a tandem repeat catalog and variation clusters for genome-wide analyses and population databases
+      type: preprint
+    - doi: 10.64898/2026.06.09.731080
       url: https://www.biorxiv.org/content/10.64898/2026.06.09.731080
-
-- name: skiver
-  url: https://github.com/GZHoffie/skiver
-  repo: GZHoffie/skiver
-  category: sequence-io-and-formats
-  description: Reference-free sequencing error-rate estimates using (k, v)-mer sketches.
-  papers:
-    - title: "Skiver: Alignment-free Estimation of Sequencing Error Rates and Spectra using (k, v)-mer Sketches"
+      title: 'inquiSTR: a toolkit for accurate and efficient population-scale tandem repeat genotyping and analysis'
+      type: preprint
+    status:
+      catalog: active
+  skiver:
+    name: skiver
+    repository: GZHoffie/skiver
+    description: Reference-free sequencing error-rate estimates using (k, v)-mer sketches.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.02.12.705514
       url: https://www.biorxiv.org/content/10.64898/2026.02.12.705514
-
-- name: dna_parser
-  url: https://github.com/Mvila035/dna_parser
-  repo: Mvila035/dna_parser
-  category: core-libraries
-  description: Python library with a Rust core for encoding DNA and RNA sequences for machine learning.
-  papers:
-    - title: "dna-parser: a Python library written in Rust for fast encoding of DNA and RNA sequences"
+      title: 'Skiver: Alignment-free Estimation of Sequencing Error Rates and Spectra using (k, v)-mer Sketches'
+      type: preprint
+    status:
+      catalog: active
+  dna-parser:
+    name: dna_parser
+    repository: Mvila035/dna_parser
+    description: Python library with a Rust core for encoding DNA and RNA sequences for machine learning.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.01.20.700656
       url: https://www.biorxiv.org/content/10.64898/2026.01.20.700656
-
-- name: umgap
-  url: https://github.com/unipept/umgap
-  repo: unipept/umgap
-  category: metagenomics
-  description: Taxonomic classifier for shotgun metagenomic reads.
-  papers:
-    - title: "UMGAP: the Unipept MetaGenomics Analysis Pipeline."
+      title: 'dna-parser: a Python library written in Rust for fast encoding of DNA and RNA sequences'
+      type: preprint
+    status:
+      catalog: active
+  umgap:
+    name: umgap
+    repository: unipept/umgap
+    description: Taxonomic classifier for shotgun metagenomic reads.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1186/s12864-022-08542-4
       url: https://doi.org/10.1186/s12864-022-08542-4
-
-- name: DeepChopper
-  url: https://github.com/ylab-hi/DeepChopper
-  repo: ylab-hi/DeepChopper
-  category: long-reads
-  description: Genomic language model that mitigates chimera artifacts in Nanopore direct RNA sequencing.
-  papers:
-    - title: "Genomic language model mitigates chimera artifacts in nanopore direct RNA sequencing."
+      title: 'UMGAP: the Unipept MetaGenomics Analysis Pipeline.'
+      type: journal
+    status:
+      catalog: active
+  deepchopper:
+    name: DeepChopper
+    repository: ylab-hi/DeepChopper
+    description: Genomic language model that mitigates chimera artifacts in Nanopore direct RNA sequencing.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.1038/s41467-026-68571-5
       url: https://doi.org/10.1038/s41467-026-68571-5
-
-- name: fishnet
-  url: https://github.com/dietvin/fishnet
-  repo: dietvin/fishnet
-  category: long-reads
-  description: Nanopore signal-to-sequence alignment.
-  papers:
-    - title: "Fishnet simplifies and accelerates signal-to-sequence alignment in Nanopore sequencing"
+      title: Genomic language model mitigates chimera artifacts in nanopore direct RNA sequencing.
+      type: journal
+    status:
+      catalog: active
+  fishnet:
+    name: fishnet
+    repository: dietvin/fishnet
+    description: Nanopore signal-to-sequence alignment.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.21203/rs.3.rs-8345719/v1
       url: https://doi.org/10.21203/rs.3.rs-8345719/v1
-
-- name: eidolon
-  url: https://github.com/ncsa/eidolon
-  repo: ncsa/eidolon
-  category: variants-and-annotation
-  description: Sequencing simulator with cancer genetics and complex variant models.
-  papers:
-    - title: "Enhancing short-read sequencing simulation: Updates to NEAT"
+      title: Fishnet simplifies and accelerates signal-to-sequence alignment in Nanopore sequencing
+      type: journal
+    status:
+      catalog: active
+  eidolon:
+    name: eidolon
+    repository: ncsa/eidolon
+    description: Sequencing simulator with cancer genetics and complex variant models.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.21105/joss.09056
       url: https://doi.org/10.21105/joss.09056
-
-- name: emits
-  url: https://github.com/ayobi/emits
-  repo: ayobi/emits
-  category: metagenomics
-  description: Expectation-maximization abundance estimation for fungal ITS communities from long reads.
-  papers:
-    - title: "EMITS: expectation-maximization abundance estimation for fungal ITS communities from long-read sequencing"
+      title: 'Enhancing short-read sequencing simulation: Updates to NEAT'
+      type: journal
+    status:
+      catalog: active
+  emits:
+    name: emits
+    repository: ayobi/emits
+    description: Expectation-maximization abundance estimation for fungal ITS communities from long reads.
+    category:
+      primary: metagenomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    publications:
+    - doi: 10.64898/2026.03.31.715662
       url: https://www.biorxiv.org/content/10.64898/2026.03.31.715662
-
-- name: rosalind
-  url: https://github.com/logannye/rosalind
-  repo: logannye/rosalind
-  category: workflows-and-infrastructure
-  description: Deterministic, resource-governed per-locus genomics analyses with transactional artifacts and replay.
-
-- name: sprocket
-  url: https://github.com/stjude-rust-labs/sprocket
-  repo: stjude-rust-labs/sprocket
-  category: workflows-and-infrastructure
-  description: Bioinformatics workflow engine built on the Workflow Description Language.
-
-- name: molchanica
-  url: https://github.com/David-OConnor/molchanica
-  repo: David-OConnor/molchanica
-  category: visualization
-  description: Protein and molecule viewer, editor, and simulator.
-
-- name: RustQC
-  url: https://github.com/seqeralabs/RustQC
-  repo: seqeralabs/RustQC
-  category: sequence-io-and-formats
-  description: Fast quality-control tools for sequencing data.
-
-- name: rust-lapper
-  url: https://github.com/sstadick/rust-lapper
-  repo: sstadick/rust-lapper
-  category: core-libraries
-  description: Fast interval-tree library for overlap queries.
-
-- name: crankshaft
-  url: https://github.com/stjude-rust-labs/crankshaft
-  repo: stjude-rust-labs/crankshaft
-  category: workflows-and-infrastructure
-  description: Headless workflow execution framework for local, cloud, and HPC backends.
-
-- name: fgumi
-  url: https://github.com/fulcrumgenomics/fgumi
-  repo: fulcrumgenomics/fgumi
-  category: sequence-io-and-formats
-  description: High-performance UMI processing for NGS data.
-
-- name: gbwt-rs
-  url: https://github.com/jltsiren/gbwt-rs
-  repo: jltsiren/gbwt-rs
-  category: assembly-and-pangenomes
-  description: GBZ file format and related pangenome graph structures.
-
-- name: gen
-  url: https://github.com/genhub-bio/gen
-  repo: genhub-bio/gen
-  category: workflows-and-infrastructure
-  description: Version-control system for genome assemblies and annotations.
-
-- name: FasterFASTA
-  url: https://github.com/unum-science/FasterFASTA
-  repo: unum-science/FasterFASTA
-  category: sequence-io-and-formats
-  description: FASTA and FASTQ parsing, sorting, deduplication, filtering, and statistics.
-
-- name: microBioRust
-  url: https://github.com/LCrossman/microBioRust
-  repo: LCrossman/microBioRust
-  category: core-libraries
-  description: Library for microbial genomics data structures and analyses.
-
-- name: seqair
-  url: https://github.com/Softleif/seqair
-  repo: Softleif/seqair
-  category: sequence-io-and-formats
-  description: BAM, SAM, CRAM, and FASTA reader with pileup and BCF writing.
-
-- name: ferro-hgvs
-  url: https://github.com/fulcrumgenomics/ferro-hgvs
-  repo: fulcrumgenomics/ferro-hgvs
-  category: variants-and-annotation
-  description: HGVS variant nomenclature parser and normalizer.
-
-- name: fqless
-  url: https://github.com/openpaul/fqless
-  repo: openpaul/fqless
-  category: visualization
-  description: Pager-style viewer for FASTQ files.
-
-- name: ProForma
-  url: https://github.com/HUPO-PSI/ProForma
-  repo: HUPO-PSI/ProForma
-  category: proteomics-and-structure
-  description: Reference implementation of HUPO-PSI peptidoform notation.
-
-- name: bed2gtf
-  url: https://github.com/alejandrogzi/bed2gtf
-  repo: alejandrogzi/bed2gtf
-  category: sequence-io-and-formats
-  description: High-performance BED-to-GTF converter.
-
-- name: packed-seq
-  url: https://github.com/rust-seq/packed-seq
-  repo: rust-seq/packed-seq
-  category: core-libraries
-  description: Bit-packed nucleotide sequence trait and implementations.
-
-- name: snpick
-  url: https://github.com/PathoGenOmics-Lab/snpick
-  repo: PathoGenOmics-Lab/snpick
-  category: variants-and-annotation
-  description: Memory-efficient SNP extraction from large genomic alignments.
-
-- name: chelae
-  url: https://github.com/fulcrumgenomics/chelae
-  repo: fulcrumgenomics/chelae
-  category: sequence-io-and-formats
-  description: Accurate read trimming for NGS data.
-
-- name: irma-core
-  url: https://github.com/CDCgov/irma-core
-  repo: CDCgov/irma-core
-  category: alignment-and-mapping
-  description: Core library accelerating IRMA virus sequencing workflows.
-
-- name: OpenTFRaw
-  url: https://github.com/Sigilweaver/OpenTFRaw
-  repo: Sigilweaver/OpenTFRaw
-  category: proteomics-and-structure
-  description: Pure-Rust reader for Thermo Fisher RAW mass-spectrometry files, with Python bindings.
-
-- name: OpenMassSpec
-  url: https://github.com/Sigilweaver/OpenMassSpec
-  repo: Sigilweaver/OpenMassSpec
-  category: proteomics-and-structure
-  description: High-performance Rust and Python readers for mass-spectrometry raw data.
-
-- name: bgzf
-  url: https://github.com/fulcrumgenomics/bgzf
-  repo: fulcrumgenomics/bgzf
-  category: sequence-io-and-formats
-  description: BGZF compression library.
-
-- name: mako
-  url: https://github.com/fg-labs/mako
-  repo: fg-labs/mako
-  category: sequence-io-and-formats
-  description: Fast SAM and BAM sorter.
-
-- name: zoe
-  url: https://github.com/CDCgov/zoe
-  repo: CDCgov/zoe
-  category: core-libraries
-  description: Library for common data formats and methods in RNA-virus sequencing.
-
-- name: nanoget-rs
-  url: https://github.com/wdecoster/nanoget-rs
-  repo: wdecoster/nanoget-rs
-  category: long-reads
-  description: Fast extraction of Nanopore sequencing metrics.
-
-- name: pandedup
-  url: https://github.com/RagnarGrootKoerkamp/pandedup
-  repo: RagnarGrootKoerkamp/pandedup
-  category: assembly-and-pangenomes
-  description: Minimizer-based k-mer spectrum construction from AGC pangenomes.
-
-- name: haddock-restraints
-  url: https://github.com/haddocking/haddock-restraints
-  repo: haddocking/haddock-restraints
-  category: protein-engineering
-  description: Generates docking restraints for HADDOCK.
-
-- name: cfDNAlab
-  url: https://github.com/BesenbacherLab/cfDNAlab
-  repo: BesenbacherLab/cfDNAlab
-  category: variants-and-annotation
-  description: Extracts bias-corrected fragmentation patterns from cell-free DNA.
-
-- name: holodeck
-  url: https://github.com/fg-labs/holodeck
-  repo: fg-labs/holodeck
-  category: sequence-io-and-formats
-  description: NGS read simulator.
-
-- name: rs_demultiplex
-  url: https://github.com/colindaven/rs_demultiplex
-  repo: colindaven/rs_demultiplex
-  category: sequence-io-and-formats
-  description: Fast FASTQ demultiplexing.
-
-- name: umi-tools-rs
-  url: https://github.com/vertti/umi-tools-rs
-  repo: vertti/umi-tools-rs
-  category: sequence-io-and-formats
-  description: Drop-in Rust replacement for UMI-tools.
+      title: 'EMITS: expectation-maximization abundance estimation for fungal ITS communities from long-read sequencing'
+      type: preprint
+    status:
+      catalog: active
+  rosalind:
+    name: rosalind
+    repository: logannye/rosalind
+    description: Deterministic, resource-governed per-locus genomics analyses with transactional artifacts and replay.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  sprocket:
+    name: sprocket
+    repository: stjude-rust-labs/sprocket
+    description: Bioinformatics workflow engine built on the Workflow Description Language.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  molchanica:
+    name: molchanica
+    repository: David-OConnor/molchanica
+    description: Protein and molecule viewer, editor, and simulator.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rustqc:
+    name: RustQC
+    repository: seqeralabs/RustQC
+    description: Fast quality-control tools for sequencing data.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rust-lapper:
+    name: rust-lapper
+    repository: sstadick/rust-lapper
+    description: Fast interval-tree library for overlap queries.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  crankshaft:
+    name: crankshaft
+    repository: stjude-rust-labs/crankshaft
+    description: Headless workflow execution framework for local, cloud, and HPC backends.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  fgumi:
+    name: fgumi
+    repository: fulcrumgenomics/fgumi
+    description: High-performance UMI processing for NGS data.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  gbwt-rs:
+    name: gbwt-rs
+    repository: jltsiren/gbwt-rs
+    description: GBZ file format and related pangenome graph structures.
+    category:
+      primary: assembly-pangenome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  gen:
+    name: gen
+    repository: genhub-bio/gen
+    description: Version-control system for genome assemblies and annotations.
+    category:
+      primary: infrastructure
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  fasterfasta:
+    name: FasterFASTA
+    repository: unum-science/FasterFASTA
+    description: FASTA and FASTQ parsing, sorting, deduplication, filtering, and statistics.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  microbiorust:
+    name: microBioRust
+    repository: LCrossman/microBioRust
+    description: Library for microbial genomics data structures and analyses.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  seqair:
+    name: seqair
+    repository: Softleif/seqair
+    description: BAM, SAM, CRAM, and FASTA reader with pileup and BCF writing.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  ferro-hgvs:
+    name: ferro-hgvs
+    repository: fulcrumgenomics/ferro-hgvs
+    description: HGVS variant nomenclature parser and normalizer.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  fqless:
+    name: fqless
+    repository: openpaul/fqless
+    description: Pager-style viewer for FASTQ files.
+    category:
+      primary: visualization
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  proforma:
+    name: ProForma
+    repository: HUPO-PSI/ProForma
+    description: Reference implementation of HUPO-PSI peptidoform notation.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  bed2gtf:
+    name: bed2gtf
+    repository: alejandrogzi/bed2gtf
+    description: High-performance BED-to-GTF converter.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  packed-seq:
+    name: packed-seq
+    repository: rust-seq/packed-seq
+    description: Bit-packed nucleotide sequence trait and implementations.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  snpick:
+    name: snpick
+    repository: PathoGenOmics-Lab/snpick
+    description: Memory-efficient SNP extraction from large genomic alignments.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  chelae:
+    name: chelae
+    repository: fulcrumgenomics/chelae
+    description: Accurate read trimming for NGS data.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  irma-core:
+    name: irma-core
+    repository: CDCgov/irma-core
+    description: Core library accelerating IRMA virus sequencing workflows.
+    category:
+      primary: alignment
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  opentfraw:
+    name: OpenTFRaw
+    repository: Sigilweaver/OpenTFRaw
+    description: Pure-Rust reader for Thermo Fisher RAW mass-spectrometry files, with Python bindings.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: hybrid
+      interfaces:
+      - python
+      - library
+    status:
+      catalog: active
+  openmassspec:
+    name: OpenMassSpec
+    repository: Sigilweaver/OpenMassSpec
+    description: High-performance Rust and Python readers for mass-spectrometry raw data.
+    category:
+      primary: proteomics
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  bgzf:
+    name: bgzf
+    repository: fulcrumgenomics/bgzf
+    description: BGZF compression library.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  mako:
+    name: mako
+    repository: fg-labs/mako
+    description: Fast SAM and BAM sorter.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  zoe:
+    name: zoe
+    repository: CDCgov/zoe
+    description: Library for common data formats and methods in RNA-virus sequencing.
+    category:
+      primary: core-libraries
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  nanoget-rs:
+    name: nanoget-rs
+    repository: wdecoster/nanoget-rs
+    description: Fast extraction of Nanopore sequencing metrics.
+    category:
+      primary: long-reads
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  pandedup:
+    name: pandedup
+    repository: RagnarGrootKoerkamp/pandedup
+    description: Minimizer-based k-mer spectrum construction from AGC pangenomes.
+    category:
+      primary: assembly-pangenome
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  haddock-restraints:
+    name: haddock-restraints
+    repository: haddocking/haddock-restraints
+    description: Generates docking restraints for HADDOCK.
+    category:
+      primary: protein-engineering
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  cfdnalab:
+    name: cfDNAlab
+    repository: BesenbacherLab/cfDNAlab
+    description: Extracts bias-corrected fragmentation patterns from cell-free DNA.
+    category:
+      primary: variants
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  holodeck:
+    name: holodeck
+    repository: fg-labs/holodeck
+    description: NGS read simulator.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  rs-demultiplex:
+    name: rs_demultiplex
+    repository: colindaven/rs_demultiplex
+    description: Fast FASTQ demultiplexing.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active
+  umi-tools-rs:
+    name: umi-tools-rs
+    repository: vertti/umi-tools-rs
+    description: Drop-in Rust replacement for UMI-tools.
+    category:
+      primary: sequence-io
+    architecture:
+      rust_role: unknown
+      interfaces:
+      - cli
+    status:
+      catalog: active

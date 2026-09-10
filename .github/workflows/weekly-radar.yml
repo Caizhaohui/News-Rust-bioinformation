@@ -1,0 +1,33 @@
+name: Weekly Ecosystem Radar
+
+on:
+  schedule:
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Refresh metadata, snapshots, and trends
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cargo run --locked --release -- fetch-metadata
+          cargo run --locked --release -- snapshot
+          cargo run --locked --release -- trends
+          cargo run --locked --release -- build-radar
+          cargo run --locked --release -- build-readme
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md RADAR.md data/metadata.json data/snapshots data/trends.json
+          git diff --cached --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore(radar): update weekly Rust bioinformatics radar"
+          git push

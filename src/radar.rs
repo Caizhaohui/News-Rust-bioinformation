@@ -30,7 +30,9 @@ pub fn compute_radar(
         .map(|meta| meta.urls.iter().map(String::as_str).collect())
         .unwrap_or_default();
     let empty_repos = Default::default();
-    let prev_repos = previous.map(|meta| &meta.repos).unwrap_or(&empty_repos);
+    let prev_repos = previous
+        .map(|meta| &meta.repositories)
+        .unwrap_or(&empty_repos);
 
     let mut by_url = std::collections::BTreeMap::new();
     for tool in &tracked {

@@ -1,0 +1,1475 @@
+{
+  "generated_at": "2026-09-10T03:56:11Z",
+  "repositories": {
+    "10XGenomics/cellranger": {
+      "stars_7d": 2,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "10XGenomics/rust-boomphf": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "10XGenomics/rust-debruijn": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "38/d4-format": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "AI4S-YB/igv-rs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ArcInstitute/binseq": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ArcInstitute/bqtools": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ArcInstitute/cyto": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ArcInstitute/xsra": {
+      "stars_7d": 2,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Baohua-Chen/GFFx": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "BesenbacherLab/cfDNAlab": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "BioEarthDigital/CycSim": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "CDCgov/irma-core": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "CDCgov/zoe": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "COMBINE-lab/alevin-fry": {
+      "stars_7d": 4,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "COMBINE-lab/oarfish": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "COMBINE-lab/piscem": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "COMBINE-lab/salmon": {
+      "stars_7d": 3,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "COMBINE-lab/simpleaf": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ChangqingW/SeqSizzle": {
+      "stars_7d": 2,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Daniel-Liu-c0deb0t/triple_accel": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "David-OConnor/daedalus": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "David-OConnor/molchanica": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "David-OConnor/plascad": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Ebedthan/hyperex": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Ebedthan/xgt": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "FJingxian/JanusX": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "FelixKrueger/Bismark": {
+      "stars_7d": 3,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "FullHuman/orphos": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "GZHoffie/skiver": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "HPCBio/dada2-rs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "HUPO-PSI/ProForma": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Huang-lab/RastQC": {
+      "stars_7d": 2,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Huang-lab/fastVEP": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Jakeelamb/bbnorm-rs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "LCrossman/microBioRust": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "MannLabs/timsrust": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Mvila035/dna_parser": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "PacificBiosciences/HiPhase": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "PacificBiosciences/SVTopo": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "PacificBiosciences/trgt": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "PathoGenOmics-Lab/snpick": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Psy-Fer/kuva": {
+      "stars_7d": 2,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "RagnarGrootKoerkamp/pandedup": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "RagnarGrootKoerkamp/simd-sketch": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Sigilweaver/OpenMassSpec": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Sigilweaver/OpenTFRaw": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Softleif/seqair": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "Traitome/oxo-flow": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "alejandrogzi/bed2gtf": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "alejandrogzi/gtfsort": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "alexcoulton/odon": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "algbio/ggcat": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "alignoth/alignoth": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "alsmith151/BamNado": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "althonos/diced": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "anergictcell/atg": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "annocat-project/AnnoCAT": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "arewebioyet/arewebioyet.github.io": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ayobi/ITSxRust": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ayobi/emits": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "bacpop/ska.rust": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "bacpop/sketchlib.rust": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "bacpop/sparrowhawk-amr": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "bacpop/sparrowhawk-asm": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "baku4/sigalign": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "bede/deacon": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "biodatageeks/polars-bio": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "bluenote-1577/devider": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "bluenote-1577/myloasm": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "bluenote-1577/savont": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "bluenote-1577/skani": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "bluenote-1577/sylph": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "brentp/echtvar": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "brentp/vcfexpress": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "broadinstitute/poasta": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "caltechmsc/dreid-pack": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "codialab/panacus": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "colindaven/rs_demultiplex": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "cytokineking/sc-rs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "dacarlin/heme": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "danielecook/Awesome-Bioinformatics": {
+      "stars_7d": 8,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "dcjones/coitrees": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "dcjones/proseg": {
+      "stars_7d": 2,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "dietvin/fishnet": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "dohlee/metheor": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "douweschulte/pdbtbx": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ekimb/rust-mdbg": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "esteinig/nanoq": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "esteinig/vircov": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ferritin-bio/ferritin": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "fg-labs/holodeck": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "fg-labs/mako": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "fulcrumgenomics/bgzf": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "fulcrumgenomics/chelae": {
+      "stars_7d": 2,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "fulcrumgenomics/ferro-hgvs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "fulcrumgenomics/fg-sra": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "fulcrumgenomics/fgumi": {
+      "stars_7d": 2,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "fulcrumgenomics/fqgrep": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "fulcrumgenomics/fqtk": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "fulcrumgenomics/guide-counter": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "genhub-bio/gen": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "haddocking/haddock-restraints": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "henriksson-lab/blast-rs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "henriksson-lab/minimap2-pure-rs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "huangnengCSU/longcallR": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "informationsea/transanno": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "jackh726/bigtools": {
+      "stars_7d": 5,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "jean-pierreBoth/gsearch": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "jianshu93/DartUniFrac": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "jltsiren/gbwt-rs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "jltsiren/gbz-base": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "kaathewisegit/aspartik": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "kaizhang/SnapATAC2": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "lazear/sage": {
+      "stars_7d": 5,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "lh3/badclip": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "logannye/rosalind": {
+      "stars_7d": 2,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "lrslab/trackclusterTU": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "luizirber/niffler": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "markschl/seq_io": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "mbhall88/lrge": {
+      "stars_7d": 3,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "mbhall88/nohuman": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "mbhall88/rasusa": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "mlin/gvcf_norm": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "mobiusklein/mzdata": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "mpieva/mapAD": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "nanoporetech/modkit": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "natir/nuc2bit": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "natir/vcf2parquet": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "natir/yacrd": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ncsa/eidolon": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "necoli1822/rust-ise": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "nextstrain/nextclade": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ngless-toolkit/ngless": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "nh13/rebgzf": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "noamteyssier/crispr_screen": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "noamteyssier/ggetrs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "noamteyssier/gia": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "noamteyssier/ibu": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "noamteyssier/sgcount": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "onecodex/finch-rs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "onecodex/needletail": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "openpaul/fqless": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "pangenome/gafpack": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "pangenome/impg": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "pangenome/seqrush": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "pangenome/seqwish": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "pjedge/longshot": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ranwez-search/SeqTUI": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "raw-lab/dynamite": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "rickbeeloo/barbell": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "rnabioco/sracha-rs": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "rrwick/Autocycler": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "rrwick/Polypolish": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "rust-bio/rust-bio": {
+      "stars_7d": 2,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "rust-bio/rust-bio-tools": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "rust-bio/rust-htslib": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "rust-seq/packed-seq": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "rust-unofficial/awesome-rust": {
+      "stars_7d": 152,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "rusteomics/mzcore": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "sbhattlab/phylo2vec": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "seqeralabs/RustQC": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "sharkLoc/fqkit": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "sharkLoc/rust-in-bioinformatics": {
+      "stars_7d": 3,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "sib-swiss/termal": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "snijderlab/align-cli": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "snijderlab/annotator": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "soedinglab/MAGmax": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "sourmash-bio/sourmash": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "sstadick/perbase": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "sstadick/rust-lapper": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "stajichlab/orthoSynAssign": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "steineggerlab/folddisco": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "steineggerlab/foldmason": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "steineggerlab/unicore": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "stjude-rust-labs/crankshaft": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "stjude-rust-labs/fq": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "stjude-rust-labs/ngs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "stjude-rust-labs/sprocket": {
+      "stars_7d": 8,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "stjude-rust-labs/wdl": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "tolkit/gfatk": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "tprodanov/locityper": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "treangenlab/bronko": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ukmrs/rnapkin": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "umccr/htsget-rs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "unipept/FragGeneScanRs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "unipept/umgap": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "unum-science/FasterFASTA": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "varfish-org/mehari": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "vertti/umi-tools-rs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "vollgerlab/rustybam": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "vsbuffalo/granges": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "vsbuffalo/recmap": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "vsbuffalo/scidataflow": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "wang-q/nwr": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "wdecoster/STRdust": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "wdecoster/chopper": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "wdecoster/cramino": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "wdecoster/inquiSTR": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "wdecoster/nanoget-rs": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "wheretrue/biobear": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "wheretrue/exon": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "wjwei-handsome/wgatools": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "wwood/CoverM": {
+      "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "wwood/galah": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "y1zhou/arpeggia": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "ylab-hi/DeepChopper": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "zaeleus/noodles": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "zaeleus/squab": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "zeqianli/tgv": {
+      "stars_7d": 0,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    }
+  }
+}

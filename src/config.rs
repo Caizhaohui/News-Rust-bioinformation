@@ -1,79 +1,227 @@
+use serde::{Deserialize, Serialize};
 use std::path::Path;
 
-use serde_yaml::Value;
-
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Config {
+    #[serde(default = "default_schema_version")]
+    pub schema_version: u32,
+    #[serde(default)]
+    pub activity: ActivityConfig,
+    #[serde(default)]
+    pub emerging: EmergingConfig,
+    #[serde(default)]
+    pub trending: TrendingConfig,
+    #[serde(default)]
+    pub readme: ReadmeConfig,
+    #[serde(default)]
+    pub snapshot: SnapshotConfig,
+    #[serde(default)]
     pub radar: RadarConfig,
+    #[serde(default = "default_snapshots_keep")]
     pub snapshots_keep: i64,
 }
 
-#[derive(Debug, Clone)]
+fn default_schema_version() -> u32 {
+    2
+}
+
+fn default_snapshots_keep() -> i64 {
+    8
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ActivityConfig {
+    #[serde(default = "default_active_days")]
+    pub active_days: i64,
+    #[serde(default = "default_maintained_days")]
+    pub maintained_days: i64,
+    #[serde(default = "default_quiet_days")]
+    pub quiet_days: i64,
+}
+
+impl Default for ActivityConfig {
+    fn default() -> Self {
+        Self {
+            active_days: 90,
+            maintained_days: 365,
+            quiet_days: 730,
+        }
+    }
+}
+
+fn default_active_days() -> i64 {
+    90
+}
+fn default_maintained_days() -> i64 {
+    365
+}
+fn default_quiet_days() -> i64 {
+    730
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct EmergingConfig {
+    #[serde(default = "default_emerging_max_stars")]
+    pub max_stars: i64,
+    #[serde(default = "default_emerging_max_age_days")]
+    pub max_age_days: i64,
+    #[serde(default = "default_emerging_max_inactive_days")]
+    pub max_inactive_days: i64,
+}
+
+impl Default for EmergingConfig {
+    fn default() -> Self {
+        Self {
+            max_stars: 150,
+            max_age_days: 1095,
+            max_inactive_days: 180,
+        }
+    }
+}
+
+fn default_emerging_max_stars() -> i64 {
+    150
+}
+fn default_emerging_max_age_days() -> i64 {
+    1095
+}
+fn default_emerging_max_inactive_days() -> i64 {
+    180
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct TrendingConfig {
+    #[serde(default = "default_trending_min_stars")]
+    pub min_stars: i64,
+    #[serde(default = "default_trending_min_gain_30d")]
+    pub min_gain_30d: i64,
+    #[serde(default = "default_trending_min_growth_30d")]
+    pub min_growth_30d: f64,
+}
+
+impl Default for TrendingConfig {
+    fn default() -> Self {
+        Self {
+            min_stars: 20,
+            min_gain_30d: 10,
+            min_growth_30d: 0.10,
+        }
+    }
+}
+
+fn default_trending_min_stars() -> i64 {
+    20
+}
+fn default_trending_min_gain_30d() -> i64 {
+    10
+}
+fn default_trending_min_growth_30d() -> f64 {
+    0.10
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct ReadmeConfig {
+    #[serde(default = "default_trending_limit")]
+    pub trending_limit: usize,
+    #[serde(default = "default_emerging_limit")]
+    pub emerging_limit: usize,
+    #[serde(default = "default_source_picks_limit")]
+    pub source_picks_limit: usize,
+}
+
+impl Default for ReadmeConfig {
+    fn default() -> Self {
+        Self {
+            trending_limit: 10,
+            emerging_limit: 12,
+            source_picks_limit: 12,
+        }
+    }
+}
+
+fn default_trending_limit() -> usize {
+    10
+}
+fn default_emerging_limit() -> usize {
+    12
+}
+fn default_source_picks_limit() -> usize {
+    12
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+pub struct SnapshotConfig {
+    #[serde(default = "default_snapshot_keep_days")]
+    pub keep_days: i64,
+}
+
+impl Default for SnapshotConfig {
+    fn default() -> Self {
+        Self { keep_days: 730 }
+    }
+}
+
+fn default_snapshot_keep_days() -> i64 {
+    730
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct RadarConfig {
+    #[serde(default = "default_stale_months")]
     pub stale_months: i32,
+    #[serde(default = "default_cold_inactive_months")]
     pub cold_inactive_months: i32,
+    #[serde(default = "default_min_star_delta")]
     pub min_star_delta: i64,
+    #[serde(default = "default_true")]
     pub include_new_release: bool,
+    #[serde(default = "default_true")]
     pub include_cold_repo_push: bool,
+}
+
+fn default_stale_months() -> i32 {
+    18
+}
+fn default_cold_inactive_months() -> i32 {
+    6
+}
+fn default_min_star_delta() -> i64 {
+    5
+}
+fn default_true() -> bool {
+    true
+}
+
+impl Default for RadarConfig {
+    fn default() -> Self {
+        Self {
+            stale_months: 18,
+            cold_inactive_months: 6,
+            min_star_delta: 5,
+            include_new_release: true,
+            include_cold_repo_push: true,
+        }
+    }
 }
 
 impl Default for Config {
     fn default() -> Self {
         Self {
-            radar: RadarConfig {
-                stale_months: 18,
-                cold_inactive_months: 6,
-                min_star_delta: 5,
-                include_new_release: true,
-                include_cold_repo_push: true,
-            },
+            schema_version: 2,
+            activity: ActivityConfig::default(),
+            emerging: EmergingConfig::default(),
+            trending: TrendingConfig::default(),
+            readme: ReadmeConfig::default(),
+            snapshot: SnapshotConfig::default(),
+            radar: RadarConfig::default(),
             snapshots_keep: 8,
         }
     }
 }
 
-fn mapping(value: &Value) -> Option<&serde_yaml::Mapping> {
-    value.as_mapping()
-}
-
-fn get_i64(map: &serde_yaml::Mapping, key: &str, default: i64) -> i64 {
-    map.get(Value::String(key.into()))
-        .and_then(Value::as_i64)
-        .unwrap_or(default)
-}
-
-fn get_bool(map: &serde_yaml::Mapping, key: &str, default: bool) -> bool {
-    map.get(Value::String(key.into()))
-        .and_then(Value::as_bool)
-        .unwrap_or(default)
-}
-
-fn nested<'a>(map: &'a serde_yaml::Mapping, key: &str) -> Option<&'a serde_yaml::Mapping> {
-    map.get(Value::String(key.into())).and_then(mapping)
-}
-
 pub fn load_config(path: &Path) -> Config {
-    let mut config = Config::default();
     let Ok(text) = std::fs::read_to_string(path) else {
-        return config;
+        return Config::default();
     };
-    let Ok(raw) = serde_yaml::from_str::<Value>(&text) else {
-        return config;
-    };
-    let Some(root) = mapping(&raw) else {
-        return config;
-    };
-    if let Some(radar) = nested(root, "radar") {
-        config.radar.stale_months = get_i64(radar, "stale_months", 18) as i32;
-        config.radar.cold_inactive_months = get_i64(radar, "cold_inactive_months", 6) as i32;
-        if let Some(active) = nested(radar, "active") {
-            config.radar.min_star_delta = get_i64(active, "min_star_delta", 5);
-            config.radar.include_new_release = get_bool(active, "include_new_release", true);
-            config.radar.include_cold_repo_push = get_bool(active, "include_cold_repo_push", true);
-        }
-    }
-    if let Some(snapshots) = nested(root, "snapshots") {
-        config.snapshots_keep = get_i64(snapshots, "keep", 8);
-    }
-    config
+    serde_yaml::from_str::<Config>(&text).unwrap_or_else(|_| Config::default())
 }

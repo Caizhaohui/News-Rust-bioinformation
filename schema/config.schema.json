@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/Caizhaohui/News-Rust-bioinformation/main/schema/config.schema.json",
+  "title": "Rust Bioinformatics Radar Config Schema",
+  "description": "Schema for data/config.yaml in News-Rust-bioinformation v2",
+  "type": "object",
+  "required": ["schema_version", "activity", "emerging", "trending", "readme"],
+  "properties": {
+    "schema_version": { "type": "integer", "const": 2 },
+    "activity": {
+      "type": "object",
+      "required": ["active_days", "maintained_days", "quiet_days"],
+      "properties": {
+        "active_days": { "type": "integer" },
+        "maintained_days": { "type": "integer" },
+        "quiet_days": { "type": "integer" }
+      }
+    },
+    "emerging": {
+      "type": "object",
+      "required": ["max_stars", "max_age_days", "max_inactive_days"],
+      "properties": {
+        "max_stars": { "type": "integer" },
+        "max_age_days": { "type": "integer" },
+        "max_inactive_days": { "type": "integer" }
+      }
+    },
+    "trending": {
+      "type": "object",
+      "required": ["min_stars", "min_gain_30d", "min_growth_30d"],
+      "properties": {
+        "min_stars": { "type": "integer" },
+        "min_gain_30d": { "type": "integer" },
+        "min_growth_30d": { "type": "number" }
+      }
+    },
+    "readme": {
+      "type": "object",
+      "properties": {
+        "trending_limit": { "type": "integer" },
+        "emerging_limit": { "type": "integer" },
+        "source_picks_limit": { "type": "integer" }
+      }
+    },
+    "snapshot": {
+      "type": "object",
+      "properties": {
+        "keep_days": { "type": "integer" }
+      }
+    }
+  }
+}
