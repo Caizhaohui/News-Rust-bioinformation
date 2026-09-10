@@ -26,7 +26,7 @@ pub fn build_readme_v2(
         "Edit data/tools.yaml instead.".into(),
         "-->".into(),
         String::new(),
-        "# Rust Bioinformatics Radar 🦀🧬".into(),
+        "# News-Rust-bioinformation".into(),
         String::new(),
         "A continuously updated catalog and ecosystem radar for Rust libraries, applications, and infrastructure in bioinformatics and computational biology.".into(),
         String::new(),
