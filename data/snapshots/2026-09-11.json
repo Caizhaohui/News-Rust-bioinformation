@@ -1,0 +1,849 @@
+{
+  "date": "2026-09-11",
+  "repositories": {
+    "10XGenomics/cellranger": {
+      "stars": 476,
+      "forks": 104
+    },
+    "10XGenomics/rust-boomphf": {
+      "stars": 154,
+      "forks": 28
+    },
+    "10XGenomics/rust-debruijn": {
+      "stars": 72,
+      "forks": 19
+    },
+    "38/d4-format": {
+      "stars": 176,
+      "forks": 21
+    },
+    "AI4S-YB/igv-rs": {
+      "stars": 11,
+      "forks": 1
+    },
+    "ArcInstitute/binseq": {
+      "stars": 107,
+      "forks": 8
+    },
+    "ArcInstitute/bqtools": {
+      "stars": 40,
+      "forks": 3
+    },
+    "ArcInstitute/cyto": {
+      "stars": 49,
+      "forks": 3
+    },
+    "ArcInstitute/xsra": {
+      "stars": 129,
+      "forks": 12
+    },
+    "Baohua-Chen/GFFx": {
+      "stars": 47,
+      "forks": 2
+    },
+    "BesenbacherLab/cfDNAlab": {
+      "stars": 6,
+      "forks": 0
+    },
+    "BioEarthDigital/CycSim": {
+      "stars": 13,
+      "forks": 2
+    },
+    "CDCgov/irma-core": {
+      "stars": 13,
+      "forks": 0
+    },
+    "CDCgov/zoe": {
+      "stars": 8,
+      "forks": 3
+    },
+    "COMBINE-lab/alevin-fry": {
+      "stars": 219,
+      "forks": 23
+    },
+    "COMBINE-lab/oarfish": {
+      "stars": 124,
+      "forks": 8
+    },
+    "COMBINE-lab/piscem": {
+      "stars": 37,
+      "forks": 3
+    },
+    "COMBINE-lab/salmon": {
+      "stars": 930,
+      "forks": 189
+    },
+    "COMBINE-lab/simpleaf": {
+      "stars": 68,
+      "forks": 6
+    },
+    "ChangqingW/SeqSizzle": {
+      "stars": 27,
+      "forks": 1
+    },
+    "Daniel-Liu-c0deb0t/triple_accel": {
+      "stars": 109,
+      "forks": 15
+    },
+    "David-OConnor/daedalus": {
+      "stars": 150,
+      "forks": 4
+    },
+    "David-OConnor/molchanica": {
+      "stars": 150,
+      "forks": 4
+    },
+    "David-OConnor/plascad": {
+      "stars": 139,
+      "forks": 3
+    },
+    "Ebedthan/hyperex": {
+      "stars": 10,
+      "forks": 2
+    },
+    "Ebedthan/xgt": {
+      "stars": 31,
+      "forks": 0
+    },
+    "FJingxian/JanusX": {
+      "stars": 37,
+      "forks": 5
+    },
+    "FelixKrueger/Bismark": {
+      "stars": 464,
+      "forks": 112
+    },
+    "FullHuman/orphos": {
+      "stars": 29,
+      "forks": 1
+    },
+    "GZHoffie/skiver": {
+      "stars": 12,
+      "forks": 2
+    },
+    "HPCBio/dada2-rs": {
+      "stars": 4,
+      "forks": 1
+    },
+    "HUPO-PSI/ProForma": {
+      "stars": 26,
+      "forks": 5
+    },
+    "Huang-lab/RastQC": {
+      "stars": 56,
+      "forks": 4
+    },
+    "Huang-lab/fastVEP": {
+      "stars": 133,
+      "forks": 26
+    },
+    "Jakeelamb/bbnorm-rs": {
+      "stars": 0,
+      "forks": 0
+    },
+    "LCrossman/microBioRust": {
+      "stars": 32,
+      "forks": 14
+    },
+    "MannLabs/timsrust": {
+      "stars": 36,
+      "forks": 15
+    },
+    "Mvila035/dna_parser": {
+      "stars": 11,
+      "forks": 0
+    },
+    "PacificBiosciences/HiPhase": {
+      "stars": 88,
+      "forks": 5
+    },
+    "PacificBiosciences/SVTopo": {
+      "stars": 51,
+      "forks": 4
+    },
+    "PacificBiosciences/trgt": {
+      "stars": 144,
+      "forks": 17
+    },
+    "PathoGenOmics-Lab/snpick": {
+      "stars": 17,
+      "forks": 2
+    },
+    "Psy-Fer/kuva": {
+      "stars": 870,
+      "forks": 39
+    },
+    "RagnarGrootKoerkamp/pandedup": {
+      "stars": 7,
+      "forks": 0
+    },
+    "RagnarGrootKoerkamp/simd-sketch": {
+      "stars": 21,
+      "forks": 6
+    },
+    "Sigilweaver/OpenMassSpec": {
+      "stars": 11,
+      "forks": 2
+    },
+    "Sigilweaver/OpenTFRaw": {
+      "stars": 13,
+      "forks": 3
+    },
+    "Softleif/seqair": {
+      "stars": 29,
+      "forks": 2
+    },
+    "Traitome/oxo-flow": {
+      "stars": 18,
+      "forks": 1
+    },
+    "alejandrogzi/bed2gtf": {
+      "stars": 21,
+      "forks": 0
+    },
+    "alejandrogzi/gtfsort": {
+      "stars": 39,
+      "forks": 3
+    },
+    "alexcoulton/odon": {
+      "stars": 78,
+      "forks": 2
+    },
+    "algbio/ggcat": {
+      "stars": 101,
+      "forks": 15
+    },
+    "alignoth/alignoth": {
+      "stars": 132,
+      "forks": 5
+    },
+    "alsmith151/BamNado": {
+      "stars": 1,
+      "forks": 2
+    },
+    "althonos/diced": {
+      "stars": 4,
+      "forks": 1
+    },
+    "anergictcell/atg": {
+      "stars": 7,
+      "forks": 0
+    },
+    "annocat-project/AnnoCAT": {
+      "stars": 0,
+      "forks": 0
+    },
+    "arewebioyet/arewebioyet.github.io": {
+      "stars": 19,
+      "forks": 8
+    },
+    "ayobi/ITSxRust": {
+      "stars": 23,
+      "forks": 0
+    },
+    "ayobi/emits": {
+      "stars": 3,
+      "forks": 0
+    },
+    "bacpop/ska.rust": {
+      "stars": 105,
+      "forks": 9
+    },
+    "bacpop/sketchlib.rust": {
+      "stars": 32,
+      "forks": 6
+    },
+    "bacpop/sparrowhawk-amr": {
+      "stars": 0,
+      "forks": 0
+    },
+    "bacpop/sparrowhawk-asm": {
+      "stars": 15,
+      "forks": 2
+    },
+    "baku4/sigalign": {
+      "stars": 31,
+      "forks": 4
+    },
+    "bede/deacon": {
+      "stars": 126,
+      "forks": 21
+    },
+    "biodatageeks/polars-bio": {
+      "stars": 198,
+      "forks": 34
+    },
+    "bluenote-1577/devider": {
+      "stars": 48,
+      "forks": 3
+    },
+    "bluenote-1577/myloasm": {
+      "stars": 168,
+      "forks": 8
+    },
+    "bluenote-1577/savont": {
+      "stars": 55,
+      "forks": 4
+    },
+    "bluenote-1577/skani": {
+      "stars": 264,
+      "forks": 15
+    },
+    "bluenote-1577/sylph": {
+      "stars": 318,
+      "forks": 19
+    },
+    "brentp/echtvar": {
+      "stars": 162,
+      "forks": 17
+    },
+    "brentp/vcfexpress": {
+      "stars": 93,
+      "forks": 3
+    },
+    "broadinstitute/poasta": {
+      "stars": 71,
+      "forks": 7
+    },
+    "caltechmsc/dreid-pack": {
+      "stars": 2,
+      "forks": 0
+    },
+    "codialab/panacus": {
+      "stars": 138,
+      "forks": 12
+    },
+    "colindaven/rs_demultiplex": {
+      "stars": 6,
+      "forks": 1
+    },
+    "cytokineking/sc-rs": {
+      "stars": 20,
+      "forks": 1
+    },
+    "dacarlin/heme": {
+      "stars": 4,
+      "forks": 1
+    },
+    "danielecook/Awesome-Bioinformatics": {
+      "stars": 4275,
+      "forks": 728
+    },
+    "dcjones/coitrees": {
+      "stars": 136,
+      "forks": 11
+    },
+    "dcjones/proseg": {
+      "stars": 189,
+      "forks": 20
+    },
+    "dietvin/fishnet": {
+      "stars": 7,
+      "forks": 0
+    },
+    "dohlee/metheor": {
+      "stars": 55,
+      "forks": 11
+    },
+    "douweschulte/pdbtbx": {
+      "stars": 73,
+      "forks": 21
+    },
+    "ekimb/rust-mdbg": {
+      "stars": 184,
+      "forks": 16
+    },
+    "esteinig/nanoq": {
+      "stars": 139,
+      "forks": 11
+    },
+    "esteinig/vircov": {
+      "stars": 27,
+      "forks": 3
+    },
+    "ferritin-bio/ferritin": {
+      "stars": 34,
+      "forks": 2
+    },
+    "fg-labs/holodeck": {
+      "stars": 6,
+      "forks": 0
+    },
+    "fg-labs/mako": {
+      "stars": 9,
+      "forks": 0
+    },
+    "fulcrumgenomics/bgzf": {
+      "stars": 9,
+      "forks": 0
+    },
+    "fulcrumgenomics/chelae": {
+      "stars": 17,
+      "forks": 0
+    },
+    "fulcrumgenomics/ferro-hgvs": {
+      "stars": 28,
+      "forks": 4
+    },
+    "fulcrumgenomics/fg-sra": {
+      "stars": 6,
+      "forks": 0
+    },
+    "fulcrumgenomics/fgumi": {
+      "stars": 55,
+      "forks": 2
+    },
+    "fulcrumgenomics/fqgrep": {
+      "stars": 104,
+      "forks": 5
+    },
+    "fulcrumgenomics/fqtk": {
+      "stars": 71,
+      "forks": 2
+    },
+    "fulcrumgenomics/guide-counter": {
+      "stars": 35,
+      "forks": 4
+    },
+    "genhub-bio/gen": {
+      "stars": 35,
+      "forks": 0
+    },
+    "haddocking/haddock-restraints": {
+      "stars": 7,
+      "forks": 2
+    },
+    "henriksson-lab/blast-rs": {
+      "stars": 9,
+      "forks": 0
+    },
+    "henriksson-lab/minimap2-pure-rs": {
+      "stars": 29,
+      "forks": 1
+    },
+    "huangnengCSU/longcallR": {
+      "stars": 96,
+      "forks": 8
+    },
+    "informationsea/transanno": {
+      "stars": 151,
+      "forks": 16
+    },
+    "jackh726/bigtools": {
+      "stars": 125,
+      "forks": 13
+    },
+    "jean-pierreBoth/gsearch": {
+      "stars": 66,
+      "forks": 7
+    },
+    "jianshu93/DartUniFrac": {
+      "stars": 12,
+      "forks": 1
+    },
+    "jltsiren/gbwt-rs": {
+      "stars": 46,
+      "forks": 8
+    },
+    "jltsiren/gbz-base": {
+      "stars": 16,
+      "forks": 6
+    },
+    "kaathewisegit/aspartik": {
+      "stars": 3,
+      "forks": 4
+    },
+    "kaizhang/SnapATAC2": {
+      "stars": 323,
+      "forks": 43
+    },
+    "lazear/sage": {
+      "stars": 307,
+      "forks": 66
+    },
+    "lh3/badclip": {
+      "stars": 0,
+      "forks": 0
+    },
+    "logannye/rosalind": {
+      "stars": 279,
+      "forks": 13
+    },
+    "lrslab/trackclusterTU": {
+      "stars": 4,
+      "forks": 1
+    },
+    "luizirber/niffler": {
+      "stars": 81,
+      "forks": 7
+    },
+    "markschl/seq_io": {
+      "stars": 85,
+      "forks": 13
+    },
+    "mbhall88/lrge": {
+      "stars": 96,
+      "forks": 5
+    },
+    "mbhall88/nohuman": {
+      "stars": 53,
+      "forks": 4
+    },
+    "mbhall88/rasusa": {
+      "stars": 275,
+      "forks": 20
+    },
+    "mlin/gvcf_norm": {
+      "stars": 9,
+      "forks": 1
+    },
+    "mobiusklein/mzdata": {
+      "stars": 44,
+      "forks": 16
+    },
+    "mpieva/mapAD": {
+      "stars": 22,
+      "forks": 0
+    },
+    "nanoporetech/modkit": {
+      "stars": 273,
+      "forks": 32
+    },
+    "natir/nuc2bit": {
+      "stars": 14,
+      "forks": 1
+    },
+    "natir/vcf2parquet": {
+      "stars": 32,
+      "forks": 3
+    },
+    "natir/yacrd": {
+      "stars": 88,
+      "forks": 8
+    },
+    "ncsa/eidolon": {
+      "stars": 4,
+      "forks": 1
+    },
+    "necoli1822/rust-ise": {
+      "stars": 0,
+      "forks": 0
+    },
+    "nextstrain/nextclade": {
+      "stars": 262,
+      "forks": 67
+    },
+    "ngless-toolkit/ngless": {
+      "stars": 152,
+      "forks": 23
+    },
+    "nh13/rebgzf": {
+      "stars": 7,
+      "forks": 0
+    },
+    "noamteyssier/crispr_screen": {
+      "stars": 11,
+      "forks": 0
+    },
+    "noamteyssier/ggetrs": {
+      "stars": 45,
+      "forks": 3
+    },
+    "noamteyssier/gia": {
+      "stars": 69,
+      "forks": 3
+    },
+    "noamteyssier/ibu": {
+      "stars": 11,
+      "forks": 0
+    },
+    "noamteyssier/sgcount": {
+      "stars": 12,
+      "forks": 2
+    },
+    "onecodex/finch-rs": {
+      "stars": 101,
+      "forks": 8
+    },
+    "onecodex/needletail": {
+      "stars": 214,
+      "forks": 33
+    },
+    "openpaul/fqless": {
+      "stars": 26,
+      "forks": 4
+    },
+    "pangenome/gafpack": {
+      "stars": 28,
+      "forks": 2
+    },
+    "pangenome/impg": {
+      "stars": 111,
+      "forks": 16
+    },
+    "pangenome/seqrush": {
+      "stars": 12,
+      "forks": 1
+    },
+    "pangenome/seqwish": {
+      "stars": 165,
+      "forks": 22
+    },
+    "pjedge/longshot": {
+      "stars": 212,
+      "forks": 29
+    },
+    "ranwez-search/SeqTUI": {
+      "stars": 47,
+      "forks": 1
+    },
+    "raw-lab/dynamite": {
+      "stars": 35,
+      "forks": 1
+    },
+    "rickbeeloo/barbell": {
+      "stars": 106,
+      "forks": 3
+    },
+    "rnabioco/sracha-rs": {
+      "stars": 73,
+      "forks": 5
+    },
+    "rrwick/Autocycler": {
+      "stars": 238,
+      "forks": 21
+    },
+    "rrwick/Polypolish": {
+      "stars": 224,
+      "forks": 16
+    },
+    "rust-bio/rust-bio": {
+      "stars": 1840,
+      "forks": 220
+    },
+    "rust-bio/rust-bio-tools": {
+      "stars": 205,
+      "forks": 20
+    },
+    "rust-bio/rust-bio.github.io": {
+      "stars": 1,
+      "forks": 3
+    },
+    "rust-bio/rust-htslib": {
+      "stars": 372,
+      "forks": 98
+    },
+    "rust-seq/packed-seq": {
+      "stars": 19,
+      "forks": 4
+    },
+    "rust-unofficial/awesome-rust": {
+      "stars": 59286,
+      "forks": 3608
+    },
+    "rusteomics/mzcore": {
+      "stars": 51,
+      "forks": 11
+    },
+    "sbhattlab/phylo2vec": {
+      "stars": 21,
+      "forks": 9
+    },
+    "seqeralabs/RustQC": {
+      "stars": 124,
+      "forks": 7
+    },
+    "sharkLoc/fqkit": {
+      "stars": 6,
+      "forks": 3
+    },
+    "sharkLoc/rust-in-bioinformatics": {
+      "stars": 138,
+      "forks": 14
+    },
+    "sib-swiss/termal": {
+      "stars": 34,
+      "forks": 5
+    },
+    "snijderlab/align-cli": {
+      "stars": 17,
+      "forks": 1
+    },
+    "snijderlab/annotator": {
+      "stars": 42,
+      "forks": 4
+    },
+    "soedinglab/MAGmax": {
+      "stars": 37,
+      "forks": 4
+    },
+    "sourmash-bio/sourmash": {
+      "stars": 557,
+      "forks": 93
+    },
+    "sstadick/perbase": {
+      "stars": 151,
+      "forks": 20
+    },
+    "sstadick/rust-lapper": {
+      "stars": 71,
+      "forks": 10
+    },
+    "stajichlab/orthoSynAssign": {
+      "stars": 6,
+      "forks": 1
+    },
+    "steineggerlab/folddisco": {
+      "stars": 214,
+      "forks": 26
+    },
+    "steineggerlab/foldmason": {
+      "stars": 281,
+      "forks": 30
+    },
+    "steineggerlab/unicore": {
+      "stars": 91,
+      "forks": 10
+    },
+    "stjude-rust-labs/crankshaft": {
+      "stars": 56,
+      "forks": 25
+    },
+    "stjude-rust-labs/fq": {
+      "stars": 102,
+      "forks": 7
+    },
+    "stjude-rust-labs/ngs": {
+      "stars": 39,
+      "forks": 4
+    },
+    "stjude-rust-labs/sprocket": {
+      "stars": 206,
+      "forks": 74
+    },
+    "stjude-rust-labs/wdl": {
+      "stars": 62,
+      "forks": 33
+    },
+    "tolkit/gfatk": {
+      "stars": 16,
+      "forks": 1
+    },
+    "tprodanov/locityper": {
+      "stars": 47,
+      "forks": 3
+    },
+    "treangenlab/bronko": {
+      "stars": 47,
+      "forks": 0
+    },
+    "ukmrs/rnapkin": {
+      "stars": 10,
+      "forks": 1
+    },
+    "umccr/htsget-rs": {
+      "stars": 56,
+      "forks": 9
+    },
+    "unipept/FragGeneScanRs": {
+      "stars": 31,
+      "forks": 1
+    },
+    "unipept/umgap": {
+      "stars": 11,
+      "forks": 6
+    },
+    "unum-science/FasterFASTA": {
+      "stars": 31,
+      "forks": 1
+    },
+    "varfish-org/mehari": {
+      "stars": 32,
+      "forks": 2
+    },
+    "vertti/umi-tools-rs": {
+      "stars": 6,
+      "forks": 0
+    },
+    "vollgerlab/rustybam": {
+      "stars": 107,
+      "forks": 4
+    },
+    "vsbuffalo/granges": {
+      "stars": 103,
+      "forks": 7
+    },
+    "vsbuffalo/recmap": {
+      "stars": 9,
+      "forks": 1
+    },
+    "vsbuffalo/scidataflow": {
+      "stars": 230,
+      "forks": 10
+    },
+    "wang-q/nwr": {
+      "stars": 9,
+      "forks": 1
+    },
+    "wdecoster/STRdust": {
+      "stars": 28,
+      "forks": 3
+    },
+    "wdecoster/chopper": {
+      "stars": 261,
+      "forks": 19
+    },
+    "wdecoster/cramino": {
+      "stars": 190,
+      "forks": 16
+    },
+    "wdecoster/inquiSTR": {
+      "stars": 12,
+      "forks": 0
+    },
+    "wdecoster/nanoget-rs": {
+      "stars": 7,
+      "forks": 0
+    },
+    "wheretrue/biobear": {
+      "stars": 196,
+      "forks": 13
+    },
+    "wheretrue/exon": {
+      "stars": 71,
+      "forks": 7
+    },
+    "wjwei-handsome/wgatools": {
+      "stars": 224,
+      "forks": 15
+    },
+    "wwood/CoverM": {
+      "stars": 406,
+      "forks": 36
+    },
+    "wwood/galah": {
+      "stars": 87,
+      "forks": 12
+    },
+    "y1zhou/arpeggia": {
+      "stars": 8,
+      "forks": 1
+    },
+    "ylab-hi/DeepChopper": {
+      "stars": 9,
+      "forks": 1
+    },
+    "zaeleus/noodles": {
+      "stars": 721,
+      "forks": 87
+    },
+    "zaeleus/squab": {
+      "stars": 40,
+      "forks": 3
+    },
+    "zeqianli/tgv": {
+      "stars": 483,
+      "forks": 25
+    }
+  }
+}
