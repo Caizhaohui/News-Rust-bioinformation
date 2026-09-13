@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T07:54:14Z",
+  "generated_at": "2026-09-13T08:17:07Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 0,
@@ -184,7 +184,7 @@
       "trend": "quiet"
     },
     "FJingxian/JanusX": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -247,7 +247,7 @@
       "trend": "quiet"
     },
     "LCrossman/microBioRust": {
-      "stars_7d": 1,
+      "stars_7d": 4,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -373,11 +373,11 @@
       "trend": "quiet"
     },
     "alignoth/alignoth": {
-      "stars_7d": 0,
-      "stars_30d": 0,
-      "stars_90d": 0,
-      "growth_30d": 0.0,
-      "trend": "quiet"
+      "stars_7d": 1,
+      "stars_30d": 1,
+      "stars_90d": 1,
+      "growth_30d": 0.007575757575757576,
+      "trend": "steady"
     },
     "alsmith151/BamNado": {
       "stars_7d": 0,
@@ -429,14 +429,14 @@
       "trend": "quiet"
     },
     "bacpop/ska.rust": {
-      "stars_7d": 0,
-      "stars_30d": 0,
-      "stars_90d": 0,
-      "growth_30d": 0.0,
-      "trend": "quiet"
+      "stars_7d": 1,
+      "stars_30d": 1,
+      "stars_90d": 1,
+      "growth_30d": 0.009523809523809525,
+      "trend": "steady"
     },
     "bacpop/sketchlib.rust": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -450,7 +450,7 @@
       "trend": "quiet"
     },
     "bacpop/sparrowhawk-asm": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -485,10 +485,10 @@
       "trend": "quiet"
     },
     "bluenote-1577/myloasm": {
-      "stars_7d": 1,
-      "stars_30d": 2,
-      "stars_90d": 2,
-      "growth_30d": 0.012048192771084338,
+      "stars_7d": 2,
+      "stars_30d": 3,
+      "stars_90d": 3,
+      "growth_30d": 0.018072289156626505,
       "trend": "steady"
     },
     "bluenote-1577/savont": {
@@ -569,10 +569,10 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 9,
-      "stars_30d": 17,
-      "stars_90d": 17,
-      "growth_30d": 0.003990610328638498,
+      "stars_7d": 11,
+      "stars_30d": 19,
+      "stars_90d": 19,
+      "growth_30d": 0.004460093896713615,
       "trend": "rising"
     },
     "dcjones/coitrees": {
@@ -1066,18 +1066,18 @@
       "trend": "steady"
     },
     "rrwick/Autocycler": {
-      "stars_7d": 0,
-      "stars_30d": 0,
-      "stars_90d": 0,
-      "growth_30d": 0.0,
-      "trend": "quiet"
+      "stars_7d": 1,
+      "stars_30d": 1,
+      "stars_90d": 1,
+      "growth_30d": 0.004201680672268907,
+      "trend": "steady"
     },
     "rrwick/Polypolish": {
-      "stars_7d": 0,
-      "stars_30d": 0,
-      "stars_90d": 0,
-      "growth_30d": 0.0,
-      "trend": "quiet"
+      "stars_7d": 1,
+      "stars_30d": 1,
+      "stars_90d": 1,
+      "growth_30d": 0.004464285714285714,
+      "trend": "steady"
     },
     "rust-bio/rust-bio": {
       "stars_7d": 0,
@@ -1115,10 +1115,10 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 82,
-      "stars_30d": 257,
-      "stars_90d": 257,
-      "growth_30d": 0.004352243861134632,
+      "stars_7d": 100,
+      "stars_30d": 275,
+      "stars_90d": 275,
+      "growth_30d": 0.0046570702794242165,
       "trend": "rising"
     },
     "rusteomics/mzcore": {
