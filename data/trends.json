@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T08:52:35Z",
+  "generated_at": "2026-09-14T09:22:34Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 0,
@@ -1115,10 +1115,10 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 113,
-      "stars_30d": 288,
-      "stars_90d": 288,
-      "growth_30d": 0.004877222692633362,
+      "stars_7d": 115,
+      "stars_30d": 290,
+      "stars_90d": 290,
+      "growth_30d": 0.004911092294665537,
       "trend": "rising"
     },
     "rusteomics/mzcore": {

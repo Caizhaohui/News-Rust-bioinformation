@@ -59,7 +59,7 @@ Projects showing notable GitHub growth during the last 30 days.
 
 | Project | Primary Area | Stars | +30d | Activity |
 |---|---|---:|---:|---|
-| [awesome-rust](https://github.com/rust-unofficial/awesome-rust) | Learning Resources | 59338 | +288 | 🟢 |
+| [awesome-rust](https://github.com/rust-unofficial/awesome-rust) | Learning Resources | 59340 | +290 | 🟢 |
 | [Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics) | Learning Resources | 4279 | +19 | 🟡 |
 | [htsget-rs](https://github.com/umccr/htsget-rs) | Sequence IO and Formats | 56 | +6 | 🟢 |
 
@@ -367,7 +367,7 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 
 ## 📚 Learning Resources
 
-- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59338`
+- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59340`
 - **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟡 Maintained` `★ 4279`
 - **[rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics)** — Collection of genomics software tools written in Rust. `🟢 Active` `★ 138`
 - **[Rust-Bio documentation](https://rust-bio.github.io/)** — Project site and documentation for the Rust-Bio ecosystem. `🔴 Inactive` `★ 1`
