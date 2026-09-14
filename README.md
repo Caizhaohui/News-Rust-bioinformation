@@ -9,7 +9,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 
 > Automatically tracks repository activity, releases, ecosystem trends, and emerging projects.
 
-**Projects:** 211 · **Active:** 153 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-09-13
+**Projects:** 211 · **Active:** 153 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-09-14
 
 ## Contents
 
@@ -59,7 +59,7 @@ Projects showing notable GitHub growth during the last 30 days.
 
 | Project | Primary Area | Stars | +30d | Activity |
 |---|---|---:|---:|---|
-| [awesome-rust](https://github.com/rust-unofficial/awesome-rust) | Learning Resources | 59325 | +275 | 🟢 |
+| [awesome-rust](https://github.com/rust-unofficial/awesome-rust) | Learning Resources | 59338 | +288 | 🟢 |
 | [Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics) | Learning Resources | 4279 | +19 | 🟡 |
 | [htsget-rs](https://github.com/umccr/htsget-rs) | Sequence IO and Formats | 56 | +6 | 🟢 |
 
@@ -75,9 +75,9 @@ Recently active Rust bioinformatics projects that are still relatively new or un
 | [deacon](https://github.com/bede/deacon) | Metagenomics | 126 | 🟢 | Fast host DNA sequence filtering. |
 | [RustQC](https://github.com/seqeralabs/RustQC) | Sequence IO and Formats | 124 | 🟢 | Fast quality-control tools for sequencing data. |
 | [impg](https://github.com/pangenome/impg) | Assembly and Pangenomes | 111 | 🟢 | Implicit pangenome graph toolkit. |
-| [binseq](https://github.com/ArcInstitute/binseq) | Sequence IO and Formats | 107 | 🟢 | Compact binary format for sequencing reads. |
+| [binseq](https://github.com/ArcInstitute/binseq) | Sequence IO and Formats | 108 | 🟢 | Compact binary format for sequencing reads. |
 | [barbell](https://github.com/rickbeeloo/barbell) | Long Reads | 106 | 🟢 | Fast Nanopore demultiplexing. |
-| [lrge](https://github.com/mbhall88/lrge) | Long Reads | 96 | 🟢 | Genome size estimation from long-read overlaps. |
+| [lrge](https://github.com/mbhall88/lrge) | Long Reads | 97 | 🟢 | Genome size estimation from long-read overlaps. |
 | [vcfexpress](https://github.com/brentp/vcfexpress) | Variants and Annotation | 93 | 🟡 | Expression language for querying and rewriting VCFs. |
 | [odon](https://github.com/alexcoulton/odon) | Visualization | 78 | 🟢 | Ultra-fast spatial proteomics viewer for OME-Zarr data. |
 | [sracha-rs](https://github.com/rnabioco/sracha-rs) | Sequence IO and Formats | 73 | 🟢 | Rust-based helpers around NCBI SRA tools. |
@@ -135,7 +135,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[ngless](https://github.com/ngless-toolkit/ngless)** — Domain-specific language for next-generation sequencing and metagenomic workflows. `🟢 Active` `★ 152` · [DOI: 10.1186/s40168-019-0684-8](https://doi.org/10.1186/s40168-019-0684-8) · [DOI: 10.1093/gigascience/giz079](https://doi.org/10.1093/gigascience/giz079)
 - **[deacon](https://github.com/bede/deacon)** — Fast host DNA sequence filtering. `🟢 Active` `★ 126`
 - **[ska](https://github.com/bacpop/ska.rust)** — Split k-mer analysis for bacterial genomes. `🟢 Active` `★ 106`
-- **[galah](https://github.com/wwood/galah)** — Scalable dereplication of metagenome-assembled genomes. `🟢 Active` `★ 87`
+- **[galah](https://github.com/wwood/galah)** — Scalable dereplication of metagenome-assembled genomes. `🟢 Active` `★ 88`
 - **[gsearch](https://github.com/jean-pierreBoth/gsearch)** — Approximate nearest-neighbor search for microbial genomes. `🟡 Maintained` `★ 66`
 - **[savont](https://github.com/bluenote-1577/savont)** — Calls amplicon sequence variants from 16S ONT and PacBio HiFi reads. `🟢 Active` `★ 55` · [DOI: 10.64898/2026.05.26.727271](https://www.biorxiv.org/content/10.64898/2026.05.26.727271)
 - **[nohuman](https://github.com/mbhall88/nohuman)** — Removal of human reads from a sequencing run. `🟢 Active` `★ 53`
@@ -174,7 +174,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 ### Variants and Annotation
 
 - **[Bismark](https://github.com/FelixKrueger/Bismark)** — Maps bisulfite-converted reads and calls cytosine methylation. `🟢 Active` `★ 465` · [DOI: 10.1093/bioinformatics/btr167](https://doi.org/10.1093/bioinformatics/btr167)
-- **[modkit](https://github.com/nanoporetech/modkit)** — Tools for working with modified bases in alignments. `🟢 Active` `★ 273`
+- **[modkit](https://github.com/nanoporetech/modkit)** — Tools for working with modified bases in alignments. `🟢 Active` `★ 274`
 - **[echtvar](https://github.com/brentp/echtvar)** — Compact variant annotation and filtering for VCF files. `🟢 Active` `★ 162`
 - **[transanno](https://github.com/informationsea/transanno)** — Accurate liftOver for new genome assemblies. `🔴 Inactive` `★ 151`
 - **[fastVEP](https://github.com/Huang-lab/fastVEP)** — High-performance variant effect predictor written in Rust. `🟢 Active` `★ 133` · [DOI: 10.64898/2026.04.14.718452](https://www.biorxiv.org/content/10.64898/2026.04.14.718452)
@@ -200,7 +200,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[trgt](https://github.com/PacificBiosciences/trgt)** — Tandem repeat genotyping from PacBio HiFi data. `🟡 Maintained` `★ 144`
 - **[nanoq](https://github.com/esteinig/nanoq)** — Minimal quality control for Oxford Nanopore reads. `🟠 Quiet` `★ 139`
 - **[barbell](https://github.com/rickbeeloo/barbell)** — Fast Nanopore demultiplexing. `🟢 Active` `★ 106`
-- **[lrge](https://github.com/mbhall88/lrge)** — Genome size estimation from long-read overlaps. `🟢 Active` `★ 96`
+- **[lrge](https://github.com/mbhall88/lrge)** — Genome size estimation from long-read overlaps. `🟢 Active` `★ 97`
 - **[longcallR](https://github.com/huangnengCSU/longcallR)** — SNP calling, haplotype phasing, and allele-specific analysis from long-read RNA-seq. `🟢 Active` `★ 96` · [DOI: 10.1101/2025.05.26.656191](https://www.biorxiv.org/content/10.1101/2025.05.26.656191)
 - **[HiPhase](https://github.com/PacificBiosciences/HiPhase)** — Small-variant, SV, and STR phasing for PacBio HiFi reads. `🟡 Maintained` `★ 88`
 - **[yacrd](https://github.com/natir/yacrd)** — Chimeric read detector for long-read datasets. `🟠 Quiet` `★ 88`
@@ -235,7 +235,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[proseg](https://github.com/dcjones/proseg)** — Probabilistic cell segmentation for spatial transcriptomics. `🟢 Active` `★ 189`
 - **[oarfish](https://github.com/COMBINE-lab/oarfish)** — Quantification for long-read RNA-seq. `🟢 Active` `★ 124`
 - **[simpleaf](https://github.com/COMBINE-lab/simpleaf)** — Workflow wrapper that simplifies alevin-fry analyses. `🔗 Binding` `🟢 Active` `★ 68`
-- **[cyto](https://github.com/ArcInstitute/cyto)** — Mapper for 10x Flex single-cell reads with fixed abstract geometries. `🟢 Active` `★ 49` · [DOI: 10.64898/2026.01.21.700936](https://www.biorxiv.org/content/10.64898/2026.01.21.700936)
+- **[cyto](https://github.com/ArcInstitute/cyto)** — Mapper for 10x Flex single-cell reads with fixed abstract geometries. `🟢 Active` `★ 50` · [DOI: 10.64898/2026.01.21.700936](https://www.biorxiv.org/content/10.64898/2026.01.21.700936)
 - **[squab](https://github.com/zaeleus/squab)** — Alignment-based gene expression quantification. `🟢 Active` `★ 40`
 - **[piscem](https://github.com/COMBINE-lab/piscem)** — Next-generation sequence indexing and mapping components. `🟢 Active` `★ 37`
 - **[rnapkin](https://github.com/ukmrs/rnapkin)** — Fast drawing of RNA secondary structure. `🟡 Maintained` `★ 10`
@@ -243,11 +243,11 @@ _Genomics and bioinformatics tools focused on microorganisms._
 
 ### Proteomics and Structure
 
-- **[sage](https://github.com/lazear/sage)** — Fast proteomics search and quantification. `🟡 Maintained` `★ 308`
-- **[foldmason](https://github.com/steineggerlab/foldmason)** — Multiple alignment of large protein structure sets. `🟡 Maintained` `★ 281`
-- **[folddisco](https://github.com/steineggerlab/folddisco)** — Indexing and search of discontinuous motifs in protein structures. `🟢 Active` `★ 215`
+- **[sage](https://github.com/lazear/sage)** — Fast proteomics search and quantification. `🟡 Maintained` `★ 309`
+- **[foldmason](https://github.com/steineggerlab/foldmason)** — Multiple alignment of large protein structure sets. `🟡 Maintained` `★ 282`
+- **[folddisco](https://github.com/steineggerlab/folddisco)** — Indexing and search of discontinuous motifs in protein structures. `🟢 Active` `★ 216`
 - **[daedalus](https://github.com/David-OConnor/daedalus)** — Protein and molecule viewer. `🟢 Active` `★ 150`
-- **[unicore](https://github.com/steineggerlab/unicore)** — Core-gene phylogeny using Foldseek and ProstT5. `🟡 Maintained` `★ 91`
+- **[unicore](https://github.com/steineggerlab/unicore)** — Core-gene phylogeny using Foldseek and ProstT5. `🟡 Maintained` `★ 92`
 - **[pdbtbx](https://github.com/douweschulte/pdbtbx)** — Library for reading, editing, and writing PDB and mmCIF files. `🟢 Active` `★ 73`
 - **[mzcore](https://github.com/rusteomics/mzcore)** — Peptide-centric mass spectrometry calculations around PSI standards. `🟢 Active` `★ 51`
 - **[mzdata](https://github.com/mobiusklein/mzdata)** — Readers and writers for mass spectrometry file formats. `🟢 Active` `★ 44`
@@ -298,7 +298,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[niffler](https://github.com/luizirber/niffler)** — Transparent reading and writing of compressed files. `🟢 Active` `★ 81`
 - **[rust-debruijn](https://github.com/10XGenomics/rust-debruijn)** — De Bruijn graph construction and path compression libraries. `🔴 Inactive` `★ 72`
 - **[rust-lapper](https://github.com/sstadick/rust-lapper)** — Fast interval-tree library for overlap queries. `🟢 Active` `★ 71`
-- **[microBioRust](https://github.com/LCrossman/microBioRust)** — Library for microbial genomics data structures and analyses. `🟢 Active` `★ 35`
+- **[microBioRust](https://github.com/LCrossman/microBioRust)** — Library for microbial genomics data structures and analyses. `🟢 Active` `★ 36`
 - **[phylo2vec](https://github.com/sbhattlab/phylo2vec)** — Vector representation and library for phylogenetic tree manipulation. `🟢 Active` `★ 21` · [DOI: 10.21105/joss.09040](https://doi.org/10.21105/joss.09040) · [DOI: 10.1093/sysbio/syae030](https://doi.org/10.1093/sysbio/syae030)
 - **[simd-sketch](https://github.com/RagnarGrootKoerkamp/simd-sketch)** — SIMD-accelerated bottom-s and s-bucket genomic sketches. `🟢 Active` `★ 21` · [DOI: 10.1101/2025.01.27.634998](https://www.biorxiv.org/content/10.1101/2025.01.27.634998)
 - **[packed-seq](https://github.com/rust-seq/packed-seq)** — Bit-packed nucleotide sequence trait and implementations. `🟢 Active` `★ 19`
@@ -314,7 +314,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[xsra](https://github.com/ArcInstitute/xsra)** — Fast extraction of sequences from the SRA. `🟡 Maintained` `★ 129`
 - **[bigtools](https://github.com/jackh726/bigtools)** — High-performance BigWig and BigBed library and CLI. `🟢 Active` `★ 125`
 - **[RustQC](https://github.com/seqeralabs/RustQC)** — Fast quality-control tools for sequencing data. `🟢 Active` `★ 124`
-- **[binseq](https://github.com/ArcInstitute/binseq)** — Compact binary format for sequencing reads. `🟢 Active` `★ 107`
+- **[binseq](https://github.com/ArcInstitute/binseq)** — Compact binary format for sequencing reads. `🟢 Active` `★ 108`
 - **[fqgrep](https://github.com/fulcrumgenomics/fqgrep)** — Grep-like search over FASTQ files. `🟢 Active` `★ 104`
 - **[granges](https://github.com/vsbuffalo/granges)** — Library and CLI for genomic ranges and associated data. `🔴 Inactive` `★ 103`
 - **[fq](https://github.com/stjude-rust-labs/fq)** — Command-line utility for manipulating Illumina FASTQ files. `🟢 Active` `★ 102`
@@ -324,13 +324,13 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[RastQC](https://github.com/Huang-lab/RastQC)** — High-throughput sequencing quality control covering short and long reads. `🟢 Active` `★ 56` · [DOI: 10.64898/2026.03.31.715630](https://www.biorxiv.org/content/10.64898/2026.03.31.715630)
 - **[htsget-rs](https://github.com/umccr/htsget-rs)** — Server implementation of the GA4GH htsget protocol. `🟢 Active` `★ 56`
 - **[fgumi](https://github.com/fulcrumgenomics/fgumi)** — High-performance UMI processing for NGS data. `🟢 Active` `★ 55`
-- **[bqtools](https://github.com/ArcInstitute/bqtools)** — Command-line utilities for BINSEQ files. `🟢 Active` `★ 40`
+- **[bqtools](https://github.com/ArcInstitute/bqtools)** — Command-line utilities for BINSEQ files. `🟢 Active` `★ 41`
 - **[gtfsort](https://github.com/alejandrogzi/gtfsort)** — Lexicographic sorter for GTF and GFF annotation files. `🟢 Active` `★ 39` · [DOI: 10.1101/2023.10.21.563454](https://www.biorxiv.org/content/10.1101/2023.10.21.563454)
 - **[FasterFASTA](https://github.com/unum-science/FasterFASTA)** — FASTA and FASTQ parsing, sorting, deduplication, filtering, and statistics. `🟢 Active` `★ 31`
 - **[seqair](https://github.com/Softleif/seqair)** — BAM, SAM, CRAM, and FASTA reader with pileup and BCF writing. `🟢 Active` `★ 29`
 - **[bed2gtf](https://github.com/alejandrogzi/bed2gtf)** — High-performance BED-to-GTF converter. `🟢 Active` `★ 21`
 - **[chelae](https://github.com/fulcrumgenomics/chelae)** — Accurate read trimming for NGS data. `🟢 Active` `★ 17`
-- **[skiver](https://github.com/GZHoffie/skiver)** — Reference-free sequencing error-rate estimates using (k, v)-mer sketches. `🟢 Active` `★ 12` · [DOI: 10.64898/2026.02.12.705514](https://www.biorxiv.org/content/10.64898/2026.02.12.705514)
+- **[skiver](https://github.com/GZHoffie/skiver)** — Reference-free sequencing error-rate estimates using (k, v)-mer sketches. `🟢 Active` `★ 13` · [DOI: 10.64898/2026.02.12.705514](https://www.biorxiv.org/content/10.64898/2026.02.12.705514)
 - **[mako](https://github.com/fg-labs/mako)** — Fast SAM and BAM sorter. `🟢 Active` `★ 9`
 - **[bgzf](https://github.com/fulcrumgenomics/bgzf)** — BGZF compression library. `🟢 Active` `★ 9`
 - **[rebgzf](https://github.com/nh13/rebgzf)** — Gzip to BGZF transcoder that avoids a full decompress-recompress cycle. `🟢 Active` `★ 7`
@@ -353,7 +353,7 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 
 - **[rosalind](https://github.com/logannye/rosalind)** — Deterministic, resource-governed per-locus genomics analyses with transactional artifacts and replay. `🟢 Active` `★ 279`
 - **[nextclade](https://github.com/nextstrain/nextclade)** — Viral genome alignment, clade assignment, and quality checks. `🟢 Active` `★ 262`
-- **[scidataflow](https://github.com/vsbuffalo/scidataflow)** — Command-line scientific data management. `🟠 Quiet` `★ 230`
+- **[scidataflow](https://github.com/vsbuffalo/scidataflow)** — Command-line scientific data management. `🟠 Quiet` `★ 229`
 - **[sprocket](https://github.com/stjude-rust-labs/sprocket)** — Bioinformatics workflow engine built on the Workflow Description Language. `🟢 Active` `★ 206`
 - **[polars-bio](https://github.com/biodatageeks/polars-bio)** — Bioinformatics operations on Polars DataFrames. `🟢 Active` `★ 199`
 - **[biobear](https://github.com/wheretrue/biobear)** — Query bioinformatics files through Arrow, Polars, and DuckDB. `🟠 Quiet` `★ 196`
@@ -367,7 +367,7 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 
 ## 📚 Learning Resources
 
-- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59325`
+- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59338`
 - **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟡 Maintained` `★ 4279`
 - **[rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics)** — Collection of genomics software tools written in Rust. `🟢 Active` `★ 138`
 - **[Rust-Bio documentation](https://rust-bio.github.io/)** — Project site and documentation for the Rust-Bio ecosystem. `🔴 Inactive` `★ 1`

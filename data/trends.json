@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T08:17:07Z",
+  "generated_at": "2026-09-14T08:52:35Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 0,
@@ -37,21 +37,21 @@
       "trend": "quiet"
     },
     "ArcInstitute/binseq": {
-      "stars_7d": 1,
-      "stars_30d": 2,
-      "stars_90d": 2,
-      "growth_30d": 0.01904761904761905,
+      "stars_7d": 2,
+      "stars_30d": 3,
+      "stars_90d": 3,
+      "growth_30d": 0.02857142857142857,
       "trend": "steady"
     },
     "ArcInstitute/bqtools": {
-      "stars_7d": 0,
-      "stars_30d": 1,
-      "stars_90d": 1,
-      "growth_30d": 0.02564102564102564,
+      "stars_7d": 1,
+      "stars_30d": 2,
+      "stars_90d": 2,
+      "growth_30d": 0.05128205128205128,
       "trend": "steady"
     },
     "ArcInstitute/cyto": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -205,7 +205,7 @@
       "trend": "quiet"
     },
     "GZHoffie/skiver": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -247,7 +247,7 @@
       "trend": "quiet"
     },
     "LCrossman/microBioRust": {
-      "stars_7d": 4,
+      "stars_7d": 5,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -800,10 +800,10 @@
       "trend": "quiet"
     },
     "lazear/sage": {
-      "stars_7d": 1,
-      "stars_30d": 7,
-      "stars_90d": 7,
-      "growth_30d": 0.023255813953488372,
+      "stars_7d": 2,
+      "stars_30d": 8,
+      "stars_90d": 8,
+      "growth_30d": 0.026578073089700997,
       "trend": "steady"
     },
     "lh3/badclip": {
@@ -842,10 +842,10 @@
       "trend": "quiet"
     },
     "mbhall88/lrge": {
-      "stars_7d": 2,
-      "stars_30d": 5,
-      "stars_90d": 5,
-      "growth_30d": 0.054945054945054944,
+      "stars_7d": 3,
+      "stars_30d": 6,
+      "stars_90d": 6,
+      "growth_30d": 0.06593406593406594,
       "trend": "steady"
     },
     "mbhall88/nohuman": {
@@ -884,10 +884,10 @@
       "trend": "quiet"
     },
     "nanoporetech/modkit": {
-      "stars_7d": 0,
-      "stars_30d": 1,
-      "stars_90d": 1,
-      "growth_30d": 0.003676470588235294,
+      "stars_7d": 1,
+      "stars_30d": 2,
+      "stars_90d": 2,
+      "growth_30d": 0.007352941176470588,
       "trend": "steady"
     },
     "natir/nuc2bit": {
@@ -1115,10 +1115,10 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 100,
-      "stars_30d": 275,
-      "stars_90d": 275,
-      "growth_30d": 0.0046570702794242165,
+      "stars_7d": 113,
+      "stars_30d": 288,
+      "stars_90d": 288,
+      "growth_30d": 0.004877222692633362,
       "trend": "rising"
     },
     "rusteomics/mzcore": {
@@ -1213,25 +1213,25 @@
       "trend": "quiet"
     },
     "steineggerlab/folddisco": {
-      "stars_7d": 2,
-      "stars_30d": 2,
-      "stars_90d": 2,
-      "growth_30d": 0.009389671361502348,
+      "stars_7d": 3,
+      "stars_30d": 3,
+      "stars_90d": 3,
+      "growth_30d": 0.014084507042253521,
       "trend": "steady"
     },
     "steineggerlab/foldmason": {
-      "stars_7d": 0,
-      "stars_30d": 0,
-      "stars_90d": 0,
-      "growth_30d": 0.0,
-      "trend": "quiet"
+      "stars_7d": 1,
+      "stars_30d": 1,
+      "stars_90d": 1,
+      "growth_30d": 0.0035587188612099642,
+      "trend": "steady"
     },
     "steineggerlab/unicore": {
-      "stars_7d": 0,
-      "stars_30d": 0,
-      "stars_90d": 0,
-      "growth_30d": 0.0,
-      "trend": "quiet"
+      "stars_7d": 1,
+      "stars_30d": 1,
+      "stars_90d": 1,
+      "growth_30d": 0.01098901098901099,
+      "trend": "steady"
     },
     "stjude-rust-labs/crankshaft": {
       "stars_7d": 0,
@@ -1437,11 +1437,11 @@
       "trend": "steady"
     },
     "wwood/galah": {
-      "stars_7d": 0,
-      "stars_30d": 0,
-      "stars_90d": 0,
-      "growth_30d": 0.0,
-      "trend": "quiet"
+      "stars_7d": 1,
+      "stars_30d": 1,
+      "stars_90d": 1,
+      "growth_30d": 0.011494252873563218,
+      "trend": "steady"
     },
     "y1zhou/arpeggia": {
       "stars_7d": 0,
