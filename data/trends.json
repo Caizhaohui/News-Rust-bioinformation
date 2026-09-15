@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T09:22:34Z",
+  "generated_at": "2026-09-15T08:39:33Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 0,
@@ -100,10 +100,10 @@
       "trend": "quiet"
     },
     "COMBINE-lab/alevin-fry": {
-      "stars_7d": 0,
-      "stars_30d": 4,
-      "stars_90d": 4,
-      "growth_30d": 0.018604651162790697,
+      "stars_7d": 1,
+      "stars_30d": 5,
+      "stars_90d": 5,
+      "growth_30d": 0.023255813953488372,
       "trend": "steady"
     },
     "COMBINE-lab/oarfish": {
@@ -184,7 +184,7 @@
       "trend": "quiet"
     },
     "FJingxian/JanusX": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -436,7 +436,7 @@
       "trend": "steady"
     },
     "bacpop/sketchlib.rust": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -506,10 +506,10 @@
       "trend": "steady"
     },
     "bluenote-1577/sylph": {
-      "stars_7d": 0,
-      "stars_30d": 2,
-      "stars_90d": 2,
-      "growth_30d": 0.006329113924050633,
+      "stars_7d": 1,
+      "stars_30d": 3,
+      "stars_90d": 3,
+      "growth_30d": 0.00949367088607595,
       "trend": "steady"
     },
     "brentp/echtvar": {
@@ -569,10 +569,10 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 11,
-      "stars_30d": 19,
-      "stars_90d": 19,
-      "growth_30d": 0.004460093896713615,
+      "stars_7d": 12,
+      "stars_30d": 20,
+      "stars_90d": 20,
+      "growth_30d": 0.004694835680751174,
       "trend": "rising"
     },
     "dcjones/coitrees": {
@@ -989,11 +989,11 @@
       "trend": "quiet"
     },
     "onecodex/needletail": {
-      "stars_7d": 0,
-      "stars_30d": 0,
-      "stars_90d": 0,
-      "growth_30d": 0.0,
-      "trend": "quiet"
+      "stars_7d": 1,
+      "stars_30d": 1,
+      "stars_90d": 1,
+      "growth_30d": 0.004672897196261682,
+      "trend": "steady"
     },
     "openpaul/fqless": {
       "stars_7d": 0,
@@ -1115,10 +1115,10 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 115,
-      "stars_30d": 290,
-      "stars_90d": 290,
-      "growth_30d": 0.004911092294665537,
+      "stars_7d": 119,
+      "stars_30d": 294,
+      "stars_90d": 294,
+      "growth_30d": 0.00497883149872989,
       "trend": "rising"
     },
     "rusteomics/mzcore": {
@@ -1255,7 +1255,7 @@
       "trend": "quiet"
     },
     "stjude-rust-labs/sprocket": {
-      "stars_7d": 5,
+      "stars_7d": 6,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1458,10 +1458,10 @@
       "trend": "quiet"
     },
     "zaeleus/noodles": {
-      "stars_7d": 2,
-      "stars_30d": 1,
-      "stars_90d": 1,
-      "growth_30d": 0.001388888888888889,
+      "stars_7d": 3,
+      "stars_30d": 2,
+      "stars_90d": 2,
+      "growth_30d": 0.002777777777777778,
       "trend": "steady"
     },
     "zaeleus/squab": {
