@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-16T08:33:54Z",
+  "generated_at": "2026-09-17T08:38:12Z",
   "repositories": {
     "10XGenomics/cellranger": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -37,7 +37,7 @@
       "trend": "quiet"
     },
     "ArcInstitute/binseq": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -58,14 +58,14 @@
       "trend": "quiet"
     },
     "ArcInstitute/xsra": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "Baohua-Chen/GFFx": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -107,7 +107,7 @@
       "trend": "quiet"
     },
     "COMBINE-lab/oarfish": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -212,7 +212,7 @@
       "trend": "quiet"
     },
     "HPCBio/dada2-rs": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -233,7 +233,7 @@
       "trend": "quiet"
     },
     "Huang-lab/fastVEP": {
-      "stars_7d": 4,
+      "stars_7d": 15,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -247,7 +247,7 @@
       "trend": "quiet"
     },
     "LCrossman/microBioRust": {
-      "stars_7d": 6,
+      "stars_7d": 5,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -268,7 +268,7 @@
       "trend": "quiet"
     },
     "PacificBiosciences/HiPhase": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -296,7 +296,7 @@
       "trend": "quiet"
     },
     "Psy-Fer/kuva": {
-      "stars_7d": 3,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -317,7 +317,7 @@
       "trend": "quiet"
     },
     "Sigilweaver/OpenMassSpec": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -338,7 +338,7 @@
       "trend": "quiet"
     },
     "Traitome/oxo-flow": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -415,7 +415,7 @@
       "trend": "quiet"
     },
     "ayobi/ITSxRust": {
-      "stars_7d": 2,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -471,7 +471,7 @@
       "trend": "quiet"
     },
     "biodatageeks/polars-bio": {
-      "stars_7d": 3,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -485,7 +485,7 @@
       "trend": "quiet"
     },
     "bluenote-1577/myloasm": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -499,7 +499,7 @@
       "trend": "quiet"
     },
     "bluenote-1577/skani": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 15,
+      "stars_7d": 8,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -660,14 +660,14 @@
       "trend": "quiet"
     },
     "fulcrumgenomics/chelae": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "fulcrumgenomics/ferro-hgvs": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -681,7 +681,7 @@
       "trend": "quiet"
     },
     "fulcrumgenomics/fgumi": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -744,7 +744,7 @@
       "trend": "quiet"
     },
     "informationsea/transanno": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -842,14 +842,14 @@
       "trend": "quiet"
     },
     "mbhall88/lrge": {
-      "stars_7d": 3,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "mbhall88/nohuman": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1010,7 +1010,7 @@
       "trend": "quiet"
     },
     "pangenome/impg": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1045,7 +1045,7 @@
       "trend": "quiet"
     },
     "raw-lab/dynamite": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 142,
+      "stars_7d": 99,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1136,7 +1136,7 @@
       "trend": "quiet"
     },
     "seqeralabs/RustQC": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1185,7 +1185,7 @@
       "trend": "quiet"
     },
     "sourmash-bio/sourmash": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1206,14 +1206,14 @@
       "trend": "quiet"
     },
     "stajichlab/orthoSynAssign": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "steineggerlab/folddisco": {
-      "stars_7d": 3,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1234,7 +1234,7 @@
       "trend": "quiet"
     },
     "stjude-rust-labs/crankshaft": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1255,7 +1255,7 @@
       "trend": "quiet"
     },
     "stjude-rust-labs/sprocket": {
-      "stars_7d": 7,
+      "stars_7d": 4,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1269,7 +1269,7 @@
       "trend": "quiet"
     },
     "tolkit/gfatk": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1297,7 +1297,7 @@
       "trend": "quiet"
     },
     "umccr/htsget-rs": {
-      "stars_7d": 6,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1381,7 +1381,7 @@
       "trend": "quiet"
     },
     "wdecoster/chopper": {
-      "stars_7d": 2,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1458,7 +1458,7 @@
       "trend": "quiet"
     },
     "zaeleus/noodles": {
-      "stars_7d": 3,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
