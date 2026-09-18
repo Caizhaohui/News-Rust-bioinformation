@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T08:38:12Z",
+  "generated_at": "2026-09-18T08:13:35Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 1,
@@ -79,7 +79,7 @@
       "trend": "quiet"
     },
     "BioEarthDigital/CycSim": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -254,7 +254,7 @@
       "trend": "quiet"
     },
     "MannLabs/timsrust": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -373,7 +373,7 @@
       "trend": "quiet"
     },
     "alignoth/alignoth": {
-      "stars_7d": 2,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -485,14 +485,14 @@
       "trend": "quiet"
     },
     "bluenote-1577/myloasm": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "bluenote-1577/savont": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 8,
+      "stars_7d": 10,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1010,7 +1010,7 @@
       "trend": "quiet"
     },
     "pangenome/impg": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 99,
+      "stars_7d": 123,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1227,7 +1227,7 @@
       "trend": "quiet"
     },
     "steineggerlab/unicore": {
-      "stars_7d": 1,
+      "stars_7d": 10,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1241,7 +1241,7 @@
       "trend": "quiet"
     },
     "stjude-rust-labs/fq": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
