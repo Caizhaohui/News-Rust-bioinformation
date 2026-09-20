@@ -9,7 +9,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 
 > Automatically tracks repository activity, releases, ecosystem trends, and emerging projects.
 
-**Projects:** 211 · **Active:** 155 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-09-19
+**Projects:** 211 · **Active:** 154 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-09-20
 
 ## Contents
 
@@ -47,7 +47,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 | Metric | Count |
 |---|---:|
 | Cataloged projects | 211 |
-| Actively maintained | 155 |
+| Actively maintained | 154 |
 | Pure Rust | 5 |
 | Rust × Python | 3 |
 | Published software (with DOI/paper) | 41 |
@@ -116,7 +116,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 
 - **[dynamite](https://github.com/raw-lab/dynamite)** — Finds protein-coding genes in bacteria, archaea, phages, and raw sequencing reads. `🟢 Active` `★ 35`
 - **[FragGeneScanRs](https://github.com/unipept/FragGeneScanRs)** — Gene prediction for short and error-prone reads using the FragGeneScan model. `🟡 Maintained` `★ 31`
-- **[orphos](https://github.com/FullHuman/orphos)** — Parallel Prodigal-style gene prediction for prokaryotic genomes. `🟢 Active` `★ 29`
+- **[orphos](https://github.com/FullHuman/orphos)** — Parallel Prodigal-style gene prediction for prokaryotic genomes. `🟢 Active` `★ 30`
 
 #### Prokaryotic Transcriptome
 
@@ -244,7 +244,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[folddisco](https://github.com/steineggerlab/folddisco)** — Indexing and search of discontinuous motifs in protein structures. `🟢 Active` `★ 216`
 - **[daedalus](https://github.com/David-OConnor/daedalus)** — Protein and molecule viewer. `🟢 Active` `★ 150`
 - **[unicore](https://github.com/steineggerlab/unicore)** — Core-gene phylogeny using Foldseek and ProstT5. `🟡 Maintained` `★ 101`
-- **[pdbtbx](https://github.com/douweschulte/pdbtbx)** — Library for reading, editing, and writing PDB and mmCIF files. `🟢 Active` `★ 73`
+- **[pdbtbx](https://github.com/douweschulte/pdbtbx)** — Library for reading, editing, and writing PDB and mmCIF files. `🟡 Maintained` `★ 73`
 - **[mzcore](https://github.com/rusteomics/mzcore)** — Peptide-centric mass spectrometry calculations around PSI standards. `🟢 Active` `★ 51`
 - **[mzdata](https://github.com/mobiusklein/mzdata)** — Readers and writers for mass spectrometry file formats. `🟢 Active` `★ 44`
 - **[annotator](https://github.com/snijderlab/annotator)** — Interactive annotation of complex mass spectra, one spectrum at a time. `🟢 Active` `★ 42` · [DOI: 10.1021/acs.analchem.5c02832](https://doi.org/10.1021/acs.analchem.5c02832)
@@ -301,7 +301,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[ibu](https://github.com/noamteyssier/ibu)** — High-throughput binary encoding of genomic sequences. `🟢 Active` `★ 11`
 - **[dna_parser](https://github.com/Mvila035/dna_parser)** — Python library with a Rust core for encoding DNA and RNA sequences for machine learning. `🟢 Active` `★ 11` · [DOI: 10.64898/2026.01.20.700656](https://www.biorxiv.org/content/10.64898/2026.01.20.700656)
 - **[zoe](https://github.com/CDCgov/zoe)** — Library for common data formats and methods in RNA-virus sequencing. `🟢 Active` `★ 8`
-- **[aspartik](https://github.com/kaathewisegit/aspartik)** — Computational biology toolkit for genetic data and phylogenetic simulations. `🟢 Active` `★ 3`
+- **[aspartik](https://github.com/kaathewisegit/aspartik)** — Computational biology toolkit for genetic data and phylogenetic simulations. `🟢 Active` `★ 4`
 
 ### Sequence IO and Formats
 
@@ -350,7 +350,7 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 - **[rosalind](https://github.com/logannye/rosalind)** — Deterministic, resource-governed per-locus genomics analyses with transactional artifacts and replay. `🟢 Active` `★ 279`
 - **[nextclade](https://github.com/nextstrain/nextclade)** — Viral genome alignment, clade assignment, and quality checks. `🟢 Active` `★ 262`
 - **[scidataflow](https://github.com/vsbuffalo/scidataflow)** — Command-line scientific data management. `🟠 Quiet` `★ 229`
-- **[sprocket](https://github.com/stjude-rust-labs/sprocket)** — Bioinformatics workflow engine built on the Workflow Description Language. `🟢 Active` `★ 211`
+- **[sprocket](https://github.com/stjude-rust-labs/sprocket)** — Bioinformatics workflow engine built on the Workflow Description Language. `🟢 Active` `★ 212`
 - **[polars-bio](https://github.com/biodatageeks/polars-bio)** — Bioinformatics operations on Polars DataFrames. `🟢 Active` `★ 200`
 - **[biobear](https://github.com/wheretrue/biobear)** — Query bioinformatics files through Arrow, Polars, and DuckDB. `🟠 Quiet` `★ 196`
 - **[exon](https://github.com/wheretrue/exon)** — OLAP query engine for biology and life-science files. `🟠 Quiet` `★ 71`
@@ -363,8 +363,8 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 
 ## 📚 Learning Resources
 
-- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59428`
-- **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟡 Maintained` `★ 4285`
+- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59444`
+- **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟡 Maintained` `★ 4287`
 - **[rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics)** — Collection of genomics software tools written in Rust. `🟢 Active` `★ 138`
 - **[Rust-Bio documentation](https://rust-bio.github.io/)** — Project site and documentation for the Rust-Bio ecosystem. `🔴 Inactive` `★ 1`
 

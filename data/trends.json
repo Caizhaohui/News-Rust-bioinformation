@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T08:01:54Z",
+  "generated_at": "2026-09-20T08:33:37Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 1,
@@ -184,7 +184,7 @@
       "trend": "quiet"
     },
     "FJingxian/JanusX": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -198,7 +198,7 @@
       "trend": "quiet"
     },
     "FullHuman/orphos": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -247,7 +247,7 @@
       "trend": "quiet"
     },
     "LCrossman/microBioRust": {
-      "stars_7d": 5,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -373,7 +373,7 @@
       "trend": "quiet"
     },
     "alignoth/alignoth": {
-      "stars_7d": 3,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -429,14 +429,14 @@
       "trend": "quiet"
     },
     "bacpop/ska.rust": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "bacpop/sketchlib.rust": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -450,7 +450,7 @@
       "trend": "quiet"
     },
     "bacpop/sparrowhawk-asm": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -485,7 +485,7 @@
       "trend": "quiet"
     },
     "bluenote-1577/myloasm": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -786,7 +786,7 @@
       "trend": "quiet"
     },
     "kaathewisegit/aspartik": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1066,14 +1066,14 @@
       "trend": "quiet"
     },
     "rrwick/Autocycler": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "rrwick/Polypolish": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 121,
+      "stars_7d": 119,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1255,7 +1255,7 @@
       "trend": "quiet"
     },
     "stjude-rust-labs/sprocket": {
-      "stars_7d": 5,
+      "stars_7d": 6,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
