@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T08:54:14Z",
+  "generated_at": "2026-09-21T09:24:48Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 3,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 133,
+      "stars_7d": 134,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
