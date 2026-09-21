@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-20T08:33:37Z",
+  "generated_at": "2026-09-21T08:54:14Z",
   "repositories": {
     "10XGenomics/cellranger": {
-      "stars_7d": 1,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -37,21 +37,21 @@
       "trend": "quiet"
     },
     "ArcInstitute/binseq": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "ArcInstitute/bqtools": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "ArcInstitute/cyto": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -205,7 +205,7 @@
       "trend": "quiet"
     },
     "GZHoffie/skiver": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -247,7 +247,7 @@
       "trend": "quiet"
     },
     "LCrossman/microBioRust": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -485,14 +485,14 @@
       "trend": "quiet"
     },
     "bluenote-1577/myloasm": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "bluenote-1577/savont": {
-      "stars_7d": 2,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 8,
+      "stars_7d": 16,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -583,7 +583,7 @@
       "trend": "quiet"
     },
     "dcjones/proseg": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -800,7 +800,7 @@
       "trend": "quiet"
     },
     "lazear/sage": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -842,7 +842,7 @@
       "trend": "quiet"
     },
     "mbhall88/lrge": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -884,7 +884,7 @@
       "trend": "quiet"
     },
     "nanoporetech/modkit": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1038,7 +1038,7 @@
       "trend": "quiet"
     },
     "ranwez-search/SeqTUI": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 119,
+      "stars_7d": 133,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1213,21 +1213,21 @@
       "trend": "quiet"
     },
     "steineggerlab/folddisco": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "steineggerlab/foldmason": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "steineggerlab/unicore": {
-      "stars_7d": 10,
+      "stars_7d": 9,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1381,7 +1381,7 @@
       "trend": "quiet"
     },
     "wdecoster/chopper": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1437,7 +1437,7 @@
       "trend": "quiet"
     },
     "wwood/galah": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
