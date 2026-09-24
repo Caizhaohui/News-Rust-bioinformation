@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-23T08:33:05Z",
+  "generated_at": "2026-09-24T08:25:37Z",
   "repositories": {
     "10XGenomics/cellranger": {
-      "stars_7d": 3,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -58,7 +58,7 @@
       "trend": "quiet"
     },
     "ArcInstitute/xsra": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -212,7 +212,7 @@
       "trend": "quiet"
     },
     "HPCBio/dada2-rs": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -226,14 +226,14 @@
       "trend": "quiet"
     },
     "Huang-lab/RastQC": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "Huang-lab/fastVEP": {
-      "stars_7d": 13,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -254,7 +254,7 @@
       "trend": "quiet"
     },
     "MannLabs/timsrust": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -471,7 +471,7 @@
       "trend": "quiet"
     },
     "biodatageeks/polars-bio": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -485,7 +485,7 @@
       "trend": "quiet"
     },
     "bluenote-1577/myloasm": {
-      "stars_7d": 2,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 18,
+      "stars_7d": 17,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -709,7 +709,7 @@
       "trend": "quiet"
     },
     "genhub-bio/gen": {
-      "stars_7d": 2,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -793,7 +793,7 @@
       "trend": "quiet"
     },
     "kaizhang/SnapATAC2": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -849,7 +849,7 @@
       "trend": "quiet"
     },
     "mbhall88/nohuman": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -884,7 +884,7 @@
       "trend": "quiet"
     },
     "nanoporetech/modkit": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1010,7 +1010,7 @@
       "trend": "quiet"
     },
     "pangenome/impg": {
-      "stars_7d": 3,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1059,7 +1059,7 @@
       "trend": "quiet"
     },
     "rnabioco/sracha-rs": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 139,
+      "stars_7d": 136,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1157,7 +1157,7 @@
       "trend": "quiet"
     },
     "sib-swiss/termal": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1234,7 +1234,7 @@
       "trend": "quiet"
     },
     "stjude-rust-labs/crankshaft": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1255,7 +1255,7 @@
       "trend": "quiet"
     },
     "stjude-rust-labs/sprocket": {
-      "stars_7d": 5,
+      "stars_7d": 4,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1269,7 +1269,7 @@
       "trend": "quiet"
     },
     "tolkit/gfatk": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1339,7 +1339,7 @@
       "trend": "quiet"
     },
     "vollgerlab/rustybam": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
