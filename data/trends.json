@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T08:25:37Z",
+  "generated_at": "2026-09-25T08:47:24Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 2,
@@ -79,7 +79,7 @@
       "trend": "quiet"
     },
     "BioEarthDigital/CycSim": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -212,14 +212,14 @@
       "trend": "quiet"
     },
     "HPCBio/dada2-rs": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "HUPO-PSI/ProForma": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -254,7 +254,7 @@
       "trend": "quiet"
     },
     "MannLabs/timsrust": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -296,7 +296,7 @@
       "trend": "quiet"
     },
     "Psy-Fer/kuva": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -373,7 +373,7 @@
       "trend": "quiet"
     },
     "alignoth/alignoth": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 17,
+      "stars_7d": 16,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -681,7 +681,7 @@
       "trend": "quiet"
     },
     "fulcrumgenomics/fgumi": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -723,7 +723,7 @@
       "trend": "quiet"
     },
     "henriksson-lab/blast-rs": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -926,7 +926,7 @@
       "trend": "quiet"
     },
     "nextstrain/nextclade": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1010,7 +1010,7 @@
       "trend": "quiet"
     },
     "pangenome/impg": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1066,7 +1066,7 @@
       "trend": "quiet"
     },
     "rrwick/Autocycler": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 136,
+      "stars_7d": 130,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1227,21 +1227,21 @@
       "trend": "quiet"
     },
     "steineggerlab/unicore": {
-      "stars_7d": 9,
-      "stars_30d": 0,
-      "stars_90d": 0,
-      "growth_30d": 0.0,
-      "trend": "quiet"
-    },
-    "stjude-rust-labs/crankshaft": {
       "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
-    "stjude-rust-labs/fq": {
+    "stjude-rust-labs/crankshaft": {
       "stars_7d": 1,
+      "stars_30d": 0,
+      "stars_90d": 0,
+      "growth_30d": 0.0,
+      "trend": "quiet"
+    },
+    "stjude-rust-labs/fq": {
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1255,7 +1255,7 @@
       "trend": "quiet"
     },
     "stjude-rust-labs/sprocket": {
-      "stars_7d": 4,
+      "stars_7d": 5,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1451,7 +1451,7 @@
       "trend": "quiet"
     },
     "ylab-hi/DeepChopper": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
