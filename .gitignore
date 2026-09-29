@@ -4,3 +4,13 @@
 __pycache__/
 *.py[cod]
 
+# Development and planning documents (kept local only)
+V2_IMPLEMENTATION_PLAN.md
+News-Rust-bioinformation v2 架构设计与实施规格.md
+原核基因编辑脱靶检测-开发计划.md
+微生物基因编辑与基因组-值得用Rust做的方向.md
+*开发计划*.md
+*实施规格*.md
+*实施方案*.md
+
+
