@@ -214,7 +214,45 @@ pub fn snapshot_dates(dir: &Path) -> Vec<String> {
 }
 
 pub fn load_snapshot(dir: &Path, date: &str) -> Option<Metadata> {
-    load_json(&dir.join(format!("{date}.json")))
+    let path = dir.join(format!("{date}.json"));
+    let text = std::fs::read_to_string(&path).ok()?;
+    if let Ok(compact) = serde_json::from_str::<crate::trends::CompactSnapshot>(&text) {
+        if !compact.repositories.is_empty() {
+            let mut repos = BTreeMap::new();
+            for (name, rec) in compact.repositories {
+                let rel = if rec.latest_release_tag.is_some() || rec.latest_release_at.is_some() {
+                    Some(ReleaseInfo {
+                        tag: rec.latest_release_tag.clone(),
+                        published_at: rec.latest_release_at.clone(),
+                        url: None,
+                    })
+                } else {
+                    None
+                };
+                repos.insert(
+                    name,
+                    RepoRecord {
+                        stars: rec.stars,
+                        forks: rec.forks,
+                        pushed_at: rec.pushed_at,
+                        latest_release: rel,
+                        latest_release_tag: rec.latest_release_tag,
+                        latest_release_at: rec.latest_release_at,
+                        ..Default::default()
+                    },
+                );
+            }
+            return Some(Metadata {
+                schema_version: 2,
+                generated_at: compact.date.clone(),
+                incomplete: false,
+                urls: compact.urls,
+                repositories: repos,
+                date: Some(compact.date),
+            });
+        }
+    }
+    serde_json::from_str::<Metadata>(&text).ok()
 }
 
 pub fn previous_snapshot(dir: &Path, today: Option<&str>) -> Option<Metadata> {

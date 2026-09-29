@@ -31,6 +31,8 @@ pub struct TrendsData {
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct CompactSnapshot {
     pub date: String,
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub urls: Vec<String>,
     pub repositories: BTreeMap<String, CompactRepoRecord>,
 }
 
@@ -39,6 +41,12 @@ pub struct CompactRepoRecord {
     pub stars: Option<i64>,
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub forks: Option<i64>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub pushed_at: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub latest_release_tag: Option<String>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub latest_release_at: Option<String>,
 }
 
 pub fn create_compact_snapshot(metadata: &Metadata, date_str: &str) -> CompactSnapshot {
@@ -49,11 +57,15 @@ pub fn create_compact_snapshot(metadata: &Metadata, date_str: &str) -> CompactSn
             CompactRepoRecord {
                 stars: rec.stars,
                 forks: rec.forks,
+                pushed_at: rec.pushed_at.clone(),
+                latest_release_tag: rec.release_tag().map(str::to_string),
+                latest_release_at: rec.release_at().map(str::to_string),
             },
         );
     }
     CompactSnapshot {
         date: date_str.to_string(),
+        urls: metadata.urls.clone(),
         repositories,
     }
 }

@@ -127,6 +127,8 @@ pub struct ReadmeConfig {
     pub emerging_limit: usize,
     #[serde(default = "default_source_picks_limit")]
     pub source_picks_limit: usize,
+    #[serde(default = "default_recent_releases_limit")]
+    pub recent_releases_limit: usize,
 }
 
 impl Default for ReadmeConfig {
@@ -135,8 +137,13 @@ impl Default for ReadmeConfig {
             trending_limit: 10,
             emerging_limit: 12,
             source_picks_limit: 12,
+            recent_releases_limit: 8,
         }
     }
+}
+
+fn default_recent_releases_limit() -> usize {
+    8
 }
 
 fn default_trending_limit() -> usize {

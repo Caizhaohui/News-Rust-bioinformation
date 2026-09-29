@@ -105,15 +105,42 @@ pub fn compute_radar(
             }
         }
         if config.radar.include_new_release {
-            let rel = record.and_then(|record| parse_dt(record.latest_release_at.as_deref()));
-            let prev_rel = prev.and_then(|record| parse_dt(record.latest_release_at.as_deref()));
-            if let Some(_rel) = rel {
-                if prev_rel.map(|prev_rel| _rel > prev_rel).unwrap_or(true) {
-                    let tag = record
-                        .and_then(|record| record.latest_release_tag.as_deref())
-                        .unwrap_or("release");
-                    reasons.push(format!("new release {tag}"));
+            let rel = record.and_then(|r| parse_dt(r.release_at()));
+            let prev_rel = prev.and_then(|r| parse_dt(r.release_at()));
+            let curr_tag = record.and_then(|r| r.release_tag());
+            let prev_tag = prev.and_then(|r| r.release_tag());
+
+            let mut is_new_release = false;
+            if let Some(curr_t) = curr_tag {
+                if let Some(prev_t) = prev_tag {
+                    if curr_t != prev_t {
+                        is_new_release = true;
+                    } else if let (Some(rel_dt), Some(prev_dt)) = (rel, prev_rel) {
+                        if rel_dt > prev_dt {
+                            is_new_release = true;
+                        }
+                    }
+                } else if let Some(rel_dt) = rel {
+                    let prev_pushed = prev.and_then(|r| parse_dt(r.pushed_at.as_deref()));
+                    if let Some(prev_p) = prev_pushed {
+                        if rel_dt >= prev_p {
+                            is_new_release = true;
+                        }
+                    } else {
+                        is_new_release = true;
+                    }
+                } else {
+                    is_new_release = true;
                 }
+            }
+
+            if is_new_release {
+                let tag = curr_tag.unwrap_or("release");
+                let reason_str = match prev_tag {
+                    Some(old) if old != tag => format!("new release {old} -> {tag}"),
+                    _ => format!("new release {tag}"),
+                };
+                reasons.push(reason_str);
             }
         }
         if config.radar.include_cold_repo_push {

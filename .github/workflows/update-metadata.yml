@@ -22,11 +22,17 @@ jobs:
         run: |
           cargo run --locked --release -- build-readme
           cargo run --locked --release -- build-radar
+      - name: Publish change summary to job summary
+        run: |
+          if [ -f data/diff.md ]; then
+            cat data/diff.md >> $GITHUB_STEP_SUMMARY
+          fi
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md RADAR.md data/metadata.json data/snapshots data/trends.json
           git diff --cached --quiet && echo "No changes to commit" && exit 0
-          git commit -m "chore(data): refresh repository metadata"
+          DIFF_SUMMARY=$(cargo run --locked --release -- diff --format summary 2>/dev/null || echo "refresh repository metadata")
+          git commit -m "chore(data): refresh repository metadata" -m "$DIFF_SUMMARY"
           git push

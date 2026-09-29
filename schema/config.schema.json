@@ -39,7 +39,8 @@
       "properties": {
         "trending_limit": { "type": "integer" },
         "emerging_limit": { "type": "integer" },
-        "source_picks_limit": { "type": "integer" }
+        "source_picks_limit": { "type": "integer" },
+        "recent_releases_limit": { "type": "integer" }
       }
     },
     "snapshot": {

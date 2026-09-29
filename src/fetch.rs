@@ -241,14 +241,25 @@ pub fn cmd_fetch_metadata(root: &Path) -> i32 {
         repositories: records.clone(),
         date: None,
     };
+    let today = utcnow().date_naive().to_string();
+    let snap_dir = paths::snapshot_dir(root);
     let meta_path = paths::metadata_path(root);
+
+    // Capture previous metadata/snapshot before overwriting for change diffing
+    let prev_meta = crate::metadata::previous_snapshot(&snap_dir, Some(&today)).or_else(|| {
+        let existing = crate::metadata::load_metadata(&meta_path);
+        if !existing.repositories.is_empty() {
+            Some(existing)
+        } else {
+            None
+        }
+    });
+
     if let Err(err) = dump_json(&meta_path, &metadata) {
         eprintln!("{err}");
         return 1;
     }
 
-    let today = utcnow().date_naive().to_string();
-    let snap_dir = paths::snapshot_dir(root);
     let compact_snap = crate::trends::create_compact_snapshot(&metadata, &today);
     if let Err(err) =
         crate::trends::save_compact_snapshot(&snap_dir.join(format!("{today}.json")), &compact_snap)
@@ -269,5 +280,22 @@ pub fn cmd_fetch_metadata(root: &Path) -> i32 {
         meta_path.strip_prefix(root).unwrap_or(&meta_path).display(),
         records.len()
     );
+
+    if let Some(baseline) = prev_meta {
+        let catalog = crate::validate::load_and_validate(&tools_path)
+            .ok()
+            .map(|(cat, _)| cat);
+        let diff_report =
+            crate::diff::compute_diff(&baseline, &metadata, catalog.as_ref(), &config, utcnow());
+
+        print!("{}", diff_report.format_terminal(1));
+
+        let diff_path = root.join("data").join("diff.md");
+        let md_content = diff_report.format_markdown(1);
+        if let Err(e) = std::fs::write(&diff_path, md_content) {
+            eprintln!("Warning: failed to write diff.md: {e}");
+        }
+    }
+
     0
 }

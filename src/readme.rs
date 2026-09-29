@@ -74,6 +74,7 @@ pub fn build_readme_v2(
     lines.push(String::new());
     lines.push("- [Ecosystem at a Glance](#ecosystem-at-a-glance)".into());
     lines.push("- [🔥 Trending](#-trending)".into());
+    lines.push("- [🚀 Recent Releases](#-recent-releases)".into());
     lines.push("- [🌱 Emerging Projects](#-emerging-projects)".into());
     lines.push("- [📖 Recommended Source Code](#-recommended-source-code)".into());
     lines.push("- [🧬 Bioinformatics Applications](#-bioinformatics-applications)".into());
@@ -188,6 +189,44 @@ pub fn build_readme_v2(
                 area_name,
                 stars,
                 gain,
+                act.emoji()
+            ));
+        }
+    }
+    lines.push(String::new());
+
+    // 🚀 Recent Releases Section
+    let mut recent_releases: Vec<(&ToolDef, &str, &str, ActivityLevel)> = Vec::new();
+    for tool in &active_tools {
+        if let Some(rec) = metadata.get_repo(&tool.repository) {
+            if let (Some(tag), Some(published_at)) = (rec.release_tag(), rec.release_at()) {
+                let act = calculate_activity(Some(rec), &config.activity, now);
+                recent_releases.push((tool, tag, published_at, act));
+            }
+        }
+    }
+    recent_releases.sort_by(|a, b| b.2.cmp(a.2).then_with(|| a.0.name.cmp(&b.0.name)));
+    recent_releases.truncate(config.readme.recent_releases_limit);
+
+    lines.push("## 🚀 Recent Releases".into());
+    lines.push(String::new());
+    lines.push("Latest software releases and version tags across cataloged tools.".into());
+    lines.push(String::new());
+    if recent_releases.is_empty() {
+        lines.push("_No release information recorded._".into());
+    } else {
+        lines.push("| Project | Version | Released | Primary Area | Activity |".into());
+        lines.push("|---|---|---|---|---|".into());
+        for (tool, tag, published_at, act) in recent_releases {
+            let area_name = resolve_category_name(&tool.category.primary, &catalog.categories);
+            let date_str = published_at.split('T').next().unwrap_or(published_at);
+            lines.push(format!(
+                "| [{}]({}) | `{}` | {} | {} | {} |",
+                tool.name,
+                tool.effective_url(),
+                tag,
+                date_str,
+                area_name,
                 act.emoji()
             ));
         }

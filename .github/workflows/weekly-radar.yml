@@ -23,11 +23,17 @@ jobs:
           cargo run --locked --release -- trends
           cargo run --locked --release -- build-radar
           cargo run --locked --release -- build-readme
+      - name: Publish change summary to job summary
+        run: |
+          if [ -f data/diff.md ]; then
+            cat data/diff.md >> $GITHUB_STEP_SUMMARY
+          fi
       - name: Commit if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md RADAR.md data/metadata.json data/snapshots data/trends.json
           git diff --cached --quiet && echo "No changes to commit" && exit 0
-          git commit -m "chore(radar): update weekly Rust bioinformatics radar"
+          DIFF_SUMMARY=$(cargo run --locked --release -- diff --format summary 2>/dev/null || echo "update weekly Rust bioinformatics radar")
+          git commit -m "chore(radar): update weekly Rust bioinformatics radar" -m "$DIFF_SUMMARY"
           git push

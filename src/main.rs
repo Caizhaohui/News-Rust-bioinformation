@@ -40,6 +40,24 @@ enum Commands {
         #[arg(long)]
         output: Option<PathBuf>,
     },
+    /// Show changes (stars, releases, new tools) between snapshots or metadata
+    Diff {
+        /// Baseline snapshot date (YYYY-MM-DD), defaults to previous snapshot
+        #[arg(long)]
+        from: Option<String>,
+        /// Target snapshot date (YYYY-MM-DD), defaults to current metadata
+        #[arg(long)]
+        to: Option<String>,
+        /// Output format: text (default), markdown, json, or summary
+        #[arg(long, default_value = "text")]
+        format: String,
+        /// Minimum star delta to report (default: 1)
+        #[arg(long, default_value_t = 1)]
+        min_stars: i64,
+        /// Save output to a file
+        #[arg(long)]
+        output: Option<PathBuf>,
+    },
     /// Migrate v1 tools.yaml to v2 schema
     MigrateV2,
 }
@@ -161,6 +179,13 @@ fn main() {
             sources,
             output,
         } => discover::cmd_discover(&root, days, &sources, output),
+        Commands::Diff {
+            from,
+            to,
+            format,
+            min_stars,
+            output,
+        } => news_rust_bioinformation::diff::cmd_diff(&root, from, to, &format, min_stars, output),
         Commands::MigrateV2 => cmd_migrate_v2(&root),
     };
     std::process::exit(code);

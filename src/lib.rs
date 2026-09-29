@@ -1,5 +1,6 @@
 pub mod catalog;
 pub mod config;
+pub mod diff;
 pub mod digest;
 pub mod discover;
 pub mod fetch;

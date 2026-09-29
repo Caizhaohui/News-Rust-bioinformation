@@ -19,6 +19,7 @@ readme:
   trending_limit: 10
   emerging_limit: 12
   source_picks_limit: 12
+  recent_releases_limit: 8
 
 snapshot:
   keep_days: 730
