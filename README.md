@@ -9,12 +9,13 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 
 > Automatically tracks repository activity, releases, ecosystem trends, and emerging projects.
 
-**Projects:** 211 · **Active:** 155 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-09-28
+**Projects:** 211 · **Active:** 155 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-09-29
 
 ## Contents
 
 - [Ecosystem at a Glance](#ecosystem-at-a-glance)
 - [🔥 Trending](#-trending)
+- [🚀 Recent Releases](#-recent-releases)
 - [🌱 Emerging Projects](#-emerging-projects)
 - [📖 Recommended Source Code](#-recommended-source-code)
 - [🧬 Bioinformatics Applications](#-bioinformatics-applications)
@@ -58,6 +59,21 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 Projects showing notable GitHub growth during the last 30 days.
 
 _No trending projects crossed thresholds this period._
+
+## 🚀 Recent Releases
+
+Latest software releases and version tags across cataloged tools.
+
+| Project | Version | Released | Primary Area | Activity |
+|---|---|---|---|---|
+| [daedalus](https://github.com/David-OConnor/daedalus) | `0.4.1` | 2026-09-27 | Proteomics and Structure | 🟢 |
+| [molchanica](https://github.com/David-OConnor/molchanica) | `0.4.1` | 2026-09-27 | Visualization | 🟢 |
+| [gbz-base](https://github.com/jltsiren/gbz-base) | `v0.6.2` | 2026-09-27 | Assembly and Pangenomes | 🟢 |
+| [fqtk](https://github.com/fulcrumgenomics/fqtk) | `v0.4.1` | 2026-09-26 | Sequence IO and Formats | 🟢 |
+| [salmon](https://github.com/COMBINE-lab/salmon) | `v2.8.0` | 2026-09-25 | Single-cell and RNA | 🟢 |
+| [chelae](https://github.com/fulcrumgenomics/chelae) | `v0.2.0` | 2026-09-25 | Sequence IO and Formats | 🟢 |
+| [vcfexpress](https://github.com/brentp/vcfexpress) | `v0.3.8` | 2026-09-25 | Variants and Annotation | 🟢 |
+| [seqair](https://github.com/Softleif/seqair) | `seqair-v0.3.1` | 2026-09-25 | Sequence IO and Formats | 🟢 |
 
 ## 🌱 Emerging Projects
 
