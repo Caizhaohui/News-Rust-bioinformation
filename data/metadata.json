@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-03T09:07:12.700978+00:00",
+  "generated_at": "2026-10-04T09:45:06.909784+00:00",
   "incomplete": false,
   "urls": [
     "https://github.com/rust-bio/rust-bio",
@@ -403,7 +403,7 @@
       "stars": 124,
       "forks": 8,
       "created_at": "2022-06-27T17:58:35Z",
-      "pushed_at": "2026-08-19T19:08:15Z",
+      "pushed_at": "2026-10-04T04:36:37Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.10.3",
@@ -426,7 +426,7 @@
       "latest_release_tag": "v0.23.0"
     },
     "COMBINE-lab/salmon": {
-      "stars": 933,
+      "stars": 934,
       "forks": 190,
       "created_at": "2015-03-19T22:37:41Z",
       "pushed_at": "2026-09-29T03:04:12Z",
@@ -465,7 +465,7 @@
       "latest_release_tag": "v0.5.0"
     },
     "Daniel-Liu-c0deb0t/triple_accel": {
-      "stars": 110,
+      "stars": 109,
       "forks": 15,
       "created_at": "2020-03-23T20:48:06Z",
       "pushed_at": "2023-03-13T08:16:03Z",
@@ -592,7 +592,7 @@
       "stars": 7,
       "forks": 2,
       "created_at": "2026-04-09T00:29:22Z",
-      "pushed_at": "2026-10-02T16:48:21Z",
+      "pushed_at": "2026-10-03T22:58:57Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.2.0",
@@ -727,7 +727,7 @@
       "latest_release_tag": "1.0.2"
     },
     "Psy-Fer/kuva": {
-      "stars": 875,
+      "stars": 876,
       "forks": 40,
       "created_at": "2025-05-05T05:30:19Z",
       "pushed_at": "2026-09-24T06:45:43Z",
@@ -743,7 +743,7 @@
       "stars": 7,
       "forks": 0,
       "created_at": "2026-07-24T15:37:02Z",
-      "pushed_at": "2026-10-02T16:44:43Z",
+      "pushed_at": "2026-10-03T17:21:09Z",
       "archived": false
     },
     "RagnarGrootKoerkamp/simd-sketch": {
@@ -757,7 +757,7 @@
       "stars": 11,
       "forks": 1,
       "created_at": "2026-05-21T23:11:24Z",
-      "pushed_at": "2026-09-28T04:52:40Z",
+      "pushed_at": "2026-10-04T07:50:20Z",
       "archived": false,
       "latest_release": {
         "tag": "v1.5.5",
@@ -770,7 +770,7 @@
       "stars": 13,
       "forks": 3,
       "created_at": "2026-05-16T18:52:59Z",
-      "pushed_at": "2026-10-03T04:54:21Z",
+      "pushed_at": "2026-10-04T07:50:02Z",
       "archived": false,
       "latest_release": {
         "tag": "v1.2.0",
@@ -796,14 +796,14 @@
       "stars": 21,
       "forks": 2,
       "created_at": "2026-04-04T15:04:06Z",
-      "pushed_at": "2026-10-03T09:02:11Z",
+      "pushed_at": "2026-10-04T02:56:39Z",
       "archived": false,
       "latest_release": {
-        "tag": "v0.22.0",
-        "published_at": "2026-10-03T06:48:28Z"
+        "tag": "v0.23.0",
+        "published_at": "2026-10-03T14:07:22Z"
       },
-      "latest_release_at": "2026-10-03T06:48:28Z",
-      "latest_release_tag": "v0.22.0"
+      "latest_release_at": "2026-10-03T14:07:22Z",
+      "latest_release_tag": "v0.23.0"
     },
     "alejandrogzi/bed2gtf": {
       "stars": 21,
@@ -885,7 +885,7 @@
     },
     "althonos/diced": {
       "stars": 4,
-      "forks": 1,
+      "forks": 2,
       "created_at": "2024-05-28T11:38:56Z",
       "pushed_at": "2026-03-06T10:58:52Z",
       "archived": false,
@@ -1113,7 +1113,7 @@
       "latest_release_tag": "v0.2.4"
     },
     "brentp/vcfexpress": {
-      "stars": 93,
+      "stars": 94,
       "forks": 4,
       "created_at": "2024-04-15T13:20:04Z",
       "pushed_at": "2026-09-25T15:42:54Z",
@@ -1352,7 +1352,7 @@
       "stars": 24,
       "forks": 0,
       "created_at": "2026-04-21T20:02:37Z",
-      "pushed_at": "2026-10-03T03:23:07Z",
+      "pushed_at": "2026-10-03T18:44:13Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.2.1",
@@ -1378,7 +1378,7 @@
       "stars": 6,
       "forks": 0,
       "created_at": "2026-03-02T16:06:19Z",
-      "pushed_at": "2026-10-03T02:28:48Z",
+      "pushed_at": "2026-10-03T16:46:54Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.2.0",
@@ -1391,7 +1391,7 @@
       "stars": 57,
       "forks": 2,
       "created_at": "2026-01-24T03:24:46Z",
-      "pushed_at": "2026-10-02T22:30:54Z",
+      "pushed_at": "2026-10-03T20:16:05Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.7.0",
@@ -1443,7 +1443,7 @@
       "stars": 37,
       "forks": 0,
       "created_at": "2025-04-24T18:33:53Z",
-      "pushed_at": "2026-10-02T23:57:14Z",
+      "pushed_at": "2026-10-04T07:00:11Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.3.1",
@@ -1535,7 +1535,7 @@
       "stars": 13,
       "forks": 3,
       "created_at": "2025-08-16T10:08:49Z",
-      "pushed_at": "2026-09-30T20:24:20Z",
+      "pushed_at": "2026-10-03T23:58:03Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.3.2",
@@ -1585,7 +1585,7 @@
       "archived": false
     },
     "lazear/sage": {
-      "stars": 310,
+      "stars": 311,
       "forks": 67,
       "created_at": "2022-07-18T04:55:55Z",
       "pushed_at": "2026-09-17T12:40:04Z",
@@ -1601,7 +1601,7 @@
       "stars": 5,
       "forks": 0,
       "created_at": "2026-07-30T22:17:39Z",
-      "pushed_at": "2026-10-01T17:22:55Z",
+      "pushed_at": "2026-10-03T16:46:34Z",
       "archived": false
     },
     "logannye/rosalind": {
@@ -1700,7 +1700,7 @@
       "stars": 44,
       "forks": 16,
       "created_at": "2021-07-03T03:55:35Z",
-      "pushed_at": "2026-10-02T22:33:51Z",
+      "pushed_at": "2026-10-03T15:45:10Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.67.0",
@@ -1772,7 +1772,7 @@
       "stars": 5,
       "forks": 1,
       "created_at": "2024-03-01T18:31:54Z",
-      "pushed_at": "2026-10-03T05:41:54Z",
+      "pushed_at": "2026-10-04T04:04:44Z",
       "archived": false,
       "latest_release": {
         "tag": "v3.5.1",
@@ -2066,7 +2066,7 @@
       "stars": 1841,
       "forks": 222,
       "created_at": "2015-01-25T16:40:31Z",
-      "pushed_at": "2026-10-02T13:40:13Z",
+      "pushed_at": "2026-10-04T09:32:55Z",
       "archived": false,
       "latest_release": {
         "tag": "v4.2.0",
@@ -2112,7 +2112,7 @@
       "stars": 19,
       "forks": 4,
       "created_at": "2024-09-19T16:18:51Z",
-      "pushed_at": "2026-10-02T15:28:25Z",
+      "pushed_at": "2026-10-03T16:07:21Z",
       "archived": false,
       "latest_release": {
         "tag": "v4.0.0",
@@ -2122,10 +2122,10 @@
       "latest_release_tag": "v4.0.0"
     },
     "rust-unofficial/awesome-rust": {
-      "stars": 59658,
-      "forks": 3650,
+      "stars": 59672,
+      "forks": 3656,
       "created_at": "2014-07-17T10:45:10Z",
-      "pushed_at": "2026-10-01T21:08:44Z",
+      "pushed_at": "2026-10-04T07:09:07Z",
       "archived": false
     },
     "rusteomics/mzcore": {
@@ -2243,7 +2243,7 @@
       "stars": 556,
       "forks": 94,
       "created_at": "2016-04-09T17:35:30Z",
-      "pushed_at": "2026-09-30T02:34:42Z",
+      "pushed_at": "2026-10-03T21:19:55Z",
       "archived": false,
       "latest_release": {
         "tag": "v4.9.4",
@@ -2292,7 +2292,7 @@
       "latest_release_tag": "v1.3.1"
     },
     "steineggerlab/folddisco": {
-      "stars": 216,
+      "stars": 218,
       "forks": 26,
       "created_at": "2023-02-21T05:02:01Z",
       "pushed_at": "2026-09-18T08:34:11Z",
@@ -2678,7 +2678,7 @@
       "latest_release_tag": "v0.8.0"
     },
     "wwood/galah": {
-      "stars": 88,
+      "stars": 89,
       "forks": 12,
       "created_at": "2020-01-18T05:11:17Z",
       "pushed_at": "2026-10-01T19:01:29Z",
@@ -2734,7 +2734,7 @@
       "stars": 485,
       "forks": 25,
       "created_at": "2025-03-20T19:31:46Z",
-      "pushed_at": "2026-10-02T19:25:20Z",
+      "pushed_at": "2026-10-04T02:13:47Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.3.0",
