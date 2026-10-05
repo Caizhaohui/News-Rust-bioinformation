@@ -12,6 +12,7 @@ _None._
 
 Crossed a threshold: star jump, new release, or a cold repository pushed.
 
+- [rust-bio](https://github.com/rust-bio/rust-bio) — new release v4.2.0 -> v4.2.1
 - [awesome-rust](https://github.com/rust-unofficial/awesome-rust) — stars 59672 -> 59677
 
 ## Possibly stale

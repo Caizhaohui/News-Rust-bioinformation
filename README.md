@@ -66,10 +66,10 @@ Latest software releases and version tags across cataloged tools.
 
 | Project | Version | Released | Primary Area | Activity |
 |---|---|---|---|---|
+| [rust-bio](https://github.com/rust-bio/rust-bio) | `v4.2.1` | 2026-10-05 | Core Libraries | 🟢 |
 | [oxo-flow](https://github.com/Traitome/oxo-flow) | `v0.23.0` | 2026-10-03 | Workflows and Infrastructure | 🟢 |
 | [chelae](https://github.com/fulcrumgenomics/chelae) | `v0.2.1` | 2026-10-03 | Sequence IO and Formats | 🟢 |
 | [sracha-rs](https://github.com/rnabioco/sracha-rs) | `v0.7.1` | 2026-10-02 | Sequence IO and Formats | 🟢 |
-| [rust-bio](https://github.com/rust-bio/rust-bio) | `v4.2.0` | 2026-10-02 | Core Libraries | 🟢 |
 | [Autocycler](https://github.com/rrwick/Autocycler) | `v0.8.0` | 2026-10-02 | Bacterial Genome Assembly | 🟢 |
 | [dna_parser](https://github.com/Mvila035/dna_parser) | `v0.6.0` | 2026-10-01 | Core Libraries | 🟢 |
 | [zoe](https://github.com/CDCgov/zoe) | `v0.0.34` | 2026-10-01 | Core Libraries | 🟢 |
