@@ -9,7 +9,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 
 > Automatically tracks repository activity, releases, ecosystem trends, and emerging projects.
 
-**Projects:** 211 · **Active:** 155 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-10-07
+**Projects:** 211 · **Active:** 154 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-10-08
 
 ## Contents
 
@@ -48,7 +48,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 | Metric | Count |
 |---|---:|
 | Cataloged projects | 211 |
-| Actively maintained | 155 |
+| Actively maintained | 154 |
 | Pure Rust | 5 |
 | Rust × Python | 3 |
 | Published software (with DOI/paper) | 41 |
@@ -66,14 +66,14 @@ Latest software releases and version tags across cataloged tools.
 
 | Project | Version | Released | Primary Area | Activity |
 |---|---|---|---|---|
+| [timsrust](https://github.com/MannLabs/timsrust) | `v0.6.7` | 2026-10-08 | Proteomics and Structure | 🟢 |
+| [daedalus](https://github.com/David-OConnor/daedalus) | `0.4.2` | 2026-10-08 | Proteomics and Structure | 🟢 |
+| [molchanica](https://github.com/David-OConnor/molchanica) | `0.4.2` | 2026-10-08 | Visualization | 🟢 |
+| [sprocket](https://github.com/stjude-rust-labs/sprocket) | `v0.32.0` | 2026-10-07 | Workflows and Infrastructure | 🟢 |
 | [polars-bio](https://github.com/biodatageeks/polars-bio) | `0.36.1` | 2026-10-07 | Workflows and Infrastructure | 🟢 |
 | [alignoth](https://github.com/alignoth/alignoth) | `v1.12.0` | 2026-10-07 | Visualization | 🟢 |
 | [crankshaft](https://github.com/stjude-rust-labs/crankshaft) | `crankshaft-v0.12.0` | 2026-10-06 | Workflows and Infrastructure | 🟢 |
 | [rust-bio](https://github.com/rust-bio/rust-bio) | `v4.2.1` | 2026-10-05 | Core Libraries | 🟢 |
-| [oxo-flow](https://github.com/Traitome/oxo-flow) | `v0.23.0` | 2026-10-03 | Workflows and Infrastructure | 🟢 |
-| [chelae](https://github.com/fulcrumgenomics/chelae) | `v0.2.1` | 2026-10-03 | Sequence IO and Formats | 🟢 |
-| [sracha-rs](https://github.com/rnabioco/sracha-rs) | `v0.7.1` | 2026-10-02 | Sequence IO and Formats | 🟢 |
-| [Autocycler](https://github.com/rrwick/Autocycler) | `v0.8.0` | 2026-10-02 | Bacterial Genome Assembly | 🟢 |
 
 ## 🌱 Emerging Projects
 
@@ -240,12 +240,12 @@ _Genomics and bioinformatics tools focused on microorganisms._
 
 ### Single-cell and RNA
 
-- **[salmon](https://github.com/COMBINE-lab/salmon)** — Transcript-level RNA-seq quantification using selective alignment. `🟢 Active` `★ 935` · [DOI: 10.1038/nmeth.4197](https://doi.org/10.1038/nmeth.4197)
+- **[salmon](https://github.com/COMBINE-lab/salmon)** — Transcript-level RNA-seq quantification using selective alignment. `🟢 Active` `★ 936` · [DOI: 10.1038/nmeth.4197](https://doi.org/10.1038/nmeth.4197)
 - **[cellranger](https://github.com/10XGenomics/cellranger)** — 10x Genomics single-cell analysis pipeline with a large Rust core. `🟢 Active` `★ 481` · [DOI: 10.1038/ncomms14049](https://doi.org/10.1038/ncomms14049)
 - **[SnapATAC2](https://github.com/kaizhang/SnapATAC2)** — Single-cell epigenomics analysis tools. `🟢 Active` `★ 326`
 - **[alevin-fry](https://github.com/COMBINE-lab/alevin-fry)** — Efficient processing of single-cell sequencing data, focused on transcriptomics. `🟢 Active` `★ 220`
 - **[proseg](https://github.com/dcjones/proseg)** — Probabilistic cell segmentation for spatial transcriptomics. `🟢 Active` `★ 193`
-- **[oarfish](https://github.com/COMBINE-lab/oarfish)** — Quantification for long-read RNA-seq. `🟢 Active` `★ 124`
+- **[oarfish](https://github.com/COMBINE-lab/oarfish)** — Quantification for long-read RNA-seq. `🟢 Active` `★ 125`
 - **[simpleaf](https://github.com/COMBINE-lab/simpleaf)** — Workflow wrapper that simplifies alevin-fry analyses. `🔗 Binding` `🟢 Active` `★ 68`
 - **[cyto](https://github.com/ArcInstitute/cyto)** — Mapper for 10x Flex single-cell reads with fixed abstract geometries. `🟢 Active` `★ 50` · [DOI: 10.64898/2026.01.21.700936](https://www.biorxiv.org/content/10.64898/2026.01.21.700936)
 - **[squab](https://github.com/zaeleus/squab)** — Alignment-based gene expression quantification. `🟢 Active` `★ 40`
@@ -305,7 +305,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[rust-boomphf](https://github.com/10XGenomics/rust-boomphf)** — Fast minimal perfect hashing for large key sets. `🔴 Inactive` `★ 154`
 - **[coitrees](https://github.com/dcjones/coitrees)** — Cache-oblivious interval trees for fast overlap queries on genomic intervals. `🟠 Quiet` `★ 137`
 - **[triple_accel](https://github.com/Daniel-Liu-c0deb0t/triple_accel)** — SIMD-accelerated edit distance and string search routines. `🔴 Inactive` `★ 109`
-- **[finch](https://github.com/onecodex/finch-rs)** — MinHash sketches for genomic distance and search. `🟢 Active` `★ 100`
+- **[finch](https://github.com/onecodex/finch-rs)** — MinHash sketches for genomic distance and search. `🟡 Maintained` `★ 100`
 - **[seq_io](https://github.com/markschl/seq_io)** — FASTA and FASTQ readers and writers designed for high throughput. `🟠 Quiet` `★ 84`
 - **[niffler](https://github.com/luizirber/niffler)** — Transparent reading and writing of compressed files. `🟢 Active` `★ 81`
 - **[rust-debruijn](https://github.com/10XGenomics/rust-debruijn)** — De Bruijn graph construction and path compression libraries. `🔴 Inactive` `★ 72`
@@ -367,7 +367,7 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 - **[nextclade](https://github.com/nextstrain/nextclade)** — Viral genome alignment, clade assignment, and quality checks. `🟢 Active` `★ 264`
 - **[scidataflow](https://github.com/vsbuffalo/scidataflow)** — Command-line scientific data management. `🟠 Quiet` `★ 229`
 - **[sprocket](https://github.com/stjude-rust-labs/sprocket)** — Bioinformatics workflow engine built on the Workflow Description Language. `🟢 Active` `★ 217`
-- **[polars-bio](https://github.com/biodatageeks/polars-bio)** — Bioinformatics operations on Polars DataFrames. `🟢 Active` `★ 202`
+- **[polars-bio](https://github.com/biodatageeks/polars-bio)** — Bioinformatics operations on Polars DataFrames. `🟢 Active` `★ 203`
 - **[biobear](https://github.com/wheretrue/biobear)** — Query bioinformatics files through Arrow, Polars, and DuckDB. `🟠 Quiet` `★ 197`
 - **[exon](https://github.com/wheretrue/exon)** — OLAP query engine for biology and life-science files. `🟠 Quiet` `★ 71`
 - **[crankshaft](https://github.com/stjude-rust-labs/crankshaft)** — Headless workflow execution framework for local, cloud, and HPC backends. `🟢 Active` `★ 61`
@@ -379,8 +379,8 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 
 ## 📚 Learning Resources
 
-- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59700`
-- **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟢 Active` `★ 4306`
+- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59712`
+- **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟢 Active` `★ 4307`
 - **[rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics)** — Collection of genomics software tools written in Rust. `🟢 Active` `★ 138`
 - **[Rust-Bio documentation](https://rust-bio.github.io/)** — Project site and documentation for the Rust-Bio ecosystem. `🔴 Inactive` `★ 1`
 

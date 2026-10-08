@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T10:13:59Z",
+  "generated_at": "2026-10-08T10:31:51Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 2,
@@ -107,7 +107,7 @@
       "trend": "quiet"
     },
     "COMBINE-lab/oarfish": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -233,7 +233,7 @@
       "trend": "quiet"
     },
     "Huang-lab/fastVEP": {
-      "stars_7d": 5,
+      "stars_7d": 4,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -296,7 +296,7 @@
       "trend": "quiet"
     },
     "Psy-Fer/kuva": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -338,7 +338,7 @@
       "trend": "quiet"
     },
     "Traitome/oxo-flow": {
-      "stars_7d": 2,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -471,7 +471,7 @@
       "trend": "quiet"
     },
     "biodatageeks/polars-bio": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -506,7 +506,7 @@
       "trend": "quiet"
     },
     "bluenote-1577/sylph": {
-      "stars_7d": 0,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 0,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -667,7 +667,7 @@
       "trend": "quiet"
     },
     "fulcrumgenomics/ferro-hgvs": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1066,7 +1066,7 @@
       "trend": "quiet"
     },
     "rrwick/Autocycler": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 90,
+      "stars_7d": 87,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1437,7 +1437,7 @@
       "trend": "quiet"
     },
     "wwood/galah": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1472,7 +1472,7 @@
       "trend": "quiet"
     },
     "zeqianli/tgv": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
