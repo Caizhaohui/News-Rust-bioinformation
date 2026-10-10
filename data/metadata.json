@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-09T10:30:14.444348+00:00",
+  "generated_at": "2026-10-10T09:47:53.106070+00:00",
   "incomplete": false,
   "urls": [
     "https://github.com/rust-bio/rust-bio",
@@ -377,7 +377,7 @@
       "stars": 8,
       "forks": 3,
       "created_at": "2025-01-15T20:47:29Z",
-      "pushed_at": "2026-10-07T15:24:19Z",
+      "pushed_at": "2026-10-09T17:28:45Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.0.34",
@@ -475,7 +475,7 @@
       "stars": 151,
       "forks": 4,
       "created_at": "2025-01-28T02:21:13Z",
-      "pushed_at": "2026-10-08T23:15:14Z",
+      "pushed_at": "2026-10-09T22:00:03Z",
       "archived": false,
       "latest_release": {
         "tag": "0.4.2",
@@ -488,7 +488,7 @@
       "stars": 151,
       "forks": 4,
       "created_at": "2025-01-28T02:21:13Z",
-      "pushed_at": "2026-10-08T23:15:14Z",
+      "pushed_at": "2026-10-09T22:00:03Z",
       "archived": false,
       "latest_release": {
         "tag": "0.4.2",
@@ -553,7 +553,7 @@
       "stars": 467,
       "forks": 113,
       "created_at": "2015-11-07T18:14:13Z",
-      "pushed_at": "2026-10-08T12:01:07Z",
+      "pushed_at": "2026-10-09T18:08:22Z",
       "archived": false,
       "latest_release": {
         "tag": "bismark-rust-v3.1.0",
@@ -592,7 +592,7 @@
       "stars": 7,
       "forks": 2,
       "created_at": "2026-04-09T00:29:22Z",
-      "pushed_at": "2026-10-09T03:29:46Z",
+      "pushed_at": "2026-10-09T16:20:37Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.2.0",
@@ -746,7 +746,7 @@
       "latest_release_tag": "v0.5.0"
     },
     "RagnarGrootKoerkamp/pandedup": {
-      "stars": 8,
+      "stars": 9,
       "forks": 0,
       "created_at": "2026-07-24T15:37:02Z",
       "pushed_at": "2026-10-06T17:38:53Z",
@@ -763,7 +763,7 @@
       "stars": 11,
       "forks": 1,
       "created_at": "2026-05-21T23:11:24Z",
-      "pushed_at": "2026-10-09T01:51:48Z",
+      "pushed_at": "2026-10-10T05:56:27Z",
       "archived": false,
       "latest_release": {
         "tag": "v1.5.5",
@@ -774,9 +774,9 @@
     },
     "Sigilweaver/OpenTFRaw": {
       "stars": 13,
-      "forks": 3,
+      "forks": 4,
       "created_at": "2026-05-16T18:52:59Z",
-      "pushed_at": "2026-10-09T01:49:21Z",
+      "pushed_at": "2026-10-10T02:20:43Z",
       "archived": false,
       "latest_release": {
         "tag": "v1.2.0",
@@ -789,7 +789,7 @@
       "stars": 29,
       "forks": 2,
       "created_at": "2026-03-26T14:24:51Z",
-      "pushed_at": "2026-10-09T09:31:54Z",
+      "pushed_at": "2026-10-09T13:37:39Z",
       "archived": false,
       "latest_release": {
         "tag": "compair-v0.1.0",
@@ -799,8 +799,8 @@
       "latest_release_tag": "compair-v0.1.0"
     },
     "Traitome/oxo-flow": {
-      "stars": 21,
-      "forks": 2,
+      "stars": 23,
+      "forks": 3,
       "created_at": "2026-04-04T15:04:06Z",
       "pushed_at": "2026-10-08T14:12:58Z",
       "archived": false,
@@ -936,7 +936,7 @@
       "archived": false
     },
     "ayobi/ITSxRust": {
-      "stars": 23,
+      "stars": 24,
       "forks": 1,
       "created_at": "2026-02-13T17:33:34Z",
       "pushed_at": "2026-08-26T20:20:01Z",
@@ -965,7 +965,7 @@
       "stars": 106,
       "forks": 9,
       "created_at": "2022-11-08T17:02:21Z",
-      "pushed_at": "2026-10-05T09:18:51Z",
+      "pushed_at": "2026-10-09T21:32:13Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.5.1",
@@ -1028,7 +1028,7 @@
       "latest_release_tag": "0.18.0"
     },
     "biodatageeks/polars-bio": {
-      "stars": 203,
+      "stars": 204,
       "forks": 34,
       "created_at": "2024-11-26T16:58:18Z",
       "pushed_at": "2026-10-08T05:47:18Z",
@@ -1080,7 +1080,7 @@
       "latest_release_tag": "v0.7.0"
     },
     "bluenote-1577/skani": {
-      "stars": 264,
+      "stars": 265,
       "forks": 15,
       "created_at": "2022-11-14T21:39:10Z",
       "pushed_at": "2026-05-13T18:00:43Z",
@@ -1204,7 +1204,7 @@
       "archived": false
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars": 4307,
+      "stars": 4308,
       "forks": 732,
       "created_at": "2014-08-27T00:59:21Z",
       "pushed_at": "2026-09-27T21:38:10Z",
@@ -1397,7 +1397,7 @@
       "stars": 57,
       "forks": 2,
       "created_at": "2026-01-24T03:24:46Z",
-      "pushed_at": "2026-10-08T18:32:14Z",
+      "pushed_at": "2026-10-10T06:34:41Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.7.0",
@@ -1449,7 +1449,7 @@
       "stars": 37,
       "forks": 0,
       "created_at": "2025-04-24T18:33:53Z",
-      "pushed_at": "2026-10-09T10:20:18Z",
+      "pushed_at": "2026-10-09T22:24:36Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.3.1",
@@ -1499,7 +1499,7 @@
       "latest_release_tag": "v2.0.0"
     },
     "informationsea/transanno": {
-      "stars": 153,
+      "stars": 154,
       "forks": 16,
       "created_at": "2019-09-25T06:56:18Z",
       "pushed_at": "2024-08-08T02:38:06Z",
@@ -1567,7 +1567,7 @@
       "stars": 16,
       "forks": 6,
       "created_at": "2023-11-08T02:03:21Z",
-      "pushed_at": "2026-10-07T20:27:14Z",
+      "pushed_at": "2026-10-10T02:16:33Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.6.2",
@@ -1580,7 +1580,7 @@
       "stars": 4,
       "forks": 4,
       "created_at": "2024-10-29T16:17:21Z",
-      "pushed_at": "2026-09-28T11:48:48Z",
+      "pushed_at": "2026-10-09T19:39:17Z",
       "archived": false
     },
     "kaizhang/SnapATAC2": {
@@ -1683,7 +1683,7 @@
       "latest_release_tag": "0.5.1"
     },
     "mbhall88/rasusa": {
-      "stars": 277,
+      "stars": 278,
       "forks": 20,
       "created_at": "2019-09-26T13:25:47Z",
       "pushed_at": "2026-10-05T09:03:19Z",
@@ -1706,14 +1706,14 @@
       "stars": 44,
       "forks": 16,
       "created_at": "2021-07-03T03:55:35Z",
-      "pushed_at": "2026-10-05T01:38:37Z",
+      "pushed_at": "2026-10-10T03:26:53Z",
       "archived": false,
       "latest_release": {
-        "tag": "v0.67.0",
-        "published_at": "2026-09-16T19:25:32Z"
+        "tag": "v0.67.4",
+        "published_at": "2026-10-10T03:52:17Z"
       },
-      "latest_release_at": "2026-09-16T19:25:32Z",
-      "latest_release_tag": "v0.67.0"
+      "latest_release_at": "2026-10-10T03:52:17Z",
+      "latest_release_tag": "v0.67.4"
     },
     "mpieva/mapAD": {
       "stars": 22,
@@ -1778,14 +1778,14 @@
       "stars": 5,
       "forks": 1,
       "created_at": "2024-03-01T18:31:54Z",
-      "pushed_at": "2026-10-09T03:26:05Z",
+      "pushed_at": "2026-10-09T22:37:58Z",
       "archived": false,
       "latest_release": {
-        "tag": "v3.5.1",
-        "published_at": "2026-10-01T07:03:35Z"
+        "tag": "v4.0.0",
+        "published_at": "2026-10-09T12:46:06Z"
       },
-      "latest_release_at": "2026-10-01T07:03:35Z",
-      "latest_release_tag": "v3.5.1"
+      "latest_release_at": "2026-10-09T12:46:06Z",
+      "latest_release_tag": "v4.0.0"
     },
     "necoli1822/rust-ise": {
       "stars": 0,
@@ -1817,7 +1817,7 @@
       "stars": 152,
       "forks": 23,
       "created_at": "2013-01-08T15:56:55Z",
-      "pushed_at": "2026-10-01T02:42:23Z",
+      "pushed_at": "2026-10-09T18:22:46Z",
       "archived": false,
       "latest_release": {
         "tag": "v1.6.1",
@@ -2030,7 +2030,7 @@
       "latest_release_tag": "v0.3.2"
     },
     "rnabioco/sracha-rs": {
-      "stars": 76,
+      "stars": 77,
       "forks": 5,
       "created_at": "2026-04-12T18:47:45Z",
       "pushed_at": "2026-10-02T16:40:56Z",
@@ -2082,7 +2082,7 @@
       "latest_release_tag": "v4.2.1"
     },
     "rust-bio/rust-bio-tools": {
-      "stars": 204,
+      "stars": 205,
       "forks": 22,
       "created_at": "2016-07-06T13:00:09Z",
       "pushed_at": "2024-06-24T12:12:29Z",
@@ -2128,10 +2128,10 @@
       "latest_release_tag": "v4.0.0"
     },
     "rust-unofficial/awesome-rust": {
-      "stars": 59734,
-      "forks": 3659,
+      "stars": 59752,
+      "forks": 3662,
       "created_at": "2014-07-17T10:45:10Z",
-      "pushed_at": "2026-10-08T22:54:45Z",
+      "pushed_at": "2026-10-10T09:33:51Z",
       "archived": false
     },
     "rusteomics/mzcore": {
@@ -2187,7 +2187,7 @@
       "latest_release_tag": "version0.4.14"
     },
     "sharkLoc/rust-in-bioinformatics": {
-      "stars": 138,
+      "stars": 139,
       "forks": 16,
       "created_at": "2024-05-11T06:05:54Z",
       "pushed_at": "2026-09-28T03:46:16Z",
@@ -2259,7 +2259,7 @@
       "latest_release_tag": "v4.9.4"
     },
     "sstadick/perbase": {
-      "stars": 151,
+      "stars": 153,
       "forks": 20,
       "created_at": "2020-09-18T15:07:05Z",
       "pushed_at": "2026-05-09T11:43:42Z",
@@ -2376,10 +2376,10 @@
       "latest_release_tag": "v0.4.0"
     },
     "stjude-rust-labs/sprocket": {
-      "stars": 216,
+      "stars": 217,
       "forks": 76,
       "created_at": "2023-12-17T23:12:08Z",
-      "pushed_at": "2026-10-08T20:13:29Z",
+      "pushed_at": "2026-10-09T14:56:36Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.32.0",
@@ -2497,7 +2497,7 @@
       "stars": 33,
       "forks": 3,
       "created_at": "2023-03-03T12:29:59Z",
-      "pushed_at": "2026-10-04T19:56:34Z",
+      "pushed_at": "2026-10-09T22:18:33Z",
       "archived": false,
       "latest_release": {
         "tag": "mehari-python-v0.46.0",
@@ -2723,7 +2723,7 @@
       "latest_release_tag": "py-cli-v1.3.3"
     },
     "zaeleus/noodles": {
-      "stars": 726,
+      "stars": 727,
       "forks": 86,
       "created_at": "2018-10-06T20:14:49Z",
       "pushed_at": "2026-10-08T16:34:55Z",
@@ -2737,17 +2737,17 @@
       "archived": false
     },
     "zeqianli/tgv": {
-      "stars": 484,
+      "stars": 485,
       "forks": 25,
       "created_at": "2025-03-20T19:31:46Z",
-      "pushed_at": "2026-10-09T00:16:33Z",
+      "pushed_at": "2026-10-10T05:00:44Z",
       "archived": false,
       "latest_release": {
-        "tag": "v0.3.0",
-        "published_at": "2026-06-21T03:19:30Z"
+        "tag": "v0.4.0",
+        "published_at": "2026-10-10T03:34:09Z"
       },
-      "latest_release_at": "2026-06-21T03:19:30Z",
-      "latest_release_tag": "v0.3.0"
+      "latest_release_at": "2026-10-10T03:34:09Z",
+      "latest_release_tag": "v0.4.0"
     }
   }
 }

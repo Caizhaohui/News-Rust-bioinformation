@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T10:30:14Z",
+  "generated_at": "2026-10-10T09:47:53Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 1,
@@ -233,7 +233,7 @@
       "trend": "quiet"
     },
     "Huang-lab/fastVEP": {
-      "stars_7d": 3,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -247,14 +247,14 @@
       "trend": "quiet"
     },
     "LCrossman/microBioRust": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "MannLabs/timsrust": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -303,7 +303,7 @@
       "trend": "quiet"
     },
     "RagnarGrootKoerkamp/pandedup": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -338,7 +338,7 @@
       "trend": "quiet"
     },
     "Traitome/oxo-flow": {
-      "stars_7d": 0,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -373,7 +373,7 @@
       "trend": "quiet"
     },
     "alignoth/alignoth": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -415,7 +415,7 @@
       "trend": "quiet"
     },
     "ayobi/ITSxRust": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -499,7 +499,7 @@
       "trend": "quiet"
     },
     "bluenote-1577/skani": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -744,7 +744,7 @@
       "trend": "quiet"
     },
     "informationsea/transanno": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -793,7 +793,7 @@
       "trend": "quiet"
     },
     "kaizhang/SnapATAC2": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -856,7 +856,7 @@
       "trend": "quiet"
     },
     "mbhall88/rasusa": {
-      "stars_7d": 3,
+      "stars_7d": 4,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -968,7 +968,7 @@
       "trend": "quiet"
     },
     "noamteyssier/ibu": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1059,7 +1059,7 @@
       "trend": "quiet"
     },
     "rnabioco/sracha-rs": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1087,7 +1087,7 @@
       "trend": "quiet"
     },
     "rust-bio/rust-bio-tools": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1150,7 +1150,7 @@
       "trend": "quiet"
     },
     "sharkLoc/rust-in-bioinformatics": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1192,7 +1192,7 @@
       "trend": "quiet"
     },
     "sstadick/perbase": {
-      "stars_7d": 0,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1283,7 +1283,7 @@
       "trend": "quiet"
     },
     "treangenlab/bronko": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
