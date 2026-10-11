@@ -9,7 +9,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 
 > Automatically tracks repository activity, releases, ecosystem trends, and emerging projects.
 
-**Projects:** 211 · **Active:** 154 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-10-10
+**Projects:** 211 · **Active:** 155 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-10-11
 
 ## Contents
 
@@ -48,7 +48,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 | Metric | Count |
 |---|---:|
 | Cataloged projects | 211 |
-| Actively maintained | 154 |
+| Actively maintained | 155 |
 | Pure Rust | 5 |
 | Rust × Python | 3 |
 | Published software (with DOI/paper) | 41 |
@@ -66,14 +66,14 @@ Latest software releases and version tags across cataloged tools.
 
 | Project | Version | Released | Primary Area | Activity |
 |---|---|---|---|---|
+| [skani](https://github.com/bluenote-1577/skani) | `latest` | 2026-10-11 | Metagenomics | 🟢 |
+| [savont](https://github.com/bluenote-1577/savont) | `v0.8.0` | 2026-10-10 | Metagenomics | 🟢 |
 | [mzdata](https://github.com/mobiusklein/mzdata) | `v0.67.4` | 2026-10-10 | Proteomics and Structure | 🟢 |
 | [tgv](https://github.com/zeqianli/tgv) | `v0.4.0` | 2026-10-10 | Visualization | 🟢 |
 | [eidolon](https://github.com/ncsa/eidolon) | `v4.0.0` | 2026-10-09 | Variants and Annotation | 🟢 |
 | [galah](https://github.com/wwood/galah) | `v0.6.0` | 2026-10-09 | Metagenomics | 🟢 |
 | [oxo-flow](https://github.com/Traitome/oxo-flow) | `v0.23.1` | 2026-10-08 | Workflows and Infrastructure | 🟢 |
 | [timsrust](https://github.com/MannLabs/timsrust) | `v0.6.7` | 2026-10-08 | Proteomics and Structure | 🟢 |
-| [daedalus](https://github.com/David-OConnor/daedalus) | `0.4.2` | 2026-10-08 | Proteomics and Structure | 🟢 |
-| [molchanica](https://github.com/David-OConnor/molchanica) | `0.4.2` | 2026-10-08 | Visualization | 🟢 |
 
 ## 🌱 Emerging Projects
 
@@ -143,7 +143,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[sourmash](https://github.com/sourmash-bio/sourmash)** — Sketch-based search and comparison of genomic and metagenomic datasets. `🐍 Rust × Python` `🟢 Active` `★ 556` `📖 Source Pick`
 - **[CoverM](https://github.com/wwood/CoverM)** — Read coverage calculator for metagenomics. `🟢 Active` `★ 406`
 - **[sylph](https://github.com/bluenote-1577/sylph)** — Abundance-corrected minhash profiling for metagenomic samples. `🦀 Native` `🟢 Active` `★ 325` `📖 Source Pick`
-- **[skani](https://github.com/bluenote-1577/skani)** — Fast ANI and aligned-fraction estimates for genomes and metagenomic contigs. `🦀 Native` `🟡 Maintained` `★ 265` `📖 Source Pick`
+- **[skani](https://github.com/bluenote-1577/skani)** — Fast ANI and aligned-fraction estimates for genomes and metagenomic contigs. `🦀 Native` `🟢 Active` `★ 265` `📖 Source Pick`
 - **[ngless](https://github.com/ngless-toolkit/ngless)** — Domain-specific language for next-generation sequencing and metagenomic workflows. `🟢 Active` `★ 152` · [DOI: 10.1186/s40168-019-0684-8](https://doi.org/10.1186/s40168-019-0684-8) · [DOI: 10.1093/gigascience/giz079](https://doi.org/10.1093/gigascience/giz079)
 - **[deacon](https://github.com/bede/deacon)** — Fast host DNA sequence filtering. `🟢 Active` `★ 127`
 - **[ska](https://github.com/bacpop/ska.rust)** — Split k-mer analysis for bacterial genomes. `🟢 Active` `★ 106`
@@ -343,7 +343,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[chelae](https://github.com/fulcrumgenomics/chelae)** — Accurate read trimming for NGS data. `🟢 Active` `★ 24`
 - **[bed2gtf](https://github.com/alejandrogzi/bed2gtf)** — High-performance BED-to-GTF converter. `🟢 Active` `★ 21`
 - **[skiver](https://github.com/GZHoffie/skiver)** — Reference-free sequencing error-rate estimates using (k, v)-mer sketches. `🟢 Active` `★ 13` · [DOI: 10.64898/2026.02.12.705514](https://www.biorxiv.org/content/10.64898/2026.02.12.705514)
-- **[bgzf](https://github.com/fulcrumgenomics/bgzf)** — BGZF compression library. `🟢 Active` `★ 9`
+- **[bgzf](https://github.com/fulcrumgenomics/bgzf)** — BGZF compression library. `🟢 Active` `★ 10`
 - **[mako](https://github.com/fg-labs/mako)** — Fast SAM and BAM sorter. `🟢 Active` `★ 9`
 - **[fg-sra](https://github.com/fulcrumgenomics/fg-sra)** — High-performance SRA-to-SAM/BAM converter. `🟢 Active` `★ 8`
 - **[rebgzf](https://github.com/nh13/rebgzf)** — Gzip to BGZF transcoder that avoids a full decompress-recompress cycle. `🟡 Maintained` `★ 7`
@@ -379,8 +379,8 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 
 ## 📚 Learning Resources
 
-- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59752`
-- **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟢 Active` `★ 4308`
+- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59768`
+- **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟢 Active` `★ 4310`
 - **[rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics)** — Collection of genomics software tools written in Rust. `🟢 Active` `★ 139`
 - **[Rust-Bio documentation](https://rust-bio.github.io/)** — Project site and documentation for the Rust-Bio ecosystem. `🔴 Inactive` `★ 1`
 
