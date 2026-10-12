@@ -9,7 +9,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 
 > Automatically tracks repository activity, releases, ecosystem trends, and emerging projects.
 
-**Projects:** 211 · **Active:** 155 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-10-11
+**Projects:** 211 · **Active:** 155 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-10-12
 
 ## Contents
 
@@ -66,14 +66,14 @@ Latest software releases and version tags across cataloged tools.
 
 | Project | Version | Released | Primary Area | Activity |
 |---|---|---|---|---|
+| [OpenMassSpec](https://github.com/Sigilweaver/OpenMassSpec) | `v2.0.0` | 2026-10-11 | Proteomics and Structure | 🟢 |
+| [orphos](https://github.com/FullHuman/orphos) | `v0.4.0` | 2026-10-11 | Genome Annotation | 🟢 |
+| [oxo-flow](https://github.com/Traitome/oxo-flow) | `v0.23.2` | 2026-10-11 | Workflows and Infrastructure | 🟢 |
 | [skani](https://github.com/bluenote-1577/skani) | `latest` | 2026-10-11 | Metagenomics | 🟢 |
 | [savont](https://github.com/bluenote-1577/savont) | `v0.8.0` | 2026-10-10 | Metagenomics | 🟢 |
 | [mzdata](https://github.com/mobiusklein/mzdata) | `v0.67.4` | 2026-10-10 | Proteomics and Structure | 🟢 |
 | [tgv](https://github.com/zeqianli/tgv) | `v0.4.0` | 2026-10-10 | Visualization | 🟢 |
 | [eidolon](https://github.com/ncsa/eidolon) | `v4.0.0` | 2026-10-09 | Variants and Annotation | 🟢 |
-| [galah](https://github.com/wwood/galah) | `v0.6.0` | 2026-10-09 | Metagenomics | 🟢 |
-| [oxo-flow](https://github.com/Traitome/oxo-flow) | `v0.23.1` | 2026-10-08 | Workflows and Infrastructure | 🟢 |
-| [timsrust](https://github.com/MannLabs/timsrust) | `v0.6.7` | 2026-10-08 | Proteomics and Structure | 🟢 |
 
 ## 🌱 Emerging Projects
 
@@ -83,8 +83,8 @@ Recently active Rust bioinformatics projects that are still relatively new or un
 |---|---|---:|---|---|
 | [plascad](https://github.com/David-OConnor/plascad) | Visualization | 139 | 🟢 | Plasmid and primer design with cloning and restriction workflows. |
 | [rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics) | Learning Resources | 139 | 🟢 | Collection of genomics software tools written in Rust. |
+| [RustQC](https://github.com/seqeralabs/RustQC) | Sequence IO and Formats | 132 | 🟢 | Fast quality-control tools for sequencing data. |
 | [xsra](https://github.com/ArcInstitute/xsra) | Sequence IO and Formats | 132 | 🟡 | Fast extraction of sequences from the SRA. |
-| [RustQC](https://github.com/seqeralabs/RustQC) | Sequence IO and Formats | 131 | 🟢 | Fast quality-control tools for sequencing data. |
 | [deacon](https://github.com/bede/deacon) | Metagenomics | 127 | 🟢 | Fast host DNA sequence filtering. |
 | [impg](https://github.com/pangenome/impg) | Assembly and Pangenomes | 114 | 🟢 | Implicit pangenome graph toolkit. |
 | [binseq](https://github.com/ArcInstitute/binseq) | Sequence IO and Formats | 110 | 🟢 | Compact binary format for sequencing reads. |
@@ -323,8 +323,8 @@ _Genomics and bioinformatics tools focused on microorganisms._
 
 - **[rasusa](https://github.com/mbhall88/rasusa)** — Random subsampling of sequencing reads. `🦀 Native` `🟢 Active` `★ 278` `📖 Source Pick`
 - **[d4tools](https://github.com/38/d4-format)** — Dense depth data format and tools as an alternative to bigWig-style coverage files. `🟡 Maintained` `★ 176`
+- **[RustQC](https://github.com/seqeralabs/RustQC)** — Fast quality-control tools for sequencing data. `🟢 Active` `★ 132`
 - **[xsra](https://github.com/ArcInstitute/xsra)** — Fast extraction of sequences from the SRA. `🟡 Maintained` `★ 132`
-- **[RustQC](https://github.com/seqeralabs/RustQC)** — Fast quality-control tools for sequencing data. `🟢 Active` `★ 131`
 - **[bigtools](https://github.com/jackh726/bigtools)** — High-performance BigWig and BigBed library and CLI. `🟢 Active` `★ 127`
 - **[binseq](https://github.com/ArcInstitute/binseq)** — Compact binary format for sequencing reads. `🟢 Active` `★ 110`
 - **[fq](https://github.com/stjude-rust-labs/fq)** — Command-line utility for manipulating Illumina FASTQ files. `🟢 Active` `★ 104`
@@ -379,7 +379,7 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 
 ## 📚 Learning Resources
 
-- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59768`
+- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 59804`
 - **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟢 Active` `★ 4310`
 - **[rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics)** — Collection of genomics software tools written in Rust. `🟢 Active` `★ 139`
 - **[Rust-Bio documentation](https://rust-bio.github.io/)** — Project site and documentation for the Rust-Bio ecosystem. `🔴 Inactive` `★ 1`

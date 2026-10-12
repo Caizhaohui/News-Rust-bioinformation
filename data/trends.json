@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T09:57:51Z",
+  "generated_at": "2026-10-12T10:44:50Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 1,
@@ -121,7 +121,7 @@
       "trend": "quiet"
     },
     "COMBINE-lab/salmon": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -233,7 +233,7 @@
       "trend": "quiet"
     },
     "Huang-lab/fastVEP": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -471,7 +471,7 @@
       "trend": "quiet"
     },
     "biodatageeks/polars-bio": {
-      "stars_7d": 2,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 3,
+      "stars_7d": 4,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -884,7 +884,7 @@
       "trend": "quiet"
     },
     "nanoporetech/modkit": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 96,
+      "stars_7d": 127,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1136,7 +1136,7 @@
       "trend": "quiet"
     },
     "seqeralabs/RustQC": {
-      "stars_7d": 4,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1409,7 +1409,7 @@
       "trend": "quiet"
     },
     "wheretrue/biobear": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
