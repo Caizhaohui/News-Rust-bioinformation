@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T08:40:21Z",
+  "generated_at": "2026-10-15T08:15:30Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 0,
@@ -107,7 +107,7 @@
       "trend": "quiet"
     },
     "COMBINE-lab/oarfish": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -163,7 +163,7 @@
       "trend": "quiet"
     },
     "David-OConnor/plascad": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -282,7 +282,7 @@
       "trend": "quiet"
     },
     "PacificBiosciences/trgt": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -296,7 +296,7 @@
       "trend": "quiet"
     },
     "Psy-Fer/kuva": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -317,14 +317,14 @@
       "trend": "quiet"
     },
     "Sigilweaver/OpenMassSpec": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "Sigilweaver/OpenTFRaw": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -359,7 +359,7 @@
       "trend": "quiet"
     },
     "alexcoulton/odon": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -471,7 +471,7 @@
       "trend": "quiet"
     },
     "biodatageeks/polars-bio": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -499,14 +499,14 @@
       "trend": "quiet"
     },
     "bluenote-1577/skani": {
-      "stars_7d": 1,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "bluenote-1577/sylph": {
-      "stars_7d": 0,
+      "stars_7d": 4,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 7,
+      "stars_7d": 9,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -583,7 +583,7 @@
       "trend": "quiet"
     },
     "dcjones/proseg": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -646,7 +646,7 @@
       "trend": "quiet"
     },
     "fg-labs/mako": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -660,7 +660,7 @@
       "trend": "quiet"
     },
     "fulcrumgenomics/chelae": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -793,7 +793,7 @@
       "trend": "quiet"
     },
     "kaizhang/SnapATAC2": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 146,
+      "stars_7d": 148,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1206,14 +1206,14 @@
       "trend": "quiet"
     },
     "stajichlab/orthoSynAssign": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "steineggerlab/folddisco": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1451,7 +1451,7 @@
       "trend": "quiet"
     },
     "ylab-hi/DeepChopper": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1472,7 +1472,7 @@
       "trend": "quiet"
     },
     "zeqianli/tgv": {
-      "stars_7d": 0,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
