@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T08:48:43Z",
+  "generated_at": "2026-10-19T09:25:01Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 2,
@@ -1430,7 +1430,7 @@
       "trend": "quiet"
     },
     "wwood/CoverM": {
-      "stars_7d": 2,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,

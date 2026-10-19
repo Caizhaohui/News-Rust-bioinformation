@@ -393,7 +393,7 @@
     "FJingxian/JanusX": {
       "stars": 41,
       "forks": 7,
-      "pushed_at": "2026-10-19T06:41:00Z",
+      "pushed_at": "2026-10-19T09:10:13Z",
       "latest_release_tag": "v1.0.27",
       "latest_release_at": "2026-08-06T08:15:23Z"
     },
@@ -1033,7 +1033,7 @@
     "mbhall88/rasusa": {
       "stars": 278,
       "forks": 20,
-      "pushed_at": "2026-10-05T09:03:19Z",
+      "pushed_at": "2026-10-19T09:03:17Z",
       "latest_release_tag": "5.1.0",
       "latest_release_at": "2026-07-31T02:48:01Z"
     },
@@ -1581,7 +1581,7 @@
       "latest_release_at": "2025-11-06T05:30:03Z"
     },
     "wwood/CoverM": {
-      "stars": 408,
+      "stars": 409,
       "forks": 36,
       "pushed_at": "2026-10-12T01:43:58Z",
       "latest_release_tag": "v0.8.0",
