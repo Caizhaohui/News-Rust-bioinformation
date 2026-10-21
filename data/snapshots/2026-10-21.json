@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-21",
   "urls": [
     "https://github.com/rust-bio/rust-bio",
     "https://github.com/rust-bio/rust-htslib",
@@ -222,7 +222,7 @@
       "latest_release_at": "2026-08-17T21:16:03Z"
     },
     "10XGenomics/rust-boomphf": {
-      "stars": 154,
+      "stars": 155,
       "forks": 28,
       "pushed_at": "2024-07-08T03:07:01Z"
     },
@@ -247,7 +247,7 @@
     },
     "ArcInstitute/binseq": {
       "stars": 110,
-      "forks": 8,
+      "forks": 9,
       "pushed_at": "2026-08-26T22:36:40Z",
       "latest_release_tag": "v0.9.6",
       "latest_release_at": "2026-08-13T05:13:10Z"
@@ -261,10 +261,10 @@
     },
     "ArcInstitute/cyto": {
       "stars": 50,
-      "forks": 3,
-      "pushed_at": "2026-09-02T18:22:56Z",
-      "latest_release_tag": "cyto-0.4.7",
-      "latest_release_at": "2026-09-02T18:22:56Z"
+      "forks": 4,
+      "pushed_at": "2026-10-14T17:06:18Z",
+      "latest_release_tag": "cyto-0.4.8",
+      "latest_release_at": "2026-10-14T17:06:18Z"
     },
     "ArcInstitute/xsra": {
       "stars": 132,
@@ -283,7 +283,7 @@
     "BesenbacherLab/cfDNAlab": {
       "stars": 6,
       "forks": 0,
-      "pushed_at": "2026-08-12T14:45:47Z",
+      "pushed_at": "2026-10-20T19:25:39Z",
       "latest_release_tag": "v0.9.0",
       "latest_release_at": "2026-07-30T22:24:57Z"
     },
@@ -297,42 +297,42 @@
     "CDCgov/irma-core": {
       "stars": 13,
       "forks": 1,
-      "pushed_at": "2026-10-07T17:31:05Z",
+      "pushed_at": "2026-10-19T19:53:35Z",
       "latest_release_tag": "v0.11.0",
       "latest_release_at": "2026-09-17T19:54:16Z"
     },
     "CDCgov/zoe": {
       "stars": 8,
       "forks": 3,
-      "pushed_at": "2026-10-09T17:28:45Z",
-      "latest_release_tag": "v0.0.34",
-      "latest_release_at": "2026-10-01T17:17:02Z"
+      "pushed_at": "2026-10-20T20:20:47Z",
+      "latest_release_tag": "v0.0.35",
+      "latest_release_at": "2026-10-16T18:41:58Z"
     },
     "COMBINE-lab/alevin-fry": {
       "stars": 219,
       "forks": 24,
-      "pushed_at": "2026-09-30T16:47:07Z",
+      "pushed_at": "2026-10-19T23:51:05Z",
       "latest_release_tag": "v0.18.3",
       "latest_release_at": "2026-09-13T21:55:50Z"
     },
     "COMBINE-lab/oarfish": {
-      "stars": 125,
+      "stars": 127,
       "forks": 8,
-      "pushed_at": "2026-10-08T22:00:05Z",
+      "pushed_at": "2026-10-17T16:26:01Z",
       "latest_release_tag": "v0.10.3",
       "latest_release_at": "2026-07-16T12:40:32Z"
     },
     "COMBINE-lab/piscem": {
-      "stars": 37,
+      "stars": 38,
       "forks": 3,
-      "pushed_at": "2026-08-31T18:02:26Z",
+      "pushed_at": "2026-10-19T23:34:54Z",
       "latest_release_tag": "v0.23.0",
       "latest_release_at": "2026-08-30T10:59:42Z"
     },
     "COMBINE-lab/salmon": {
-      "stars": 936,
+      "stars": 937,
       "forks": 190,
-      "pushed_at": "2026-10-13T09:19:32Z",
+      "pushed_at": "2026-10-19T11:56:27Z",
       "latest_release_tag": "v2.8.0",
       "latest_release_at": "2026-09-25T22:05:48Z"
     },
@@ -358,23 +358,23 @@
     "David-OConnor/daedalus": {
       "stars": 151,
       "forks": 4,
-      "pushed_at": "2026-10-12T12:11:04Z",
-      "latest_release_tag": "0.4.2",
-      "latest_release_at": "2026-10-08T00:55:15Z"
+      "pushed_at": "2026-10-21T00:52:27Z",
+      "latest_release_tag": "0.4.3",
+      "latest_release_at": "2026-10-19T02:34:20Z"
     },
     "David-OConnor/molchanica": {
       "stars": 151,
       "forks": 4,
-      "pushed_at": "2026-10-12T12:11:04Z",
-      "latest_release_tag": "0.4.2",
-      "latest_release_at": "2026-10-08T00:55:15Z"
+      "pushed_at": "2026-10-21T00:52:27Z",
+      "latest_release_tag": "0.4.3",
+      "latest_release_at": "2026-10-19T02:34:20Z"
     },
     "David-OConnor/plascad": {
       "stars": 139,
-      "forks": 3,
-      "pushed_at": "2026-09-26T19:07:55Z",
-      "latest_release_tag": "0.7.7",
-      "latest_release_at": "2024-12-14T19:11:00Z"
+      "forks": 4,
+      "pushed_at": "2026-10-18T00:23:32Z",
+      "latest_release_tag": "0.7.9",
+      "latest_release_at": "2026-10-15T21:57:52Z"
     },
     "Ebedthan/hyperex": {
       "stars": 10,
@@ -393,21 +393,21 @@
     "FJingxian/JanusX": {
       "stars": 41,
       "forks": 7,
-      "pushed_at": "2026-09-25T09:48:40Z",
+      "pushed_at": "2026-10-20T11:18:09Z",
       "latest_release_tag": "v1.0.27",
       "latest_release_at": "2026-08-06T08:15:23Z"
     },
     "FelixKrueger/Bismark": {
-      "stars": 467,
+      "stars": 468,
       "forks": 113,
       "pushed_at": "2026-10-13T09:05:02Z",
       "latest_release_tag": "bismark-rust-v3.1.0",
       "latest_release_at": "2026-07-13T14:58:36Z"
     },
     "FullHuman/orphos": {
-      "stars": 30,
+      "stars": 31,
       "forks": 1,
-      "pushed_at": "2026-10-11T13:27:06Z",
+      "pushed_at": "2026-10-14T19:26:54Z",
       "latest_release_tag": "v0.4.0",
       "latest_release_at": "2026-10-11T14:20:14Z"
     },
@@ -419,11 +419,11 @@
       "latest_release_at": "2026-08-19T12:52:49Z"
     },
     "HPCBio/dada2-rs": {
-      "stars": 7,
+      "stars": 8,
       "forks": 2,
-      "pushed_at": "2026-10-12T18:25:44Z",
-      "latest_release_tag": "v0.2.0",
-      "latest_release_at": "2026-07-07T03:24:58Z"
+      "pushed_at": "2026-10-21T01:11:40Z",
+      "latest_release_tag": "v0.5.0",
+      "latest_release_at": "2026-10-19T19:23:14Z"
     },
     "HUPO-PSI/ProForma": {
       "stars": 27,
@@ -438,8 +438,8 @@
       "latest_release_at": "2026-09-10T20:54:50Z"
     },
     "Huang-lab/fastVEP": {
-      "stars": 157,
-      "forks": 34,
+      "stars": 158,
+      "forks": 35,
       "pushed_at": "2026-10-11T16:05:55Z",
       "latest_release_tag": "v0.4.0",
       "latest_release_at": "2026-09-24T14:13:00Z"
@@ -453,8 +453,8 @@
     },
     "LCrossman/microBioRust": {
       "stars": 38,
-      "forks": 15,
-      "pushed_at": "2026-10-02T08:18:30Z"
+      "forks": 16,
+      "pushed_at": "2026-10-17T10:25:10Z"
     },
     "MannLabs/timsrust": {
       "stars": 39,
@@ -485,7 +485,7 @@
       "latest_release_at": "2026-08-06T19:33:34Z"
     },
     "PacificBiosciences/trgt": {
-      "stars": 144,
+      "stars": 145,
       "forks": 18,
       "pushed_at": "2026-06-10T09:39:28Z",
       "latest_release_tag": "v5.1.0",
@@ -499,11 +499,11 @@
       "latest_release_at": "2026-07-19T08:01:26Z"
     },
     "Psy-Fer/kuva": {
-      "stars": 877,
-      "forks": 41,
-      "pushed_at": "2026-10-13T07:39:28Z",
-      "latest_release_tag": "v0.5.0",
-      "latest_release_at": "2026-08-07T06:32:27Z"
+      "stars": 885,
+      "forks": 42,
+      "pushed_at": "2026-10-19T05:04:56Z",
+      "latest_release_tag": "v0.6.0",
+      "latest_release_at": "2026-10-15T05:32:55Z"
     },
     "RagnarGrootKoerkamp/pandedup": {
       "stars": 9,
@@ -516,32 +516,32 @@
       "pushed_at": "2026-08-26T20:50:36Z"
     },
     "Sigilweaver/OpenMassSpec": {
-      "stars": 12,
+      "stars": 13,
       "forks": 1,
-      "pushed_at": "2026-10-12T00:30:06Z",
+      "pushed_at": "2026-10-21T00:56:21Z",
       "latest_release_tag": "v2.0.0",
       "latest_release_at": "2026-10-11T17:04:44Z"
     },
     "Sigilweaver/OpenTFRaw": {
-      "stars": 14,
+      "stars": 15,
       "forks": 5,
-      "pushed_at": "2026-10-12T00:10:16Z",
+      "pushed_at": "2026-10-21T03:51:59Z",
       "latest_release_tag": "v1.2.0",
       "latest_release_at": "2026-06-23T02:55:44Z"
     },
     "Softleif/seqair": {
       "stars": 29,
-      "forks": 2,
-      "pushed_at": "2026-10-09T13:37:39Z",
-      "latest_release_tag": "compair-v0.1.0",
-      "latest_release_at": "2026-09-29T20:24:18Z"
+      "forks": 3,
+      "pushed_at": "2026-10-20T13:04:19Z",
+      "latest_release_tag": "compair-v0.2.1",
+      "latest_release_at": "2026-10-20T09:32:23Z"
     },
     "Traitome/oxo-flow": {
       "stars": 24,
       "forks": 3,
-      "pushed_at": "2026-10-12T23:35:47Z",
-      "latest_release_tag": "v0.23.2",
-      "latest_release_at": "2026-10-11T12:46:12Z"
+      "pushed_at": "2026-10-21T05:43:02Z",
+      "latest_release_tag": "v0.24.1",
+      "latest_release_at": "2026-10-21T05:43:00Z"
     },
     "alejandrogzi/bed2gtf": {
       "stars": 21,
@@ -558,7 +558,7 @@
       "latest_release_at": "2026-08-08T11:39:58Z"
     },
     "alexcoulton/odon": {
-      "stars": 79,
+      "stars": 80,
       "forks": 2,
       "pushed_at": "2026-08-28T15:36:36Z",
       "latest_release_tag": "v0.1.5",
@@ -567,14 +567,14 @@
     "algbio/ggcat": {
       "stars": 100,
       "forks": 16,
-      "pushed_at": "2026-10-01T23:21:52Z",
+      "pushed_at": "2026-10-20T19:38:11Z",
       "latest_release_tag": "v2.2.0",
       "latest_release_at": "2026-06-11T10:32:26Z"
     },
     "alignoth/alignoth": {
       "stars": 136,
       "forks": 6,
-      "pushed_at": "2026-10-07T09:38:21Z",
+      "pushed_at": "2026-10-19T20:03:07Z",
       "latest_release_tag": "v1.12.0",
       "latest_release_at": "2026-10-07T09:38:22Z"
     },
@@ -588,9 +588,9 @@
     "althonos/diced": {
       "stars": 4,
       "forks": 2,
-      "pushed_at": "2026-03-06T10:58:52Z",
-      "latest_release_tag": "v0.1.3",
-      "latest_release_at": "2026-03-06T08:33:35Z"
+      "pushed_at": "2026-10-19T15:08:27Z",
+      "latest_release_tag": "v0.1.4",
+      "latest_release_at": "2026-10-19T14:49:05Z"
     },
     "anergictcell/atg": {
       "stars": 7,
@@ -621,33 +621,33 @@
     "ayobi/emits": {
       "stars": 3,
       "forks": 0,
-      "pushed_at": "2026-09-25T14:56:59Z",
+      "pushed_at": "2026-10-20T21:12:52Z",
       "latest_release_tag": "0.2.1",
       "latest_release_at": "2026-09-07T14:55:19Z"
     },
     "bacpop/ska.rust": {
-      "stars": 106,
-      "forks": 9,
-      "pushed_at": "2026-10-12T21:47:36Z",
+      "stars": 108,
+      "forks": 8,
+      "pushed_at": "2026-10-20T10:00:34Z",
       "latest_release_tag": "v0.5.1",
       "latest_release_at": "2026-01-08T09:56:19Z"
     },
     "bacpop/sketchlib.rust": {
       "stars": 34,
       "forks": 7,
-      "pushed_at": "2026-10-12T11:35:07Z",
+      "pushed_at": "2026-10-19T16:07:13Z",
       "latest_release_tag": "v0.4.1",
       "latest_release_at": "2026-08-03T12:42:06Z"
     },
     "bacpop/sparrowhawk-amr": {
       "stars": 0,
       "forks": 0,
-      "pushed_at": "2026-10-13T07:21:44Z"
+      "pushed_at": "2026-10-15T21:07:20Z"
     },
     "bacpop/sparrowhawk-asm": {
       "stars": 16,
       "forks": 2,
-      "pushed_at": "2026-10-13T08:09:37Z",
+      "pushed_at": "2026-10-20T15:26:56Z",
       "latest_release_tag": "v0.1.3",
       "latest_release_at": "2026-04-09T17:22:05Z"
     },
@@ -657,16 +657,16 @@
       "pushed_at": "2026-02-07T04:30:04Z"
     },
     "bede/deacon": {
-      "stars": 127,
+      "stars": 128,
       "forks": 21,
       "pushed_at": "2026-10-02T22:05:06Z",
       "latest_release_tag": "0.18.0",
       "latest_release_at": "2026-09-21T17:31:54Z"
     },
     "biodatageeks/polars-bio": {
-      "stars": 204,
-      "forks": 34,
-      "pushed_at": "2026-10-13T06:02:08Z",
+      "stars": 205,
+      "forks": 35,
+      "pushed_at": "2026-10-21T03:43:11Z",
       "latest_release_tag": "0.36.2",
       "latest_release_at": "2026-10-13T06:02:09Z"
     },
@@ -678,35 +678,35 @@
       "latest_release_at": "2026-09-18T15:00:23Z"
     },
     "bluenote-1577/myloasm": {
-      "stars": 173,
+      "stars": 174,
       "forks": 8,
       "pushed_at": "2026-10-11T03:09:33Z",
       "latest_release_tag": "v0.7.0",
       "latest_release_at": "2026-09-09T17:23:18Z"
     },
     "bluenote-1577/savont": {
-      "stars": 66,
-      "forks": 6,
+      "stars": 68,
+      "forks": 7,
       "pushed_at": "2026-10-10T20:33:52Z",
       "latest_release_tag": "v0.8.0",
       "latest_release_at": "2026-10-10T17:31:44Z"
     },
     "bluenote-1577/skani": {
-      "stars": 265,
+      "stars": 267,
       "forks": 15,
-      "pushed_at": "2026-10-11T03:03:29Z",
+      "pushed_at": "2026-10-14T18:07:52Z",
       "latest_release_tag": "latest",
       "latest_release_at": "2026-10-11T02:37:00Z"
     },
     "bluenote-1577/sylph": {
-      "stars": 325,
+      "stars": 330,
       "forks": 19,
       "pushed_at": "2026-10-10T21:15:19Z",
       "latest_release_tag": "latest",
       "latest_release_at": "2026-09-14T02:30:13Z"
     },
     "brentp/echtvar": {
-      "stars": 163,
+      "stars": 164,
       "forks": 17,
       "pushed_at": "2026-07-22T04:36:35Z",
       "latest_release_tag": "v0.2.4",
@@ -722,9 +722,9 @@
     "broadinstitute/poasta": {
       "stars": 71,
       "forks": 7,
-      "pushed_at": "2026-09-16T16:19:09Z",
-      "latest_release_tag": "v0.1.0",
-      "latest_release_at": "2025-07-08T17:42:25Z"
+      "pushed_at": "2026-10-18T22:15:35Z",
+      "latest_release_tag": "v1.0.0",
+      "latest_release_at": "2026-10-18T21:52:48Z"
     },
     "caltechmsc/dreid-pack": {
       "stars": 2,
@@ -760,8 +760,8 @@
       "pushed_at": "2024-07-27T01:33:19Z"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars": 4311,
-      "forks": 735,
+      "stars": 4326,
+      "forks": 743,
       "pushed_at": "2026-09-27T21:38:10Z"
     },
     "dcjones/coitrees": {
@@ -770,9 +770,9 @@
       "pushed_at": "2025-02-03T04:22:50Z"
     },
     "dcjones/proseg": {
-      "stars": 193,
+      "stars": 196,
       "forks": 21,
-      "pushed_at": "2026-09-22T23:55:39Z",
+      "pushed_at": "2026-10-17T01:12:46Z",
       "latest_release_tag": "v3.2.0",
       "latest_release_at": "2026-07-30T14:49:21Z"
     },
@@ -791,7 +791,7 @@
       "latest_release_at": "2025-08-23T01:46:15Z"
     },
     "douweschulte/pdbtbx": {
-      "stars": 74,
+      "stars": 75,
       "forks": 21,
       "pushed_at": "2026-06-20T10:32:25Z",
       "latest_release_tag": "v0.12.0",
@@ -821,21 +821,21 @@
     "ferritin-bio/ferritin": {
       "stars": 33,
       "forks": 2,
-      "pushed_at": "2026-09-14T00:21:40Z"
+      "pushed_at": "2026-10-20T12:28:30Z"
     },
     "fg-labs/holodeck": {
-      "stars": 6,
+      "stars": 8,
       "forks": 0,
-      "pushed_at": "2026-10-02T02:12:29Z",
+      "pushed_at": "2026-10-17T02:35:27Z",
       "latest_release_tag": "v0.3.0",
       "latest_release_at": "2026-06-13T20:29:55Z"
     },
     "fg-labs/mako": {
-      "stars": 9,
+      "stars": 10,
       "forks": 0,
-      "pushed_at": "2026-09-18T11:34:58Z",
-      "latest_release_tag": "v0.1.7",
-      "latest_release_at": "2026-08-25T08:07:38Z"
+      "pushed_at": "2026-10-21T02:42:58Z",
+      "latest_release_tag": "v0.1.8",
+      "latest_release_at": "2026-10-20T04:27:49Z"
     },
     "fulcrumgenomics/bgzf": {
       "stars": 10,
@@ -845,14 +845,14 @@
       "latest_release_at": "2026-08-09T14:22:35Z"
     },
     "fulcrumgenomics/chelae": {
-      "stars": 24,
+      "stars": 26,
       "forks": 1,
-      "pushed_at": "2026-10-12T14:14:12Z",
+      "pushed_at": "2026-10-20T15:59:32Z",
       "latest_release_tag": "v0.2.1",
       "latest_release_at": "2026-10-03T02:37:56Z"
     },
     "fulcrumgenomics/ferro-hgvs": {
-      "stars": 30,
+      "stars": 31,
       "forks": 5,
       "pushed_at": "2026-10-10T10:06:20Z",
       "latest_release_tag": "v1.0.0",
@@ -861,19 +861,19 @@
     "fulcrumgenomics/fg-sra": {
       "stars": 8,
       "forks": 0,
-      "pushed_at": "2026-10-08T13:35:04Z",
+      "pushed_at": "2026-10-15T13:33:53Z",
       "latest_release_tag": "v0.2.0",
       "latest_release_at": "2026-09-28T22:30:59Z"
     },
     "fulcrumgenomics/fgumi": {
-      "stars": 57,
+      "stars": 61,
       "forks": 3,
-      "pushed_at": "2026-10-13T04:31:39Z",
-      "latest_release_tag": "v0.7.0",
-      "latest_release_at": "2026-08-25T07:18:39Z"
+      "pushed_at": "2026-10-20T20:18:51Z",
+      "latest_release_tag": "v0.8.0",
+      "latest_release_at": "2026-10-20T03:27:49Z"
     },
     "fulcrumgenomics/fqgrep": {
-      "stars": 102,
+      "stars": 103,
       "forks": 5,
       "pushed_at": "2026-09-26T20:07:26Z",
       "latest_release_tag": "v1.1.2",
@@ -887,18 +887,18 @@
       "latest_release_at": "2026-09-26T19:32:02Z"
     },
     "fulcrumgenomics/guide-counter": {
-      "stars": 35,
+      "stars": 36,
       "forks": 4,
       "pushed_at": "2026-04-30T22:28:04Z",
       "latest_release_tag": "v0.1.3",
       "latest_release_at": "2022-03-22T11:58:09Z"
     },
     "genhub-bio/gen": {
-      "stars": 37,
+      "stars": 38,
       "forks": 0,
-      "pushed_at": "2026-10-12T19:58:33Z",
-      "latest_release_tag": "v0.3.1",
-      "latest_release_at": "2026-09-22T15:23:00Z"
+      "pushed_at": "2026-10-20T20:55:35Z",
+      "latest_release_tag": "v0.4.0",
+      "latest_release_at": "2026-10-13T23:22:36Z"
     },
     "haddocking/haddock-restraints": {
       "stars": 8,
@@ -918,7 +918,7 @@
       "pushed_at": "2026-08-15T20:38:54Z"
     },
     "huangnengCSU/longcallR": {
-      "stars": 96,
+      "stars": 97,
       "forks": 8,
       "pushed_at": "2026-08-02T19:17:12Z",
       "latest_release_tag": "v2.0.0",
@@ -932,7 +932,7 @@
       "latest_release_at": "2024-05-15T03:02:58Z"
     },
     "jackh726/bigtools": {
-      "stars": 127,
+      "stars": 128,
       "forks": 13,
       "pushed_at": "2026-08-14T15:09:16Z",
       "latest_release_tag": "v0.5.8",
@@ -954,7 +954,7 @@
     },
     "jltsiren/gbwt-rs": {
       "stars": 46,
-      "forks": 8,
+      "forks": 9,
       "pushed_at": "2026-09-14T01:52:28Z",
       "latest_release_tag": "v0.7",
       "latest_release_at": "2026-08-24T18:28:27Z"
@@ -962,31 +962,31 @@
     "jltsiren/gbz-base": {
       "stars": 16,
       "forks": 6,
-      "pushed_at": "2026-10-13T04:23:13Z",
+      "pushed_at": "2026-10-16T18:41:57Z",
       "latest_release_tag": "v0.6.2",
       "latest_release_at": "2026-09-27T04:04:38Z"
     },
     "kaathewisegit/aspartik": {
       "stars": 4,
       "forks": 4,
-      "pushed_at": "2026-10-12T12:13:16Z"
+      "pushed_at": "2026-10-19T20:07:34Z"
     },
     "kaizhang/SnapATAC2": {
-      "stars": 326,
+      "stars": 329,
       "forks": 45,
       "pushed_at": "2026-09-12T06:44:21Z"
     },
     "lazear/sage": {
-      "stars": 313,
-      "forks": 68,
-      "pushed_at": "2026-10-07T01:35:30Z",
+      "stars": 315,
+      "forks": 71,
+      "pushed_at": "2026-10-20T13:22:59Z",
       "latest_release_tag": "v0.14.7",
       "latest_release_at": "2024-03-15T00:30:36Z"
     },
     "lh3/badclip": {
       "stars": 5,
       "forks": 0,
-      "pushed_at": "2026-10-13T04:07:06Z",
+      "pushed_at": "2026-10-15T00:27:26Z",
       "latest_release_tag": "v0.1.0",
       "latest_release_at": "2026-10-13T02:55:57Z"
     },
@@ -1033,7 +1033,7 @@
     "mbhall88/rasusa": {
       "stars": 278,
       "forks": 20,
-      "pushed_at": "2026-10-05T09:03:19Z",
+      "pushed_at": "2026-10-19T09:03:17Z",
       "latest_release_tag": "5.1.0",
       "latest_release_at": "2026-07-31T02:48:01Z"
     },
@@ -1045,7 +1045,7 @@
     "mobiusklein/mzdata": {
       "stars": 44,
       "forks": 16,
-      "pushed_at": "2026-10-10T03:26:53Z",
+      "pushed_at": "2026-10-18T15:56:50Z",
       "latest_release_tag": "v0.67.4",
       "latest_release_at": "2026-10-10T03:52:17Z"
     },
@@ -1057,8 +1057,8 @@
       "latest_release_at": "2025-04-23T11:11:01Z"
     },
     "nanoporetech/modkit": {
-      "stars": 278,
-      "forks": 34,
+      "stars": 279,
+      "forks": 35,
       "pushed_at": "2026-07-14T23:37:18Z",
       "latest_release_tag": "v0.6.4",
       "latest_release_at": "2026-06-11T04:37:28Z"
@@ -1085,9 +1085,9 @@
     "ncsa/eidolon": {
       "stars": 5,
       "forks": 1,
-      "pushed_at": "2026-10-12T14:16:58Z",
-      "latest_release_tag": "v4.0.0",
-      "latest_release_at": "2026-10-09T12:46:06Z"
+      "pushed_at": "2026-10-21T06:23:12Z",
+      "latest_release_tag": "v4.0.1",
+      "latest_release_at": "2026-10-21T05:41:10Z"
     },
     "necoli1822/rust-ise": {
       "stars": 0,
@@ -1099,9 +1099,9 @@
     "nextstrain/nextclade": {
       "stars": 265,
       "forks": 69,
-      "pushed_at": "2026-10-08T07:01:40Z",
-      "latest_release_tag": "3.24.0",
-      "latest_release_at": "2026-09-30T10:52:13Z"
+      "pushed_at": "2026-10-20T14:28:46Z",
+      "latest_release_tag": "3.25.0",
+      "latest_release_at": "2026-10-13T13:54:00Z"
     },
     "ngless-toolkit/ngless": {
       "stars": 152,
@@ -1159,7 +1159,7 @@
     },
     "onecodex/needletail": {
       "stars": 214,
-      "forks": 34,
+      "forks": 35,
       "pushed_at": "2026-10-06T21:28:52Z",
       "latest_release_tag": "v0.7.3",
       "latest_release_at": "2026-04-20T16:20:36Z"
@@ -1167,7 +1167,7 @@
     "openpaul/fqless": {
       "stars": 27,
       "forks": 4,
-      "pushed_at": "2026-07-31T16:53:44Z",
+      "pushed_at": "2026-10-20T12:40:04Z",
       "latest_release_tag": "v2.3.0",
       "latest_release_at": "2026-07-31T15:29:33Z"
     },
@@ -1181,7 +1181,7 @@
     "pangenome/impg": {
       "stars": 114,
       "forks": 16,
-      "pushed_at": "2026-10-08T15:56:14Z",
+      "pushed_at": "2026-10-18T22:46:20Z",
       "latest_release_tag": "v0.5.0",
       "latest_release_at": "2026-07-26T06:10:54Z"
     },
@@ -1212,9 +1212,11 @@
       "latest_release_at": "2026-01-14T16:23:25Z"
     },
     "raw-lab/dynamite": {
-      "stars": 35,
+      "stars": 36,
       "forks": 1,
-      "pushed_at": "2026-09-23T16:08:16Z"
+      "pushed_at": "2026-10-14T21:47:33Z",
+      "latest_release_tag": "v1.1.1",
+      "latest_release_at": "2026-10-14T21:44:36Z"
     },
     "rickbeeloo/barbell": {
       "stars": 106,
@@ -1226,12 +1228,12 @@
     "rnabioco/sracha-rs": {
       "stars": 77,
       "forks": 5,
-      "pushed_at": "2026-10-13T10:08:40Z",
-      "latest_release_tag": "v0.7.1",
-      "latest_release_at": "2026-10-02T16:46:16Z"
+      "pushed_at": "2026-10-19T14:09:49Z",
+      "latest_release_tag": "v0.8.0",
+      "latest_release_at": "2026-10-15T00:21:21Z"
     },
     "rrwick/Autocycler": {
-      "stars": 241,
+      "stars": 244,
       "forks": 21,
       "pushed_at": "2026-10-08T22:25:30Z",
       "latest_release_tag": "v0.8.0",
@@ -1245,8 +1247,8 @@
       "latest_release_at": "2026-07-28T05:47:25Z"
     },
     "rust-bio/rust-bio": {
-      "stars": 1840,
-      "forks": 222,
+      "stars": 1841,
+      "forks": 223,
       "pushed_at": "2026-10-12T11:42:47Z",
       "latest_release_tag": "v4.2.2",
       "latest_release_at": "2026-10-12T11:40:47Z"
@@ -1278,26 +1280,26 @@
       "latest_release_at": "2025-09-26T13:11:42Z"
     },
     "rust-unofficial/awesome-rust": {
-      "stars": 59821,
-      "forks": 3668,
-      "pushed_at": "2026-10-13T09:08:23Z"
+      "stars": 59994,
+      "forks": 3699,
+      "pushed_at": "2026-10-21T07:12:27Z"
     },
     "rusteomics/mzcore": {
       "stars": 52,
       "forks": 11,
-      "pushed_at": "2026-10-03T08:06:47Z",
+      "pushed_at": "2026-10-20T14:40:38Z",
       "latest_release_tag": "mzident-0.2.1",
       "latest_release_at": "2026-08-04T10:00:28Z"
     },
     "sbhattlab/phylo2vec": {
       "stars": 21,
       "forks": 9,
-      "pushed_at": "2026-10-01T20:05:27Z",
+      "pushed_at": "2026-10-20T21:23:35Z",
       "latest_release_tag": "v1.8.0",
       "latest_release_at": "2026-05-21T22:43:52Z"
     },
     "seqeralabs/RustQC": {
-      "stars": 132,
+      "stars": 133,
       "forks": 7,
       "pushed_at": "2026-09-29T14:26:16Z",
       "latest_release_tag": "v0.2.1",
@@ -1311,9 +1313,9 @@
       "latest_release_at": "2025-07-21T04:51:41Z"
     },
     "sharkLoc/rust-in-bioinformatics": {
-      "stars": 139,
+      "stars": 140,
       "forks": 16,
-      "pushed_at": "2026-09-28T03:46:16Z"
+      "pushed_at": "2026-10-16T00:57:39Z"
     },
     "sib-swiss/termal": {
       "stars": 35,
@@ -1338,15 +1340,15 @@
     },
     "soedinglab/MAGmax": {
       "stars": 37,
-      "forks": 4,
+      "forks": 5,
       "pushed_at": "2026-08-28T10:20:26Z",
       "latest_release_tag": "v1.4.0",
       "latest_release_at": "2026-05-23T23:27:56Z"
     },
     "sourmash-bio/sourmash": {
-      "stars": 556,
+      "stars": 557,
       "forks": 93,
-      "pushed_at": "2026-10-12T22:34:07Z",
+      "pushed_at": "2026-10-20T15:15:54Z",
       "latest_release_tag": "v4.9.4",
       "latest_release_at": "2025-08-07T16:06:11Z"
     },
@@ -1365,18 +1367,18 @@
       "latest_release_at": "2025-07-02T09:51:56Z"
     },
     "stajichlab/orthoSynAssign": {
-      "stars": 6,
+      "stars": 7,
       "forks": 1,
       "pushed_at": "2026-09-08T18:51:43Z",
       "latest_release_tag": "v1.3.1",
       "latest_release_at": "2026-08-07T23:37:45Z"
     },
     "steineggerlab/folddisco": {
-      "stars": 218,
-      "forks": 26,
-      "pushed_at": "2026-09-18T08:34:11Z",
-      "latest_release_tag": "2-9375a2d",
-      "latest_release_at": "2026-06-08T16:24:26Z"
+      "stars": 220,
+      "forks": 27,
+      "pushed_at": "2026-10-15T03:46:17Z",
+      "latest_release_tag": "3-3e193e3",
+      "latest_release_at": "2026-10-15T03:46:17Z"
     },
     "steineggerlab/foldmason": {
       "stars": 283,
@@ -1386,7 +1388,7 @@
       "latest_release_at": "2025-10-10T16:17:37Z"
     },
     "steineggerlab/unicore": {
-      "stars": 101,
+      "stars": 102,
       "forks": 10,
       "pushed_at": "2026-03-12T11:39:23Z",
       "latest_release_tag": "v1.1.1",
@@ -1414,9 +1416,9 @@
       "latest_release_at": "2023-03-24T21:04:36Z"
     },
     "stjude-rust-labs/sprocket": {
-      "stars": 218,
-      "forks": 80,
-      "pushed_at": "2026-10-12T20:17:37Z",
+      "stars": 219,
+      "forks": 79,
+      "pushed_at": "2026-10-20T20:46:34Z",
       "latest_release_tag": "v0.32.0",
       "latest_release_at": "2026-10-07T18:19:18Z"
     },
@@ -1430,16 +1432,16 @@
     "tolkit/gfatk": {
       "stars": 17,
       "forks": 1,
-      "pushed_at": "2026-09-24T13:42:45Z",
-      "latest_release_tag": "0.6.1",
-      "latest_release_at": "2026-09-24T13:42:46Z"
+      "pushed_at": "2026-10-15T09:41:30Z",
+      "latest_release_tag": "0.6.2",
+      "latest_release_at": "2026-10-15T09:41:31Z"
     },
     "tprodanov/locityper": {
       "stars": 50,
       "forks": 3,
-      "pushed_at": "2026-10-13T09:58:41Z",
-      "latest_release_tag": "v1.7.6",
-      "latest_release_at": "2026-10-12T13:42:44Z"
+      "pushed_at": "2026-10-20T12:42:06Z",
+      "latest_release_tag": "v1.7.12",
+      "latest_release_at": "2026-10-20T12:43:27Z"
     },
     "treangenlab/bronko": {
       "stars": 48,
@@ -1482,14 +1484,14 @@
     "varfish-org/mehari": {
       "stars": 33,
       "forks": 3,
-      "pushed_at": "2026-10-13T09:56:59Z",
+      "pushed_at": "2026-10-21T08:31:14Z",
       "latest_release_tag": "mehari-python-v0.46.0",
       "latest_release_at": "2026-09-22T11:38:37Z"
     },
     "vertti/umi-tools-rs": {
       "stars": 6,
       "forks": 0,
-      "pushed_at": "2026-10-05T11:28:21Z",
+      "pushed_at": "2026-10-15T22:26:04Z",
       "latest_release_tag": "v2.0.1",
       "latest_release_at": "2026-09-23T10:26:41Z"
     },
@@ -1527,7 +1529,7 @@
     "wdecoster/STRdust": {
       "stars": 28,
       "forks": 3,
-      "pushed_at": "2026-09-21T07:52:35Z",
+      "pushed_at": "2026-10-19T07:16:26Z",
       "latest_release_tag": "v1.0.0",
       "latest_release_at": "2026-09-13T18:39:59Z"
     },
@@ -1548,7 +1550,7 @@
     "wdecoster/inquiSTR": {
       "stars": 12,
       "forks": 0,
-      "pushed_at": "2026-10-01T13:24:27Z",
+      "pushed_at": "2026-10-19T07:16:24Z",
       "latest_release_tag": "v0.28.1",
       "latest_release_at": "2026-08-29T19:33:07Z"
     },
@@ -1579,16 +1581,16 @@
       "latest_release_at": "2025-11-06T05:30:03Z"
     },
     "wwood/CoverM": {
-      "stars": 408,
-      "forks": 36,
-      "pushed_at": "2026-10-12T01:43:58Z",
+      "stars": 409,
+      "forks": 37,
+      "pushed_at": "2026-10-20T10:24:01Z",
       "latest_release_tag": "v0.8.0",
       "latest_release_at": "2026-07-08T03:37:16Z"
     },
     "wwood/galah": {
-      "stars": 89,
+      "stars": 91,
       "forks": 12,
-      "pushed_at": "2026-10-12T22:17:24Z",
+      "pushed_at": "2026-10-21T05:33:31Z",
       "latest_release_tag": "v0.6.1",
       "latest_release_at": "2026-10-12T22:20:59Z"
     },
@@ -1600,16 +1602,16 @@
       "latest_release_at": "2026-09-21T09:00:08Z"
     },
     "ylab-hi/DeepChopper": {
-      "stars": 11,
+      "stars": 12,
       "forks": 1,
-      "pushed_at": "2026-10-07T12:53:36Z",
+      "pushed_at": "2026-10-19T17:01:34Z",
       "latest_release_tag": "py-cli-v1.3.3",
       "latest_release_at": "2026-04-15T16:29:16Z"
     },
     "zaeleus/noodles": {
-      "stars": 727,
-      "forks": 86,
-      "pushed_at": "2026-10-08T16:34:55Z"
+      "stars": 729,
+      "forks": 87,
+      "pushed_at": "2026-10-15T18:13:39Z"
     },
     "zaeleus/squab": {
       "stars": 40,
@@ -1617,9 +1619,9 @@
       "pushed_at": "2026-10-01T20:01:48Z"
     },
     "zeqianli/tgv": {
-      "stars": 486,
+      "stars": 487,
       "forks": 25,
-      "pushed_at": "2026-10-10T05:00:44Z",
+      "pushed_at": "2026-10-21T00:14:58Z",
       "latest_release_tag": "v0.4.0",
       "latest_release_at": "2026-10-10T03:34:09Z"
     }
