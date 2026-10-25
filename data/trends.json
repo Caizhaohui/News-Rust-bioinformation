@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T08:05:16Z",
+  "generated_at": "2026-10-25T08:22:49Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 0,
@@ -163,7 +163,7 @@
       "trend": "quiet"
     },
     "David-OConnor/plascad": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -296,7 +296,7 @@
       "trend": "quiet"
     },
     "Psy-Fer/kuva": {
-      "stars_7d": 6,
+      "stars_7d": 5,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -464,14 +464,14 @@
       "trend": "quiet"
     },
     "bede/deacon": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "biodatageeks/polars-bio": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 11,
+      "stars_7d": 13,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -884,7 +884,7 @@
       "trend": "quiet"
     },
     "nanoporetech/modkit": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 169,
+      "stars_7d": 175,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1185,7 +1185,7 @@
       "trend": "quiet"
     },
     "sourmash-bio/sourmash": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
