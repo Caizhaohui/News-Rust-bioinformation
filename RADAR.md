@@ -15,7 +15,7 @@ Crossed a threshold: star jump, new release, or a cold repository pushed.
 - [alevin-fry](https://github.com/COMBINE-lab/alevin-fry) — new release v0.18.3 -> v0.19.0
 - [simpleaf](https://github.com/COMBINE-lab/simpleaf) — new release v0.30.0 -> v0.31.0
 - [mzdata](https://github.com/mobiusklein/mzdata) — new release v0.67.4 -> v0.68.0
-- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) — stars 60110 -> 60131
+- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) — stars 60110 -> 60132
 - [locityper](https://github.com/tprodanov/locityper) — new release v1.7.13 -> v1.7.14
 - [STRdust](https://github.com/wdecoster/STRdust) — new release v1.0.0 -> v1.1.0
 

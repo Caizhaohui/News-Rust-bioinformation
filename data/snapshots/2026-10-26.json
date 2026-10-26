@@ -539,7 +539,7 @@
     "Traitome/oxo-flow": {
       "stars": 24,
       "forks": 3,
-      "pushed_at": "2026-10-26T08:25:11Z",
+      "pushed_at": "2026-10-26T09:25:31Z",
       "latest_release_tag": "v0.24.1",
       "latest_release_at": "2026-10-21T05:43:00Z"
     },
@@ -1275,12 +1275,12 @@
     "rust-seq/packed-seq": {
       "stars": 19,
       "forks": 5,
-      "pushed_at": "2026-10-25T12:53:34Z",
+      "pushed_at": "2026-10-26T09:23:38Z",
       "latest_release_tag": "v4.0.0",
       "latest_release_at": "2025-09-26T13:11:42Z"
     },
     "rust-unofficial/awesome-rust": {
-      "stars": 60131,
+      "stars": 60132,
       "forks": 3718,
       "pushed_at": "2026-10-26T08:12:30Z"
     },
