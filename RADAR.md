@@ -16,9 +16,10 @@ Crossed a threshold: star jump, new release, or a cold repository pushed.
 - [galah](https://github.com/wwood/galah) — new release v0.6.2 -> v0.6.3
 - [oxo-flow](https://github.com/Traitome/oxo-flow) — new release v0.27.0 -> v0.28.0
 - [Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics) — stars 4347 -> 4352
-- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) — stars 60256 -> 60274
+- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) — stars 60256 -> 60276
 - [savont](https://github.com/bluenote-1577/savont) — new release v0.8.0 -> v0.8.1
 - [salmon](https://github.com/COMBINE-lab/salmon) — new release v2.9.1 -> v2.10.0
+- [phylo2vec](https://github.com/sbhattlab/phylo2vec) — new release v1.8.0 -> v1.8.1
 
 ## Possibly stale
 

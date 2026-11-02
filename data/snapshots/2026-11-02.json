@@ -400,7 +400,7 @@
     "FelixKrueger/Bismark": {
       "stars": 470,
       "forks": 112,
-      "pushed_at": "2026-11-02T09:53:39Z",
+      "pushed_at": "2026-11-02T11:48:11Z",
       "latest_release_tag": "bismark-rust-v3.1.0",
       "latest_release_at": "2026-07-13T14:58:36Z"
     },
@@ -635,7 +635,7 @@
     "bacpop/sketchlib.rust": {
       "stars": 35,
       "forks": 7,
-      "pushed_at": "2026-11-02T10:22:28Z",
+      "pushed_at": "2026-11-02T10:59:00Z",
       "latest_release_tag": "v0.4.1",
       "latest_release_at": "2026-08-03T12:42:06Z"
     },
@@ -833,7 +833,7 @@
     "fg-labs/mako": {
       "stars": 10,
       "forks": 0,
-      "pushed_at": "2026-10-29T16:09:55Z",
+      "pushed_at": "2026-11-02T11:36:28Z",
       "latest_release_tag": "v0.1.8",
       "latest_release_at": "2026-10-20T04:27:49Z"
     },
@@ -1280,7 +1280,7 @@
       "latest_release_at": "2025-09-26T13:11:42Z"
     },
     "rust-unofficial/awesome-rust": {
-      "stars": 60274,
+      "stars": 60276,
       "forks": 3766,
       "pushed_at": "2026-11-02T10:53:54Z"
     },
@@ -1294,9 +1294,9 @@
     "sbhattlab/phylo2vec": {
       "stars": 21,
       "forks": 9,
-      "pushed_at": "2026-11-02T10:55:55Z",
-      "latest_release_tag": "v1.8.0",
-      "latest_release_at": "2026-05-21T22:43:52Z"
+      "pushed_at": "2026-11-02T11:04:10Z",
+      "latest_release_tag": "v1.8.1",
+      "latest_release_at": "2026-11-02T11:04:10Z"
     },
     "seqeralabs/RustQC": {
       "stars": 134,

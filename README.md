@@ -66,6 +66,7 @@ Latest software releases and version tags across cataloged tools.
 
 | Project | Version | Released | Primary Area | Activity |
 |---|---|---|---|---|
+| [phylo2vec](https://github.com/sbhattlab/phylo2vec) | `v1.8.1` | 2026-11-02 | Core Libraries | 🟢 |
 | [oxo-flow](https://github.com/Traitome/oxo-flow) | `v0.28.0` | 2026-11-02 | Workflows and Infrastructure | 🟢 |
 | [galah](https://github.com/wwood/galah) | `v0.6.3` | 2026-11-02 | Metagenomics | 🟢 |
 | [sracha-rs](https://github.com/rnabioco/sracha-rs) | `v0.10.1` | 2026-11-02 | Sequence IO and Formats | 🟢 |
@@ -73,7 +74,6 @@ Latest software releases and version tags across cataloged tools.
 | [savont](https://github.com/bluenote-1577/savont) | `v0.8.1` | 2026-11-01 | Metagenomics | 🟢 |
 | [piscem](https://github.com/COMBINE-lab/piscem) | `v0.25.0` | 2026-10-31 | Single-cell and RNA | 🟢 |
 | [perbase](https://github.com/sstadick/perbase) | `v1.4.1` | 2026-10-31 | Alignment and Mapping | 🟢 |
-| [DartUniFrac](https://github.com/jianshu93/DartUniFrac) | `v0.3.3` | 2026-10-31 | Metagenomics | 🟢 |
 
 ## 🌱 Emerging Projects
 
@@ -379,7 +379,7 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 
 ## 📚 Learning Resources
 
-- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 60274`
+- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 60276`
 - **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟢 Active` `★ 4352`
 - **[rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics)** — Collection of genomics software tools written in Rust. `🟢 Active` `★ 141`
 - **[Rust-Bio documentation](https://rust-bio.github.io/)** — Project site and documentation for the Rust-Bio ecosystem. `🔴 Inactive` `★ 1`
