@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T10:48:57Z",
+  "generated_at": "2026-11-07T10:02:17Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 1,
@@ -51,7 +51,7 @@
       "trend": "quiet"
     },
     "ArcInstitute/cyto": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -114,7 +114,7 @@
       "trend": "quiet"
     },
     "COMBINE-lab/piscem": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -191,7 +191,7 @@
       "trend": "quiet"
     },
     "FelixKrueger/Bismark": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -219,7 +219,7 @@
       "trend": "quiet"
     },
     "HUPO-PSI/ProForma": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -282,7 +282,7 @@
       "trend": "quiet"
     },
     "PacificBiosciences/trgt": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 12,
+      "stars_7d": 8,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -800,7 +800,7 @@
       "trend": "quiet"
     },
     "lazear/sage": {
-      "stars_7d": 2,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 146,
+      "stars_7d": 147,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1178,14 +1178,14 @@
       "trend": "quiet"
     },
     "soedinglab/MAGmax": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "sourmash-bio/sourmash": {
-      "stars_7d": 3,
+      "stars_7d": 4,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
