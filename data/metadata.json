@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-09T11:27:14.003694+00:00",
+  "generated_at": "2026-11-09T12:18:39.200265+00:00",
   "incomplete": false,
   "urls": [
     "https://github.com/rust-bio/rust-bio",
@@ -338,7 +338,7 @@
       "stars": 7,
       "forks": 1,
       "created_at": "2025-09-04T13:12:53Z",
-      "pushed_at": "2026-11-06T13:53:00Z",
+      "pushed_at": "2026-11-09T12:07:49Z",
       "archived": false,
       "latest_release": {
         "tag": "v0.9.0",
@@ -400,7 +400,7 @@
       "latest_release_tag": "v0.19.0"
     },
     "COMBINE-lab/oarfish": {
-      "stars": 127,
+      "stars": 129,
       "forks": 8,
       "created_at": "2022-06-27T17:58:35Z",
       "pushed_at": "2026-11-07T21:25:05Z",
@@ -426,10 +426,10 @@
       "latest_release_tag": "v0.25.0"
     },
     "COMBINE-lab/salmon": {
-      "stars": 943,
+      "stars": 944,
       "forks": 192,
       "created_at": "2015-03-19T22:37:41Z",
-      "pushed_at": "2026-11-03T15:13:24Z",
+      "pushed_at": "2026-11-09T11:56:56Z",
       "archived": false,
       "latest_release": {
         "tag": "v2.11.0",
@@ -553,7 +553,7 @@
       "stars": 471,
       "forks": 112,
       "created_at": "2015-11-07T18:14:13Z",
-      "pushed_at": "2026-11-08T20:19:41Z",
+      "pushed_at": "2026-11-09T12:07:50Z",
       "archived": false,
       "latest_release": {
         "tag": "bismark-rust-v3.1.0",
@@ -1204,7 +1204,7 @@
       "archived": false
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars": 4359,
+      "stars": 4360,
       "forks": 751,
       "created_at": "2014-08-27T00:59:21Z",
       "pushed_at": "2026-09-27T21:38:10Z",
@@ -2430,14 +2430,14 @@
       "stars": 51,
       "forks": 3,
       "created_at": "2022-12-20T10:48:29Z",
-      "pushed_at": "2026-11-06T13:46:52Z",
+      "pushed_at": "2026-11-09T11:47:08Z",
       "archived": false,
       "latest_release": {
-        "tag": "v1.7.15",
-        "published_at": "2026-10-30T10:15:54Z"
+        "tag": "v1.8.1",
+        "published_at": "2026-11-09T11:50:26Z"
       },
-      "latest_release_at": "2026-10-30T10:15:54Z",
-      "latest_release_tag": "v1.7.15"
+      "latest_release_at": "2026-11-09T11:50:26Z",
+      "latest_release_tag": "v1.8.1"
     },
     "treangenlab/bronko": {
       "stars": 49,
@@ -2509,7 +2509,7 @@
       "stars": 33,
       "forks": 3,
       "created_at": "2023-03-03T12:29:59Z",
-      "pushed_at": "2026-11-09T10:10:05Z",
+      "pushed_at": "2026-11-09T11:45:32Z",
       "archived": false,
       "latest_release": {
         "tag": "mehari-python-v0.50.0",

@@ -283,7 +283,7 @@
     "BesenbacherLab/cfDNAlab": {
       "stars": 7,
       "forks": 1,
-      "pushed_at": "2026-11-06T13:53:00Z",
+      "pushed_at": "2026-11-09T12:07:49Z",
       "latest_release_tag": "v0.9.0",
       "latest_release_at": "2026-07-30T22:24:57Z"
     },
@@ -316,7 +316,7 @@
       "latest_release_at": "2026-10-25T17:53:30Z"
     },
     "COMBINE-lab/oarfish": {
-      "stars": 127,
+      "stars": 129,
       "forks": 8,
       "pushed_at": "2026-11-07T21:25:05Z",
       "latest_release_tag": "v0.11.0",
@@ -330,9 +330,9 @@
       "latest_release_at": "2026-10-31T16:00:57Z"
     },
     "COMBINE-lab/salmon": {
-      "stars": 943,
+      "stars": 944,
       "forks": 192,
-      "pushed_at": "2026-11-03T15:13:24Z",
+      "pushed_at": "2026-11-09T11:56:56Z",
       "latest_release_tag": "v2.11.0",
       "latest_release_at": "2026-11-03T12:37:09Z"
     },
@@ -400,7 +400,7 @@
     "FelixKrueger/Bismark": {
       "stars": 471,
       "forks": 112,
-      "pushed_at": "2026-11-08T20:19:41Z",
+      "pushed_at": "2026-11-09T12:07:50Z",
       "latest_release_tag": "bismark-rust-v3.1.0",
       "latest_release_at": "2026-07-13T14:58:36Z"
     },
@@ -760,7 +760,7 @@
       "pushed_at": "2024-07-27T01:33:19Z"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars": 4359,
+      "stars": 4360,
       "forks": 751,
       "pushed_at": "2026-09-27T21:38:10Z"
     },
@@ -1439,9 +1439,9 @@
     "tprodanov/locityper": {
       "stars": 51,
       "forks": 3,
-      "pushed_at": "2026-11-06T13:46:52Z",
-      "latest_release_tag": "v1.7.15",
-      "latest_release_at": "2026-10-30T10:15:54Z"
+      "pushed_at": "2026-11-09T11:47:08Z",
+      "latest_release_tag": "v1.8.1",
+      "latest_release_at": "2026-11-09T11:50:26Z"
     },
     "treangenlab/bronko": {
       "stars": 49,
@@ -1484,7 +1484,7 @@
     "varfish-org/mehari": {
       "stars": 33,
       "forks": 3,
-      "pushed_at": "2026-11-09T10:10:05Z",
+      "pushed_at": "2026-11-09T11:45:32Z",
       "latest_release_tag": "mehari-python-v0.50.0",
       "latest_release_at": "2026-11-03T14:11:54Z"
     },

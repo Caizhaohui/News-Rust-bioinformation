@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T11:27:14Z",
+  "generated_at": "2026-11-09T12:18:39Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 1,
@@ -107,7 +107,7 @@
       "trend": "quiet"
     },
     "COMBINE-lab/oarfish": {
-      "stars_7d": 0,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -121,7 +121,7 @@
       "trend": "quiet"
     },
     "COMBINE-lab/salmon": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 7,
+      "stars_7d": 8,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
