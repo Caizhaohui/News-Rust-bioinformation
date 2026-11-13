@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T11:00:50Z",
+  "generated_at": "2026-11-13T10:55:23Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 0,
@@ -51,7 +51,7 @@
       "trend": "quiet"
     },
     "ArcInstitute/cyto": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -121,7 +121,7 @@
       "trend": "quiet"
     },
     "COMBINE-lab/salmon": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -149,14 +149,14 @@
       "trend": "quiet"
     },
     "David-OConnor/daedalus": {
-      "stars_7d": 2,
+      "stars_7d": 4,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "David-OConnor/molchanica": {
-      "stars_7d": 2,
+      "stars_7d": 4,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -191,7 +191,7 @@
       "trend": "quiet"
     },
     "FelixKrueger/Bismark": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -233,7 +233,7 @@
       "trend": "quiet"
     },
     "Huang-lab/fastVEP": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -296,7 +296,7 @@
       "trend": "quiet"
     },
     "Psy-Fer/kuva": {
-      "stars_7d": 5,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -324,7 +324,7 @@
       "trend": "quiet"
     },
     "Sigilweaver/OpenTFRaw": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -555,7 +555,7 @@
       "trend": "quiet"
     },
     "cytokineking/sc-rs": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 7,
+      "stars_7d": 9,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -639,7 +639,7 @@
       "trend": "quiet"
     },
     "fg-labs/holodeck": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -695,7 +695,7 @@
       "trend": "quiet"
     },
     "fulcrumgenomics/fqtk": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -800,7 +800,7 @@
       "trend": "quiet"
     },
     "lazear/sage": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1024,14 +1024,14 @@
       "trend": "quiet"
     },
     "pangenome/seqwish": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "pjedge/longshot": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 137,
+      "stars_7d": 152,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1185,7 +1185,7 @@
       "trend": "quiet"
     },
     "sourmash-bio/sourmash": {
-      "stars_7d": 4,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1213,7 +1213,7 @@
       "trend": "quiet"
     },
     "steineggerlab/folddisco": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1276,7 +1276,7 @@
       "trend": "quiet"
     },
     "tprodanov/locityper": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1339,7 +1339,7 @@
       "trend": "quiet"
     },
     "vollgerlab/rustybam": {
-      "stars_7d": 3,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
