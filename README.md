@@ -9,7 +9,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 
 > Automatically tracks repository activity, releases, ecosystem trends, and emerging projects.
 
-**Projects:** 211 · **Active:** 144 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-11-15
+**Projects:** 211 · **Active:** 144 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-11-16
 
 ## Contents
 
@@ -66,14 +66,14 @@ Latest software releases and version tags across cataloged tools.
 
 | Project | Version | Released | Primary Area | Activity |
 |---|---|---|---|---|
+| [oxo-flow](https://github.com/Traitome/oxo-flow) | `v0.30.1` | 2026-11-15 | Workflows and Infrastructure | 🟢 |
+| [daedalus](https://github.com/David-OConnor/daedalus) | `0.5.4` | 2026-11-15 | Proteomics and Structure | 🟢 |
+| [molchanica](https://github.com/David-OConnor/molchanica) | `0.5.4` | 2026-11-15 | Visualization | 🟢 |
 | [umi-tools-rs](https://github.com/vertti/umi-tools-rs) | `v2.0.2` | 2026-11-15 | Sequence IO and Formats | 🟢 |
 | [oarfish](https://github.com/COMBINE-lab/oarfish) | `v0.13.0` | 2026-11-14 | Single-cell and RNA | 🟢 |
-| [daedalus](https://github.com/David-OConnor/daedalus) | `0.5.3` | 2026-11-14 | Proteomics and Structure | 🟢 |
-| [molchanica](https://github.com/David-OConnor/molchanica) | `0.5.3` | 2026-11-14 | Visualization | 🟢 |
 | [seqair](https://github.com/Softleif/seqair) | `seqair-v0.10.1` | 2026-11-13 | Sequence IO and Formats | 🟢 |
 | [Autocycler](https://github.com/rrwick/Autocycler) | `v0.8.1` | 2026-11-12 | Bacterial Genome Assembly | 🟢 |
 | [STRdust](https://github.com/wdecoster/STRdust) | `v1.3.1` | 2026-11-11 | Long Reads | 🟢 |
-| [orthoSynAssign](https://github.com/stajichlab/orthoSynAssign) | `v1.4.0` | 2026-11-11 | Workflows and Infrastructure | 🟢 |
 
 ## 🌱 Emerging Projects
 
@@ -207,7 +207,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 ### Long Reads
 
 - **[chopper](https://github.com/wdecoster/chopper)** — Filtering and trimming for PacBio and Nanopore FASTQ files. `🟢 Active` `★ 264`
-- **[longshot](https://github.com/pjedge/longshot)** — Diploid SNV caller for error-prone long reads. `🔴 Inactive` `★ 214`
+- **[longshot](https://github.com/pjedge/longshot)** — Diploid SNV caller for error-prone long reads. `🔴 Inactive` `★ 215`
 - **[cramino](https://github.com/wdecoster/cramino)** — Fast BAM and CRAM quality evaluation for long-read datasets. `🟢 Active` `★ 191` · [DOI: 10.1101/2022.11.28.518232](https://www.biorxiv.org/content/10.1101/2022.11.28.518232)
 - **[trgt](https://github.com/PacificBiosciences/trgt)** — Tandem repeat genotyping from PacBio HiFi data. `🟡 Maintained` `★ 146`
 - **[nanoq](https://github.com/esteinig/nanoq)** — Minimal quality control for Oxford Nanopore reads. `🔴 Inactive` `★ 140`
@@ -255,7 +255,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 
 ### Proteomics and Structure
 
-- **[sage](https://github.com/lazear/sage)** — Fast proteomics search and quantification. `🟢 Active` `★ 320`
+- **[sage](https://github.com/lazear/sage)** — Fast proteomics search and quantification. `🟢 Active` `★ 321`
 - **[foldmason](https://github.com/steineggerlab/foldmason)** — Multiple alignment of large protein structure sets. `🟡 Maintained` `★ 284`
 - **[folddisco](https://github.com/steineggerlab/folddisco)** — Indexing and search of discontinuous motifs in protein structures. `🟢 Active` `★ 225`
 - **[daedalus](https://github.com/David-OConnor/daedalus)** — Protein and molecule viewer. `🟢 Active` `★ 159`
@@ -379,8 +379,8 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 
 ## 📚 Learning Resources
 
-- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 60548`
-- **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟢 Active` `★ 4367`
+- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 60576`
+- **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟢 Active` `★ 4368`
 - **[rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics)** — Collection of genomics software tools written in Rust. `🟢 Active` `★ 142`
 - **[Rust-Bio documentation](https://rust-bio.github.io/)** — Project site and documentation for the Rust-Bio ecosystem. `🔴 Inactive` `★ 1`
 
