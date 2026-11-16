@@ -14,7 +14,7 @@ Crossed a threshold: star jump, new release, or a cold repository pushed.
 
 - [daedalus](https://github.com/David-OConnor/daedalus) — new release 0.5.3 -> 0.5.4
 - [oxo-flow](https://github.com/Traitome/oxo-flow) — new release v0.30.0 -> v0.30.1
-- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) — stars 60548 -> 60576
+- [awesome-rust](https://github.com/rust-unofficial/awesome-rust) — stars 60548 -> 60577
 - [molchanica](https://github.com/David-OConnor/molchanica) — new release 0.5.3 -> 0.5.4
 
 ## Possibly stale

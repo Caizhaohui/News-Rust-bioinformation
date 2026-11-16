@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T11:09:49Z",
+  "generated_at": "2026-11-16T12:13:42Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 8,
+      "stars_7d": 9,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 156,
+      "stars_7d": 157,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
