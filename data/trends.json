@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T11:33:55Z",
+  "generated_at": "2026-11-20T11:31:17Z",
   "repositories": {
     "10XGenomics/cellranger": {
       "stars_7d": 0,
@@ -51,7 +51,7 @@
       "trend": "quiet"
     },
     "ArcInstitute/cyto": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -121,7 +121,7 @@
       "trend": "quiet"
     },
     "COMBINE-lab/salmon": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -149,14 +149,14 @@
       "trend": "quiet"
     },
     "David-OConnor/daedalus": {
-      "stars_7d": 5,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
       "trend": "quiet"
     },
     "David-OConnor/molchanica": {
-      "stars_7d": 5,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -233,7 +233,7 @@
       "trend": "quiet"
     },
     "Huang-lab/fastVEP": {
-      "stars_7d": 0,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -324,7 +324,7 @@
       "trend": "quiet"
     },
     "Sigilweaver/OpenTFRaw": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -471,7 +471,7 @@
       "trend": "quiet"
     },
     "biodatageeks/polars-bio": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -492,7 +492,7 @@
       "trend": "quiet"
     },
     "bluenote-1577/savont": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -555,7 +555,7 @@
       "trend": "quiet"
     },
     "cytokineking/sc-rs": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 10,
+      "stars_7d": 6,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -716,7 +716,7 @@
       "trend": "quiet"
     },
     "haddocking/haddock-restraints": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1024,7 +1024,7 @@
       "trend": "quiet"
     },
     "pangenome/seqwish": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1080,7 +1080,7 @@
       "trend": "quiet"
     },
     "rust-bio/rust-bio": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1101,7 +1101,7 @@
       "trend": "quiet"
     },
     "rust-bio/rust-htslib": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 176,
+      "stars_7d": 166,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1185,7 +1185,7 @@
       "trend": "quiet"
     },
     "sourmash-bio/sourmash": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1213,7 +1213,7 @@
       "trend": "quiet"
     },
     "steineggerlab/folddisco": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1430,7 +1430,7 @@
       "trend": "quiet"
     },
     "wwood/CoverM": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1458,7 +1458,7 @@
       "trend": "quiet"
     },
     "zaeleus/noodles": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
