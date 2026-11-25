@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-24T13:38:06Z",
+  "generated_at": "2026-11-25T12:47:43Z",
   "repositories": {
     "10XGenomics/cellranger": {
-      "stars_7d": 2,
+      "stars_7d": 3,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -121,7 +121,7 @@
       "trend": "quiet"
     },
     "COMBINE-lab/salmon": {
-      "stars_7d": 1,
+      "stars_7d": 2,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -296,7 +296,7 @@
       "trend": "quiet"
     },
     "Psy-Fer/kuva": {
-      "stars_7d": 4,
+      "stars_7d": 5,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -331,7 +331,7 @@
       "trend": "quiet"
     },
     "Softleif/seqair": {
-      "stars_7d": 2,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -485,7 +485,7 @@
       "trend": "quiet"
     },
     "bluenote-1577/myloasm": {
-      "stars_7d": 3,
+      "stars_7d": 4,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -569,7 +569,7 @@
       "trend": "quiet"
     },
     "danielecook/Awesome-Bioinformatics": {
-      "stars_7d": 5,
+      "stars_7d": 7,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -695,7 +695,7 @@
       "trend": "quiet"
     },
     "fulcrumgenomics/fqtk": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -800,7 +800,7 @@
       "trend": "quiet"
     },
     "lazear/sage": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -940,7 +940,7 @@
       "trend": "quiet"
     },
     "nh13/rebgzf": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1024,7 +1024,7 @@
       "trend": "quiet"
     },
     "pangenome/seqwish": {
-      "stars_7d": 1,
+      "stars_7d": 0,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1115,7 +1115,7 @@
       "trend": "quiet"
     },
     "rust-unofficial/awesome-rust": {
-      "stars_7d": 179,
+      "stars_7d": 178,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1136,7 +1136,7 @@
       "trend": "quiet"
     },
     "seqeralabs/RustQC": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
@@ -1339,7 +1339,7 @@
       "trend": "quiet"
     },
     "vollgerlab/rustybam": {
-      "stars_7d": 0,
+      "stars_7d": 1,
       "stars_30d": 0,
       "stars_90d": 0,
       "growth_30d": 0.0,
