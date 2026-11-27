@@ -9,7 +9,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 
 > Automatically tracks repository activity, releases, ecosystem trends, and emerging projects.
 
-**Projects:** 211 · **Active:** 134 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-11-26
+**Projects:** 211 · **Active:** 132 · **Pure Rust:** 5 · **Rust × Python:** 3 · **Updated:** 2026-11-27
 
 ## Contents
 
@@ -48,7 +48,7 @@ A continuously updated catalog and ecosystem radar for Rust libraries, applicati
 | Metric | Count |
 |---|---:|
 | Cataloged projects | 211 |
-| Actively maintained | 134 |
+| Actively maintained | 132 |
 | Pure Rust | 5 |
 | Rust × Python | 3 |
 | Published software (with DOI/paper) | 41 |
@@ -66,14 +66,14 @@ Latest software releases and version tags across cataloged tools.
 
 | Project | Version | Released | Primary Area | Activity |
 |---|---|---|---|---|
+| [OpenTFRaw](https://github.com/Sigilweaver/OpenTFRaw) | `v4.0.0` | 2026-11-27 | Proteomics and Structure | 🟢 |
+| [OpenMassSpec](https://github.com/Sigilweaver/OpenMassSpec) | `v2.1.2` | 2026-11-27 | Proteomics and Structure | 🟢 |
+| [sparrowhawk-amr](https://github.com/bacpop/sparrowhawk-amr) | `v0.1.0` | 2026-11-26 | Antimicrobial Resistance | 🟢 |
+| [sparrowhawk-asm](https://github.com/bacpop/sparrowhawk-asm) | `v0.2.0` | 2026-11-26 | Bacterial Genome Assembly | 🟢 |
+| [Bismark](https://github.com/FelixKrueger/Bismark) | `bismark-rust-v3.5.0` | 2026-11-26 | Variants and Annotation | 🟢 |
 | [orthoSynAssign](https://github.com/stajichlab/orthoSynAssign) | `v1.5.0` | 2026-11-26 | Workflows and Infrastructure | 🟢 |
 | [fqless](https://github.com/openpaul/fqless) | `v2.4.0` | 2026-11-25 | Visualization | 🟢 |
 | [inquiSTR](https://github.com/wdecoster/inquiSTR) | `v0.31.0` | 2026-11-25 | Long Reads | 🟢 |
-| [STRdust](https://github.com/wdecoster/STRdust) | `v1.4.3` | 2026-11-24 | Long Reads | 🟢 |
-| [irma-core](https://github.com/CDCgov/irma-core) | `v0.12.1` | 2026-11-24 | Alignment and Mapping | 🟢 |
-| [nextclade](https://github.com/nextstrain/nextclade) | `3.30.0` | 2026-11-24 | Workflows and Infrastructure | 🟢 |
-| [zoe](https://github.com/CDCgov/zoe) | `v0.0.37` | 2026-11-23 | Core Libraries | 🟢 |
-| [OpenMassSpec](https://github.com/Sigilweaver/OpenMassSpec) | `v2.1.0` | 2026-11-23 | Proteomics and Structure | 🟢 |
 
 ## 🌱 Emerging Projects
 
@@ -82,7 +82,7 @@ Recently active Rust bioinformatics projects that are still relatively new or un
 | Project | Primary Area | Stars | Activity | Description |
 |---|---|---:|---|---|
 | [plascad](https://github.com/David-OConnor/plascad) | Visualization | 143 | 🟢 | Plasmid and primer design with cloning and restriction workflows. |
-| [rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics) | Learning Resources | 142 | 🟢 | Collection of genomics software tools written in Rust. |
+| [rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics) | Learning Resources | 143 | 🟢 | Collection of genomics software tools written in Rust. |
 | [RustQC](https://github.com/seqeralabs/RustQC) | Sequence IO and Formats | 141 | 🟢 | Fast quality-control tools for sequencing data. |
 | [xsra](https://github.com/ArcInstitute/xsra) | Sequence IO and Formats | 132 | 🟡 | Fast extraction of sequences from the SRA. |
 | [deacon](https://github.com/bede/deacon) | Metagenomics | 130 | 🟢 | Fast host DNA sequence filtering. |
@@ -124,7 +124,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 
 #### Bacterial Genome Assembly
 
-- **[Autocycler](https://github.com/rrwick/Autocycler)** — Consensus long-read assemblies for bacterial genomes. `🟢 Active` `★ 246`
+- **[Autocycler](https://github.com/rrwick/Autocycler)** — Consensus long-read assemblies for bacterial genomes. `🟢 Active` `★ 247`
 - **[Polypolish](https://github.com/rrwick/Polypolish)** — Short-read polishing for long-read assemblies. `🟡 Maintained` `★ 226`
 - **[sparrowhawk-asm](https://github.com/bacpop/sparrowhawk-asm)** — Short-read de Bruijn assembler for bacterial genomes. `🟢 Active` `★ 16`
 
@@ -151,7 +151,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[savont](https://github.com/bluenote-1577/savont)** — Calls amplicon sequence variants from 16S ONT and PacBio HiFi reads. `🟢 Active` `★ 75` · [DOI: 10.64898/2026.05.26.727271](https://www.biorxiv.org/content/10.64898/2026.05.26.727271)
 - **[gsearch](https://github.com/jean-pierreBoth/gsearch)** — Approximate nearest-neighbor search for microbial genomes. `🟢 Active` `★ 66`
 - **[nohuman](https://github.com/mbhall88/nohuman)** — Removal of human reads from a sequencing run. `🟡 Maintained` `★ 54`
-- **[MAGmax](https://github.com/soedinglab/MAGmax)** — Dereplicates and enriches metagenome-assembled genomes across samples. `🟢 Active` `★ 39` · [DOI: 10.1093/bioinformatics/btaf538](https://doi.org/10.1093/bioinformatics/btaf538)
+- **[MAGmax](https://github.com/soedinglab/MAGmax)** — Dereplicates and enriches metagenome-assembled genomes across samples. `🟡 Maintained` `★ 39` · [DOI: 10.1093/bioinformatics/btaf538](https://doi.org/10.1093/bioinformatics/btaf538)
 - **[sketchlib.rust](https://github.com/bacpop/sketchlib.rust)** — Fast sequence distance estimates from genomic sketches. `🟢 Active` `★ 36` · [DOI: 10.64898/2025.12.30.695181](https://www.biorxiv.org/content/10.64898/2025.12.30.695181)
 - **[xgt](https://github.com/Ebedthan/xgt)** — Command-line client for querying the Genome Taxonomy Database. `🟢 Active` `★ 34` · [DOI: 10.1093/gigascience/giag086](https://doi.org/10.1093/gigascience/giag086)
 - **[ITSxRust](https://github.com/ayobi/ITSxRust)** — ITS region extraction for long-read amplicon sequencing. `🟡 Maintained` `★ 25` · [DOI: 10.64898/2026.02.25.707950](https://www.biorxiv.org/content/10.64898/2026.02.25.707950)
@@ -171,10 +171,10 @@ _Genomics and bioinformatics tools focused on microorganisms._
 
 ### Alignment and Mapping
 
-- **[wgatools](https://github.com/wjwei-handsome/wgatools)** — Tools for whole-genome alignments. `🟢 Active` `★ 225`
+- **[wgatools](https://github.com/wjwei-handsome/wgatools)** — Tools for whole-genome alignments. `🟢 Active` `★ 226`
 - **[rust-bio-tools](https://github.com/rust-bio/rust-bio-tools)** — Command-line utilities built on Rust-Bio. `🔴 Inactive` `★ 205`
 - **[perbase](https://github.com/sstadick/perbase)** — Per-base depth analysis from alignments. `🟢 Active` `★ 153`
-- **[rustybam](https://github.com/vollgerlab/rustybam)** — Bioinformatics toolkit focused on BAM and pangenome alignments. `🟡 Maintained` `★ 119` · [DOI: 10.64898/2026.02.16.706142](https://www.biorxiv.org/content/10.64898/2026.02.16.706142)
+- **[rustybam](https://github.com/vollgerlab/rustybam)** — Bioinformatics toolkit focused on BAM and pangenome alignments. `🟡 Maintained` `★ 120` · [DOI: 10.64898/2026.02.16.706142](https://www.biorxiv.org/content/10.64898/2026.02.16.706142)
 - **[poasta](https://github.com/broadinstitute/poasta)** — Fast exact gap-affine partial order alignment. `🟢 Active` `★ 72`
 - **[sigalign](https://github.com/baku4/sigalign)** — Similarity-guided sequence alignment algorithm. `🟡 Maintained` `★ 31`
 - **[minimap2-pure-rs](https://github.com/henriksson-lab/minimap2-pure-rs)** — Pure Rust port of the minimap2 aligner. `🟡 Maintained` `★ 29`
@@ -245,7 +245,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[SnapATAC2](https://github.com/kaizhang/SnapATAC2)** — Single-cell epigenomics analysis tools. `🟢 Active` `★ 331`
 - **[alevin-fry](https://github.com/COMBINE-lab/alevin-fry)** — Efficient processing of single-cell sequencing data, focused on transcriptomics. `🟢 Active` `★ 220`
 - **[proseg](https://github.com/dcjones/proseg)** — Probabilistic cell segmentation for spatial transcriptomics. `🟢 Active` `★ 199`
-- **[oarfish](https://github.com/COMBINE-lab/oarfish)** — Quantification for long-read RNA-seq. `🟢 Active` `★ 130`
+- **[oarfish](https://github.com/COMBINE-lab/oarfish)** — Quantification for long-read RNA-seq. `🟢 Active` `★ 131`
 - **[simpleaf](https://github.com/COMBINE-lab/simpleaf)** — Workflow wrapper that simplifies alevin-fry analyses. `🔗 Binding` `🟢 Active` `★ 69`
 - **[cyto](https://github.com/ArcInstitute/cyto)** — Mapper for 10x Flex single-cell reads with fixed abstract geometries. `🟢 Active` `★ 52` · [DOI: 10.64898/2026.01.21.700936](https://www.biorxiv.org/content/10.64898/2026.01.21.700936)
 - **[squab](https://github.com/zaeleus/squab)** — Alignment-based gene expression quantification. `🟢 Active` `★ 40`
@@ -274,7 +274,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 ### Protein Engineering
 
 - **[ferritin](https://github.com/ferritin-bio/ferritin)** — Utilities for protein structures, protein language models, and LigandMPNN-style sequence-design workflows. `🟢 Active` `★ 33`
-- **[sc-rs](https://github.com/cytokineking/sc-rs)** — Scores the shape complementarity of protein-protein interfaces using the Lawrence and Colman statistic. `🟠 Quiet` `★ 20`
+- **[sc-rs](https://github.com/cytokineking/sc-rs)** — Scores the shape complementarity of protein-protein interfaces using the Lawrence and Colman statistic. `🟠 Quiet` `★ 21`
 - **[haddock-restraints](https://github.com/haddocking/haddock-restraints)** — Generates docking restraints for HADDOCK. `🟢 Active` `★ 9`
 - **[dreid-pack](https://github.com/caltechmsc/dreid-pack)** — Packs protein side chains with the DREIDING force field, dead-end elimination, and tree-decomposition search. `🟡 Maintained` `★ 2`
 
@@ -291,7 +291,7 @@ _Genomics and bioinformatics tools focused on microorganisms._
 - **[termal](https://github.com/sib-swiss/termal)** — Terminal multiple-sequence-alignment viewer for remote and HPC workflows. `🟢 Active` `★ 36` · [DOI: 10.1093/bioadv/vbaf208](https://doi.org/10.1093/bioadv/vbaf208)
 - **[fqless](https://github.com/openpaul/fqless)** — Pager-style viewer for FASTQ files. `🟢 Active` `★ 27`
 - **[SeqSizzle](https://github.com/ChangqingW/SeqSizzle)** — FASTQ pager with fuzzy matching and adaptor coloring. `🟢 Active` `★ 27`
-- **[igv-rs](https://github.com/AI4S-YB/igv-rs)** — Interactive terminal genome viewer for FASTA, VCF, BAM, GFF, and BED. `🟢 Active` `★ 11`
+- **[igv-rs](https://github.com/AI4S-YB/igv-rs)** — Interactive terminal genome viewer for FASTA, VCF, BAM, GFF, and BED. `🟡 Maintained` `★ 11`
 
 ## 🦀 Core Rust Libraries
 
@@ -372,16 +372,16 @@ Python packages and hybrid ecosystems accelerated by high-performance Rust cores
 - **[exon](https://github.com/wheretrue/exon)** — OLAP query engine for biology and life-science files. `🟠 Quiet` `★ 71`
 - **[crankshaft](https://github.com/stjude-rust-labs/crankshaft)** — Headless workflow execution framework for local, cloud, and HPC backends. `🟢 Active` `★ 61`
 - **[ggetrs](https://github.com/noamteyssier/ggetrs)** — Efficient querying of biological databases. `🟠 Quiet` `★ 45`
-- **[gen](https://github.com/genhub-bio/gen)** — Version-control system for genome assemblies and annotations. `🟢 Active` `★ 39`
+- **[gen](https://github.com/genhub-bio/gen)** — Version-control system for genome assemblies and annotations. `🟢 Active` `★ 40`
 - **[oxo-flow](https://github.com/Traitome/oxo-flow)** — Rust-native bioinformatics pipeline engine with TOML workflows. `🟢 Active` `★ 29`
 - **[nwr](https://github.com/wang-q/nwr)** — CLI for NCBI taxonomy, Newick trees, and assembly reports. `🟡 Maintained` `★ 9`
 - **[orthoSynAssign](https://github.com/stajichlab/orthoSynAssign)** — Refines orthogroups with synteny information; Python interface with a Rust core. `🟢 Active` `★ 7` · [DOI: 10.64898/2026.08.10.744007](https://www.biorxiv.org/content/10.64898/2026.08.10.744007)
 
 ## 📚 Learning Resources
 
-- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 60818`
-- **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟢 Active` `★ 4380`
-- **[rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics)** — Collection of genomics software tools written in Rust. `🟢 Active` `★ 142`
+- **[awesome-rust](https://github.com/rust-unofficial/awesome-rust)** — General awesome list for Rust, including a short Bioinformatics section. `🟢 Active` `★ 60861`
+- **[Awesome Bioinformatics](https://github.com/danielecook/Awesome-Bioinformatics)** — Language-agnostic curated list of bioinformatics software. `🟢 Active` `★ 4381`
+- **[rust-in-bioinformatics](https://github.com/sharkLoc/rust-in-bioinformatics)** — Collection of genomics software tools written in Rust. `🟢 Active` `★ 143`
 - **[Rust-Bio documentation](https://rust-bio.github.io/)** — Project site and documentation for the Rust-Bio ecosystem. `🔴 Inactive` `★ 1`
 
 ## 🗄️ Retired
